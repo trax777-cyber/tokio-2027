@@ -1,0 +1,1073 @@
+<title>Tokio 2027 Orte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2f0eb;
+    --paper-2: #e9e6de;
+    --ink: #23262b;
+    --ink-soft: #5d6166;
+    --line: #d8d4c9;
+    --card: #ffffff;
+    --indigo: #2f3e50;
+    --indigo-soft: #e2e7ec;
+    --vermillion: #b1462f;
+    --vermillion-soft: #f4e4df;
+    --gold: #97702a;
+    --gold-soft: #f1e8d4;
+    --sage: #4d6a52;
+    --sage-soft: #e3ebe3;
+    --focus: #2f6fed;
+    --shadow: 0 10px 40px rgba(35, 38, 43, 0.18);
+    --serif: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
+    --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #191b1e;
+      --paper-2: #202226;
+      --ink: #ece9e2;
+      --ink-soft: #a7aab0;
+      --line: #35383d;
+      --card: #24262a;
+      --indigo: #9db4cc;
+      --indigo-soft: #263041;
+      --vermillion: #df917c;
+      --vermillion-soft: #3a2521;
+      --gold: #d3b06a;
+      --gold-soft: #3a3120;
+      --sage: #9bc0a1;
+      --sage-soft: #22301f;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #191b1e;
+    --paper-2: #202226;
+    --ink: #ece9e2;
+    --ink-soft: #a7aab0;
+    --line: #35383d;
+    --card: #24262a;
+    --indigo: #9db4cc;
+    --indigo-soft: #263041;
+    --vermillion: #df917c;
+    --vermillion-soft: #3a2521;
+    --gold: #d3b06a;
+    --gold-soft: #3a3120;
+    --sage: #9bc0a1;
+    --sage-soft: #22301f;
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { height: 100%; box-sizing: border-box; }
+  body {
+    height: 100%;
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+  }
+  button { font-family: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+  .app { height: 100%; display: flex; flex-direction: column; }
+
+  /* ---------- header ---------- */
+  .top {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 14px 16px 10px;
+    max-width: 820px; width: 100%; margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .hanko {
+    flex: none;
+    width: 40px; height: 40px;
+    display: grid; place-items: center;
+    background: var(--vermillion); color: var(--paper);
+    font-family: var(--serif); font-weight: 700; font-size: 15px; line-height: 1;
+    writing-mode: vertical-rl; letter-spacing: 0.05em;
+    border-radius: 6px;
+  }
+  .brand h1 {
+    margin: 0; font-family: var(--serif); font-weight: 700;
+    font-size: 22px; line-height: 1.1; letter-spacing: 0.01em;
+  }
+  .brand p { margin: 2px 0 0; font-size: 12.5px; color: var(--ink-soft); }
+  .count { font-size: 13px; color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .count b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- search + chips ---------- */
+  .tools { max-width: 820px; width: 100%; margin: 0 auto; padding: 0 16px; display: grid; gap: 10px; }
+  .search-row { display: flex; gap: 8px; }
+  .search {
+    flex: 1; min-width: 0;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 0 12px;
+  }
+  .search:focus-within { outline: 2px solid var(--focus); outline-offset: 1px; }
+  .search svg { flex: none; color: var(--ink-soft); }
+  .search input {
+    flex: 1; min-width: 0; border: 0; background: transparent; outline: none;
+    padding: 11px 0; font: inherit; font-size: 16px; color: var(--ink);
+  }
+  .search input::-webkit-search-cancel-button { display: none; }
+  .clear-q { border: 0; background: none; padding: 4px; cursor: pointer; color: var(--ink-soft); font-size: 18px; line-height: 1; }
+  .filter-btn {
+    position: relative; flex: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 0 14px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .filter-btn .dot {
+    min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px;
+    background: var(--vermillion); color: var(--paper);
+    font-size: 11px; display: grid; place-items: center; font-variant-numeric: tabular-nums;
+  }
+  .chips {
+    display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+    margin: 0 -16px; padding: 0 16px 10px;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: none; display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink-soft);
+    border-radius: 999px; padding: 6px 12px 6px 8px; font-size: 13.5px; cursor: pointer;
+  }
+  .chip .k { font-family: var(--serif); font-weight: 700; font-size: 14px; color: var(--ink); }
+  .chip.all { padding-left: 12px; }
+  .chip[aria-pressed="true"] { background: var(--indigo); border-color: var(--indigo); color: var(--paper); }
+  .chip[aria-pressed="true"] .k { color: var(--paper); }
+  .chip .n { font-variant-numeric: tabular-nums; opacity: 0.75; font-size: 12px; }
+
+  /* ---------- views ---------- */
+  main { flex: 1; min-height: 0; position: relative; border-top: 1px solid var(--line); }
+  .view { position: absolute; inset: 0; }
+  .view.scroll { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .list-wrap { max-width: 820px; margin: 0 auto; padding: 4px 16px 24px; }
+
+  .list { list-style: none; margin: 0; padding: 0; }
+  .item { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); }
+  .row {
+    flex: 1; min-width: 0; display: flex; gap: 12px; align-items: flex-start;
+    text-align: left; border: 0; background: none; padding: 13px 0; cursor: pointer;
+  }
+  .stamp {
+    flex: none; width: 38px; height: 38px; border-radius: 8px;
+    display: grid; place-items: center;
+    font-family: var(--serif); font-weight: 700; font-size: 19px; line-height: 1;
+  }
+  .g-food { background: var(--vermillion-soft); color: var(--vermillion); }
+  .g-cafe { background: var(--gold-soft); color: var(--gold); }
+  .g-shop { background: var(--indigo-soft); color: var(--indigo); }
+  .g-calm { background: var(--sage-soft); color: var(--sage); }
+  .g-misc { background: var(--paper-2); color: var(--ink-soft); }
+  .body { min-width: 0; flex: 1; display: grid; gap: 2px; }
+  .name { font-weight: 600; font-size: 15.5px; line-height: 1.3; }
+  .sub { font-size: 13px; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 2px 10px; }
+  .sub .rate { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .desc {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .note-line { font-size: 13px; color: var(--vermillion); }
+  .tag-done {
+    display: inline-flex; align-items: center; gap: 3px;
+    font-size: 11.5px; font-weight: 600; letter-spacing: 0.02em;
+    color: var(--sage); background: var(--sage-soft); border-radius: 4px; padding: 1px 6px;
+  }
+  .item.done .name { color: var(--ink-soft); }
+  .fav {
+    flex: none; width: 48px; border: 0; background: none; cursor: pointer;
+    font-size: 22px; line-height: 1; color: var(--line); padding: 0;
+  }
+  .fav[aria-pressed="true"] { color: var(--gold); }
+  .fav:hover { color: var(--gold); }
+
+  .empty { padding: 48px 8px; text-align: center; color: var(--ink-soft); line-height: 1.6; }
+  .empty strong { display: block; font-family: var(--serif); font-size: 18px; color: var(--ink); margin-bottom: 4px; }
+  .link-btn { border: 0; background: none; color: var(--indigo); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+
+  .section-h {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 18px 0 2px;
+  }
+  .progress { margin: 14px 0 4px; display: grid; gap: 6px; }
+  .progress .txt { font-size: 13.5px; color: var(--ink-soft); }
+  .progress .txt b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .bar { height: 6px; border-radius: 3px; background: var(--paper-2); overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--sage); border-radius: 3px; }
+
+  /* ---------- map ---------- */
+  .map-view { display: flex; flex-direction: column; }
+  .map-box { flex: 1; min-height: 0; position: relative; background: var(--paper-2); overflow: hidden; }
+  #map { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
+  #map.dragging { cursor: grabbing; }
+  #map .loop { fill: none; stroke: var(--line); stroke-linejoin: round; }
+  #map .loop-fill { fill: var(--paper); stroke: none; }
+  #map .stn { fill: var(--card); stroke: var(--ink-soft); }
+  #map .lbl { fill: var(--ink-soft); font-family: var(--sans); font-weight: 600; letter-spacing: 0.04em; paint-order: stroke; stroke: var(--paper-2); stroke-linejoin: round; }
+  #map .lbl-loop { fill: var(--ink-soft); font-family: var(--serif); font-style: normal; opacity: 0.8; }
+  #map .pt { stroke: var(--card); cursor: pointer; }
+  #map .pt.food { fill: var(--vermillion); }
+  #map .pt.cafe { fill: var(--gold); }
+  #map .pt.shop { fill: var(--indigo); }
+  #map .pt.calm { fill: var(--sage); }
+  #map .pt.misc { fill: var(--ink-soft); }
+  #map .pt.done { opacity: 0.45; }
+  #map .ring { fill: none; stroke: var(--ink); }
+  #map .fav-mark { fill: var(--gold); stroke: var(--card); }
+  .map-ctrl {
+    position: absolute; right: 12px; top: 12px; display: grid; gap: 6px;
+  }
+  .map-ctrl button {
+    width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line);
+    background: var(--card); font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .legend {
+    position: absolute; left: 12px; bottom: 12px; right: 64px;
+    display: flex; flex-wrap: wrap; gap: 4px 12px;
+    font-size: 12px; color: var(--ink-soft);
+    pointer-events: none;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; background: var(--card); padding: 3px 8px; border-radius: 6px; }
+  .legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .map-note {
+    padding: 10px 16px; font-size: 13px; color: var(--ink-soft); border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+
+  /* ---------- tabs ---------- */
+  .tabs {
+    display: flex; justify-content: center; gap: 4px;
+    border-top: 1px solid var(--line); background: var(--paper);
+    padding: 6px 8px;
+  }
+  .tab {
+    flex: 1; max-width: 200px; border: 0; background: none; cursor: pointer;
+    display: grid; justify-items: center; gap: 1px; padding: 6px 4px;
+    border-radius: 10px; color: var(--ink-soft); font-size: 12px; font-weight: 600;
+    position: relative;
+  }
+  .tab .ico { font-family: var(--serif); font-size: 19px; line-height: 1.1; font-weight: 700; }
+  .tab[aria-selected="true"] { color: var(--vermillion); background: var(--vermillion-soft); }
+  .tab .badge {
+    position: absolute; top: 2px; left: calc(50% + 10px);
+    min-width: 17px; height: 17px; padding: 0 4px; border-radius: 9px;
+    background: var(--gold); color: var(--paper); font-size: 10.5px; display: grid; place-items: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- sheets ---------- */
+  .scrim {
+    position: fixed; inset: 0; background: rgba(20, 22, 25, 0.42); z-index: 20;
+    opacity: 0; transition: opacity 0.18s;
+  }
+  .scrim.on { opacity: 1; }
+  .sheet {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 21;
+    max-width: 640px; margin: 0 auto;
+    max-height: 90%;
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+    background: var(--paper); border-radius: 18px 18px 0 0; box-shadow: var(--shadow);
+    padding: 8px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+    transform: translateY(100%); transition: transform 0.22s cubic-bezier(.2,.8,.2,1);
+  }
+  .sheet.on { transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .sheet, .scrim { transition: none; }
+  }
+  .grip { width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 4px auto 12px; }
+  .sheet-close {
+    position: sticky; top: 0; float: right; margin: -4px -8px 0 0;
+    width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--paper-2);
+    font-size: 18px; cursor: pointer; z-index: 1;
+  }
+  .d-head { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 12px; }
+  .d-head .stamp { width: 52px; height: 52px; font-size: 26px; border-radius: 10px; }
+  .d-kat { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .d-head h2 {
+    margin: 2px 0 4px; font-family: var(--serif); font-weight: 700; font-size: 24px; line-height: 1.2;
+    text-wrap: balance; overflow-wrap: anywhere;
+  }
+  .d-where { font-size: 14px; color: var(--ink-soft); }
+  .d-rate { font-size: 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .d-rate .stars { color: var(--gold); letter-spacing: 1px; }
+  .d-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 16px 0 10px; }
+  .toggle {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    border: 1px solid var(--line); background: var(--card); border-radius: 12px;
+    padding: 12px 10px; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  .toggle .i { font-size: 18px; line-height: 1; }
+  .toggle.fav-t[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); color: var(--gold); }
+  .toggle.done-t[aria-pressed="true"] { background: var(--sage-soft); border-color: var(--sage); color: var(--sage); }
+  .d-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .pill-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 14px; border-radius: 999px; font-size: 14px; font-weight: 600;
+    text-decoration: none; color: var(--indigo); background: var(--indigo-soft); border: 0; cursor: pointer;
+  }
+  .pill-link.primary { background: var(--indigo); color: var(--paper); }
+  .d-sec { border-top: 1px solid var(--line); padding: 14px 0; }
+  .d-sec h3 {
+    margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .d-sec h3 button { text-transform: none; letter-spacing: 0; font-size: 13px; }
+  .d-sec p { margin: 0; line-height: 1.55; max-width: 62ch; overflow-wrap: anywhere; }
+  .muted { color: var(--ink-soft); font-style: italic; }
+  .addr { display: flex; gap: 10px; align-items: flex-start; }
+  .addr p { flex: 1; font-size: 14px; user-select: text; -webkit-user-select: text; }
+  .small-btn {
+    flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 8px;
+    padding: 5px 10px; font-size: 13px; cursor: pointer;
+  }
+  textarea {
+    width: 100%; font: inherit; font-size: 16px; line-height: 1.45;
+    padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--card); color: var(--ink); resize: vertical; min-height: 84px;
+  }
+  .edit-actions { display: flex; gap: 8px; margin-top: 8px; align-items: center; }
+  .btn {
+    border: 1px solid var(--line); background: var(--card); border-radius: 10px;
+    padding: 8px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .btn.primary { background: var(--indigo); border-color: var(--indigo); color: var(--paper); }
+  .status { font-size: 12.5px; color: var(--ink-soft); }
+
+  /* filter sheet */
+  .f-title { font-family: var(--serif); font-weight: 700; font-size: 20px; margin: 0 0 12px; }
+  .f-group { padding: 12px 0; border-top: 1px solid var(--line); }
+  .f-group > label, .f-group > .lab { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 8px; }
+  .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+  .seg button {
+    border: 1px solid var(--line); background: var(--card); border-radius: 999px;
+    padding: 7px 13px; font-size: 14px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--indigo); border-color: var(--indigo); color: var(--paper); }
+  select {
+    width: 100%; font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  .switch-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 15px; }
+  .switch-row input { width: 22px; height: 22px; accent-color: var(--indigo); }
+  .f-foot { display: flex; justify-content: space-between; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+
+  .toast {
+    position: fixed; left: 50%; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); z-index: 30;
+    transform: translateX(-50%); max-width: calc(100% - 32px);
+    background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 10px;
+    font-size: 14px; box-shadow: var(--shadow);
+  }
+
+  @media (min-width: 720px) {
+    .top { padding-top: 22px; }
+    .brand h1 { font-size: 26px; }
+    .hanko { width: 46px; height: 46px; font-size: 17px; }
+  }
+</style>
+
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <div class="hanko" aria-hidden="true">東京</div>
+      <div>
+        <h1>Tokio 2027</h1>
+        <p>Juli 2027 · Wien → Haneda</p>
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+  </header>
+
+  <div class="tools">
+    <div class="search-row">
+      <label class="search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Name, Stadtteil, Stichwort …" autocomplete="off" aria-label="Orte durchsuchen">
+        <button class="clear-q" id="clear-q" type="button" aria-label="Suche leeren" hidden>×</button>
+      </label>
+      <button class="filter-btn" id="open-filter" type="button">Filter <span class="dot" id="filter-dot" hidden></span></button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Kategorien"></div>
+  </div>
+
+  <main>
+    <section class="view scroll" id="view-liste" aria-label="Liste">
+      <div class="list-wrap">
+        <ul class="list" id="list"></ul>
+        <div class="empty" id="empty" hidden></div>
+      </div>
+    </section>
+
+    <section class="view map-view" id="view-karte" aria-label="Karte" hidden>
+      <div class="map-box">
+        <svg id="map" role="img" aria-label="Karte der Orte in Tokio"></svg>
+        <div class="map-ctrl">
+          <button type="button" id="zin" aria-label="Hineinzoomen">+</button>
+          <button type="button" id="zout" aria-label="Herauszoomen">−</button>
+          <button type="button" id="zhome" aria-label="Ansicht zurücksetzen" style="font-size:15px">⌂</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="map-note" id="map-note"></div>
+    </section>
+
+    <section class="view scroll" id="view-merkliste" aria-label="Merkliste" hidden>
+      <div class="list-wrap" id="merk-wrap"></div>
+    </section>
+  </main>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="liste" type="button"><span class="ico">一覧</span>Liste</button>
+    <button class="tab" role="tab" data-tab="karte" type="button"><span class="ico">地図</span>Karte</button>
+    <button class="tab" role="tab" data-tab="merkliste" type="button"><span class="ico">☆</span>Merkliste<span class="badge" id="fav-badge" hidden></span></button>
+  </nav>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="detail" role="dialog" aria-modal="true" aria-labelledby="d-name" hidden></div>
+<div class="sheet" id="filters" role="dialog" aria-modal="true" aria-label="Filter" hidden>
+  <div class="grip"></div>
+  <h2 class="f-title">Filter</h2>
+  <div class="f-group">
+    <span class="lab">Region</span>
+    <div class="seg" id="f-region">
+      <button type="button" data-v="alle">Alle</button>
+      <button type="button" data-v="Tokio">Tokio</button>
+      <button type="button" data-v="Andere Region">Tagesausflüge</button>
+    </div>
+  </div>
+  <div class="f-group">
+    <label for="f-bezirk">Bezirk</label>
+    <select id="f-bezirk"><option value="alle">Alle Bezirke</option></select>
+  </div>
+  <div class="f-group">
+    <span class="lab">Google-Bewertung</span>
+    <div class="seg" id="f-rating">
+      <button type="button" data-v="0">Egal</button>
+      <button type="button" data-v="4">ab 4,0</button>
+      <button type="button" data-v="4.3">ab 4,3</button>
+      <button type="button" data-v="4.5">ab 4,5</button>
+    </div>
+  </div>
+  <div class="f-group">
+    <span class="lab">Sortieren nach</span>
+    <div class="seg" id="f-sort">
+      <button type="button" data-v="name">Name</button>
+      <button type="button" data-v="rating">Bewertung</button>
+      <button type="button" data-v="bezirk">Bezirk</button>
+    </div>
+  </div>
+  <div class="f-group">
+    <label class="switch-row" for="f-hide">Besuchte Orte ausblenden <input type="checkbox" id="f-hide"></label>
+  </div>
+  <div class="f-foot">
+    <button type="button" class="btn" id="f-reset">Zurücksetzen</button>
+    <button type="button" class="btn primary" id="f-done">Fertig</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+const DATA = [{"name":"2k540 Aki-Oka Artisan","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Ueno, Taito City","region":"Tokio","adresse":"5 Chome-9 Ueno, Taito City, Tokyo 110-0005, Japan","beschreibung":"Gallery of 50 boutiques beneath an elevated railway line selling unique handcrafted & custom items.","rating":4.0,"ratingsTotal":"","website":"http://www.jrtk.jp/2k540/","googleUrl":"https://www.google.com/maps/place/2k540+Aki-Oka+Artisan/data=!4m2!3m1!1s0x60188ea0b60f30af:0xf1c7be64d36acd23","lat":"35.7031798","lng":"139.774044","bezirk":"Taito","id":"000-2k540-aki-oka-artisan"},{"name":"485 TOKINI CASTELLA / 485 TOKINI CREPE","kategorie":"Café","google_typ":"Cake shop","stadtteil":"Tokiwa, Koto City","region":"Tokio","adresse":"2 Chome-2-14 Tokiwa, Koto City, Tokyo 135-0006, Japan","beschreibung":"Gemütliches Café nahe Kiyosumi-Shirakawa, bekannt für japanischen Castella-Kuchen und weitere Torten.","rating":4.7,"ratingsTotal":"","website":"https://instagram.com/485__tokini?igshid=yanc9x15r2z7","googleUrl":"https://www.google.com/maps/place/485+TOKINI+CASTELLA+%2F+485+TOKINI+CREPE/data=!4m2!3m1!1s0x6018898a2957dfe9:0x2a48ce8d6d39729f","lat":"35.6844299","lng":"139.7961887","bezirk":"Koto","id":"001-485-tokini-castella-485-tokini-crepe"},{"name":"AFURI Ebisu","kategorie":"Essen","google_typ":"Ramen restaurant","stadtteil":"Ebisu, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0013 Tokyo, Shibuya, Ebisu, 1 Chome−1−7 117ビル 1F","beschreibung":"Ramen","rating":4.3,"ratingsTotal":"","website":"https://afuri.com/","googleUrl":"https://www.google.com/maps/place/AFURI+Ebisu/data=!4m2!3m1!1s0x60188b41c5548b81:0xbb158bd909edb2d8","lat":"35.6483022","lng":"139.710881","bezirk":"Shibuya","id":"002-afuri-ebisu"},{"name":"ARC","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Torigoe, Taito City","region":"Tokio","adresse":"Japan, 〒111-0054 Tokyo, Taito City, Torigoe, 2 Chome−3−4 篠田梅村共同ビル 1F","beschreibung":"Aus popeye","rating":4.0,"ratingsTotal":"","website":"https://www.instagram.com/arc__coffee/","googleUrl":"https://www.google.com/maps/place/ARC/data=!4m2!3m1!1s0x60188fa1d273803f:0x737fb67f3409e7bd","lat":"35.7020506","lng":"139.7862472","bezirk":"Taito","id":"003-arc"},{"name":"Akihabara Electric Town","kategorie":"Sehenswürdigkeit","google_typ":"Business park","stadtteil":"Sotokanda, Chiyoda City","region":"Tokio","adresse":"1 Chome-12 Sotokanda, Chiyoda City, Tokyo 101-0021, Japan","beschreibung":"Colorful streets lined with stalls & department stores selling cut-price manga & anime collectibles.","rating":4.5,"ratingsTotal":"","website":"http://akiba.or.jp/","googleUrl":"https://www.google.com/maps/place/Akihabara+Electric+Town/data=!4m2!3m1!1s0x60188c1da0983467:0x6fc7ec7e7222177c","lat":"35.6997178","lng":"139.7713799","bezirk":"Chiyoda","id":"004-akihabara-electric-town"},{"name":"Akihabara Gachapon Hall","kategorie":"Shop","google_typ":"Toy store","stadtteil":"Sotokanda, Chiyoda City","region":"Tokio","adresse":"Japan, 〒101-0021 Tokyo, Chiyoda City, Sotokanda, 3 Chome−15−5 MNビル 1F","beschreibung":"Traditionsreicher Laden mit rund 500 Gachapon-Automaten voller Sammelfiguren, seit über 20 Jahren ein Fixpunkt in Akihabara.","rating":4.0,"ratingsTotal":"","website":"http://www.akibagacha.com/","googleUrl":"https://www.google.com/maps/place/Akihabara+Gachapon+Hall/data=!4m2!3m1!1s0x60188c1ddf563b07:0xad10d39b97d8d169","lat":"35.7018425","lng":"139.7712256","bezirk":"Chiyoda","id":"005-akihabara-gachapon-hall"},{"name":"Ameya","kategorie":"Café","google_typ":"Japanese sweets restaurant","stadtteil":"Chofu (Tokyo)","region":"Tokio","adresse":"Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−10","beschreibung":"Wagashi-Café nahe dem Jindaiji-Tempel in Chofu, bekannt für sein Soba-Brot mit Bohnenpastenfüllung.","rating":4.0,"ratingsTotal":"","website":"https://chofu.com/ameya/?utm_source=google&utm_medium=maps","googleUrl":"https://www.google.com/maps/place/Ameya/data=!4m2!3m1!1s0x6018f02222ef4f57:0x32aea890a0dfbe0a","lat":"35.667255","lng":"139.5497249","bezirk":"Außerhalb der 23 Bezirke","id":"006-ameya"},{"name":"Ameyoko market","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Ueno, Taito City","region":"Tokio","adresse":"6 Chome-10-7 Ueno, Taito City, Tokyo 110-0005, Japan","beschreibung":"Ehemaliger Nachkriegs-Schwarzmarkt bei Ueno, heute belebte 400-Meter-Einkaufsstraße mit rund 400 Läden für Essen, Kleidung und Schnäppchen.","rating":4.3,"ratingsTotal":"","website":"https://ameyokoinfo.com/","googleUrl":"https://www.google.com/maps/place/Ameyoko+market/data=!4m2!3m1!1s0x60188f00af83b787:0x654b0a29a45fcf0a","lat":"35.7090028","lng":"139.7746259","bezirk":"Taito","id":"007-ameyoko-market"},{"name":"Ao Island","kategorie":"Sehenswürdigkeit","google_typ":"Island","stadtteil":"Andere (Ehime)","region":"Andere Region","adresse":"Nagahamacho Aoshima, Ozu, Ehime 799-3470, Japan","beschreibung":"Ferry trips are available to this fishing village where cats outnumber people by a large margin.","rating":4.6,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Aoshima/data=!4m2!3m1!1s0x3545615a1e5be903:0xa6a816cd520f72b0","lat":"33.7357445","lng":"132.483255","bezirk":"Außerhalb der 23 Bezirke","id":"008-ao-island"},{"name":"Arashiyama Park Kameyama Area","kategorie":"Park","google_typ":"Park","stadtteil":"Andere (Kyoto)","region":"Andere Region","adresse":"Japan, 〒616-8386 Kyoto, Ukyo Ward, Sagakamenoocho, ６","beschreibung":"berühmtesten Bambushain Japans","rating":4.5,"ratingsTotal":"","website":"http://www.pref.kyoto.jp/koen-annai/ara.html","googleUrl":"https://www.google.com/maps/place/Arashiyama+Park+Kameyama+Area/data=!4m2!3m1!1s0x6001aa06adc6f49f:0xca892e2244ca2df6","lat":"35.0151776","lng":"135.6713285","bezirk":"Außerhalb der 23 Bezirke","id":"009-arashiyama-park-kameyama-area"},{"name":"Sensō-ji","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"Completed in 645, this temple, Tokyo's oldest, was built to honor Kannon, the goddess of mercy.","rating":4.6,"ratingsTotal":"97974","website":"https://www.senso-ji.jp/","googleUrl":"https://www.google.com/maps/place/Asakusa-Schrein/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d","lat":"35.7147651","lng":"139.7966553","bezirk":"Taito","id":"010-sens-ji"},{"name":"Azabudai Hills","kategorie":"Sehenswürdigkeit","google_typ":"Business park","stadtteil":"Azabudai, Minato City","region":"Tokio","adresse":"1 Chome-3-1 Azabudai, Minato City, Tokyo 106-0041, Japan","beschreibung":"2023 eröffnetes Stadtquartier von Mori Building mit Japans höchstem Turm, Wohnen, Büros, Shops, Restaurants und Grünflächen.","rating":4.4,"ratingsTotal":"","website":"https://www.azabudai-hills.com/index.html?utm_source=google&utm_medium=gbp&utm_campaign=azabudai","googleUrl":"https://www.google.com/maps/place/Azabudai+Hills/data=!4m2!3m1!1s0x60188b2e40342225:0x3f9a1673138a69c1","lat":"35.6615447","lng":"139.7408302","bezirk":"Minato","id":"011-azabudai-hills"},{"name":"Bandai Namco Cross Store Tokyo","kategorie":"Sehenswürdigkeit","google_typ":"Video arcade","stadtteil":"Higashiikebukuro, Toshima City","region":"Tokio","adresse":"Japan, 〒170-8630 Tokyo, Toshima City, Higashiikebukuro, 3 Chome−1−3 サンシャインシティ・ワールドインポートマートビル 3階","beschreibung":"Anime- und Gaming-Flagshipstore in der Sunshine City Ikebukuro mit Arcade-Bereich und mehreren tausend Gachapon-Automaten.","rating":3.7,"ratingsTotal":"","website":"https://bandainamco-am.co.jp/game_center/loc/crossstore_tokyo/","googleUrl":"https://www.google.com/maps/place/Bandai+Namco+Cross+Store+Tokyo/data=!4m2!3m1!1s0x60188db1d875538f:0x8e1cbde0ce819d18","lat":"35.7288716","lng":"139.7196438","bezirk":"Toshima","id":"012-bandai-namco-cross-store-tokyo"},{"name":"Beams Japan","kategorie":"Shop","google_typ":"Clothing store","stadtteil":"Shinjuku City","region":"Tokio","adresse":"Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−32−6 B1F 5F","beschreibung":"Men's, women's & children's clothing with a pop art-inspired look from a modern flagship store.","rating":4.4,"ratingsTotal":"","website":"https://www.beams.co.jp/shop/j/?utm_source=gbp&utm_medium=organic&utm_campaign=0231","googleUrl":"https://www.google.com/maps/place/Beams+Japan/data=!4m2!3m1!1s0x60188cdb02ce6651:0xea86b34ba35eb3c5","lat":"35.6903982","lng":"139.7039897","bezirk":"Shinjuku","id":"013-beams-japan"},{"name":"Lake Biwa","kategorie":"Sehenswürdigkeit","google_typ":"Lake","stadtteil":"Andere (Shiga)","region":"Andere Region","adresse":"Shiga, Japan","beschreibung":"größter See Japans","rating":4.5,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Biwa-See/data=!4m2!3m1!1s0x60010acfc4ac3edb:0xee09cf98c31a940f","lat":"35.2483116","lng":"136.0688862","bezirk":"Außerhalb der 23 Bezirke","id":"014-lake-biwa"},{"name":"Blue Bottle Coffee - Kiyosumi-Shirakawa Flagship Cafe","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Hirano, Koto City","region":"Tokio","adresse":"1 Chome-4-8 Hirano, Koto City, Tokyo 135-0023, Japan","beschreibung":"Trendy cafe chain offering upscale coffee drinks & pastries, plus beans & brewing equipment.","rating":4.1,"ratingsTotal":"","website":"https://store.bluebottlecoffee.jp/pages/kiyosumi?utm_source=google&utm_medium=my_business&utm_campaign=top&utm_id=C001Kiyosumi","googleUrl":"https://www.google.com/maps/place/Blue+Bottle+Coffee+-+Kiyosumi-Shirakawa+Flagship+Cafe/data=!4m2!3m1!1s0x60188916dc695555:0xbcc9846c4712087c","lat":"35.6777557","lng":"139.8005894","bezirk":"Koto","id":"015-blue-bottle-coffee-kiyosumi-shirakawa-flagship-cafe"},{"name":"Bon","kategorie":"Essen","google_typ":"Vegetarian restaurant","stadtteil":"Ryusen, Taito City","region":"Tokio","adresse":"1 Chome-2-11 Ryusen, Taito City, Tokyo 110-0012, Japan","beschreibung":"Bon specializes in shojin ryori the vegetarian cuisine eaten by Zen Buddhist monks in Japan","rating":4.7,"ratingsTotal":"","website":"http://www.fuchabon.co.jp/","googleUrl":"https://www.google.com/maps/place/Bon/data=!4m2!3m1!1s0x60188e927bebddab:0x3a3b41efde84e5c8","lat":"35.7229176","lng":"139.7903898","bezirk":"Taito","id":"016-bon"},{"name":"Bond Street","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Higashishinagawa, Shinagawa City","region":"Tokio","adresse":"2 Chome-1 Higashishinagawa, Shinagawa City, Tokyo 140-0002, Japan","beschreibung":"Umgebaute Lagerhallen mit Galerien, Ateliers und Cafés im Küstenviertel Tennozu Isle, bekannt für Street Art.","rating":3.9,"ratingsTotal":"82","website":"https://www.e-tennoz.com/areaguidance/bldg_bond.html","googleUrl":"https://www.google.com/maps/place/Bond+Street/data=!4m2!3m1!1s0x60188a6a3d47f049:0x551bffb8c66a677b","lat":"35.622409","lng":"139.7480021","bezirk":"Shinagawa","id":"017-bond-street"},{"name":"Bonus Track","kategorie":"Sehenswürdigkeit","google_typ":"Business park","stadtteil":"Daita, Setagaya City","region":"Tokio","adresse":"Japan, 〒155-0033 Tokyo, Setagaya City, Daita, 2 Chome−36−15 BONUS TRACK 2F","beschreibung":"2020 eröffnetes Ensemble unabhängiger Cafés, Bars und Läden um einen Innenhof in Shimokitazawa, auf ehemaligem Bahntrassen-Gelände.","rating":4.2,"ratingsTotal":"441","website":"https://bonus-track.net/","googleUrl":"https://www.google.com/maps/place/Bonus+Track/data=!4m2!3m1!1s0x6018f399d64e3a21:0x6025f693980f39c5","lat":"35.6593012","lng":"139.6640272","bezirk":"Setagaya","id":"018-bonus-track"},{"name":"Boulangerie S.Igarashi","kategorie":"Café","google_typ":"Bakery","stadtteil":"Kiba, Koto City","region":"Tokio","adresse":"3 Chome-8-10 Kiba, Koto City, Tokyo 135-0042, Japan","beschreibung":"Beliebte Bäckerei in einem Wohnviertel bei Kiba, bekannt für Brot aus hochwertigem Mehl und Naturhefe; wegen Andrangs oft mit Wartenummer.","rating":4.3,"ratingsTotal":"329","website":"https://www.s-igarashi.tokyo/?fbclid=PAAaYQMaI-CjZwE8e0blPsfE9A3UWi91Lge5psCPK1_g3BMzBf2E2fYY23duA","googleUrl":"https://www.google.com/maps/place/Boulangerie+S.Igarashi/data=!4m2!3m1!1s0x6018897f3ff5a01b:0x648e96107ed18bb8","lat":"35.6737744","lng":"139.805345","bezirk":"Koto","id":"019-boulangerie-s.igarashi"},{"name":"Bricolage bread & co.","kategorie":"Café","google_typ":"Bakery","stadtteil":"Roppongi, Minato City","region":"Tokio","adresse":"Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−15−1 けやき坂テラス 1F","beschreibung":"Relaxed cafe & bakery supplying artisanal French bread & international bites, plus coffee.","rating":4.3,"ratingsTotal":"","website":"https://bricolagebread.com/","googleUrl":"https://www.google.com/maps/place/Bricolage+bread+%26+co./data=!4m2!3m1!1s0x60188b0a5b35b175:0x9d65001f0d575f73","lat":"35.6591869","lng":"139.7282404","bezirk":"Minato","id":"020-bricolage-bread-co."},{"name":"Bullpen","kategorie":"Shop","google_typ":"Home goods store","stadtteil":"Nishihara, Shibuya City","region":"Tokio","adresse":"1 Chome-18-7 Nishihara, Shibuya, Tokyo 151-0066, Japan","beschreibung":"Kuratiertes Möbel- und Lifestyle-Geschäft in der traditionellen Nishihara-Einkaufsstraße, kleine Werkstattatmosphäre mit japanischem Kunsthandwerk.","rating":3.8,"ratingsTotal":"","website":"https://bullpen-shop.com/","googleUrl":"https://www.google.com/maps/place/Bullpen/data=!4m2!3m1!1s0x6018f3e6b6adfed3:0x75cd4fb9362375ea","lat":"35.6754642","lng":"139.6783482","bezirk":"Shibuya","id":"021-bullpen"},{"name":"Kumamoto Castle","kategorie":"Sehenswürdigkeit","google_typ":"Castle","stadtteil":"Honmaru, Chuo City","region":"Tokio","adresse":"1-1 Honmaru, Chuo Ward, Kumamoto, 860-0002, Japan","beschreibung":"This reconstructed castle, originally completed in 1607, sits atop a hill & houses a history museum.","rating":4.5,"ratingsTotal":"","website":"https://kumamoto-guide.jp/kumamoto-castle/","googleUrl":"https://www.google.com/maps/place/Burg+Kumamoto/data=!4m2!3m1!1s0x3540f40e023aca59:0x5e8b66c876cde430","lat":"32.8061859","lng":"130.7058335","bezirk":"Chuo","id":"022-kumamoto-castle"},{"name":"Matsumoto Castle","kategorie":"Sehenswürdigkeit","google_typ":"Castle","stadtteil":"Andere (Nagano)","region":"Andere Region","adresse":"4-1 Marunouchi, Matsumoto, Nagano 390-0873, Japan","beschreibung":"Known for its black walls, this grand, 16th-century castle features exhibits of historical weapons.","rating":4.5,"ratingsTotal":"","website":"https://www.matsumoto-castle.jp/","googleUrl":"https://www.google.com/maps/place/Burg+Matsumoto/data=!4m2!3m1!1s0x601d0e850a9a5999:0x902d0e20fabcf654","lat":"36.238653","lng":"137.9688674","bezirk":"Außerhalb der 23 Bezirke","id":"023-matsumoto-castle"},{"name":"Nijō Castle","kategorie":"Sehenswürdigkeit","google_typ":"Castle","stadtteil":"Andere (Kyoto)","region":"Andere Region","adresse":"541 Nijojocho, Nakagyo Ward, Kyoto, 604-8301, Japan","beschreibung":"Built in 1603, this cypress-wood castle with extensive gardens was a home for the shogun Ieyasu.","rating":4.4,"ratingsTotal":"","website":"https://nijo-jocastle.city.kyoto.lg.jp/","googleUrl":"https://www.google.com/maps/place/Burg+Nij%C5%8D/data=!4m2!3m1!1s0x600107d40a2b9b0b:0x106b8759906a2f2f","lat":"35.0140379","lng":"135.7484258","bezirk":"Außerhalb der 23 Bezirke","id":"024-nij-castle"},{"name":"CAFE 雫","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Ome (Tokyo)","region":"Tokio","adresse":"2 Chome-748 Sawai, Ome, Tokyo 198-0172, Japan","beschreibung":"Café im Sawanoi-Garten einer Sake-Brauerei in Ome, Terrasse mit Blick auf den Tama-Fluss, bekannt für Tofu-Cheesecake.","rating":4.3,"ratingsTotal":"","website":"https://www.sawanoi-sake.com/service/shizuku/","googleUrl":"https://www.google.com/maps/place/CAFE+%E9%9B%AB/data=!4m2!3m1!1s0x60193bd6988a98ab:0x3b4411c82eaf4a1d","lat":"35.8039763","lng":"139.1942641","bezirk":"Außerhalb der 23 Bezirke","id":"025-cafe"},{"name":"COREDO Muromachi 1","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Nihonbashimuromachi, Chuo City","region":"Tokio","adresse":"2 Chome-2-1 Nihonbashimuromachi, Chuo City, Tokyo 103-0022, Japan","beschreibung":"Mall mit Schwerpunkt Haushaltswaren und Gourmetläden","rating":3.9,"ratingsTotal":"","website":"https://mitsui-shopping-park.com/urban/muromachi/","googleUrl":"https://www.google.com/maps/place/COREDO+Muromachi+1/data=!4m2!3m1!1s0x601889550adb06df:0x6fa909ec52487b1d","lat":"35.6865187","lng":"139.7740345","bezirk":"Chuo","id":"026-coredo-muromachi-1"},{"name":"Cat St","kategorie":"Sehenswürdigkeit","google_typ":"","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"","beschreibung":"Fußgängerpromenade auf dem ehemaligen Flussbett der Shibuya-gawa zwischen Shibuya und Harajuku, gesäumt von Boutiquen, Vintage-Läden und Cafés (\"Ura-Harajuku\").","rating":null,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Cat+St/data=!4m2!3m1!1s0x60188ca30819b9d7:0x462be8cd044503d0","lat":"35.6670292","lng":"139.7063518","bezirk":"Shibuya","id":"027-cat-st"},{"name":"Cat St top entrance","kategorie":"Sehenswürdigkeit","google_typ":"Historical landmark","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 5 Chome−10−10 旧渋谷川遊歩道路","beschreibung":"Nördlicher Zugang zur Cat Street, der belebten Boutiquen- und Café-Promenade zwischen Harajuku und Shibuya.","rating":4.4,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Cat+St+top+entrance/data=!4m2!3m1!1s0x60188d00186ed337:0x83ff88d214521715","lat":"35.6676453","lng":"139.7068048","bezirk":"Shibuya","id":"028-cat-st-top-entrance"},{"name":"Ciest","kategorie":"Café","google_typ":"Bakery","stadtteil":"Hirano, Koto City","region":"Tokio","adresse":"Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ","beschreibung":"Bäckerei mit Wein-Pairing, mahlt Mehl aus 15-16 einheimischen Weizensorten selbst; 2019 in Funabori eröffnet, 2025 nach Kiyosumi-Shirakawa umgezogen.","rating":4.1,"ratingsTotal":"","website":"https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==","googleUrl":"https://www.google.com/maps/place/Ciest/data=!4m2!3m1!1s0x6018890074116d17:0x98828a4915057ef7","lat":"35.6782519","lng":"139.8002737","bezirk":"Koto","id":"029-ciest"},{"name":"D&DEPARTMENT TOKYO","kategorie":"Shop","google_typ":"Home goods store","stadtteil":"Okusawa, Setagaya City","region":"Tokio","adresse":"8 Chome-3-2 Okusawa, Setagaya City, Tokyo 158-0083, Japan","beschreibung":"Classic midcentury furniture, plus modern tableware & home goods on offer in this hip shop.","rating":4.2,"ratingsTotal":"","website":"https://www.d-department.com/ext/shop/tokyo.html","googleUrl":"https://www.google.com/maps/place/D%26DEPARTMENT+TOKYO/data=!4m2!3m1!1s0x6018f50376c78587:0xdf00610b7fe28ac2","lat":"35.6021667","lng":"139.6582379","bezirk":"Setagaya","id":"030-d-department-tokyo"},{"name":"Daikokudo","kategorie":"Café","google_typ":"Japanese confectionery shop","stadtteil":"Denenchofu, Ota City","region":"Tokio","adresse":"1 Chome-55-5 Denenchofu, Ota City, Tokyo 145-0071, Japan","beschreibung":"","rating":4.3,"ratingsTotal":"","website":"https://daikokudou.tokyo/","googleUrl":"https://www.google.com/maps/place/Daikokudo/data=!4m2!3m1!1s0x6018f56a24d470d9:0xa313f546e4b6d7bf","lat":"35.5878674","lng":"139.669046","bezirk":"Ota","id":"031-daikokudo"},{"name":"Daily Chiko","kategorie":"Café","google_typ":"Ice cream shop","stadtteil":"Nakano City","region":"Tokio","adresse":"Japan, 〒164-0001 Tokyo, Nakano City, Nakano, 5 Chome−52−15 地下1階","beschreibung":"Seit 1974 bestehender Softeis-Stand im Untergeschoss der Nakano Broadway, bekannt für die 20 cm hohe Waffel mit acht Eissorten übereinander.","rating":4.2,"ratingsTotal":"","website":"http://facebook.com/Dailychiko","googleUrl":"https://www.google.com/maps/place/Daily+Chiko/data=!4m2!3m1!1s0x6018f29749349cd1:0xa3be8fe2e5ef8173","lat":"35.7092475","lng":"139.6656524","bezirk":"Nakano","id":"032-daily-chiko"},{"name":"Day","kategorie":"Café","google_typ":"Cafe","stadtteil":"Kiyosumi, Koto City","region":"Tokio","adresse":"2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan","beschreibung":"","rating":4.5,"ratingsTotal":"","website":"https://www.instagram.com/day_kiyosumishirakawa/","googleUrl":"https://www.google.com/maps/place/Day/data=!4m2!3m1!1s0x601889002aa250db:0xa648eaad9cb57dfd","lat":"35.681185","lng":"139.7959849","bezirk":"Koto","id":"033-day"},{"name":"Discover Japan Lab.","kategorie":"Shop","google_typ":"Variety store","stadtteil":"Udagawacho, Shibuya City","region":"Tokio","adresse":"15-1 Udagawacho, Shibuya, Tokyo 150-0042, Japan","beschreibung":"Laden im Shibuya Parco (seit 2019), zeigt wechselndes, handverlesenes japanisches Kunsthandwerk: Keramik, Werkzeuge, Sake und Craft-Bier aus ganz Japan.","rating":3.9,"ratingsTotal":"","website":"https://shop.discoverjapan-web.com/","googleUrl":"https://www.google.com/maps/place/Discover+Japan+Lab./data=!4m2!3m1!1s0x60188ca8e24a1bd7:0x54d3c2319595fd9b","lat":"35.6620054","lng":"139.6989207","bezirk":"Shibuya","id":"034-discover-japan-lab."},{"name":"Edo-Tokyo Open Air Architectural Museum","kategorie":"Museum","google_typ":"Open air museum","stadtteil":"Andere (Chome−− 内 都立小金井公園)","region":"Andere Region","adresse":"Japan, 〒184-0005 Tokyo, Koganei, Sakuracho, 3 Chome−7−1 内 都立小金井公園","beschreibung":"Open-air museum with a collection of Japanese structures from many periods of history, plus a cafe.","rating":4.5,"ratingsTotal":"","website":"https://www.tatemonoen.jp/","googleUrl":"https://www.google.com/maps/place/Edo-Tokio-Freilicht-Architekturmuseum/data=!4m2!3m1!1s0x60188d9b1a7a9187:0x247f2b088a47a767","lat":"35.7155722","lng":"139.5125434","bezirk":"Außerhalb der 23 Bezirke","id":"035-edo-tokyo-open-air-architectural-museum"},{"name":"Et -THE CULTURAL COFFEEHOUSE-","kategorie":"Café","google_typ":"Cafe","stadtteil":"Kitazawa, Setagaya City","region":"Tokio","adresse":"Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−22−3 下北パークフロント 1F,2F","beschreibung":"Ende 2024 eröffnetes zweistöckiges Café in Shimokitazawa mit an die Setouchi-Region angelehntem Interieur, bekannt für Sauerteig-Tartines und Blick auf den ehemaligen Bahntrassen-Park.","rating":4.4,"ratingsTotal":"","website":"https://www.instagram.com/ettheculturalcoffeehouse","googleUrl":"https://www.google.com/maps/place/Et+-THE+CULTURAL+COFFEEHOUSE-/data=!4m2!3m1!1s0x6018f325c7478747:0x3ee29c2aef41dadc","lat":"35.6601304","lng":"139.6650393","bezirk":"Setagaya","id":"036-et-the-cultural-coffeehouse"},{"name":"FAMIMA FLAGSHIP STORE","kategorie":"Shop","google_typ":"Convenience store","stadtteil":"Toranomon, Minato City","region":"Tokio","adresse":"5 Chome-2-10 Toranomon, Minato City, Tokyo 105-0001, Japan","beschreibung":"FamilyMarts erster Flagship-Conbini (eröffnet Juli 2026 nahe Azabudai Hills), gestaltet von Designer NIGO, mit eigener Streetwear-Kollektion, Umkleide und Café-Menü.","rating":4.4,"ratingsTotal":"","website":"https://store.family.co.jp/points/12291","googleUrl":"https://www.google.com/maps/place/FAMIMA(FAMILY+MART+FLAGSHIP%F0%9F%98%90)/data=!4m2!3m1!1s0x60188b003f84a73f:0x276198a045bbc467","lat":"35.6625453","lng":"139.7443416","bezirk":"Minato","id":"037-famima-flagship-store"},{"name":"FESN Laboratory","kategorie":"Shop","google_typ":"Skate shop","stadtteil":"Chome-33-15, Nakano City","region":"Tokio","adresse":"3 Chome-33-15 Nakano, Nakano City, Tokyo 164-0001, Japan","beschreibung":"","rating":4.7,"ratingsTotal":"44","website":"https://fareastskatenetwork.com/fesn-laboratory/","googleUrl":"https://www.google.com/maps/place/FESN+Laboratory/data=!4m2!3m1!1s0x6018f29386209153:0x2df2f5057149c729","lat":"35.7034691","lng":"139.665383","bezirk":"Nakano","id":"038-fesn-laboratory"},{"name":"FermenCo.","kategorie":"Essen","google_typ":"Pizza restaurant","stadtteil":"Andere (Shizuoka)","region":"Andere Region","adresse":"348-37 Kisami, Shimoda, Shizuoka 415-0028, Japan","beschreibung":"Sauerteig-Pizza und Naturwein direkt am Strand von Shimoda auf der Izu-Halbinsel, 2025 unter Tokios Tabelog-100-Pizza-Adressen gelistet.","rating":4.7,"ratingsTotal":"413","website":"https://www.instagram.com/fermenco.pizza/","googleUrl":"https://www.google.com/maps/place/FermenCo./data=!4m2!3m1!1s0x601759831b246bed:0x10a03f4476d588c6","lat":"34.6579983","lng":"138.9251909","bezirk":"Außerhalb der 23 Bezirke","id":"039-fermenco."},{"name":"Fish Market Tsukiji Outer Market","kategorie":"Markt","google_typ":"Wholesale market","stadtteil":"Tsukiji, Chuo City","region":"Tokio","adresse":"Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome および６丁目一部","beschreibung":"Sprawling wholesale fish market with an array of seafood & viewing areas for a popular tuna auction.","rating":4.2,"ratingsTotal":"","website":"https://www.tsukiji.or.jp/","googleUrl":"https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c","lat":"35.6647703","lng":"139.7702515","bezirk":"Chuo","id":"040-fish-market-tsukiji-outer-market"},{"name":"Yanaka Cemetery","kategorie":"Sehenswürdigkeit","google_typ":"Cemetery","stadtteil":"Yanaka, Taito City","region":"Tokio","adresse":"7 Chome-5-24 Yanaka, Taito City, Tokyo 110-0001, Japan","beschreibung":"Grab des letzten Shogun und viele Katzen","rating":4.1,"ratingsTotal":"986","website":"https://www.tokyo-park.or.jp/reien/park/index073.html","googleUrl":"https://www.google.com/maps/place/Friedhof+Yanaka/data=!4m2!3m1!1s0x60188c2acac1c13b:0x23941711c439d23f","lat":"35.7240044","lng":"139.7702991","bezirk":"Taito","id":"041-yanaka-cemetery"},{"name":"Fuglen Tokyo","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Tomigaya, Shibuya City","region":"Tokio","adresse":"1 Chome-16-11 Tomigaya, Shibuya, Tokyo 151-0063, Japan","beschreibung":"Café","rating":4.3,"ratingsTotal":"","website":"https://fuglencoffee.jp/","googleUrl":"https://www.google.com/maps/place/Fuglen+Tokyo/data=!4m2!3m1!1s0x60188cb2957a60ad:0xee351263d20144a7","lat":"35.6666181","lng":"139.6923999","bezirk":"Shibuya","id":"042-fuglen-tokyo"},{"name":"Fukagawa Fudou-dō (Naritasan Tokyo branch temple)","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Tomioka, Koto City","region":"Tokio","adresse":"1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan","beschreibung":"Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.","rating":4.4,"ratingsTotal":"5313","website":"https://www.fukagawafudou.gr.jp/","googleUrl":"https://www.google.com/maps/place/Fukagawa+Fudou-d%C5%8D+(Naritasan+Tokyo+branch+temple)/data=!4m2!3m1!1s0x6018891227100001:0x940fb056b6e224f8","lat":"35.6728891","lng":"139.7983222","bezirk":"Koto","id":"043-fukagawa-fudou-d-naritasan-tokyo-branch-temple"},{"name":"Fukagawa Edo Museum","kategorie":"Museum","google_typ":"Local history museum","stadtteil":"Shirakawa, Koto City","region":"Tokio","adresse":"1 Chome-3-28 Shirakawa, Koto City, Tokyo 135-0021, Japan","beschreibung":"This history museum focused on the Edo period features re-created homes, a theater & lecture hall.","rating":4.4,"ratingsTotal":"","website":"https://www.kcf.or.jp/fukagawa/","googleUrl":"https://www.google.com/maps/place/Fukagawa-Edo-Museum/data=!4m2!3m1!1s0x60188916293799d3:0x4cc6306f51f55448","lat":"35.6811859","lng":"139.8005921","bezirk":"Koto","id":"044-fukagawa-edo-museum"},{"name":"Fumigrafico","kategorie":"Café","google_typ":"Bakery","stadtteil":"Motoyoyogicho, Shibuya City","region":"Tokio","adresse":"9-6 Motoyoyogicho, Shibuya, Tokyo 151-0062, Japan","beschreibung":"","rating":4.3,"ratingsTotal":"","website":"http://fumigrafico.net/","googleUrl":"https://www.google.com/maps/place/Fumigrafico/data=!4m2!3m1!1s0x6018f3356f84d3df:0xf6a2e798a3dcb70c","lat":"35.669922","lng":"139.6858959","bezirk":"Shibuya","id":"045-fumigrafico"},{"name":"Glitch Coffee and Roasters GINZA","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Ginza, Chuo City","region":"Tokio","adresse":"Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階","beschreibung":"Aus popeye","rating":4.3,"ratingsTotal":"","website":"https://glitchcoffee.com/","googleUrl":"https://www.google.com/maps/place/Glitch+Coffee+and+Roasters+GINZA/data=!4m2!3m1!1s0x60188bfa45634c13:0x6abbdc48213cb890","lat":"35.6689171","lng":"139.7686324","bezirk":"Chuo","id":"046-glitch-coffee-and-roasters-ginza"},{"name":"Godzilla Head","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Kabukicho, Shinjuku City","region":"Tokio","adresse":"1 Chome-19-1 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan","beschreibung":"12 Meter hohe Godzilla-Kopf-Statue seit 2015 auf der Terrasse von Hotel Gracery im Shinjuku Toho Building, brüllt stündlich und stößt Rauch aus.","rating":4.4,"ratingsTotal":"","website":"https://www.toho.co.jp/shinjukutoho/","googleUrl":"https://www.google.com/maps/place/Godzilla+Head/data=!4m2!3m1!1s0x60188d74dcc81ccd:0x2d7e490be8560647","lat":"35.6950521","lng":"139.7019117","bezirk":"Shinjuku","id":"047-godzilla-head"},{"name":"Godzilla Statue","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Yurakucho, Chiyoda City","region":"Tokio","adresse":"1 Chome-3-2 Yurakucho, Chiyoda City, Tokyo 100-0006, Japan","beschreibung":"Public sculpture of the iconic giant mutant lizard from the long-running Japanese film series.","rating":3.8,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Godzilla+Statue/data=!4m2!3m1!1s0x60188befcc42d18f:0xcec283469d9e4abf","lat":"35.6736998","lng":"139.7602977","bezirk":"Chiyoda","id":"048-godzilla-statue"},{"name":"Godzilla Store Tokyo","kategorie":"Shop","google_typ":"Toy store","stadtteil":"Shinjuku City","region":"Tokio","adresse":"Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−1−26 新宿マルイアネックス1F","beschreibung":"Erster offizieller Godzilla-Shop der Welt (seit 2017), im Erdgeschoss des Shinjuku Marui Annex, rund 500 Fanartikel, teils exklusiv.","rating":4.3,"ratingsTotal":"","website":"http://godzilla.store/tokyo/","googleUrl":"https://www.google.com/maps/place/Godzilla+Store+Tokyo/data=!4m2!3m1!1s0x60188cdb44d50a11:0xdecef9bfd62d4f26","lat":"35.6901656","lng":"139.7060582","bezirk":"Shinjuku","id":"049-godzilla-store-tokyo"},{"name":"Gonpachi Nori-temaki Harajuku","kategorie":"Essen","google_typ":"Sushi restaurant","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−35−3 コープオリンピア","beschreibung":"Gonpachi a winner with health conscious Tokyoites","rating":4.5,"ratingsTotal":"","website":"https://gonpachi.jp/nori-temaki/","googleUrl":"https://www.google.com/maps/place/Gonpachi+Nori-temaki+Harajuku/data=!4m2!3m1!1s0x60188db8860c8427:0xcfa1075362f83346","lat":"35.6690912","lng":"139.703534","bezirk":"Shibuya","id":"050-gonpachi-nori-temaki-harajuku"},{"name":"Gyoza no Fukuho","kategorie":"Essen","google_typ":"Chinese restaurant","stadtteil":"Shinjuku City","region":"Tokio","adresse":"Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階","beschreibung":"Any Tokyoite will proudly tell you that their family recipe for gyoza dumplings is the best but they ll also tell you that this place comes in a very close second Always bustling with Shinjuku s after work crowds and young diners come evening this is the kind of spot where catch ups linger into the early hours and sharing plates of gyoza are devoured and thus reordered without a second thought","rating":4.3,"ratingsTotal":"","website":"https://fukuho.net/","googleUrl":"https://www.google.com/maps/place/Gyoza+no+Fukuho/data=!4m2!3m1!1s0x60188cc31e7832f3:0xdcd4da268d9d43f2","lat":"35.6891596","lng":"139.7088948","bezirk":"Shinjuku","id":"051-gyoza-no-fukuho"},{"name":"Gōtoku-ji","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Gotokuji, Setagaya City","region":"Tokio","adresse":"2 Chome-24-7 Gotokuji, Setagaya City, Tokyo 154-0021, Japan","beschreibung":"Edo period Buddhist temple with a large collection of lucky beckoning cat statues.","rating":4.6,"ratingsTotal":"10740","website":"https://gotokuji.jp/","googleUrl":"https://www.google.com/maps/place/G%C5%8Dtokuji+Temple/data=!4m2!3m1!1s0x6018f39f99015555:0x6b0e9ad51be4cac","lat":"35.6488124","lng":"139.647481","bezirk":"Setagaya","id":"052-g-toku-ji"},{"name":"HIROKI Okonomiyaki","kategorie":"Essen","google_typ":"Okonomiyaki restaurant","stadtteil":"Kitazawa, Setagaya City","region":"Tokio","adresse":"Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−14−14 ハニー下北沢 1F","beschreibung":"okonomiyaki at Hiroki where the savory pancakes are cooked right in front of you on","rating":4.2,"ratingsTotal":"","website":"https://teppan-hiroki.com/shimokitazawa.html","googleUrl":"https://www.google.com/maps/place/HIROKI+Okonomiyaki/data=!4m2!3m1!1s0x6018f3697ea6aaab:0x3a0199a6b4940d1c","lat":"35.6601056","lng":"139.66783","bezirk":"Setagaya","id":"053-hiroki-okonomiyaki"},{"name":"HUMAN MADE OFFLINE STORE","kategorie":"Shop","google_typ":"Clothing store","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 2 Chome−6−6 秀和外苑レジデンス 1F","beschreibung":"Artsy, minimalist showroom for an on-trend Japanese streetwear label inspired by American vintage.","rating":4.0,"ratingsTotal":"","website":"http://humanmade.jp/","googleUrl":"https://www.google.com/maps/place/HUMAN+MADE+OFFLINE+STORE/data=!4m2!3m1!1s0x60188b4df277de5b:0xa25f8951bfcd27ec","lat":"35.6726964","lng":"139.7123195","bezirk":"Shibuya","id":"054-human-made-offline-store"},{"name":"Hachiko Statue","kategorie":"Sehenswürdigkeit","google_typ":"Sculpture","stadtteil":"Dogenzaka, Shibuya City","region":"Tokio","adresse":"2 Chome-1-1 Dogenzaka, Shibuya, Tokyo 150-0043, Japan","beschreibung":"Popular meeting spot with a bronze statue honoring Hachiko, the famously loyal Akita dog.","rating":4.4,"ratingsTotal":"","website":"https://www.city.shibuya.tokyo.jp/bunka/bunkazai/midokoro/map_exe_shibuya_station.html","googleUrl":"https://www.google.com/maps/place/Hachiko+Statue/data=!4m2!3m1!1s0x60188b57efbd57c7:0x217e9d9fe306fba","lat":"35.6590552","lng":"139.7006288","bezirk":"Shibuya","id":"055-hachiko-statue"},{"name":"Hamarikyu Gardens","kategorie":"Park","google_typ":"Garden","stadtteil":"Hamarikyuteien, Chuo City","region":"Tokio","adresse":"1-1 Hamarikyuteien, Chuo City, Tokyo 104-0046, Japan","beschreibung":"Public park with a pond, laid out in the Edo-period style, on the site of 17th-century Shogun villa.","rating":4.5,"ratingsTotal":"","website":"https://www.tokyo-park.or.jp/park/hama-rikyu/","googleUrl":"https://www.google.com/maps/place/Hamariky%C5%AB-Park/data=!4m2!3m1!1s0x60188bdcbaa0f7c1:0x9b4a9ebdf898381a","lat":"35.6596559","lng":"139.7634091","bezirk":"Chuo","id":"056-hamarikyu-gardens"},{"name":"Asakusa Hanayashiki","kategorie":"Sehenswürdigkeit","google_typ":"Amusement park","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"2 Chome-28-1 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"Amusement park with a roller coaster & other high-speed rides, plus kids' activities & eateries.","rating":4.1,"ratingsTotal":"","website":"https://www.hanayashiki.net/","googleUrl":"https://www.google.com/maps/place/Hanayashiki+Freizeitpark/data=!4m2!3m1!1s0x60188ec02219773d:0x6bb2077ac9a688b1","lat":"35.7154609","lng":"139.7948774","bezirk":"Taito","id":"057-asakusa-hanayashiki"},{"name":"Haritts Donuts & Coffee","kategorie":"Café","google_typ":"Cafe","stadtteil":"Uehara, Shibuya City","region":"Tokio","adresse":"1 Chome-34-2 Uehara, Shibuya, Tokyo 151-0064, Japan","beschreibung":"Unscheinbarer Donut-Laden seit 2004 in einem alten Holzhaus in Yoyogi-Uehara, handgemachte fluffige Donuts, oft schon nachmittags ausverkauft.","rating":4.4,"ratingsTotal":"","website":"https://www.instagram.com/haritts_uehara?igsh=OGJ3MTdyZ3h0OTNi","googleUrl":"https://www.google.com/maps/place/Haritts+Donuts+%26+Coffee/data=!4m2!3m1!1s0x6018f3486b045611:0x5b92c38aeda19061","lat":"35.669331","lng":"139.682016","bezirk":"Shibuya","id":"058-haritts-donuts-coffee"},{"name":"Hatsune Japanese Sweets","kategorie":"Café","google_typ":"Japanese sweets restaurant","stadtteil":"Nihonbashiningyocho, Chuo City","region":"Tokio","adresse":"1 Chome-15-6 Nihonbashiningyocho, Chuo City, Tokyo 103-0013, Japan","beschreibung":"1837 gegruendeter, einer der aeltesten Wagashi-Laeden Japans in Nihonbashi Ningyocho; bekannt fuer hausgemachten Anko und Mochi sowie Shiruko/Zenzai seit der Edo-Zeit.","rating":4.2,"ratingsTotal":"","website":"https://www.instagram.com/amami.hatsune/","googleUrl":"https://www.google.com/maps/place/Hatsune/data=!4m2!3m1!1s0x6018894ffac2249f:0x506884af3053af9b","lat":"35.6843199","lng":"139.7838658","bezirk":"Chuo","id":"059-hatsune-japanese-sweets"},{"name":"Hie Shrine","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Nagatachō, Chiyoda City","region":"Tokio","adresse":"2 Chome-10-5 Nagatachō, Chiyoda City, Tokyo 100-0014, Japan","beschreibung":"Complex of Shinto shrines & gardens holding several auspicious annual festivals & events.","rating":4.4,"ratingsTotal":"12874","website":"https://www.hiejinja.net/index.html","googleUrl":"https://www.google.com/maps/place/Hie+Shrine/data=!4m2!3m1!1s0x601fa6c4e4114317:0xef431afda2747c8f","lat":"35.6747136","lng":"139.7396621","bezirk":"Chiyoda","id":"060-hie-shrine"},{"name":"Himeji Castle","kategorie":"Sehenswürdigkeit","google_typ":"Castle","stadtteil":"Andere (Hyogo)","region":"Andere Region","adresse":"68 Honmachi, Himeji, Hyogo 670-0012, Japan","beschreibung":"Iconic circa-1613 castle known for a white facade, plus towers, moats, passageways & cherry trees.","rating":4.6,"ratingsTotal":"","website":"https://www.city.himeji.lg.jp/castle/index.html","googleUrl":"https://www.google.com/maps/place/Himejijo/data=!4m2!3m1!1s0x3554e003a23324b3:0x7a4f8c2f6eba81b1","lat":"34.839449","lng":"134.6939047","bezirk":"Außerhalb der 23 Bezirke","id":"061-himeji-castle"},{"name":"Himitsudō","kategorie":"Café","google_typ":"Dessert restaurant","stadtteil":"Yanaka, Taito City","region":"Tokio","adresse":"3 Chome-11-18 Yanaka, Taito City, Tokyo 110-0001, Japan","beschreibung":"Tiny shop preparing generous portions of shaved ice dessert topped with handmade fruit syrups.","rating":3.7,"ratingsTotal":"","website":"http://himitsudo.com/","googleUrl":"https://www.google.com/maps/place/Himitsud%C5%8D/data=!4m2!3m1!1s0x60188dd3e05fe7db:0x9f59666464ce52b2","lat":"35.7273365","lng":"139.7665968","bezirk":"Taito","id":"062-himitsud"},{"name":"Senso-ji Hozomon Gate","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"First built in 942 CE, this Buddhist temple features 2 imposing guardian statues & 3 large lanterns.","rating":4.6,"ratingsTotal":"3179","website":"http://www.senso-ji.jp/guide/guide03.html","googleUrl":"https://www.google.com/maps/place/H%C5%8Dz%C5%8Dmon+Tor/data=!4m2!3m1!1s0x60188ec10f6fc403:0xc401cd525f9f8276","lat":"35.7139333","lng":"139.7966333","bezirk":"Taito","id":"063-senso-ji-hozomon-gate"},{"name":"Intermediatheque","kategorie":"Museum","google_typ":"Natural history museum","stadtteil":"Marunouchi, Chiyoda City","region":"Tokio","adresse":"Japan, 〒100-7003 Tokyo, Chiyoda City, Marunouchi, 2 Chome−7−2 ＫＩＴＴＥ","beschreibung":"Permanent exhibition of the scientific & cultural heritage collections of the University of Tokyo.","rating":4.6,"ratingsTotal":"","website":"http://www.intermediatheque.jp/","googleUrl":"https://www.google.com/maps/place/Intermediatheque/data=!4m2!3m1!1s0x60188bfa34229017:0xacfcb610830f28da","lat":"35.6800744","lng":"139.7646866","bezirk":"Chiyoda","id":"064-intermediatheque"},{"name":"Irita Beach","kategorie":"Sehenswürdigkeit","google_typ":"Public beach","stadtteil":"Andere (Shizuoka)","region":"Andere Region","adresse":"Kisami, Shimoda, Shizuoka 415-0028, Japan","beschreibung":"Popular for surfing & swimming, this beach has rocky outcrops on both ends & is backed by grass.","rating":4.5,"ratingsTotal":"","website":"http://www.shimoda-city.info/shimoda/sea/irita.html","googleUrl":"https://www.google.com/maps/place/Irita+Beach/data=!4m2!3m1!1s0x601758f0c3c3511f:0x6622d3b3b6409f87","lat":"34.6586363","lng":"138.9264017","bezirk":"Außerhalb der 23 Bezirke","id":"065-irita-beach"},{"name":"Ise Sueyoshi","kategorie":"Essen","google_typ":"Kaiseki restaurant","stadtteil":"Nishiazabu, Minato City","region":"Tokio","adresse":"Japan, 〒106-0031 Tokyo, Minato City, Nishiazabu, 4 Chome−2−15 水野ビル 3F","beschreibung":"Intimate, minimalist venue for thoughtfully plated, traditional multi-course Japanese meals.","rating":4.9,"ratingsTotal":"","website":"https://ise-sueyoshi.com/","googleUrl":"https://www.google.com/maps/place/Ise+Sueyoshi/data=!4m2!3m1!1s0x60188b706988a2d5:0x2f16932d54cc2493","lat":"35.6586527","lng":"139.7235382","bezirk":"Minato","id":"066-ise-sueyoshi"},{"name":"Jindai Botanical Gardens","kategorie":"Park","google_typ":"Botanical garden","stadtteil":"Chofu (Tokyo)","region":"Tokio","adresse":"5 Chome-31-10 Jindaiji Motomachi, Chofu, Tokyo 182-0017, Japan","beschreibung":"Tokyo's main botanical garden, featuring a famous rose garden & a big greenhouse for exotic plants.","rating":4.3,"ratingsTotal":"","website":"https://www.tokyo-park.or.jp/jindai/","googleUrl":"https://www.google.com/maps/place/Jindai+Botanical+Gardens/data=!4m2!3m1!1s0x6018f01f98ce7833:0x877d5c81f012d74b","lat":"35.6712808","lng":"139.5483481","bezirk":"Außerhalb der 23 Bezirke","id":"067-jindai-botanical-gardens"},{"name":"Jindaiji Temple","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Chofu (Tokyo)","region":"Tokio","adresse":"Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−1","beschreibung":"Buddhist temple, founded 733 & rebuilt 1919, with a 17th-century gate & annual soba noodle festival.","rating":4.3,"ratingsTotal":"8592","website":"http://www.jindaiji.or.jp/","googleUrl":"https://www.google.com/maps/place/Jindaiji+Temple/data=!4m2!3m1!1s0x6018f0222e39f581:0x7222176660ece209","lat":"35.6675048","lng":"139.5503942","bezirk":"Außerhalb der 23 Bezirke","id":"068-jindaiji-temple"},{"name":"KAPITAL Legs Roppongi","kategorie":"Shop","google_typ":"Clothing store","stadtteil":"Roppongi, Minato City","region":"Tokio","adresse":"Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−10−1 六本木ヒルズ ヒルサイド 1F","beschreibung":"Filiale der Kult-Denim-Marke KAPITAL (seit 1984), bekannt fuer handwerkliche Indigo-Faerbung und die auf 100 Jahre Haltbarkeit ausgelegte Century Denim.","rating":4.1,"ratingsTotal":"","website":"https://www.kapital.jp/shop/detail/6.html","googleUrl":"https://www.google.com/maps/place/KAPITAL+Legs+Roppongi/data=!4m2!3m1!1s0x60188b770edd442b:0x556e7ffae8630bea","lat":"35.6600636","lng":"139.7298273","bezirk":"Minato","id":"069-kapital-legs-roppongi"},{"name":"KINTO STORE Tokyo","kategorie":"Shop","google_typ":"Home goods store","stadtteil":"Aobadai, Meguro City","region":"Tokio","adresse":"1 Chome-19-12 Aobadai, Meguro City, Tokyo 153-0042, Japan","beschreibung":"Flagship-Store der japanischen Tischgeschirr-Marke KINTO (seit 1972 in Shiga, seit 2019 Laden in Nakameguro) mit breitem Sortiment an Geschirr und Trinkgefaessen.","rating":4.5,"ratingsTotal":"160","website":"https://www.kinto.co.jp/","googleUrl":"https://www.google.com/maps/place/KINTO+STORE+Tokyo/data=!4m2!3m1!1s0x60188b2946740f9f:0x4fd690edf17a1f1e","lat":"35.6470863","lng":"139.6976565","bezirk":"Meguro","id":"070-kinto-store-tokyo"},{"name":"Kama-Asa","kategorie":"Shop","google_typ":"Kitchen supply store","stadtteil":"Matsugaya, Taito City","region":"Tokio","adresse":"2 Chome-24-1 Matsugaya, Taito City, Tokyo 111-0036, Japan","beschreibung":"Beste Adresse für Messer, Kochgeschirr","rating":4.4,"ratingsTotal":"","website":"https://kama-asa.co.jp/","googleUrl":"https://www.google.com/maps/place/Kama-Asa/data=!4m2!3m1!1s0x60188e95e4be1413:0xee1f6387d3ea5ee7","lat":"35.7138476","lng":"139.7886768","bezirk":"Taito","id":"071-kama-asa"},{"name":"Kapital Legs","kategorie":"Shop","google_typ":"Clothing store","stadtteil":"Ebisuminami, Shibuya City","region":"Tokio","adresse":"2 Chome-23-12 Ebisuminami, Shibuya, Tokyo 150-0022, Japan","beschreibung":"Filiale der Kult-Denim-Marke KAPITAL in Ebisu, Fokus auf Handwerk, Jeans und Roecke; Signature-Modell ist die handgewebte TH Zipang Real Indigo.","rating":4.1,"ratingsTotal":"","website":"https://www.kapital.jp/shop/detail/4.html","googleUrl":"https://www.google.com/maps/place/Kapital+Legs/data=!4m2!3m1!1s0x60188b3e56593439:0x7268581659c707fd","lat":"35.6421061","lng":"139.7091477","bezirk":"Shibuya","id":"072-kapital-legs"},{"name":"Kayanoya Coredo Muromachi Store","kategorie":"Shop","google_typ":"Japanese grocery store","stadtteil":"Nihonbashimuromachi, Chuo City","region":"Tokio","adresse":"Japan, 〒103-0022 Tokyo, Chuo City, Nihonbashimuromachi, 1 Chome−5−5 COREDO Muromachi 3, 1F","beschreibung":"Von Architekt Kengo Kuma gestaltete Filiale der 120 Jahre alten Sojasauce-Marke Kayanoya: Dashi- und Gewuerzpackungen, hängende Sojasauce-Faesser als Blickfang.","rating":4.1,"ratingsTotal":"","website":"http://www.kayanoya.com/shop/nihonbashi/","googleUrl":"https://www.google.com/maps/place/Kayanoya+Coredo+Muromachi+Store/data=!4m2!3m1!1s0x60188955a1e9fb8f:0xfe6206516ea0215d","lat":"35.686138","lng":"139.7743044","bezirk":"Chuo","id":"073-kayanoya-coredo-muromachi-store"},{"name":"Kegon Falls","kategorie":"Sehenswürdigkeit","google_typ":"Waterfall","stadtteil":"Andere (Tochigi)","region":"Andere Region","adresse":"Chugushi, Nikko, Tochigi 321-1661, Japan","beschreibung":"97 Meter hoher Wasserfall am Auslauf des Chuzenji-Sees bei Nikko, einer der drei beruehmtesten Wasserfaelle Japans; Aufzug fuehrt zur unteren Aussichtsplattform.","rating":4.6,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Kegon-F%C3%A4lle/data=!4m2!3m1!1s0x601fa8cf34bbd485:0xbb8f7a35e2c50e6e","lat":"36.7380555","lng":"139.5025","bezirk":"Außerhalb der 23 Bezirke","id":"074-kegon-falls"},{"name":"Kiddy Land","kategorie":"Shop","google_typ":"Toy store","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"6 Chome-1-9 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"This cheerful retail shop boasts a wide selection of Japanese & American toys on 4 different levels.","rating":4.3,"ratingsTotal":"","website":"https://www.kiddyland.co.jp/harajuku/","googleUrl":"https://www.google.com/maps/place/Kiddy+Land/data=!4m2!3m1!1s0x60188ca3f58f5bbb:0x6d0eaa1443f99189","lat":"35.667733","lng":"139.7065474","bezirk":"Shibuya","id":"075-kiddy-land"},{"name":"Kinkaku-ji","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Kinkakujicho, Kita City","region":"Tokio","adresse":"1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan","beschreibung":"Historic, tranquil temple with a gold-leaf facade set amid landscaped gardens & a reflecting pond.","rating":4.6,"ratingsTotal":"69573","website":"https://www.shokoku-ji.jp/kinkakuji/","googleUrl":"https://www.google.com/maps/place/Kinkaku-ji/data=!4m2!3m1!1s0x6001a820c0eb46bd:0xee4272b1c22645f","lat":"35.03937","lng":"135.7292431","bezirk":"Kita","id":"076-kinkaku-ji"},{"name":"Kintame","kategorie":"Shop","google_typ":"Japanese grocery store","stadtteil":"Andere (Botanbokocho)","region":"Andere Region","adresse":"Japan, 〒602-8475 Kyoto, Kamigyo Ward, Botanbokocho, 576","beschreibung":"Seit 1879 bestehendes Traditionshaus fuer Tsukemono (japanische Pickles) in Kamigyo, Kyoto; bekannt fuer den Bubuzuke-Lunch mit ueber einem Dutzend Pickles, Nara-zuke und Nuka-zuke.","rating":4.3,"ratingsTotal":"313","website":"http://www.kintame.co.jp/","googleUrl":"https://www.google.com/maps/place/Kintame/data=!4m2!3m1!1s0x600107ef428abfa9:0x7382bbcae05934b8","lat":"35.0312513","lng":"135.7419076","bezirk":"Außerhalb der 23 Bezirke","id":"077-kintame"},{"name":"Komagome Myogi Shrine","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Komagome, Toshima City","region":"Tokio","adresse":"3 Chome-16-16 Komagome, Toshima City, Tokyo 170-0003, Japan","beschreibung":"1300 Jahre alter Schrein in Toshima, bekannt als \"versteckter Katzenschrein\" mit schwarzen Katzenstatuen (Legende um den Samurai Ota Dokan); echte Katzen leben vor Ort, beliebte besondere Goshuin-Stempel.","rating":4.5,"ratingsTotal":"519","website":"http://www.myogi.tokyo/","googleUrl":"https://www.google.com/maps/place/Komagome+Myogi+Shrine/data=!4m2!3m1!1s0x60188d9121c736e1:0x84ce7e485dd1228d","lat":"35.7386424","lng":"139.7450467","bezirk":"Toshima","id":"078-komagome-myogi-shrine"},{"name":"Kurihara Tofu Shop","kategorie":"Shop","google_typ":"Tofu shop","stadtteil":"Yotsuya, Shinjuku City","region":"Tokio","adresse":"Japan, 〒160-0004 Tokyo, Shinjuku City, Yotsuya, 3 Chome−１−12 ｢栗原ビル/1F｣","beschreibung":"1887 gegruendeter Traditions-Tofuladen in Yotsuya, bekannt fuer Baumwolltofu (Momen) mit natuerlichem Nigari von der Insel Izu Oshima, beliebt bei umliegenden Restaurants.","rating":4.7,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Kurihara+Tofu+Shop/data=!4m2!3m1!1s0x60188cf29f590001:0xbf92b52e8b71882f","lat":"35.6878282","lng":"139.7220434","bezirk":"Shinjuku","id":"079-kurihara-tofu-shop"},{"name":"LYURO Tokyo Kiyosumi by THE SHARE HOTEL","kategorie":"Hotel","google_typ":"","stadtteil":"Kiyosumi, Koto City","region":"Tokio","adresse":"Japan, 〒135-0024 Tokyo, Koto City, Kiyosumi, 1 Chome−1−7 清澄リバーサイドビル","beschreibung":"HOTEL Bezirk Koto","rating":4.4,"ratingsTotal":"","website":"https://www.thesharehotels.com/lyuro/?utm_source=google&utm_medium=map","googleUrl":"https://www.google.com/maps/place/LYURO+Tokyo+Kiyosumi+by+THE+SHARE+HOTEL/data=!4m2!3m1!1s0x6018894092de1bb7:0xca3a996c23d6644a","lat":"35.6812172","lng":"139.7920658","bezirk":"Koto","id":"080-lyuro-tokyo-kiyosumi-by-the-share-hotel"},{"name":"Le Bois Kiyosumi Shirakawa Cafe & Miscellaneous Goods (formerly THE LITTLE THINGS)","kategorie":"Café","google_typ":"Cafe","stadtteil":"Miyoshi, Koto City","region":"Tokio","adresse":"3 Chome-1-14 Miyoshi, Koto City, Tokyo 135-0022, Japan","beschreibung":"Verstecktes Cafe in ruhiger Wohngegend von Kiyosumi-Shirakawa; am Eingang verkaufte Zimmerpflanzen, gedaempft beleuchteter Innenraum mit Theken- und Terrassenplaetzen.","rating":4.2,"ratingsTotal":"","website":"https://instagram.com/le.bois_kiyosumi","googleUrl":"https://www.google.com/maps/place/Le+Bois+Kiyosumi+Shirakawa+Cafe+%26+Miscellaneous+Goods+(formerly+THE+LITTLE+%0ATHINGS)/data=!4m2!3m1!1s0x601889c95d72c279:0x98591d3205c8b8dc","lat":"35.6798164","lng":"139.8047355","bezirk":"Koto","id":"081-le-bois-kiyosumi-shirakawa-cafe-miscellaneous-goods-formerly-the-little-things"},{"name":"Little Darling Coffee Roasters","kategorie":"Café","google_typ":"Cafe","stadtteil":"Minamiaoyama, Minato City","region":"Tokio","adresse":"1 Chome-12-32 Minamiaoyama, Minato City, Tokyo 107-0062, Japan","beschreibung":"Burgers, hot dogs & bento boxes are served with specialty coffee at this laid-back cafe.","rating":4.3,"ratingsTotal":"","website":"http://littledarlingcoffeeroasters.com/","googleUrl":"https://www.google.com/maps/place/Little+Darling+Coffee+Roasters/data=!4m2!3m1!1s0x60188bb8fa1f3ff5:0xd27f4de411bca4ce","lat":"35.6685866","lng":"139.7246435","bezirk":"Minato","id":"082-little-darling-coffee-roasters"},{"name":"MISONOMI","kategorie":"Café","google_typ":"Cafe","stadtteil":"Tokiwa, Koto City","region":"Tokio","adresse":"Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内","beschreibung":"Seit 2022 in Kiyosumi-Shirakawa: Miso-Suppen-Cafe mit gefriergetrockneten Zutaten und rohem Miso auf einer Monaka-Waffel, ergibt mit heissem Wasser aufgegossen Misosuppe; mehrere Sorten, auch abgewogen als Mitbringsel.","rating":4.4,"ratingsTotal":"","website":"https://www.misonomi.com/","googleUrl":"https://www.google.com/maps/place/MISONOMI/data=!4m2!3m1!1s0x601889a33b029239:0xb187737a5aa1471c","lat":"35.684812","lng":"139.7946963","bezirk":"Koto","id":"083-misonomi"},{"name":"Manseibashi Station Remains","kategorie":"Sehenswürdigkeit","google_typ":"Historical landmark","stadtteil":"Kanda Sudacho, Chiyoda City","region":"Tokio","adresse":"Japan, 〒101-0041 Tokyo, Chiyoda City, Kanda Sudacho, 1 Chome−２５−4 マーチエキュート神田万世橋","beschreibung":"1912 eroeffneter, 1943 stillgelegter Bahnhof am Kanda-Fluss; seit 2013 als mAAch ecute mit Cafes und Shops in den roten Backsteinboegen, alte Treppen und ehemaliger Bahnsteig mit Zugblick erhalten.","rating":4.2,"ratingsTotal":"","website":"http://www.ejrcf.or.jp/mansei/","googleUrl":"https://www.google.com/maps/place/Manseibashi+Station+Remains/data=!4m2!3m1!1s0x60188c1cd412e917:0x7c2fea8200537f7d","lat":"35.6971491","lng":"139.7701557","bezirk":"Chiyoda","id":"084-manseibashi-station-remains"},{"name":"Masaka (Vegan Izakaya)","kategorie":"Essen","google_typ":"Vegan restaurant","stadtteil":"Udagawacho, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0042 Tokyo, Shibuya, Udagawacho, 15−1 渋谷PARCO B1","beschreibung":"Seit 2019 vollstaendig vegane Izakaya in der Chaos Kitchen im Untergeschoss der Shibuya Parco, beruehmt fuer Karaage aus Soja; keine Reservierung moeglich, oft Warteschlange.","rating":4.6,"ratingsTotal":"","website":"https://www.instagram.com/vegan_izakaya_masaka/","googleUrl":"https://www.google.com/maps/place/Masaka+(Vegan+Izakaya)/data=!4m2!3m1!1s0x60188def16942815:0xb34fb00e05c647fd","lat":"35.6621009","lng":"139.6984833","bezirk":"Shibuya","id":"085-masaka-vegan-izakaya"},{"name":"McLean","kategorie":"Essen","google_typ":"Hamburger restaurant","stadtteil":"Komagata, Taito City","region":"Tokio","adresse":"2 Chome-2-10 Komagata, Taito City, Tokyo 111-0043, Japan","beschreibung":"Aus popeye","rating":4.3,"ratingsTotal":"","website":"http://mclean.jp/","googleUrl":"https://www.google.com/maps/place/McLean/data=!4m2!3m1!1s0x60188ec83c6eda05:0x9ddc7e8118e0e583","lat":"35.7050142","lng":"139.7941705","bezirk":"Taito","id":"086-mclean"},{"name":"McLean KIOSK-BEER BAR&SODA FOUNTAIN-","kategorie":"Bar","google_typ":"Bar","stadtteil":"Komagata, Taito City","region":"Tokio","adresse":"2 Chome-2-10 Komagata, Taito City, Tokyo 111-0043, Japan","beschreibung":"Aus popeye","rating":5.0,"ratingsTotal":"","website":"https://www.instagram.com/mclean_kiosk/","googleUrl":"https://www.google.com/maps/place/McLean+KIOSK-BEER+BAR%26SODA+FOUNTAIN-/data=!4m2!3m1!1s0x60188f00779f0973:0xca6c55bae6411989","lat":"35.7050481","lng":"139.7941862","bezirk":"Taito","id":"087-mclean-kiosk-beer-bar-soda-fountain"},{"name":"McLean OLD FASHIONED DINER","kategorie":"Essen","google_typ":"Hamburger restaurant","stadtteil":"Kuramae, Taito City","region":"Tokio","adresse":"2 Chome-5-4 Kuramae, Taito City, Tokyo 111-0051, Japan","beschreibung":"Aus popeye","rating":4.5,"ratingsTotal":"","website":"http://www.mclean.jp/","googleUrl":"https://www.google.com/maps/place/McLean+OLD+FASHIONED+DINER/data=!4m2!3m1!1s0x60188f550d4e8669:0xef41cc3f789d7933","lat":"35.7029725","lng":"139.7911604","bezirk":"Taito","id":"088-mclean-old-fashioned-diner"},{"name":"Meiji Jingu","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Yoyogikamizonocho, Shibuya City","region":"Tokio","adresse":"1-1 Yoyogikamizonocho, Shibuya, Tokyo 151-8557, Japan","beschreibung":"Surrounded by forest, this venerable Shinto shrine features a seasonal iris garden.","rating":4.6,"ratingsTotal":"52273","website":"https://www.meijijingu.or.jp/","googleUrl":"https://www.google.com/maps/place/Meiji-Schrein/data=!4m2!3m1!1s0x60188cb79a4c26e5:0x8fca893849103f73","lat":"35.6763976","lng":"139.6993259","bezirk":"Shibuya","id":"089-meiji-jingu"},{"name":"Mikkeller Tokyo","kategorie":"Bar","google_typ":"Bar","stadtteil":"Dogenzaka, Shibuya City","region":"Tokio","adresse":"2 Chome-19-11 Dogenzaka, Shibuya, Tokyo 150-0043, Japan","beschreibung":"Trendy, minimalist location offering craft beer on tap, plus meatballs & sandwiches.","rating":4.5,"ratingsTotal":"","website":"https://mikkeller.com/locations/mikkeller-tokyo","googleUrl":"https://www.google.com/maps/place/Mikkeller+Tokyo/data=!4m2!3m1!1s0x60188caa27176ef1:0xbfea86004346e637","lat":"35.6594638","lng":"139.6960234","bezirk":"Shibuya","id":"090-mikkeller-tokyo"},{"name":"Mitsukoshi Ginza","kategorie":"Shop","google_typ":"Department store","stadtteil":"Ginza, Chuo City","region":"Tokio","adresse":"4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan","beschreibung":"Kaufhaus mit ausgezeichnete Haushaltswaren und Gormet-Foodhall","rating":4.1,"ratingsTotal":"","website":"https://www.mistore.jp/store/ginza.html","googleUrl":"https://www.google.com/maps/place/Mitsukoshi+Ginza/data=!4m2!3m1!1s0x60188be68e21d35f:0x91fb4ae4762f83be","lat":"35.6712864","lng":"139.7657382","bezirk":"Chuo","id":"091-mitsukoshi-ginza"},{"name":"Miyashita Park","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"6 Chome-20-10 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"Precinct for dining & high-end shopping, with beach volleyball courts & rooftop green space.","rating":4.2,"ratingsTotal":"","website":"https://mitsui-shopping-park.com/urban/miyashita/","googleUrl":"https://www.google.com/maps/place/Miyashita+Park/data=!4m2!3m1!1s0x60188de622941551:0x5400fedc2467d9be","lat":"35.661791","lng":"139.7018507","bezirk":"Shibuya","id":"092-miyashita-park"},{"name":"Mukojima-Hyakkaen Gardens","kategorie":"Park","google_typ":"Garden","stadtteil":"Higashimukojima, Sumida City","region":"Tokio","adresse":"3 Chome-18-3 Higashimukojima, Sumida City, Tokyo 131-0032, Japan","beschreibung":"Small 19th-century garden with views of Tokyo Skytree, home to a diverse range of flowering plants.","rating":4.0,"ratingsTotal":"","website":"https://www.tokyo-park.or.jp/park/mukojima-hyakkaen/","googleUrl":"https://www.google.com/maps/place/Muk%C5%8Djima+Hyakkaen/data=!4m2!3m1!1s0x60188f1ff4a0a553:0xf42f2d949b82d148","lat":"35.7242145","lng":"139.8156006","bezirk":"Sumida","id":"093-mukojima-hyakkaen-gardens"},{"name":"Musashi Mitake Shrine","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Ome (Tokyo)","region":"Tokio","adresse":"176 Mitakesan, Ome, Tokyo 198-0175, Japan","beschreibung":"Historic red Shinto shrine at over 3,000 ft. elevation, accessed by a cable car.","rating":4.4,"ratingsTotal":"2811","website":"https://www.musashimitakejinja.jp/","googleUrl":"https://www.google.com/maps/place/Musashi+Mitake+Shrine/data=!4m2!3m1!1s0x60193a4261d3f243:0xd3e32817d29f7ede","lat":"35.782833","lng":"139.1499614","bezirk":"Außerhalb der 23 Bezirke","id":"094-musashi-mitake-shrine"},{"name":"NEIGHBORHOOD HARAJUKU","kategorie":"Shop","google_typ":"Men's clothing store","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 4 Chome−32−7 １Ｆ","beschreibung":"Flagship-Store der 1994 von Shinsuke Takizawa gegruendeten japanischen Streetwear-Marke NEIGHBORHOOD, gepraegt von Motorrad-, Punk- und Americana-Einfluessen, prominent in der Ura-Harajuku-Szene.","rating":3.4,"ratingsTotal":"","website":"http://www.neighborhood.jp/","googleUrl":"https://www.google.com/maps/place/NEIGHBORHOOD+HARAJUKU/data=!4m2!3m1!1s0x60188ca37f2fd8cd:0x1113a4673952139f","lat":"35.6692543","lng":"139.7066724","bezirk":"Shibuya","id":"095-neighborhood-harajuku"},{"name":"NUMBER SUGAR","kategorie":"Café","google_typ":"Pastry shop","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"5 Chome-11-11 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"Sleek, minimalist store for artisanal caramel candy in a host of flavors, plus gift packages.","rating":4.3,"ratingsTotal":"","website":"http://www.numbersugar.jp/","googleUrl":"https://www.google.com/maps/place/NUMBER+SUGAR/data=!4m2!3m1!1s0x60188ca6aa1af26f:0x4d50f93c26c90c6d","lat":"35.6664907","lng":"139.7061697","bezirk":"Shibuya","id":"096-number-sugar"},{"name":"Nakano Broadway","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Chome-52-15, Nakano City","region":"Tokio","adresse":"5 Chome-52-15 Nakano, Nakano City, Tokyo 164-0001, Japan","beschreibung":"Bustling shopping center featuring stores for anime & comics, plus boutiques, gift shops & eateries.","rating":4.2,"ratingsTotal":"","website":"https://nakano-broadway.com/","googleUrl":"https://www.google.com/maps/place/Nakano+Broadway/data=!4m2!3m1!1s0x6018f290b2ddee83:0xe1b67e4ee0eff0be","lat":"35.7092475","lng":"139.6656524","bezirk":"Nakano","id":"097-nakano-broadway"},{"name":"Nara Park","kategorie":"Park","google_typ":"Park","stadtteil":"Andere (Nara)","region":"Andere Region","adresse":"Nara, Japan","beschreibung":"Landscaped, public park with ancient temples & the Nara National Museum of art, plus tame deer.","rating":4.6,"ratingsTotal":"75786","website":"https://www3.pref.nara.jp/park/","googleUrl":"https://www.google.com/maps/place/Nara-Park/data=!4m2!3m1!1s0x60013996bd8c6061:0xf96cacf357447456","lat":"34.685047","lng":"135.843012","bezirk":"Außerhalb der 23 Bezirke","id":"098-nara-park"},{"name":"Nezu Museum","kategorie":"Museum","google_typ":"Art museum","stadtteil":"Minamiaoyama, Minato City","region":"Tokio","adresse":"6 Chome-5-1 Minamiaoyama, Minato City, Tokyo 107-0062, Japan","beschreibung":"Japanese & East Asian art museum with pre-modern pieces in various media, plus a cafe & gift shop.","rating":4.5,"ratingsTotal":"6505","website":"https://www.nezu-muse.or.jp/","googleUrl":"https://www.google.com/maps/place/Nezu-Museum/data=!4m2!3m1!1s0x60188b63fb3c4ec5:0xd0ca2110e541cb1c","lat":"35.6622568","lng":"139.7170937","bezirk":"Minato","id":"099-nezu-museum"},{"name":"Nikko","kategorie":"Sehenswürdigkeit","google_typ":"","stadtteil":"Andere (Nikkō, Tochigi)","region":"Andere Region","adresse":"","beschreibung":"Bergstadt in der Praefektur Tochigi, ca. 130 km noerdlich von Tokio; UNESCO-Weltkulturerbe Schreine und Tempel von Nikko, u.a. Toshogu-Schrein (Grabstaette Tokugawa Ieyasus), Kegon-Wasserfall und Chuzenji-See.","rating":null,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Nikk%C5%8D/data=!4m2!3m1!1s0x601fa4b7c69ac8d1:0x6f526b42961dd1c0","lat":"36.8464464","lng":"139.5902316","bezirk":"Außerhalb der 23 Bezirke","id":"100-nikko"},{"name":"Nikkō Tōshōgū","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Andere (Tochigi)","region":"Andere Region","adresse":"2301 Sannai, Nikko, Tochigi 321-1431, Japan","beschreibung":"Opulent 17th-century shrine complex honoring the first shogun & featuring colorful buildings & art.","rating":4.5,"ratingsTotal":"34116","website":"https://www.toshogu.jp/","googleUrl":"https://www.google.com/maps/place/Nikk%C5%8D+T%C5%8Dsh%C5%8D-g%C5%AB/data=!4m2!3m1!1s0x601fa6c553212035:0xab505b717af00e94","lat":"36.7580878","lng":"139.5987466","bezirk":"Außerhalb der 23 Bezirke","id":"101-nikk-t-sh-g"},{"name":"Nintendo Museum Rest Area","kategorie":"Park","google_typ":"Park","stadtteil":"Andere (Kyoto)","region":"Andere Region","adresse":"Kaguraden-56 Oguracho, Uji, Kyoto 611-0042, Japan","beschreibung":"Cafe \"Hatena Burger\" im Nintendo Museum in Uji bei Kyoto (seit Oktober 2024), Nintendo-thematische Snacks und Getraenke, nur mit Museumsticket zugaenglich.","rating":4.6,"ratingsTotal":"","website":"https://museum.nintendo.com/index.html","googleUrl":"https://www.google.com/maps/place/Nintendo+Museum+Rest+Area/data=!4m2!3m1!1s0x60011100457392f5:0xa943f24a52df281b","lat":"34.8924166","lng":"135.7843825","bezirk":"Außerhalb der 23 Bezirke","id":"102-nintendo-museum-rest-area"},{"name":"Norihama Beach","kategorie":"Sehenswürdigkeit","google_typ":"Beach","stadtteil":"Andere (Shizuoka)","region":"Andere Region","adresse":"Nishina, Nishiizu, Kamo District, Shizuoka 410-3514, Japan","beschreibung":"Familienstrand in Nishiizu (Shizuoka) in einer geschuetzten Bucht mit ruhigen Wellen, gegenueber den markanten Felsformationen von Dogashima; 5 Gehminuten zur Sawada-Freiluft-Onsenquelle mit Meerblick.","rating":4.3,"ratingsTotal":"","website":"http://nishiizu-kankou.com/playing/2006/03/post_7.php","googleUrl":"https://www.google.com/maps/place/Norihama+Beach/data=!4m2!3m1!1s0x6019f7656c5ac861:0x9cd0f6ce26c58ea4","lat":"34.7782234","lng":"138.7681282","bezirk":"Außerhalb der 23 Bezirke","id":"103-norihama-beach"},{"name":"OTHER SPACE Hotel Asakusa","kategorie":"Hotel","google_typ":"","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"3 Chome-4-10 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"HOTEL","rating":4.5,"ratingsTotal":"","website":"https://otherspacehotel.com/?lang=auto","googleUrl":"https://www.google.com/maps/place/OTHER+SPACE+asakusa/data=!4m2!3m1!1s0x60188faa2eb1f42d:0x2c313e4e504e433a","lat":"35.7164048","lng":"139.7973872","bezirk":"Taito","id":"104-other-space-hotel-asakusa"},{"name":"Okada","kategorie":"Essen","google_typ":"Yakitori restaurant","stadtteil":"Kitasuna, Koto City","region":"Tokio","adresse":"3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan","beschreibung":"Lokaler Yakitori-Laden in Kitasuna nahe der Sunamachi-Ginza-Einkaufsstrasse, beliebt fuer Innereien-Eintopf (Motsu-ni) und Yakitori-Spiesse, oft zum Mitnehmen gekauft.","rating":3.8,"ratingsTotal":"","website":"https://sunagin.goemon.tokyo/listings/okada/","googleUrl":"https://www.google.com/maps/place/Okada/data=!4m2!3m1!1s0x601888f477c77b61:0x2bccc9bada651831","lat":"35.6796904","lng":"139.8309429","bezirk":"Koto","id":"105-okada"},{"name":"Omoide Yokocho Memory Lane","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Nishishinjuku, Shinjuku City","region":"Tokio","adresse":"1 Chome-2-2 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan","beschreibung":"berühmteste Imbiss Gasse","rating":4.2,"ratingsTotal":"","website":"http://shinjuku-omoide.com/","googleUrl":"https://www.google.com/maps/place/Omoide+Yokocho+Memory+Lane/data=!4m2!3m1!1s0x60188cd7058ad73f:0x908f55935cc13cd3","lat":"35.6927037","lng":"139.6995778","bezirk":"Shinjuku","id":"106-omoide-yokocho-memory-lane"},{"name":"Omotesando Hills","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"4 Chome-12-10 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"Indoor shopping mall with a unique triangular floor plan & high-end stores on multiple levels.","rating":4.0,"ratingsTotal":"","website":"https://www.omotesandohills.com/?utm_source=google&utm_medium=organic&utm_campaign=google_map","googleUrl":"https://www.google.com/maps/place/Omotesando+Hills/data=!4m2!3m1!1s0x60188ca182a31e0b:0x99d7a9865079f0a5","lat":"35.6672869","lng":"139.7086162","bezirk":"Shibuya","id":"107-omotesando-hills"},{"name":"Onigiri Marutoyo","kategorie":"Essen","google_typ":"Japanese restaurant","stadtteil":"Tsukiji, Chuo City","region":"Tokio","adresse":"Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome−9−9 築地場外市場 1F","beschreibung":"Beruehmter Onigiri-Spezialist im aeusseren Tsukiji-Markt, geoeffnet ab ca. 3 Uhr morgens; bekanntestes Gericht ist \"Bakudan\" mit weich gekochtem Ei, dazu Fuellungen wie Lachs, Ikura oder Mentaiko.","rating":4.0,"ratingsTotal":"","website":"https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/389/","googleUrl":"https://www.google.com/maps/place/Onigiri+Marutoyo/data=!4m2!3m1!1s0x60188bdedc9c02f9:0xc39a0467a5a4e0bd","lat":"35.6653719","lng":"139.7697606","bezirk":"Chuo","id":"108-onigiri-marutoyo"},{"name":"Onitsuka Tiger Omotesando Store","kategorie":"Shop","google_typ":"Shoe store","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"4 Chome-24-14 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"Weltweit groesster Flagship-Store der 1949 gegruendeten Sneaker-Marke (Vorlaeufer von Asics), vier Etagen, bekannt fuer das Modell Mexico 66.","rating":4.1,"ratingsTotal":"","website":"https://www.onitsukatiger.com/jp/ja-jp","googleUrl":"https://www.google.com/maps/place/Onitsuka+Tiger+Omotesando+Store/data=!4m2!3m1!1s0x60188ca3c0e90351:0xb2265ecf2a9177ec","lat":"35.6683472","lng":"139.7078542","bezirk":"Shibuya","id":"109-onitsuka-tiger-omotesando-store"},{"name":"Parfaiteria bel","kategorie":"Café","google_typ":"Cafe","stadtteil":"Dogenzaka, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0043 Tokyo, Shibuya, Dogenzaka, 1 Chome−７−10 渋谷道玄坂一丁目ビル 3F","beschreibung":"Nacht-Parfait-Spezialist aus Hokkaido, seit 2017 in Shibuya; kunstvolle, mehrschichtige Parfaits mit saisonal wechselnder Karte, geoeffnet bis spaet in die Nacht (Fr/Sa bis 1 Uhr).","rating":4.1,"ratingsTotal":"","website":"https://yoru-parfait-gaku.com/","googleUrl":"https://www.google.com/maps/place/Parfaiteria+bel/data=!4m2!3m1!1s0x60188b57b059802d:0x677955105c89545d","lat":"35.6576097","lng":"139.6993349","bezirk":"Shibuya","id":"110-parfaiteria-bel"},{"name":"Parklet Bakery","kategorie":"Café","google_typ":"Bakery","stadtteil":"Nihonbashikobunacho, Chuo City","region":"Tokio","adresse":"Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階","beschreibung":"Breads, light bites & coffee served in a laid-back bakery that also stocks wine & food items.","rating":4.3,"ratingsTotal":"","website":"https://parkletbakery.com/","googleUrl":"https://www.google.com/maps/place/Parklet+Bakery/data=!4m2!3m1!1s0x6018894f6e84724d:0x1f290cd4d080a50b","lat":"35.6869879","lng":"139.7788709","bezirk":"Chuo","id":"111-parklet-bakery"},{"name":"Philosopher's Path (Tetsugaku no Michi), North End","kategorie":"Sehenswürdigkeit","google_typ":"Scenic spot","stadtteil":"Andere (Kyoto)","region":"Andere Region","adresse":"Shishigatani Teranomaecho, Sakyo Ward, Kyoto, 606-8426, Japan","beschreibung":"Philosophenweg","rating":4.6,"ratingsTotal":"","website":"https://tetsugakunomichi.jp/","googleUrl":"https://www.google.com/maps/place/Philosopher's+Path+(Tetsugaku+no+Michi)/data=!4m2!3m1!1s0x60010908ae94f057:0x917af331a75280f4","lat":"35.0266194","lng":"135.795457","bezirk":"Außerhalb der 23 Bezirke","id":"112-philosopher-s-path-tetsugaku-no-michi-north-end"},{"name":"Pokemon Center Shibuya","kategorie":"Shop","google_typ":"Hobby store","stadtteil":"Udagawacho, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-8377 Tokyo, Shibuya, Udagawacho, 15−1 渋谷PARCO 6F","beschreibung":"Seit 2019 im 6. Stock von Shibuya Parco, Eingang mit lebensgrossem Mewtwo-Aquarium, Shibuya-exklusives Merchandise mit Streetwear-Look.","rating":4.3,"ratingsTotal":"","website":"https://www.pokemon.co.jp/shop/pokecen/shibuya/","googleUrl":"https://www.google.com/maps/place/Pokemon+Center+Shibuya/data=!4m2!3m1!1s0x60188d8434e95ddf:0x1ec5fa74faf17a9a","lat":"35.6619557","lng":"139.6984408","bezirk":"Shibuya","id":"113-pokemon-center-shibuya"},{"name":"PokéPark Kanto","kategorie":"Sehenswürdigkeit","google_typ":"Amusement park","stadtteil":"Andere (Tokyo)","region":"Tokio","adresse":"よみうりランド遊園, 1-4015-1 Yanokuchi, Tama Ward, Inagi, Tokyo 206-0812, Japan","beschreibung":"Seit Februar 2026 erster permanenter Pokemon-Freizeitpark weltweit, innerhalb des Yomiuriland-Parks; Pokemon Forest (500 m Waldpfad mit begehbaren Pokemon) und Kayatsuri Town mit Shops und Attraktionen wie Pikapika Paradise.","rating":3.9,"ratingsTotal":"","website":"https://www.pokepark-kanto.co.jp/","googleUrl":"https://www.google.com/maps/place/Pok%C3%A9Park+Kanto/data=!4m2!3m1!1s0x6018fb2f0e9098ab:0x3ac8b697f2a3589c","lat":"35.6242581","lng":"139.5173938","bezirk":"Außerhalb der 23 Bezirke","id":"114-pok-park-kanto"},{"name":"Pokémon Center Tokyo DX","kategorie":"Shop","google_typ":"Hobby store","stadtteil":"Nihonbashi, Chuo City","region":"Tokio","adresse":"髙島屋S.C.東館 5F, 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan","beschreibung":"Seit 2018 groesster Pokemon Center im 5. Stock der Nihonbashi Takashimaya, erster mit permanentem angeschlossenem Pokemon-Cafe; eigener Fotobereich mit Snorlax-Statue.","rating":4.5,"ratingsTotal":"","website":"https://www.pokemon.co.jp/shop/pokecen/tokyodx/","googleUrl":"https://www.google.com/maps/place/Pok%C3%A9mon+Center+Tokyo+DX/data=!4m2!3m1!1s0x60188957de0e5009:0xeec96412fe192abc","lat":"35.6802902","lng":"139.7742695","bezirk":"Chuo","id":"115-pok-mon-center-tokyo-dx"},{"name":"ROTOTO STORE","kategorie":"Shop","google_typ":"Clothing store","stadtteil":"Nishihara, Shibuya City","region":"Tokio","adresse":"Japan, 〒151-0066 Tokyo, Shibuya, Nishihara, 2 Chome−28−3 クローバービル 1F","beschreibung":"Japanische Sockenmarke (seit 2014, Designer Daisuke Ishii) aus der Praefektur Nara; hochwertige Socken aus Bio-Baumwolle und recycelten Materialien, gefertigt auf traditionellen alten Strickmaschinen.","rating":4.9,"ratingsTotal":"","website":"https://www.instagram.com/rototo_store/","googleUrl":"https://www.google.com/maps/place/ROTOTO+STORE+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E8%A5%BF%E5%8E%9F2-28-3+%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%90%E3%83%BC%E3%83%93%E3%83%AB+1F/data=!4m2!3m1!1s0x6018f33689e4a3b1:0x251149cacffd4401","lat":"35.6753528","lng":"139.6781834","bezirk":"Shibuya","id":"116-rototo-store"},{"name":"RUMBLE CRUMBLE 渋谷本店","kategorie":"Café","google_typ":"Confectionery store","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−16−3 原宿T2ビル 1F","beschreibung":"New-York-Style-Cookies aus eigener Kueche; woechentlich am selben Tag eine limitierte Box mit 12 Sorten, frisch produziert und am Bestelltag verschickt.","rating":4.0,"ratingsTotal":"","website":"https://www.rumble-crumble.com/","googleUrl":"https://www.google.com/maps/place/RUMBLE+CRUMBLE+%E6%B8%8B%E8%B0%B7%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x60188d1d28f0aff7:0x78b0ae88c3cf6cc4","lat":"35.6656363","lng":"139.7041376","bezirk":"Shibuya","id":"117-rumble-crumble"},{"name":"Reiyukai Shakaden Temple","kategorie":"Tempel","google_typ":"Religious institution","stadtteil":"Azabudai, Minato City","region":"Tokio","adresse":"1 Chome-7-8 Azabudai, Minato City, Tokyo 106-0041, Japan","beschreibung":"1975 fertiggestellter \"Raumschiff-Tempel\" der Takenaka Corporation nahe dem Tokyo Tower, Hauptquartier der buddhistischen Reiyukai-Bewegung; dunkler Granit/Kupferbau mit 8 Meter hoher Holz-Buddha-Statue, kostenlose Japanisch-Kurse fuer Besucher.","rating":4.3,"ratingsTotal":"328","website":"https://reiyukai.jp/","googleUrl":"https://www.google.com/maps/place/Reiyukai+Shakaden+Temple/data=!4m2!3m1!1s0x60188b99d8a0f867:0xb814da133840c4ea","lat":"35.661137","lng":"139.742203","bezirk":"Minato","id":"118-reiyukai-shakaden-temple"},{"name":"Rock Garden","kategorie":"Sehenswürdigkeit","google_typ":"Hiking area","stadtteil":"Ome (Tokyo)","region":"Tokio","adresse":"Mitakesan, Ome, Tokyo 190-0175, Japan","beschreibung":"Moosbewachsener Bachlauf mit Felsen entlang eines Wanderwegs auf dem Mitake-Berg bei Ome, vorbei am Ayahiro-Wasserfall, Teil der Rundwanderung zum Musashi-Mitake-Schrein.","rating":4.6,"ratingsTotal":"","website":"https://youtu.be/tn18s3fKW6E","googleUrl":"https://www.google.com/maps/place/Rock+Garden/data=!4m2!3m1!1s0x60193bc75bcc78d1:0xaca61c064131e064","lat":"35.7754244","lng":"139.1463175","bezirk":"Außerhalb der 23 Bezirke","id":"119-rock-garden"},{"name":"Ryu Sushi","kategorie":"Essen","google_typ":"Sushi restaurant","stadtteil":"Toyosu, Koto City","region":"Tokio","adresse":"Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階","beschreibung":"sushi doesn t come much fresher or more authentic than at this spot in the heart of toyosu fish market the chefs here have been making edo style sushi for over 50 years.","rating":4.1,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Ryu+Sushi/data=!4m2!3m1!1s0x60188cd4c86bccdb:0x6282a19547e3c4c7","lat":"35.6441538","lng":"139.7842956","bezirk":"Koto","id":"120-ryu-sushi"},{"name":"SAWAWA Matcha Sweets Shop Asakusa","kategorie":"Café","google_typ":"Dessert restaurant","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"2 Chome-2-10 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"","rating":4.5,"ratingsTotal":"","website":"https://www.telacoya.co.jp/company/shop_detail/shop_detail-293/","googleUrl":"https://www.google.com/maps/place/SAWAWA+Matcha+Sweets+Shop+Asakusa/data=!4m2!3m1!1s0x60188ec115a6ca81:0x8d4997bf9c77bd20","lat":"35.713512","lng":"139.7969911","bezirk":"Taito","id":"121-sawawa-matcha-sweets-shop-asakusa"},{"name":"Sahsya Kanetanaka","kategorie":"Essen","google_typ":"Authentic Japanese restaurant","stadtteil":"Kita-Aoyama, Minato City","region":"Tokio","adresse":"Japan, 〒107-0061 Tokyo, Minato City, Kita-Aoyama, 3 Chome−6−1 OAK OMOTESANDO 2F","beschreibung":"zugängliches Kaiseki, mittags mit leckeren snacks, abend längere Gängen. RESERVIEREN","rating":3.8,"ratingsTotal":"","website":"http://www.kanetanaka.co.jp/restrant/sahsya/","googleUrl":"https://www.google.com/maps/place/Sahsya+Kanetanaka/data=!4m2!3m1!1s0x60188ca03da0ad61:0xa005b75a420967e8","lat":"35.6655566","lng":"139.7105652","bezirk":"Minato","id":"122-sahsya-kanetanaka"},{"name":"Sakura Cross Hotel Ueno-Iriya","kategorie":"Hotel","google_typ":"","stadtteil":"Negishi, Taito City","region":"Tokio","adresse":"3 Chome-18-18 Negishi, Taito City, Tokyo 110-0003, Japan","beschreibung":"Apartment-Hotel mit klimatisierten Zimmern und Kitchenette nahe Iriya Station, rund 15 Gehminuten zum Ueno-Park, ca. 5 Autominuten zum Sensoji-Tempel.","rating":4.7,"ratingsTotal":"","website":"https://www.sakura-cross.com/ueno-iriya.html","googleUrl":"https://www.google.com/maps/place/Sakura+Cross+Hotel+Ueno-Iriya/data=!4m2!3m1!1s0x60188e8f5db7416b:0xaf3c8aa15b01d0b5","lat":"35.7240518","lng":"139.7835626","bezirk":"Taito","id":"123-sakura-cross-hotel-ueno-iriya"},{"name":"San-Sada","kategorie":"Essen","google_typ":"Tempura restaurant","stadtteil":"Asakusa, Taito City","region":"Tokio","adresse":"1 Chome-2-2 Asakusa, Taito City, Tokyo 111-0032, Japan","beschreibung":"Aus popeye","rating":3.5,"ratingsTotal":"","website":"http://www.tempura-sansada.co.jp/","googleUrl":"https://www.google.com/maps/place/San-Sada/data=!4m2!3m1!1s0x60188ec0e739e8a9:0x8232ef6740d31307","lat":"35.7109887","lng":"139.7966179","bezirk":"Taito","id":"124-san-sada"},{"name":"Senbon Torii (Thousand Torii Gates)","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Andere (Kyoto)","region":"Andere Region","adresse":"68番地 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto, 612-0882, Japan","beschreibung":"Mountainside shinto shrine featuring a path with thousands of traditional red gates & stairs.","rating":4.7,"ratingsTotal":"14495","website":"http://inari.jp/trip/map01/","googleUrl":"https://www.google.com/maps/place/Senbon+Torii+(Thousand+Torii+Gates)/data=!4m2!3m1!1s0x60010f14384c5a19:0x5d22970f58bfde17","lat":"34.9670429","lng":"135.7746595","bezirk":"Außerhalb der 23 Bezirke","id":"125-senbon-torii-thousand-torii-gates"},{"name":"Sennari Monaka Sugamo","kategorie":"Café","google_typ":"Japanese confectionery shop","stadtteil":"Sugamo, Toshima City","region":"Tokio","adresse":"3 Chome-28-8 Sugamo, Toshima City, Tokyo 170-0002, Japan","beschreibung":"Seit 1937 bestehendes Monaka-Spezialgeschaeft direkt am Eingang der Sugamo-Einkaufsstrasse; kuerbisfoermige Monaka in fuenf Fuellungen sowie frische Dorayaki.","rating":4.6,"ratingsTotal":"","website":"https://www.monaka.co.jp/","googleUrl":"https://www.google.com/maps/place/Sennari+Monaka+Sugamo/data=!4m2!3m1!1s0x60188d9945576479:0x40a179552c64fd2f","lat":"35.7337707","lng":"139.7378118","bezirk":"Toshima","id":"126-sennari-monaka-sugamo"},{"name":"Shibadaimon Sarashina Nunoya","kategorie":"Essen","google_typ":"Kaiseki restaurant","stadtteil":"Shibadaimon, Minato City","region":"Tokio","adresse":"Japan, 〒105-0012 Tokyo, Minato City, Shibadaimon, 1 Chome−15−8 布萬スカイビル 3F","beschreibung":"From the noren curtains at the front door to the unfussy Edo era inspired interior the 230 year old Sarashina Nunoya is an authentic soba store in all respects It s run by seventh generation soba maker Eiichi Kaneko who has an unparalleled passion for tsuyu dipping sauce the staff here learn his unique recipe by taste alone.","rating":3.8,"ratingsTotal":"","website":"https://sarashina-nunoya.gorp.jp/","googleUrl":"https://www.google.com/maps/place/Shibadaimon+Sarashina+Nunoya/data=!4m2!3m1!1s0x60188bc73e4833f9:0x1d7c5dc0e5cdc689","lat":"35.6570203","lng":"139.7539","bezirk":"Minato","id":"127-shibadaimon-sarashina-nunoya"},{"name":"Shibuya Crossing","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Shibuya City","region":"Tokio","adresse":"Shibuya, Tokyo, Japan","beschreibung":"belebteste Fußgängerkreuzung der Welt","rating":4.5,"ratingsTotal":"","website":"https://play-shibuya.com/","googleUrl":"https://www.google.com/maps/place/Shibuya+Alle-Gehen-Kreuzung/data=!4m2!3m1!1s0x60188bcaeb0cd12b:0x20e563a2e0aec969","lat":"35.659482","lng":"139.7005596","bezirk":"Shibuya","id":"128-shibuya-crossing"},{"name":"Shibuya Parco","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Udagawacho, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-8377 Tokyo, Shibuya, Udagawacho, 15−1 渋谷パルコ・ヒューリックビル B1-10階","beschreibung":"Seit 2019 wiedereroeffnetes Einkaufszentrum: Erdgeschoss mit Luxusmarken wie Gucci und Loewe, 6. Stock \"Cyberspace Shibuya\" mit Nintendo Store, Pokemon Center Shibuya, Capcom Store und Jump Shop, Dachterrassenpark im 10. Stock.","rating":4.3,"ratingsTotal":"","website":"https://shibuya.parco.jp/?utm_source=mybusiness","googleUrl":"https://www.google.com/maps/place/Shibuya+Parco/data=!4m2!3m1!1s0x60188ca8e2fe2173:0x1adbb1909538391b","lat":"35.6620484","lng":"139.6987767","bezirk":"Shibuya","id":"129-shibuya-parco"},{"name":"Shinkyō Bridge","kategorie":"Sehenswürdigkeit","google_typ":"Bridge","stadtteil":"Andere (Tochigi)","region":"Andere Region","adresse":"Kamihatsuishimachi, Nikko, Tochigi 321-1401, Japan","beschreibung":"Black-&-red bridge with a storied past, framed by dense forest known for its striking fall colors.","rating":4.2,"ratingsTotal":"","website":"http://www.shinkyo.net/","googleUrl":"https://www.google.com/maps/place/Shinky%C5%8D+Bridge/data=!4m2!3m1!1s0x601fa6d687424223:0x392a9fec11582fe7","lat":"36.75337","lng":"139.6040034","bezirk":"Außerhalb der 23 Bezirke","id":"130-shinky-bridge"},{"name":"Shirahige Shrine Torii","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Andere (Shiga)","region":"Andere Region","adresse":"Ukawa, Takashima, Shiga 520-1122, Japan","beschreibung":"Ueber 2000 Jahre alter Schrein am Westufer des Biwa-Sees in Shiga, beruehmt fuer seinen \"schwimmenden\" roten Torii einige Meter vor der Kueste im See; gewidmet dem Gott Sarutahiko fuer Langlebigkeit und sichere Reisen.","rating":4.2,"ratingsTotal":"1264","website":"http://shirahigejinja.com/kotyuutorii.html","googleUrl":"https://www.google.com/maps/place/Shirahige+Shrine+Torii/data=!4m2!3m1!1s0x60019a5321bc4f7b:0xeb2df6d0357679ce","lat":"35.2737276","lng":"136.0115566","bezirk":"Außerhalb der 23 Bezirke","id":"131-shirahige-shrine-torii"},{"name":"Shitamachi Museum","kategorie":"Museum","google_typ":"Local history museum","stadtteil":"Uenokoen, Taito City","region":"Tokio","adresse":"2-1 Uenokoen, Taito City, Tokyo 110-0007, Japan","beschreibung":"Seit 1980 bestehendes Museum am Shinobazu-Teich im Ueno-Park mit lebensgrossen Nachbauten von Handwerksladen und Wohnhaeusern aus der Taisho-Zeit; laut einer Quelle zeitweise wegen Renovierung geschlossen, Status vor Reise pruefen.","rating":4.2,"ratingsTotal":"","website":"https://www.taitogeibun.net/shitamachi/","googleUrl":"https://www.google.com/maps/place/Shitamachi+Museum/data=!4m2!3m1!1s0x60188d00499a58bd:0xd389e19d949ab122","lat":"35.7102379","lng":"139.7727531","bezirk":"Taito","id":"132-shitamachi-museum"},{"name":"Single O Hamacho","kategorie":"Café","google_typ":"Coffee shop","stadtteil":"Nihonbashihamacho, Chuo City","region":"Tokio","adresse":"Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F","beschreibung":"Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.","rating":4.5,"ratingsTotal":"","website":"https://singleo.jp/","googleUrl":"https://www.google.com/maps/place/Single+O+Hamacho/data=!4m2!3m1!1s0x6018898fa80815c9:0x4c8211fa16fbeb3b","lat":"35.6840811","lng":"139.789312","bezirk":"Chuo","id":"133-single-o-hamacho"},{"name":"Solatsuki","kategorie":"Café","google_typ":"Dessert restaurant","stadtteil":"Tsukiji, Chuo City","region":"Tokio","adresse":"4 Chome-11-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan","beschreibung":"","rating":4.0,"ratingsTotal":"","website":"https://solatsuki.jp/solatsuki","googleUrl":"https://www.google.com/maps/place/Solatsuki/data=!4m2!3m1!1s0x60188bdf22515923:0x52d125d2c60480b9","lat":"35.6660151","lng":"139.7707084","bezirk":"Chuo","id":"134-solatsuki"},{"name":"Spontini Cascade Harajuku","kategorie":"Essen","google_typ":"Pizza restaurant","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−10−37 CASCADE HARAJUKU 2F","beschreibung":"Erste Uebersee-Filiale (2015) der seit 1953 bestehenden Mailaender Pizzeria Spontini; dickes, fluffiges Pizzateig in Sojaoel angebraten, riesige Stuecke fuer 900-1900 Yen, Signature-Gericht Margherita.","rating":4.1,"ratingsTotal":"","website":"http://spontini.jp/harajuku.html","googleUrl":"https://www.google.com/maps/place/Spontini+Cascade+Harajuku/data=!4m2!3m1!1s0x60188ca52a8130cf:0x6aec1483f3f4094c","lat":"35.6700617","lng":"139.7037779","bezirk":"Shibuya","id":"135-spontini-cascade-harajuku"},{"name":"Sumida Aquarium","kategorie":"Sehenswürdigkeit","google_typ":"Aquarium","stadtteil":"Oshiage, Sumida City","region":"Tokio","adresse":"Japan, 〒131-0045 Tokyo, Sumida City, Oshiage, 1 Chome−1−2 東京スカイツリータウン・ソラマチ ５階～６階","beschreibung":"Stylish, contemporary aquarium featuring a variety of fish & a host of penguins, plus a cafe.","rating":4.2,"ratingsTotal":"","website":"http://www.sumida-aquarium.com/","googleUrl":"https://www.google.com/maps/place/Sumida+Aquarium/data=!4m2!3m1!1s0x60188ed6ddcaa63b:0x52f9e68583464160","lat":"35.7099301","lng":"139.8095855","bezirk":"Sumida","id":"136-sumida-aquarium"},{"name":"Sunshine Aquarium","kategorie":"Sehenswürdigkeit","google_typ":"Aquarium","stadtteil":"Higashiikebukuro, Toshima City","region":"Tokio","adresse":"Japan, 〒170-8630 Tokyo, Toshima City, Higashiikebukuro, 3 Chome−1−1 サンシャインシティワールドインポートマートビル 屋上","beschreibung":"High-rise aquarium featuring diverse sea creatures & an above-ground glass pool.","rating":4.2,"ratingsTotal":"","website":"https://sunshinecity.jp/aquarium/?utm_source=Google&utm_medium=mybusiness&utm_campaign=kutikomi&utm_id=1","googleUrl":"https://www.google.com/maps/place/Sunshine+Aquarium/data=!4m2!3m1!1s0x60188d6f41f03f85:0xe25bfe624782e3c9","lat":"35.7289254","lng":"139.7201573","bezirk":"Toshima","id":"137-sunshine-aquarium"},{"name":"TOLO PAN TOKYO","kategorie":"Café","google_typ":"Bakery","stadtteil":"Higashiyama, Meguro City","region":"Tokio","adresse":"3 Chome-14-3 Higashiyama, Meguro City, Tokyo 153-0043, Japan","beschreibung":"Baeckerei in Ikejiri-Ohashi (Meguro) von Chef Tanaka, Tabelog-100-Brot-Auszeichnung 2020 und 2022; rund 70-100 Brotsorten aus 13 Mehlsorten, jede Sorte anders geformt, bekannt fuer Croissants und den \"Toro Dog\".","rating":4.3,"ratingsTotal":"","website":"http://tolotokyo.com/","googleUrl":"https://www.google.com/maps/place/TOLO+PAN+TOKYO/data=!4m2!3m1!1s0x6018f4a95cf90883:0xd82134e17a9a5","lat":"35.6501237","lng":"139.6855228","bezirk":"Meguro","id":"138-tolo-pan-tokyo"},{"name":"TORAYA Akasaka Main Store","kategorie":"Café","google_typ":"Japanese confectionery shop","stadtteil":"Akasaka, Minato City","region":"Tokio","adresse":"4 Chome-9-22 Akasaka, Minato City, Tokyo 107-8401, Japan","beschreibung":"Ueber 500 Jahre alte Wagashi-Manufaktur, urspruenglich Hoflieferant in Kyoto, seit 1879 in Akasaka; 2018 mit Hinoki-Holz und schwarzer Shikkui-Wand neu gestaltet, Cafe im dritten Stock.","rating":4.5,"ratingsTotal":"","website":"https://www.toraya-group.co.jp/toraya/shops/detail/?id=5","googleUrl":"https://www.google.com/maps/place/TORAYA+Akasaka+Main+Store/data=!4m2!3m1!1s0x60188d6bb603a7df:0x93e9fccd7878efc","lat":"35.6754","lng":"139.7325929","bezirk":"Minato","id":"139-toraya-akasaka-main-store"},{"name":"Takeshita St","kategorie":"Sehenswürdigkeit","google_typ":"","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"","beschreibung":"Für trendbewuste Jugendliche in Tokio ein Muss","rating":null,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Takeshita+St/data=!4m2!3m1!1s0x60188cbaf1de5995:0xc2becc88ea4e7eb5","lat":"35.6710335","lng":"139.7051821","bezirk":"Shibuya","id":"140-takeshita-st"},{"name":"Takeshita Street","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"1 Chome-16-6 Jingumae, Shibuya, Tokyo 150-0001, Japan","beschreibung":"Rund 350 Meter lange Fussgaengerstrasse von Harajuku Station bis zur Meiji-dori, Zentrum der \"Kawaii\"-Jugendkultur mit Modeboutiquen, Creepe-Staenden und bunten Suessigkeiten; an Wochenenden sehr ueberlaufen.","rating":4.2,"ratingsTotal":"","website":"https://www.takeshita-street.com/","googleUrl":"https://www.google.com/maps/place/Takeshita+Street/data=!4m2!3m1!1s0x60188d795a699d2f:0x3499ed0ca0a1edf9","lat":"35.6712601","lng":"139.7046761","bezirk":"Shibuya","id":"141-takeshita-street"},{"name":"Tamagawadai Park","kategorie":"Park","google_typ":"Park","stadtteil":"Denenchofu, Ota City","region":"Tokio","adresse":"1 Chome-63-1 Denenchofu, Ota City, Tokyo 145-0071, Japan","beschreibung":"Hillside park featuring botanical gardens, flower displays & views of the river & distant mountains.","rating":4.2,"ratingsTotal":"","website":"http://www.city.ota.tokyo.jp/shisetsu/park/tamagawadai.html","googleUrl":"https://www.google.com/maps/place/Tamagawadai+Park/data=!4m2!3m1!1s0x6018f56b4509a4a3:0x6755bc58eaa04d0","lat":"35.5894474","lng":"139.6665689","bezirk":"Ota","id":"142-tamagawadai-park"},{"name":"Tashirojima","kategorie":"Sehenswürdigkeit","google_typ":"Island","stadtteil":"Andere (Miyagi)","region":"Andere Region","adresse":"Tashirohama, Ishinomaki, Miyagi 986-0023, Japan","beschreibung":"Small island known for its large population of wild cats, offering cat-shaped cabins & a cat shrine.","rating":4.5,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Tashirojima/data=!4m2!3m1!1s0x5f89c00d07d663e7:0xd985f22a28c60972","lat":"38.2986651","lng":"141.4179248","bezirk":"Außerhalb der 23 Bezirke","id":"143-tashirojima"},{"name":"Tempura Abe Honten","kategorie":"Essen","google_typ":"Restaurant","stadtteil":"Ginza, Chuo City","region":"Tokio","adresse":"Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−3−7 銀座 スバルビル 地下1階","beschreibung":"In a city where tempura a deep fried beloved Japanese dish is associated with casual dining it s a hard task finding a special occasion worthy spot to enjoy it in That s where this old family favorite comes in Abe the chef here has over 30 years experience in this dish and watching him prepare his top notch tempura some would say the capital s best from a counter seat is unforgettable Don t leave without ordering the kakiage tendon at lunch It features a crisp tempura fritter topped with an oozy egg yolk.","rating":4.1,"ratingsTotal":"","website":"https://tempuraabe.foodre.jp/","googleUrl":"https://www.google.com/maps/place/Tempura+Abe+Honten/data=!4m2!3m1!1s0x60188be5c534a89f:0xa3a82de3a6c7f04f","lat":"35.6721005","lng":"139.7645383","bezirk":"Chuo","id":"144-tempura-abe-honten"},{"name":"The Monocle Shop, Tokyo","kategorie":"Shop","google_typ":"Store","stadtteil":"Tomigaya, Shibuya City","region":"Tokio","adresse":"Japan, 〒151-0063 Tokyo, Shibuya, Tomigaya, 1 Chome−19−2 ルナ・ロッサ渋谷 1F","beschreibung":"Stylish retail of lifestyle magazine featuring original & select brand apparel, stationary & goods.","rating":4.5,"ratingsTotal":"","website":"http://monocle.com/shop","googleUrl":"https://www.google.com/maps/place/The+Monocle+Shop,+Tokyo/data=!4m2!3m1!1s0x60188cb2bb169843:0x92efa8b6cf4ab77e","lat":"35.6661109","lng":"139.6918289","bezirk":"Shibuya","id":"145-the-monocle-shop-tokyo"},{"name":"The Plant Society Tokyo Flagship","kategorie":"Shop","google_typ":"Home goods store","stadtteil":"Hirano, Koto City","region":"Tokio","adresse":"2 Chome-6-1 Hirano, Koto City, Tokyo 135-0023, Japan","beschreibung":"Erste Filiale des Melbourner Pflanzenladens ausserhalb Australiens (seit 2021), im 2. Stock von TOKYOBIKE TOKYO in Kiyosumi-Shirakawa; Zimmerpflanzen und Keramiktoepfe australischer Kuenstler.","rating":4.1,"ratingsTotal":"","website":"https://www.theplantsociety.jp/","googleUrl":"https://www.google.com/maps/place/The+Plant+Society+Tokyo+Flagship/data=!4m2!3m1!1s0x60188943243dc6c9:0xa1d1a1bc6383456e","lat":"35.6782151","lng":"139.802611","bezirk":"Koto","id":"146-the-plant-society-tokyo-flagship"},{"name":"Things.YANAKA","kategorie":"Shop","google_typ":"Store","stadtteil":"Yanaka, Taito City","region":"Tokio","adresse":"3 Chome-12-3 Yanaka, Taito City, Tokyo 110-0001, Japan","beschreibung":"","rating":4.5,"ratingsTotal":"","website":"","googleUrl":"https://www.google.com/maps/place/Things.YANAKA/data=!4m2!3m1!1s0x60188dd15f357139:0xeb92fd9335c7c94f","lat":"35.7278239","lng":"139.7655884","bezirk":"Taito","id":"147-things.yanaka"},{"name":"Todoroki Ravine Park","kategorie":"Park","google_typ":"Park","stadtteil":"Todoroki, Setagaya City","region":"Tokio","adresse":"1 Chome-22-26 Todoroki, Setagaya City, Tokyo 158-0082, Japan","beschreibung":"Serene, tree-filled park with a brook, walking path & traditional Japanese garden, plus a temple.","rating":4.2,"ratingsTotal":"4572","website":"https://www.city.setagaya.lg.jp/mokuji/kusei/012/015/001/010/d00004247.html","googleUrl":"https://www.google.com/maps/place/Todoroki+Ravine+Park/data=!4m2!3m1!1s0x6018f45405495069:0x71ab45cd45edb2b9","lat":"35.6038976","lng":"139.6462372","bezirk":"Setagaya","id":"148-todoroki-ravine-park"},{"name":"Tokyo Character Street","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Marunouchi, Chiyoda City","region":"Tokio","adresse":"Japan, 〒100-0005 Tokyo, Chiyoda City, Marunouchi, 1 Chome−9−1 東京駅一番街 B1","beschreibung":"Shopping concourse inside Tokyo Station with stores for anime & manga character merchandise.","rating":4.2,"ratingsTotal":"","website":"https://e-shop.tokyoeki-1bangai.co.jp/","googleUrl":"https://www.google.com/maps/place/Tokyo+Character+Street/data=!4m2!3m1!1s0x60188bf95f25e619:0x103bd7d05407fec7","lat":"35.6820335","lng":"139.7686549","bezirk":"Chiyoda","id":"149-tokyo-character-street"},{"name":"Tokyo Dosanjin","kategorie":"Essen","google_typ":"Soba noodle shop","stadtteil":"Aobadai, Meguro City","region":"Tokio","adresse":"Japan, 〒153-0042 Tokyo, Meguro City, Aobadai, 3 Chome−19−8 目黒 蕎麦 池尻大橋","beschreibung":"","rating":4.0,"ratingsTotal":"","website":"https://tokyo-dosanjin.jp/?utm_source=google&utm_medium=GBP","googleUrl":"https://www.google.com/maps/place/Tokyo+Dosanjin/data=!4m2!3m1!1s0x60188b53a5555555:0xd1e9a2314772bd15","lat":"35.6500558","lng":"139.6914282","bezirk":"Meguro","id":"150-tokyo-dosanjin"},{"name":"South Observation Deck, Tokyo Metropolitan Government Building No. 1","kategorie":"Sehenswürdigkeit","google_typ":"Observation deck","stadtteil":"Nishishinjuku, Shinjuku City","region":"Tokio","adresse":"Japan, 〒160-8001 Tokyo, Shinjuku City, Nishishinjuku, 2 Chome−8−1 Tochomae Station, 45階","beschreibung":"One of the most popular places to take in the views is at the Tokyo Metropolitan Government Building, where you’ll find two free observatories on the 45th floor of both the north and south towers.","rating":4.7,"ratingsTotal":"","website":"https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou","googleUrl":"https://www.google.com/maps/place/Tokyo+Metropolitan+Government+Building+South+Observatory/data=!4m2!3m1!1s0x60188df0b64849fd:0x88b1056bc74c533f","lat":"35.6893249","lng":"139.6918129","bezirk":"Shinjuku","id":"151-south-observation-deck-tokyo-metropolitan-government-building-no.-1"},{"name":"Tokyo Riverside Distillery by Ethical Spirits (Craft Gin)","kategorie":"Bar","google_typ":"Distillery","stadtteil":"Kuramae, Taito City","region":"Tokio","adresse":"3 Chome-9-1 Kuramae, Taito City, Tokyo 111-0051, Japan","beschreibung":"Weltweit erste \"regenerative Destillerie\" (seit 2021, Kuramae): Craft-Gin aus sonst entsorgten Reststoffen wie Sake-Trester, gerettetem Bier oder Kakaoschalen, mit Shop und Bar vor Ort.","rating":4.5,"ratingsTotal":"","website":"https://shop.ethicalspirits.jp/","googleUrl":"https://www.google.com/maps/place/Tokyo+Riverside+Distillery+by+Ethical+Spirits+(Craft+Gin)/data=!4m2!3m1!1s0x60188fb157ac7d33:0xb4c700fe88f47a4b","lat":"35.7046173","lng":"139.7905899","bezirk":"Taito","id":"152-tokyo-riverside-distillery-by-ethical-spirits-craft-gin"},{"name":"Tokyo Skytree","kategorie":"Sehenswürdigkeit","google_typ":"Observation deck","stadtteil":"Oshiage, Sumida City","region":"Tokio","adresse":"1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan","beschreibung":"World's tallest freestanding broadcasting tower with an observation deck boasting 360-degree views.","rating":4.4,"ratingsTotal":"","website":"https://www.tokyo-skytree.jp/?utm_source=google&utm_medium=maps","googleUrl":"https://www.google.com/maps/place/Tokyo+Skytree/data=!4m2!3m1!1s0x60188ed0d12f9adf:0x7d1d4fb31f43f72a","lat":"35.7100627","lng":"139.8107004","bezirk":"Sumida","id":"153-tokyo-skytree"},{"name":"Tokyobike Tokyo","kategorie":"Shop","google_typ":"Bicycle Shop","stadtteil":"Miyoshi, Koto City","region":"Tokio","adresse":"3 Chome-7-2 Miyoshi, Koto City, Tokyo 135-0022, Japan","beschreibung":"Flagship-Store der Fahrradmarke tokyobike in Kiyosumi-Shirakawa (seit 2021), im Erdgeschoss Fahrraeder und der Kaffeestand Arise Coffee Roasters, im Obergeschoss der Pflanzenladen The Plant Society.","rating":4.1,"ratingsTotal":"","website":"https://tokyobike.com/","googleUrl":"https://www.google.com/maps/place/Tokyobike+Tokyo/data=!4m2!3m1!1s0x6018898e0239d2b5:0xbf5d99d9bd65dd80","lat":"35.6803378","lng":"139.8039762","bezirk":"Koto","id":"154-tokyobike-tokyo"},{"name":"Tokyu Plaza Harajuku “Harakado”","kategorie":"Shop","google_typ":"Shopping mall","stadtteil":"Jingumae, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−31−21 原宿スクエア内 東急プラザ 原宿「ハラカド」","beschreibung":"Seit April 2024 an der Jingumae-Kreuzung, 75 Laeden von Keller bis Dachterrasse, oeffentliches Bad im Untergeschoss, dreistoeckige begruente Dachterrasse mit Bar.","rating":4.3,"ratingsTotal":"","website":"https://www.tokyu-plaza.com/harakado/","googleUrl":"https://www.google.com/maps/place/Tokyu+Plaza+Harajuku+%E2%80%9CHarakado%E2%80%9D/data=!4m2!3m1!1s0x60188d006aacd1ff:0x76e61dfa18aaabe9","lat":"35.6684259","lng":"139.7049858","bezirk":"Shibuya","id":"155-tokyu-plaza-harajuku-harakado"},{"name":"Toyokawa Inari Betsuin","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Motoakasaka, Minato City","region":"Tokio","adresse":"1 Chome-4-7 Motoakasaka, Minato City, Tokyo 107-0051, Japan","beschreibung":"Lantern-filled temple complex with shrines & statues, including hundreds of Shinto fox deities.","rating":4.5,"ratingsTotal":"5065","website":"http://www.toyokawainari-tokyo.jp/","googleUrl":"https://www.google.com/maps/place/Toyokawa-inari+Tokyo-betsuin+Temple/data=!4m2!3m1!1s0x60188c7e121ee92b:0x5761574668b96c9","lat":"35.6764605","lng":"139.7329268","bezirk":"Minato","id":"156-toyokawa-inari-betsuin"},{"name":"Tsukiji Yamacho","kategorie":"Essen","google_typ":"Japanese restaurant","stadtteil":"Tsukiji, Chuo City","region":"Tokio","adresse":"4 Chome-10-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan","beschreibung":"Original Laden für tamago-yaki (omelett am Stiel)","rating":3.9,"ratingsTotal":"","website":"http://www.yamachou-matue.jp/index.shtml","googleUrl":"https://www.google.com/maps/place/Tsukiji+Yamacho/data=!4m2!3m1!1s0x60188bded74080a5:0xa83446acc5f0991c","lat":"35.6651261","lng":"139.77007","bezirk":"Chuo","id":"157-tsukiji-yamacho"},{"name":"Tsurugaoka Hachiman-gu","kategorie":"Schrein","google_typ":"Shinto shrine","stadtteil":"Andere (Kanagawa)","region":"Andere Region","adresse":"2 Chome-1-31 Yukinoshita, Kamakura, Kanagawa 248-8588, Japan","beschreibung":"Shinto shrine established in 11th century, built in 1828 in the traditional Edo architectural style.","rating":4.4,"ratingsTotal":"29237","website":"https://www.hachimangu.or.jp/","googleUrl":"https://www.google.com/maps/place/Tsurugaoka+Hachiman-g%C5%AB/data=!4m2!3m1!1s0x601845b87890aa89:0xa867ad10105036b5","lat":"35.3259856","lng":"139.5563462","bezirk":"Außerhalb der 23 Bezirke","id":"158-tsurugaoka-hachiman-gu"},{"name":"Turret Coffee","kategorie":"Café","google_typ":"Cafe","stadtteil":"Tsukiji, Chuo City","region":"Tokio","adresse":"2 Chome-12-6 Tsukiji, Chuo City, Tokyo 104-0045, Japan","beschreibung":"Artsy, compact cafe offering barista-made caffeinated drinks, some with fancy latte art.","rating":4.6,"ratingsTotal":"","website":"http://instagram.com/turretcoffee","googleUrl":"https://www.google.com/maps/place/Turret+Coffee+Tsukiji/data=!4m2!3m1!1s0x60188ba3e3e2815b:0x1b877ae335ae5b65","lat":"35.6680392","lng":"139.7719961","bezirk":"Chuo","id":"159-turret-coffee"},{"name":"Tōdai-ji","kategorie":"Tempel","google_typ":"Buddhist temple","stadtteil":"Andere (Nara)","region":"Andere Region","adresse":"406-1 Zoshicho, Nara, 630-8587, Japan","beschreibung":"Buddhist temple originally built in the mid-700s, with one of Japan's largest bronze Buddha statues.","rating":4.7,"ratingsTotal":"31717","website":"https://www.todaiji.or.jp/","googleUrl":"https://www.google.com/maps/place/T%C5%8Ddai-ji/data=!4m2!3m1!1s0x600139907a0876dd:0xf890ac3f9dd53c8f","lat":"34.6889851","lng":"135.8398158","bezirk":"Außerhalb der 23 Bezirke","id":"160-t-dai-ji"},{"name":"Unicorn Gundam","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Aomi, Koto City","region":"Tokio","adresse":"Japan, 〒135-0064 Tokyo, Koto City, Aomi, 1 Chome−1−10 ダイバーシティ東京プラザ内 2Fフェスティバル広場","beschreibung":"Giant white statue of a cult sci-fi novel & anime character, with nighttime music & lights.","rating":4.6,"ratingsTotal":"","website":"https://www.unicorn-gundam-statue.jp/","googleUrl":"https://www.google.com/maps/place/Unicorn+Gundam/data=!4m2!3m1!1s0x601889f9ca53ac17:0xe235a48a3479cb53","lat":"35.624451","lng":"139.7754917","bezirk":"Koto","id":"161-unicorn-gundam"},{"name":"VILLAGE VANGUARD Shibuya Main Store","kategorie":"Shop","google_typ":"General store","stadtteil":"Udagawacho, Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0042 Tokyo, Shibuya, Udagawacho, 1丁目23−3 渋谷第一勧銀共同ビル","beschreibung":"Verspielter Buchladen auf zwei Untergeschossen direkt bei Shibuya Station, Manga, Popkultur-Fanartikel und kurioses Sammelsurium, Fokus auf Mode wegen der Lage.","rating":3.8,"ratingsTotal":"","website":"https://www.village-v.co.jp/","googleUrl":"https://www.google.com/maps/place/VILLAGE+VANGUARD+Shibuya+Main+Store/data=!4m2!3m1!1s0x60188d0009231ecf:0x63ce705e7647fd85","lat":"35.6598242","lng":"139.6995535","bezirk":"Shibuya","id":"162-village-vanguard-shibuya-main-store"},{"name":"Yanaka Ginza","kategorie":"Sehenswürdigkeit","google_typ":"Tourist attraction","stadtteil":"Yanaka, Taito City","region":"Tokio","adresse":"3 Chome-13-1 Yanaka, Taito City, Tokyo 110-0001, Japan","beschreibung":"Traditional shopping street since the 1950s with around 60 stores & restaurants.","rating":4.1,"ratingsTotal":"11546","website":"http://www.yanakaginza.com/","googleUrl":"https://www.google.com/maps/place/Yanaka+Ginza/data=!4m2!3m1!1s0x60188dd19c058c3d:0xef3d1026c2974760","lat":"35.7276965","lng":"139.7657226","bezirk":"Taito","id":"163-yanaka-ginza"},{"name":"Yanaka Shippoya","kategorie":"Café","google_typ":"Pastry shop","stadtteil":"Yanaka, Taito City","region":"Tokio","adresse":"3 Chome-11-12 Yanaka, Taito City, Tokyo 110-0001, Japan","beschreibung":"Seit 2009 in Yanaka Ginza, gebackene (nicht frittierte) Donuts in Katzenschwanz-Form in ueber einem Dutzend Sorten, Bestseller ist die getigerte \"Tora\".","rating":3.9,"ratingsTotal":"","website":"http://yanakashippoya.com/index.html","googleUrl":"https://www.google.com/maps/place/Yanaka+Shippoya/data=!4m2!3m1!1s0x60188dd164777993:0x23c3cf0f272d295d","lat":"35.727652","lng":"139.7661567","bezirk":"Taito","id":"164-yanaka-shippoya"},{"name":"Yoyogi Park","kategorie":"Park","google_typ":"Park","stadtteil":"Yoyogikamizonocho, Shibuya City","region":"Tokio","adresse":"2-1 Yoyogikamizonocho, Shibuya, Tokyo 151-0052, Japan","beschreibung":"Large, public city park with lakes, fountains & forested areas with mature trees.","rating":4.4,"ratingsTotal":"","website":"https://www.tokyo-park.or.jp/park/yoyogi/","googleUrl":"https://www.google.com/maps/place/Yoyogi-Park/data=!4m2!3m1!1s0x60188cb479620a33:0x34bcc78ce7f8bf3e","lat":"35.6700649","lng":"139.6949656","bezirk":"Shibuya","id":"165-yoyogi-park"},{"name":"cafe capyba","kategorie":"Café","google_typ":"Animal cafe","stadtteil":"Higashimukojima, Sumida City","region":"Tokio","adresse":"1 Chome-31-3 Higashimukojima, Sumida City, Tokyo 131-0032, Japan","beschreibung":"Seit April 2023 in Higashimukojima (Sumida), reservierungspflichtiges Tier-Cafe mit zwei Capybaras (Pinsuke und Kohaku); 30-Minuten-Sessions mit Eintritt plus Pflichtgetraenk, Streicheln und Fuettern moeglich.","rating":4.2,"ratingsTotal":"","website":"https://cspace.co.jp/","googleUrl":"https://www.google.com/maps/place/cafe+capyba+(capybara+cafe)/data=!4m2!3m1!1s0x60188ffb05ce722b:0x15433a48ee4af1fe","lat":"35.7199925","lng":"139.8143766","bezirk":"Sumida","id":"166-cafe-capyba"},{"name":"cotogoto","kategorie":"Shop","google_typ":"Kitchen supply store","stadtteil":"Koenjiminami, Suginami City","region":"Tokio","adresse":"Japan, 〒166-0003 Tokyo, Suginami City, Koenjiminami, 4 Chome−27−17 恒陽サンクレスト高円寺 2階","beschreibung":"Airy, minimalist boutique showcasing a range of traditional & modern Japanese handicrafts.","rating":4.2,"ratingsTotal":"","website":"https://www.cotogoto.jp/","googleUrl":"https://www.google.com/maps/place/cotogoto/data=!4m2!3m1!1s0x6018f27d574b73f5:0x5c5739a79913152d","lat":"35.7041264","lng":"139.6501562","bezirk":"Suginami","id":"167-cotogoto"},{"name":"d47 design travel store","kategorie":"Shop","google_typ":"Gift shop","stadtteil":"Shibuya City","region":"Tokio","adresse":"Japan, 〒150-0002 Tokyo, Shibuya, 2 Chome−21−1 8F d47 MUSEUM内","beschreibung":"Laden im 8. Stock der Shibuya Hikarie mit kuratierten Designprodukten aus allen 47 japanischen Praefekturen, Teil des D&DEPARTMENT-Projekts von Kenmei Nagaoka.","rating":4.3,"ratingsTotal":"","website":"https://www.instagram.com/d47_designtravelstore/","googleUrl":"https://www.google.com/maps/place/d47+design+travel+store/data=!4m2!3m1!1s0x60188b585104971b:0x36f88a38572f5bd7","lat":"35.6590724","lng":"139.7034852","bezirk":"Shibuya","id":"168-d47-design-travel-store"},{"name":"iki Espresso","kategorie":"Essen","google_typ":"Restaurant","stadtteil":"Tokiwa, Koto City","region":"Tokio","adresse":"Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 2 Chome−2−12 1階","beschreibung":"Open-fronted contemporary cafe serving specialist coffee & an all-day menu of snacks & pastries.","rating":3.9,"ratingsTotal":"","website":"https://iki-espresso.com/","googleUrl":"https://www.google.com/maps/place/iki+Espresso/data=!4m2!3m1!1s0x6018893932dfbdd1:0x2fe4af1a9ce9eb68","lat":"35.684468","lng":"139.796564","bezirk":"Koto","id":"169-iki-espresso"},{"name":"iki Roastery & Eatery","kategorie":"Essen","google_typ":"Restaurant","stadtteil":"Tokiwa, Koto City","region":"Tokio","adresse":"1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan","beschreibung":"Zur Roesterei umgebautes Flussufer-Lagerhaus des Cafes iki, mit hauseigener Baeckerei und Kaffeebar; Montag/Dienstag 10-16 Uhr live beim Roesten zusehen, Kaffee-Verkostungen ab 2500 Yen.","rating":4.0,"ratingsTotal":"","website":"https://iki-espresso.com/","googleUrl":"https://www.google.com/maps/place/iki+Roastery+%26+Eatery/data=!4m2!3m1!1s0x601889d764972d67:0xa1ca53ac10021795","lat":"35.6845048","lng":"139.7939427","bezirk":"Koto","id":"170-iki-roastery-eatery"},{"name":"kakimori","kategorie":"Shop","google_typ":"Stationery store","stadtteil":"Misuji, Taito City","region":"Tokio","adresse":"Japan, 〒111-0055 Tokyo, Taito City, Misuji, 1 Chome−6−2 小林ビル","beschreibung":"Papeterie in Kuramae seit 2010, individuell zusammenstellbare Notizbuecher (Einband, Papier, Bindung) und eigene Tintenmischung nach Wunsch.","rating":4.5,"ratingsTotal":"","website":"http://www.kakimori.com/","googleUrl":"https://www.google.com/maps/place/kakimori/data=!4m2!3m1!1s0x60188eb76fa43163:0xb699bf7094072235","lat":"35.7031714","lng":"139.7857206","bezirk":"Taito","id":"171-kakimori"},{"name":"kasiki","kategorie":"Café","google_typ":"Ice cream shop","stadtteil":"Nishihara, Shibuya City","region":"Tokio","adresse":"1 Chome-13-2 Nishihara, Shibuya, Tokyo 151-0066, Japan","beschreibung":"flavor in the air. - seasonal ice cream and natural wine","rating":4.3,"ratingsTotal":"","website":"https://www.instagram.com/p/CkIrizCPoz5/","googleUrl":"https://www.google.com/maps/place/kasiki/data=!4m2!3m1!1s0x6018f361ed798aad:0x518a32c04e9c261c","lat":"35.674519","lng":"139.6802837","bezirk":"Shibuya","id":"172-kasiki"},{"name":"seihitsu","kategorie":"Café","google_typ":"Cafe","stadtteil":"Senzoku, Taito City","region":"Tokio","adresse":"Japan, 〒111-0031 Tokyo, Taito City, Senzoku, 1 Chome−18−2 海老根ビル 1階","beschreibung":"","rating":4.8,"ratingsTotal":"","website":"https://www.instagram.com/seihitsu_cafe?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr","googleUrl":"https://www.google.com/maps/place/seihitsu/data=!4m2!3m1!1s0x60188f0da3643c77:0x5d8c6ce4bbde5d56","lat":"35.7196581","lng":"139.7916701","bezirk":"Taito","id":"173-seihitsu"},{"name":"smash things スマッシュシングス","kategorie":"Essen","google_typ":"Hamburger restaurant","stadtteil":"Komazawa, Setagaya City","region":"Tokio","adresse":"Japan, 〒154-0012 Tokyo, Setagaya City, Komazawa, 3 Chome−14−1 グランドブルー駒沢 101","beschreibung":"","rating":4.7,"ratingsTotal":"","website":"https://www.instagram.com/smashthings_burger?igsh=MXhhN2IxbDN3dHo4Nw==&utm_source=qr","googleUrl":"https://www.google.com/maps/place/smash+things+%E3%82%B9%E3%83%9E%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%B9/data=!4m2!3m1!1s0x6018f500f8f873d9:0x8f38bc9ec0eeacf2","lat":"35.6309213","lng":"139.6551433","bezirk":"Setagaya","id":"174-smash-things"},{"name":"tallskogen","kategorie":"Café","google_typ":"Cafe","stadtteil":"Kiyosumi, Koto City","region":"Tokio","adresse":"2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan","beschreibung":"","rating":4.4,"ratingsTotal":"","website":"http://totti.tokyo/","googleUrl":"https://www.google.com/maps/place/tallskogen/data=!4m2!3m1!1s0x601889813ff4f665:0x67bc76d200b05910","lat":"35.6826638","lng":"139.7953392","bezirk":"Koto","id":"175-tallskogen"},{"name":"teamLab Borderless: MORI Building DIGITAL ART MUSEUM","kategorie":"Museum","google_typ":"Art museum","stadtteil":"Toranomon, Minato City","region":"Tokio","adresse":"Japan, 〒106-0041 Tokyo, Minato City, Toranomon, 5 Chome−９ Azabudai Hills Garden Plaza B, B1","beschreibung":"teamLab-Tipp - Beim Sketch Ocean von teamLab können Besucher:innen Fische malen und sie dann in der Projektion herumschwim- men sehen. Du kannst diese coolen Momente als ganz persönliches Reise- andenken in der teamLab Sketch Factory verewigen: Hier wird sämtliche im Rahmen der Museums- installationen gezeichnete Kunst gespeichert und kann in Anstecker, T-Shirts und Taschen verwandelt werden. - Kehrst du im EN TEA HOUSE ein, dann bestell den frozen green tea. Teezweige und Bluten wachsen aus ihm heraus und locken Schmetter- linge an, die dann um die Teetassen anderer Gäste herumflattern.","rating":4.6,"ratingsTotal":"","website":"https://www.teamlab.art/jp/e/tokyo/","googleUrl":"https://www.google.com/maps/place/teamLab+Borderless:+MORI+Building+DIGITAL+ART+MUSEUM/data=!4m2!3m1!1s0x601889fad49a9443:0x5831aba3288d2651","lat":"35.6620689","lng":"139.7432671","bezirk":"Minato","id":"176-teamlab-borderless:-mori-building-digital-art-museum"},{"name":"Ōmiharashidai Viewpoint (Mt. Takao)","kategorie":"Sehenswürdigkeit","google_typ":"Observation deck","stadtteil":"Hachioji (Tokyo)","region":"Tokio","adresse":"Japan, 〒193-0846 Tokyo, Hachioji, 高尾町2176","beschreibung":"Aussichtspunkt am Mount Takao (599 m, drei Michelin-Sterne), 90-100 Minuten Aufstieg oder per Seilbahn, Blick auf Tokio und bei klarem Wetter den Fuji, familienfreundlich mit Rastmoeglichkeiten.","rating":4.5,"ratingsTotal":"","website":"http://takaozanyuho.com/","googleUrl":"https://www.google.com/maps/place/%C5%8Cmiharashidai+Viewpoint+(Mt.+Takao)/data=!4m2!3m1!1s0x60191981e77a935d:0x16828a71f88804d9","lat":"35.6245711","lng":"139.2431128","bezirk":"Außerhalb der 23 Bezirke","id":"177-miharashidai-viewpoint-mt.-takao"},{"name":"BIEN-ETRE MAISON","kategorie":"Café","google_typ":"Cafe","stadtteil":"Uehara, Shibuya City","region":"Tokio","adresse":"Japan, 〒151-0064 Tokyo, Shibuya, Uehara, 1 Chome−17−11 2F・3F","beschreibung":"","rating":4.3,"ratingsTotal":"","website":"https://www.tablecheck.com/shops/bien-etre/reserve","googleUrl":"https://www.google.com/maps/place/%E3%83%A1%E3%82%BE%E3%83%B3+%E3%83%93%E3%83%A4%E3%83%B3%E3%83%8D%E3%83%BC%E3%83%88%E3%83%AB/data=!4m2!3m1!1s0x6018f3c3b4bc4985:0x241d80c23114b8bc","lat":"35.6692157","lng":"139.68233","bezirk":"Shibuya","id":"178-bien-etre-maison"}];
+DATA.forEach(d => { d.lat = parseFloat(d.lat); d.lng = parseFloat(d.lng); });
+
+const KAT = {
+  "Essen": { k: "食", g: "food" },
+  "Café": { k: "茶", g: "cafe" },
+  "Bar": { k: "酒", g: "food" },
+  "Shop": { k: "店", g: "shop" },
+  "Markt": { k: "市", g: "food" },
+  "Museum": { k: "館", g: "cafe" },
+  "Schrein": { k: "社", g: "calm" },
+  "Tempel": { k: "寺", g: "calm" },
+  "Park": { k: "園", g: "calm" },
+  "Sehenswürdigkeit": { k: "景", g: "shop" },
+  "Hotel": { k: "宿", g: "cafe" },
+  "Sonstiges": { k: "他", g: "misc" }
+};
+const GROUPS = [["food", "Essen & Trinken"], ["cafe", "Café, Museum, Hotel"], ["shop", "Shops & Sehenswertes"], ["calm", "Schreine, Tempel, Parks"]];
+const OUTSIDE = "Außerhalb der 23 Bezirke";
+
+const DEFAULT_FILTERS = { region: "alle", bezirk: "alle", minr: 0, sort: "name", hideDone: false };
+const S = { tab: "liste", q: "", kat: new Set(), ...DEFAULT_FILTERS, openId: null };
+let over = {};          // id -> gespeicherte Änderungen {beschreibung?, fav, besucht, notiz}
+let db = null;
+let editing = null;     // "desc" | "note" | null
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const byId = new Map(DATA.map(d => [d.id, d]));
+const kat = d => KAT[d.kategorie] || KAT.Sonstiges;
+const desc = d => (over[d.id] && typeof over[d.id].beschreibung === "string") ? over[d.id].beschreibung : (d.beschreibung || "");
+const isFav = d => !!(over[d.id] && over[d.id].fav);
+const isDone = d => !!(over[d.id] && over[d.id].besucht);
+const note = d => (over[d.id] && over[d.id].notiz) || "";
+const fmtRating = r => r.toFixed(1).replace(".", ",");
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
+
+/* ---------- local prefs (per viewer) ---------- */
+const PREF_KEY = "tokio2027.prefs";
+const LOCAL_KEY = "tokio2027.local";
+function loadPrefs() {
+  try {
+    const p = JSON.parse(localStorage.getItem(PREF_KEY) || "null");
+    if (!p) return;
+    ["tab", "region", "bezirk", "minr", "sort", "hideDone"].forEach(k => { if (k in p) S[k] = p[k]; });
+    if (Array.isArray(p.kat)) S.kat = new Set(p.kat.filter(k => KAT[k]));
+  } catch (e) {}
+}
+function savePrefs() {
+  try {
+    localStorage.setItem(PREF_KEY, JSON.stringify({ tab: S.tab, region: S.region, bezirk: S.bezirk, minr: S.minr, sort: S.sort, hideDone: S.hideDone, kat: [...S.kat] }));
+  } catch (e) {}
+}
+
+/* ---------- filtering ---------- */
+function matchesQuery(d) {
+  if (!S.q) return true;
+  const hay = (d.name + " " + d.adresse + " " + d.bezirk + " " + d.stadtteil + " " + d.kategorie + " " + d.google_typ + " " + desc(d) + " " + note(d)).toLowerCase();
+  return S.q.split(/\s+/).every(t => hay.includes(t));
+}
+function filtered() {
+  const rows = DATA.filter(d => {
+    if (S.kat.size && !S.kat.has(d.kategorie)) return false;
+    if (S.region !== "alle" && d.region !== S.region) return false;
+    if (S.bezirk !== "alle" && d.bezirk !== S.bezirk) return false;
+    if (S.minr > 0 && (!d.rating || d.rating < S.minr)) return false;
+    if (S.hideDone && isDone(d)) return false;
+    return matchesQuery(d);
+  });
+  const coll = (a, b) => a.localeCompare(b, "de", { sensitivity: "base" });
+  rows.sort((a, b) => {
+    if (S.sort === "rating") return (b.rating || 0) - (a.rating || 0) || coll(a.name, b.name);
+    if (S.sort === "bezirk") {
+      const ao = a.bezirk === OUTSIDE, bo = b.bezirk === OUTSIDE;
+      if (ao !== bo) return ao ? 1 : -1;
+      return coll(a.bezirk, b.bezirk) || coll(a.name, b.name);
+    }
+    return coll(a.name, b.name);
+  });
+  return rows;
+}
+function activeFilterCount() {
+  let n = 0;
+  if (S.region !== "alle") n++;
+  if (S.bezirk !== "alle") n++;
+  if (S.minr > 0) n++;
+  if (S.hideDone) n++;
+  return n;
+}
+
+/* ---------- rendering ---------- */
+function itemHtml(d) {
+  const k = kat(d), ds = desc(d), n = note(d), fav = isFav(d), done = isDone(d);
+  const where = d.region === "Tokio" && d.bezirk !== OUTSIDE ? d.bezirk : d.stadtteil.replace(/^Andere \((.*)\)$/, "$1");
+  return `<li class="item${done ? " done" : ""}">
+    <button class="row" type="button" data-open="${esc(d.id)}">
+      <span class="stamp g-${k.g}" aria-hidden="true">${k.k}</span>
+      <span class="body">
+        <span class="name">${esc(d.name)}</span>
+        <span class="sub"><span>${esc(d.kategorie)} · ${esc(where)}</span>${d.rating ? `<span class="rate">★ ${fmtRating(d.rating)}</span>` : ""}${done ? `<span class="tag-done">✓ besucht</span>` : ""}</span>
+        ${n ? `<span class="note-line">✎ ${esc(n)}</span>` : ""}
+        ${ds ? `<span class="desc">${esc(ds)}</span>` : ""}
+      </span>
+    </button>
+    <button class="fav" type="button" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="${fav ? "Von Merkliste entfernen" : "Merken"}: ${esc(d.name)}">${fav ? "★" : "☆"}</button>
+  </li>`;
+}
+
+function renderChips() {
+  const counts = {};
+  DATA.forEach(d => { counts[d.kategorie] = (counts[d.kategorie] || 0) + 1; });
+  const cats = Object.keys(KAT).filter(k => counts[k]);
+  $("chips").innerHTML =
+    `<button type="button" class="chip all" data-kat="" aria-pressed="${S.kat.size === 0}">Alle</button>` +
+    cats.map(c => `<button type="button" class="chip" data-kat="${esc(c)}" aria-pressed="${S.kat.has(c)}"><span class="k">${KAT[c].k}</span>${esc(c)} <span class="n">${counts[c]}</span></button>`).join("");
+}
+
+function renderList(rows) {
+  $("list").innerHTML = rows.map(itemHtml).join("");
+  const empty = $("empty");
+  if (rows.length) { empty.hidden = true; return; }
+  empty.hidden = false;
+  empty.innerHTML = `<strong>Nichts gefunden</strong>Keine Orte für diese Suche und Filter.<br><button type="button" class="link-btn" data-action="reset-all">Alles zurücksetzen</button>`;
+}
+
+function renderMerkliste() {
+  const favs = DATA.filter(d => isFav(d) && matchesQuery(d)).sort((a, b) => a.name.localeCompare(b.name, "de"));
+  const open = favs.filter(d => !isDone(d)), done = favs.filter(isDone);
+  const totalFav = DATA.filter(isFav).length;
+  const totalDone = DATA.filter(d => isFav(d) && isDone(d)).length;
+  const wrap = $("merk-wrap");
+  if (!totalFav) {
+    wrap.innerHTML = `<div class="empty"><strong>Noch nichts gemerkt</strong>Tippe in der Liste auf ☆, um einen Ort auf die Merkliste zu setzen.</div>`;
+    return;
+  }
+  const pct = Math.round(totalDone / totalFav * 100);
+  wrap.innerHTML = `
+    <div class="progress">
+      <div class="txt"><b>${totalDone}</b> von <b>${totalFav}</b> gemerkten Orten besucht</div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div>
+    </div>
+    ${open.length ? `<div class="section-h">Noch offen · ${open.length}</div><ul class="list">${open.map(itemHtml).join("")}</ul>` : ""}
+    ${done.length ? `<div class="section-h">Besucht · ${done.length}</div><ul class="list">${done.map(itemHtml).join("")}</ul>` : ""}
+    ${!favs.length ? `<div class="empty">Keine gemerkten Orte passen zur Suche.</div>` : ""}`;
+}
+
+function renderCount(rows) {
+  if (S.tab === "merkliste") {
+    $("count").innerHTML = `<b>${DATA.filter(isFav).length}</b> gemerkt`;
+  } else {
+    $("count").innerHTML = rows.length === DATA.length ? `<b>${DATA.length}</b> Orte` : `<b>${rows.length}</b> von ${DATA.length}`;
+  }
+  const f = activeFilterCount();
+  $("filter-dot").hidden = !f;
+  $("filter-dot").textContent = f;
+  const nf = DATA.filter(isFav).length;
+  $("fav-badge").hidden = !nf;
+  $("fav-badge").textContent = nf;
+}
+
+function renderTabs() {
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.tab === S.tab));
+  ["liste", "karte", "merkliste"].forEach(t => { $("view-" + t).hidden = t !== S.tab; });
+  const isMerk = S.tab === "merkliste";
+  $("chips").hidden = isMerk;
+  $("open-filter").hidden = isMerk;
+}
+
+function renderAll() {
+  const rows = filtered();
+  renderTabs();
+  renderCount(rows);
+  if (S.tab === "liste") renderList(rows);
+  if (S.tab === "merkliste") renderMerkliste();
+  if (S.tab === "karte") Map2.render(rows);
+}
+
+/* ---------- saving ---------- */
+const queues = {};
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.tm);
+  toast.tm = setTimeout(() => { t.hidden = true; }, 3200);
+}
+async function save(id, patch) {
+  const prev = over[id];
+  const next = { ...(prev || {}), ...patch, updatedAt: new Date().toISOString() };
+  over = { ...over, [id]: next };
+  renderAll();
+  if (S.openId === id && !editing) renderDetail();
+  try {
+    if (db) {
+      const run = () => db.collection("orte").doc(id).set(next);
+      queues[id] = (queues[id] || Promise.resolve()).catch(() => {}).then(run);
+      await queues[id];
+    } else {
+      localStorage.setItem(LOCAL_KEY, JSON.stringify(over));
+    }
+    return true;
+  } catch (e) {
+    over = { ...over };
+    if (prev) over[id] = prev; else delete over[id];
+    renderAll();
+    if (S.openId === id && !editing) renderDetail();
+    const code = e && e.code;
+    toast(code === "permission_denied" || code === "not_granted"
+      ? "Nicht gespeichert: Für Änderungen brauchst du Bearbeitungsrechte."
+      : "Nicht gespeichert. Prüfe die Verbindung und versuch es noch einmal.");
+    return false;
+  }
+}
+const toggleFav = id => { const d = byId.get(id); return save(id, { fav: !isFav(d) }); };
+const toggleDone = id => { const d = byId.get(id); return save(id, { besucht: !isDone(d) }); };
+
+/* ---------- sheets ---------- */
+let lastFocus = null;
+function openSheet(el) {
+  lastFocus = document.activeElement;
+  ["detail", "filters"].forEach(s => { if ($(s) !== el) { $(s).classList.remove("on"); $(s).hidden = true; } });
+  $("scrim").hidden = false; el.hidden = false;
+  requestAnimationFrame(() => { $("scrim").classList.add("on"); el.classList.add("on"); });
+  el.scrollTop = 0;
+}
+function closeSheets() {
+  editing = null;
+  S.openId = null;
+  $("scrim").classList.remove("on");
+  ["detail", "filters"].forEach(s => $(s).classList.remove("on"));
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  setTimeout(() => { $("scrim").hidden = true; $("detail").hidden = true; $("filters").hidden = true; }, reduce ? 0 : 220);
+  if (S.tab === "karte") Map2.render(filtered());
+  if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll: true }); } catch (e) {}
+}
+
+function openDetail(id) {
+  if (!byId.has(id)) return;
+  S.openId = id; editing = null;
+  renderDetail();
+  openSheet($("detail"));
+  if (S.tab === "karte") Map2.render(filtered());
+  setTimeout(() => { const c = $("detail").querySelector(".sheet-close"); c && c.focus({ preventScroll: true }); }, 50);
+}
+
+function renderDetail() {
+  const d = byId.get(S.openId);
+  if (!d) return;
+  const k = kat(d), ds = desc(d), n = note(d), fav = isFav(d), done = isDone(d);
+  const gm = safeUrl(d.googleUrl), web = safeUrl(d.website);
+  const route = isFinite(d.lat) ? `https://www.google.com/maps/dir/?api=1&destination=${d.lat},${d.lng}&travelmode=transit` : "";
+  const stars = d.rating ? "★".repeat(Math.round(d.rating)) + "☆".repeat(5 - Math.round(d.rating)) : "";
+  const count = d.ratingsTotal ? ` · ${Number(d.ratingsTotal).toLocaleString("de-DE")} Bewertungen` : "";
+  const onMap = inMapRange(d);
+
+  const descBody = editing === "desc"
+    ? `<textarea id="ed-desc" rows="4" aria-label="Beschreibung">${esc(ds)}</textarea>
+       <div class="edit-actions"><button type="button" class="btn primary" data-action="save-desc">Speichern</button><button type="button" class="btn" data-action="cancel-edit">Abbrechen</button><span class="status" id="ed-status"></span></div>`
+    : (ds ? `<p>${esc(ds)}</p>` : `<p class="muted">Noch keine Beschreibung.</p>`);
+  const noteBody = editing === "note"
+    ? `<textarea id="ed-note" rows="3" placeholder="z. B. Dienstag Vormittag, vorher reservieren" aria-label="Notiz">${esc(n)}</textarea>
+       <div class="edit-actions"><button type="button" class="btn primary" data-action="save-note">Speichern</button><button type="button" class="btn" data-action="cancel-edit">Abbrechen</button><span class="status" id="ed-status"></span></div>`
+    : (n ? `<p>${esc(n)}</p>` : `<p class="muted">Tag, Uhrzeit, Reservierung … alles, was ihr euch merken wollt.</p>`);
+
+  $("detail").innerHTML = `
+    <button type="button" class="sheet-close" data-action="close" aria-label="Schließen">✕</button>
+    <div class="grip"></div>
+    <div class="d-head">
+      <span class="stamp g-${k.g}" aria-hidden="true">${k.k}</span>
+      <div>
+        <div class="d-kat">${esc(d.kategorie)}${d.google_typ ? " · " + esc(d.google_typ) : ""}</div>
+        <h2 id="d-name">${esc(d.name)}</h2>
+        <div class="d-where">${esc(d.bezirk === OUTSIDE ? d.stadtteil.replace(/^Andere \((.*)\)$/, "$1") : d.bezirk + " · " + d.stadtteil)}</div>
+        ${d.rating ? `<div class="d-rate"><span class="stars" aria-hidden="true">${stars}</span> ${fmtRating(d.rating)}${count}</div>` : ""}
+      </div>
+    </div>
+    <div class="d-actions">
+      <button type="button" class="toggle fav-t" data-action="fav" aria-pressed="${fav}"><span class="i">${fav ? "★" : "☆"}</span>${fav ? "Gemerkt" : "Merken"}</button>
+      <button type="button" class="toggle done-t" data-action="done" aria-pressed="${done}"><span class="i">${done ? "✓" : "○"}</span>${done ? "Besucht" : "Als besucht markieren"}</button>
+    </div>
+    <div class="d-links">
+      ${gm ? `<a class="pill-link primary" href="${esc(gm)}" target="_blank" rel="noopener">Google Maps ↗</a>` : ""}
+      ${route ? `<a class="pill-link" href="${esc(route)}" target="_blank" rel="noopener">Route mit Öffis ↗</a>` : ""}
+      ${web ? `<a class="pill-link" href="${esc(web)}" target="_blank" rel="noopener">Website ↗</a>` : ""}
+      ${onMap && S.tab !== "karte" ? `<button type="button" class="pill-link" data-action="show-map">Auf der Karte</button>` : ""}
+    </div>
+    <div class="d-sec">
+      <h3>Beschreibung ${editing !== "desc" ? `<button type="button" class="link-btn" data-action="edit-desc">${ds ? "Bearbeiten" : "Hinzufügen"}</button>` : ""}</h3>
+      ${descBody}
+    </div>
+    <div class="d-sec">
+      <h3>Unsere Notiz ${editing !== "note" ? `<button type="button" class="link-btn" data-action="edit-note">${n ? "Bearbeiten" : "Hinzufügen"}</button>` : ""}</h3>
+      ${noteBody}
+    </div>
+    ${d.adresse ? `<div class="d-sec">
+      <h3>Adresse</h3>
+      <div class="addr"><p id="d-addr">${esc(d.adresse)}</p><button type="button" class="small-btn" data-action="copy">Kopieren</button></div>
+    </div>` : ""}`;
+  const ta = $("detail").querySelector("textarea");
+  if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+}
+
+async function saveEdit(field) {
+  const ta = $(field === "desc" ? "ed-desc" : "ed-note");
+  const id = S.openId;
+  if (!ta || !id) return;
+  $("ed-status").textContent = "Speichert …";
+  const val = ta.value.trim();
+  const ok = await save(id, field === "desc" ? { beschreibung: val } : { notiz: val });
+  if (ok) { editing = null; if (S.openId === id) renderDetail(); }
+  else if ($("ed-status")) $("ed-status").textContent = "Nicht gespeichert.";
+}
+
+function copyAddress() {
+  const d = byId.get(S.openId);
+  const btn = $("detail").querySelector('[data-action="copy"]');
+  const done = () => { btn.textContent = "Kopiert"; setTimeout(() => { btn.textContent = "Kopieren"; }, 1600); };
+  const fallback = () => {
+    const r = document.createRange(); r.selectNodeContents($("d-addr"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    btn.textContent = "Markiert";
+  };
+  try { navigator.clipboard.writeText(d.adresse).then(done, fallback); } catch (e) { fallback(); }
+}
+
+/* ---------- filter sheet ---------- */
+function buildBezirke() {
+  const sel = $("f-bezirk");
+  const list = [...new Set(DATA.map(d => d.bezirk))].sort((a, b) => a === OUTSIDE ? 1 : b === OUTSIDE ? -1 : a.localeCompare(b, "de"));
+  list.forEach(b => {
+    const o = document.createElement("option");
+    o.value = b; o.textContent = `${b} (${DATA.filter(d => d.bezirk === b).length})`;
+    sel.appendChild(o);
+  });
+}
+function syncFilterSheet() {
+  const mark = (id, v) => $(id).querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === String(v)));
+  mark("f-region", S.region);
+  mark("f-rating", S.minr);
+  mark("f-sort", S.sort);
+  $("f-bezirk").value = S.bezirk;
+  $("f-hide").checked = S.hideDone;
+}
+function onFilterChange() { syncFilterSheet(); savePrefs(); renderAll(); }
+$("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { S.region = b.dataset.v; onFilterChange(); } });
+$("f-rating").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { S.minr = parseFloat(b.dataset.v); onFilterChange(); } });
+$("f-sort").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { S.sort = b.dataset.v; onFilterChange(); } });
+$("f-bezirk").addEventListener("change", e => { S.bezirk = e.target.value; onFilterChange(); });
+$("f-hide").addEventListener("change", e => { S.hideDone = e.target.checked; onFilterChange(); });
+$("f-reset").addEventListener("click", () => { Object.assign(S, DEFAULT_FILTERS); onFilterChange(); });
+$("f-done").addEventListener("click", closeSheets);
+$("open-filter").addEventListener("click", () => { syncFilterSheet(); openSheet($("filters")); });
+
+/* ---------- map ---------- */
+const LAT0 = 35.68, LNG0 = 139.72, COS = Math.cos(LAT0 * Math.PI / 180), K = 1000;
+const proj = (lat, lng) => [(lng - LNG0) * COS * K, (LAT0 - lat) * K];
+const inMapRange = d => isFinite(d.lat) && d.lat > 35.2 && d.lat < 36.1 && d.lng > 138.9 && d.lng < 140.4;
+const YAMANOTE = [[35.6812,139.7671],[35.6918,139.7709],[35.6984,139.7731],[35.7075,139.7748],[35.7138,139.7773],[35.7206,139.7780],[35.7278,139.7710],[35.7320,139.7668],[35.7381,139.7608],[35.7365,139.7470],[35.7334,139.7393],[35.7318,139.7286],[35.7295,139.7109],[35.7212,139.7066],[35.7128,139.7038],[35.7012,139.7000],[35.6896,139.7006],[35.6831,139.7020],[35.6702,139.7027],[35.6580,139.7016],[35.6467,139.7101],[35.6339,139.7157],[35.6262,139.7236],[35.6197,139.7286],[35.6285,139.7388],[35.6355,139.7407],[35.6457,139.7476],[35.6555,139.7571],[35.6663,139.7583],[35.6751,139.7630]];
+const AREAS = [
+  ["Shinjuku", 35.6896, 139.7006, "l"], ["Shibuya", 35.6580, 139.7016, "l"], ["Ikebukuro", 35.7295, 139.7109, "l"],
+  ["Ueno", 35.7138, 139.7773, "r"], ["Tokyo Stn.", 35.6812, 139.7671, "r"], ["Shinagawa", 35.6285, 139.7388, "r"],
+  ["Asakusa", 35.7110, 139.7966, "c"], ["Ginza", 35.6717, 139.7650, "c"], ["Roppongi", 35.6628, 139.7314, "c"],
+  ["Shimokitazawa", 35.6616, 139.6680, "c"], ["Kiyosumi", 35.6818, 139.7996, "c"], ["Nakano", 35.7074, 139.6659, "c"],
+  ["Yanaka", 35.7260, 139.7670, "c"], ["Harajuku", 35.6702, 139.7027, "l"], ["Akihabara", 35.6984, 139.7731, "r"]
+];
+const HOME = (() => { const a = proj(35.775, 139.625), b = proj(35.585, 139.835); return { x0: a[0], y0: a[1], x1: b[0], y1: b[1] }; })();
+
+const Map2 = (() => {
+  const svg = $("map");
+  const NS = "http://www.w3.org/2000/svg";
+  let W = 1, H = 1, view = null, built = false, rows = [];
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+  let gBase, gPts, gSel, loop, loopFill, stations = [], labels = [], loopLbl;
+
+  function build() {
+    gBase = el("g", {}, svg);
+    const pts = YAMANOTE.map(([la, ln]) => proj(la, ln).map(v => v.toFixed(2)).join(",")).join(" ");
+    loopFill = el("polygon", { class: "loop-fill", points: pts }, gBase);
+    loop = el("polygon", { class: "loop", points: pts }, gBase);
+    YAMANOTE.forEach(([la, ln]) => { const [x, y] = proj(la, ln); stations.push(el("circle", { class: "stn", cx: x, cy: y }, gBase)); });
+    loopLbl = el("text", { class: "lbl-loop", "text-anchor": "middle" }, gBase);
+    loopLbl.textContent = "山手線 Yamanote-Linie";
+    AREAS.forEach(([n, la, ln, side]) => {
+      const [x, y] = proj(la, ln);
+      const t = el("text", { class: "lbl" }, gBase);
+      t.textContent = n; t.dataset.x = x; t.dataset.y = y; t.dataset.side = side;
+      labels.push(t);
+    });
+    gPts = el("g", {}, svg);
+    gSel = el("g", {}, svg);
+    built = true;
+  }
+
+  function size() {
+    const r = svg.getBoundingClientRect();
+    W = Math.max(r.width, 1); H = Math.max(r.height, 1);
+  }
+  function home() {
+    size();
+    const w = HOME.x1 - HOME.x0, h = HOME.y1 - HOME.y0;
+    const scale = Math.max(w / W, h / H);
+    view = { cx: (HOME.x0 + HOME.x1) / 2, cy: (HOME.y0 + HOME.y1) / 2, u: clampU(scale), bad: W < 2 || H < 2 };
+  }
+  const clampU = u => Math.min(Math.max(u, 0.012), 1.6);
+
+  function apply() {
+    const u = view.u, vw = W * u, vh = H * u;
+    svg.setAttribute("viewBox", `${view.cx - vw / 2} ${view.cy - vh / 2} ${vw} ${vh}`);
+    loop.setAttribute("stroke-width", 3 * u);
+    stations.forEach(s => { s.setAttribute("r", 2.2 * u); s.setAttribute("stroke-width", 1 * u); });
+    const [lx, ly] = proj(35.6745, 139.727);
+    loopLbl.setAttribute("x", lx); loopLbl.setAttribute("y", ly);
+    loopLbl.setAttribute("font-size", 11 * u);
+    loopLbl.style.display = u < 0.12 ? "" : "none";
+    labels.forEach(t => {
+      const side = t.dataset.side, x = +t.dataset.x, y = +t.dataset.y;
+      t.setAttribute("font-size", 11 * u);
+      t.setAttribute("stroke-width", 3 * u);
+      t.setAttribute("text-anchor", side === "l" ? "end" : side === "r" ? "start" : "middle");
+      t.setAttribute("x", x + (side === "l" ? -7 : side === "r" ? 7 : 0) * u);
+      t.setAttribute("y", y + (side === "c" ? -9 : 4) * u);
+      t.style.display = u < 0.3 ? "" : "none";
+    });
+    const r = u < 0.05 ? 7 : 6;
+    gPts.querySelectorAll("circle").forEach(c => { c.setAttribute("r", r * u); c.setAttribute("stroke-width", 1.5 * u); });
+    gSel.querySelectorAll("[data-r]").forEach(c => { c.setAttribute("r", +c.dataset.r * u); c.setAttribute("stroke-width", +c.dataset.sw * u); });
+  }
+
+  function render(list) {
+    if (!built) build();
+    size();
+    if (!view || view.bad) home();
+    rows = list;
+    gPts.innerHTML = ""; gSel.innerHTML = "";
+    const onMap = list.filter(inMapRange);
+    // Favoriten zuletzt zeichnen, damit sie oben liegen
+    onMap.slice().sort((a, b) => isFav(a) - isFav(b)).forEach(d => {
+      const [x, y] = proj(d.lat, d.lng);
+      const c = el("circle", { class: `pt ${kat(d).g}${isDone(d) ? " done" : ""}`, cx: x, cy: y, "data-id": d.id }, gPts);
+      el("title", {}, c).textContent = d.name;
+      if (isFav(d)) el("circle", { class: "fav-mark", cx: x, cy: y, "data-r": 2.4, "data-sw": 0.8, "pointer-events": "none" }, gSel);
+    });
+    const sel = S.openId && byId.get(S.openId);
+    if (sel && inMapRange(sel)) {
+      const [x, y] = proj(sel.lat, sel.lng);
+      el("circle", { class: "ring", cx: x, cy: y, "data-r": 12, "data-sw": 2.5, "pointer-events": "none" }, gSel);
+    }
+    apply();
+    const off = list.length - onMap.length;
+    $("map-note").innerHTML = `<b>${onMap.length}</b> Orte auf der Karte` +
+      (off ? ` · ${off} weiter weg (z. B. Kyoto, Nikkō) – <button type="button" class="link-btn" data-action="far-list">in der Liste zeigen</button>` : "");
+  }
+
+  function zoomAt(px, py, f) {
+    const u2 = clampU(view.u / f);
+    const wx = view.cx + (px - W / 2) * view.u, wy = view.cy + (py - H / 2) * view.u;
+    view.u = u2;
+    view.cx = wx - (px - W / 2) * u2; view.cy = wy - (py - H / 2) * u2;
+    apply();
+  }
+  function focus(d) {
+    if (!view) home();
+    const [x, y] = proj(d.lat, d.lng);
+    view.cx = x; view.cy = y; view.u = Math.min(view.u, 0.06); view.bad = false;
+  }
+
+  // Gesten: Ziehen, Pinch, Mausrad, Tippen
+  const ptrs = new Map();
+  let downAt = null, moved = 0, pinch = null;
+  const local = e => { const r = svg.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+  svg.addEventListener("pointerdown", e => {
+    ptrs.set(e.pointerId, local(e));
+    try { svg.setPointerCapture(e.pointerId); } catch (_) {}
+    if (ptrs.size === 1) { downAt = { id: e.target.closest && e.target.closest("circle.pt") ? e.target.getAttribute("data-id") : null }; moved = 0; }
+    if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = Math.hypot(a[0] - b[0], a[1] - b[1]); moved = 99; }
+    svg.classList.add("dragging");
+  });
+  svg.addEventListener("pointermove", e => {
+    if (!ptrs.has(e.pointerId)) return;
+    const prev = ptrs.get(e.pointerId), cur = local(e);
+    ptrs.set(e.pointerId, cur);
+    if (ptrs.size === 1) {
+      const dx = cur[0] - prev[0], dy = cur[1] - prev[1];
+      moved += Math.abs(dx) + Math.abs(dy);
+      if (moved > 6) { view.cx -= dx * view.u; view.cy -= dy * view.u; apply(); }
+    } else if (ptrs.size === 2 && pinch) {
+      const [a, b] = [...ptrs.values()];
+      const dist = Math.hypot(a[0] - b[0], a[1] - b[1]);
+      zoomAt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, dist / pinch);
+      pinch = dist;
+    }
+  });
+  const up = e => {
+    if (!ptrs.has(e.pointerId)) return;
+    ptrs.delete(e.pointerId);
+    if (ptrs.size < 2) pinch = null;
+    if (ptrs.size === 0) {
+      svg.classList.remove("dragging");
+      if (e.type === "pointerup" && moved <= 6 && downAt && downAt.id) openDetail(downAt.id);
+      downAt = null;
+    }
+  };
+  svg.addEventListener("pointerup", up);
+  svg.addEventListener("pointercancel", up);
+  svg.addEventListener("wheel", e => {
+    e.preventDefault();
+    const [px, py] = local(e);
+    zoomAt(px, py, Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0022)));
+  }, { passive: false });
+  $("zin").addEventListener("click", () => zoomAt(W / 2, H / 2, 1.6));
+  $("zout").addEventListener("click", () => zoomAt(W / 2, H / 2, 1 / 1.6));
+  $("zhome").addEventListener("click", () => { home(); apply(); });
+  window.addEventListener("resize", () => { if (S.tab === "karte" && view) { size(); apply(); } });
+
+  $("legend").innerHTML = GROUPS.map(([g, n]) => `<span><i style="background:var(--${{ food: "vermillion", cafe: "gold", shop: "indigo", calm: "sage" }[g]})"></i>${n}</span>`).join("");
+  return { render, focus };
+})();
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const favBtn = e.target.closest("[data-fav]");
+  if (favBtn) { toggleFav(favBtn.dataset.fav); return; }
+  const open = e.target.closest("[data-open]");
+  if (open) { openDetail(open.dataset.open); return; }
+  const chip = e.target.closest(".chip");
+  if (chip) {
+    const k = chip.dataset.kat;
+    if (!k) S.kat.clear();
+    else if (S.kat.has(k)) S.kat.delete(k);
+    else S.kat.add(k);
+    savePrefs(); renderChips(); renderAll();
+    return;
+  }
+  const tab = e.target.closest(".tab");
+  if (tab) { S.tab = tab.dataset.tab; savePrefs(); renderAll(); return; }
+  const act = e.target.closest("[data-action]");
+  if (!act) return;
+  const a = act.dataset.action, id = S.openId;
+  if (a === "close") closeSheets();
+  else if (a === "fav") toggleFav(id);
+  else if (a === "done") toggleDone(id);
+  else if (a === "edit-desc") { editing = "desc"; renderDetail(); }
+  else if (a === "edit-note") { editing = "note"; renderDetail(); }
+  else if (a === "cancel-edit") { editing = null; renderDetail(); }
+  else if (a === "save-desc") saveEdit("desc");
+  else if (a === "save-note") saveEdit("note");
+  else if (a === "copy") copyAddress();
+  else if (a === "show-map") {
+    const d = byId.get(id);
+    closeSheets();
+    S.tab = "karte"; savePrefs();
+    renderAll();
+    Map2.focus(d);
+    renderAll();
+  }
+  else if (a === "far-list") { S.tab = "liste"; S.region = "Andere Region"; savePrefs(); renderAll(); }
+  else if (a === "reset-all") {
+    Object.assign(S, DEFAULT_FILTERS); S.kat.clear(); S.q = ""; $("q").value = ""; $("clear-q").hidden = true;
+    savePrefs(); renderChips(); renderAll();
+  }
+});
+$("scrim").addEventListener("click", closeSheets);
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !$("scrim").hidden) closeSheets();
+});
+let qTimer;
+$("q").addEventListener("input", e => {
+  $("clear-q").hidden = !e.target.value;
+  clearTimeout(qTimer);
+  qTimer = setTimeout(() => { S.q = e.target.value.trim().toLowerCase(); renderAll(); }, 80);
+});
+$("clear-q").addEventListener("click", () => { $("q").value = ""; $("clear-q").hidden = true; S.q = ""; renderAll(); $("q").focus(); });
+
+/* ---------- start ---------- */
+loadPrefs();
+try { over = JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}") || {}; } catch (e) { over = {}; }
+buildBezirke();
+renderChips();
+renderAll();
+
+(async () => {
+  try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
+  if (!db) return;
+  over = {};
+  db.collection("orte").onSnapshot(snap => {
+    const next = {};
+    snap.docs.forEach(s => { const v = s.data(); if (v) next[s.id] = v; });
+    over = next;
+    renderAll();
+    if (S.openId && !editing) renderDetail();
+  }, () => { toast("Live-Abgleich unterbrochen. Lade die Seite neu, um Änderungen anderer zu sehen."); });
+})();
+</script>
