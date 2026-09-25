@@ -377,8 +377,8 @@
   "name": "Kumamoto Castle",
   "kategorie": "Sehenswürdigkeit",
   "google_typ": "Castle",
-  "stadtteil": "Honmaru, Chuo City",
-  "region": "Tokio",
+  "stadtteil": "Andere (Kumamoto)",
+  "region": "Andere Region",
   "adresse": "1-1 Honmaru, Chuo Ward, Kumamoto, 860-0002, Japan",
   "beschreibung": "This reconstructed castle, originally completed in 1607, sits atop a hill & houses a history museum.",
   "rating": 4.5,
@@ -387,7 +387,7 @@
   "googleUrl": "https://www.google.com/maps/place/Burg+Kumamoto/data=!4m2!3m1!1s0x3540f40e023aca59:0x5e8b66c876cde430",
   "lat": "32.8061859",
   "lng": "130.7058335",
-  "bezirk": "Chuo",
+  "bezirk": "Außerhalb der 23 Bezirke",
   "id": "022-kumamoto-castle"
  },
  {
@@ -1295,8 +1295,8 @@
   "name": "Kinkaku-ji",
   "kategorie": "Tempel",
   "google_typ": "Buddhist temple",
-  "stadtteil": "Kinkakujicho, Kita City",
-  "region": "Tokio",
+  "stadtteil": "Andere (Kyoto)",
+  "region": "Andere Region",
   "adresse": "1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan",
   "beschreibung": "Historic, tranquil temple with a gold-leaf facade set amid landscaped gardens & a reflecting pond.",
   "rating": 4.6,
@@ -1305,7 +1305,7 @@
   "googleUrl": "https://www.google.com/maps/place/Kinkaku-ji/data=!4m2!3m1!1s0x6001a820c0eb46bd:0xee4272b1c22645f",
   "lat": "35.03937",
   "lng": "135.7292431",
-  "bezirk": "Kita",
+  "bezirk": "Außerhalb der 23 Bezirke",
   "id": "076-kinkaku-ji"
  },
  {

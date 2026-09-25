@@ -25,7 +25,7 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Shibuya (38)
 - Taito (24)
 - Koto (18)
-- Chuo (16)
+- Chuo (15)
 - Minato (13)
 - Chiyoda (7)
 - Setagaya (7)
@@ -35,11 +35,10 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Meguro (3)
 - Nakano (3)
 - Ota (2)
-- Kita (1)
 - Shinagawa (1)
 - Suginami (1)
 - Tokio – außerhalb der 23 Bezirke (9)
-- Außerhalb Tokios (23)
+- Außerhalb Tokios (25)
 
 ## Shibuya (38)
 
@@ -283,7 +282,7 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
   [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
 
-## Chuo (16)
+## Chuo (15)
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
   Aus popeye
@@ -317,9 +316,6 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Hamarikyu Gardens** · Park · ★ 4,5 · Hamarikyuteien, Chuo City
   Public park with a pond, laid out in the Edo-period style, on the site of 17th-century Shogun villa.
   [Maps](https://maps.google.com/?cid=11189930762912151578) · [Website](https://www.tokyo-park.or.jp/park/hama-rikyu/) · 1-1 Hamarikyuteien, Chuo City, Tokyo 104-0046, Japan
-- **Kumamoto Castle** · Sehenswürdigkeit · ★ 4,5 · Honmaru, Chuo City
-  This reconstructed castle, originally completed in 1607, sits atop a hill & houses a history museum.
-  [Maps](https://maps.google.com/?cid=6812651872500704304) · [Website](https://kumamoto-guide.jp/kumamoto-castle/) · 1-1 Honmaru, Chuo Ward, Kumamoto, 860-0002, Japan
 - **COREDO Muromachi 1** · Shop · ★ 3,9 · Nihonbashimuromachi, Chuo City
   Mall mit Schwerpunkt Haushaltswaren und Gourmetläden
   [Maps](https://maps.google.com/?cid=8045973119871515421) · [Website](https://mitsui-shopping-park.com/urban/muromachi/) · 2 Chome-2-1 Nihonbashimuromachi, Chuo City, Tokyo 103-0022, Japan
@@ -509,12 +505,6 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Hillside park featuring botanical gardens, flower displays & views of the river & distant mountains.
   [Maps](https://maps.google.com/?cid=465379040562906320) · [Website](http://www.city.ota.tokyo.jp/shisetsu/park/tamagawadai.html) · 1 Chome-63-1 Denenchofu, Ota City, Tokyo 145-0071, Japan
 
-## Kita (1)
-
-- **Kinkaku-ji** · Tempel · ★ 4,6 · Kinkakujicho, Kita City
-  Historic, tranquil temple with a gold-leaf facade set amid landscaped gardens & a reflecting pond.
-  [Maps](https://maps.google.com/?cid=1073025677330113631) · [Website](https://www.shokoku-ji.jp/kinkakuji/) · 1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan
-
 ## Shinagawa (1)
 
 - **Bond Street** · Sehenswürdigkeit · ★ 3,9 · Higashishinagawa, Shinagawa City
@@ -557,7 +547,7 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist temple, founded 733 & rebuilt 1919, with a 17th-century gate & annual soba noodle festival.
   [Maps](https://maps.google.com/?cid=8224161598012187145) · [Website](http://www.jindaiji.or.jp/) · Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−1
 
-## Außerhalb Tokios (23)
+## Außerhalb Tokios (25)
 
 - **FermenCo.** · Essen · ★ 4,7 · Andere (Shizuoka)
   Sauerteig-Pizza und Naturwein direkt am Strand von Shimoda auf der Izu-Halbinsel, 2025 unter Tokios Tabelog-100-Pizza-Adressen gelistet.
@@ -598,6 +588,9 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Kegon Falls** · Sehenswürdigkeit · ★ 4,6 · Andere (Tochigi)
   97 Meter hoher Wasserfall am Auslauf des Chuzenji-Sees bei Nikko, einer der drei beruehmtesten Wasserfaelle Japans; Aufzug fuehrt zur unteren Aussichtsplattform.
   [Maps](https://maps.google.com/?cid=13515155378618568302) · Chugushi, Nikko, Tochigi 321-1661, Japan
+- **Kumamoto Castle** · Sehenswürdigkeit · ★ 4,5 · Andere (Kumamoto)
+  This reconstructed castle, originally completed in 1607, sits atop a hill & houses a history museum.
+  [Maps](https://maps.google.com/?cid=6812651872500704304) · [Website](https://kumamoto-guide.jp/kumamoto-castle/) · 1-1 Honmaru, Chuo Ward, Kumamoto, 860-0002, Japan
 - **Lake Biwa** · Sehenswürdigkeit · ★ 4,5 · Andere (Shiga)
   größter See Japans
   [Maps](https://maps.google.com/?cid=17152468910832522255) · Shiga, Japan
@@ -625,6 +618,9 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Kintame** · Shop · ★ 4,3 · Andere (Botanbokocho)
   Seit 1879 bestehendes Traditionshaus fuer Tsukemono (japanische Pickles) in Kamigyo, Kyoto; bekannt fuer den Bubuzuke-Lunch mit ueber einem Dutzend Pickles, Nara-zuke und Nuka-zuke.
   [Maps](https://maps.google.com/?cid=8323421541355828408) · [Website](http://www.kintame.co.jp/) · Japan, 〒602-8475 Kyoto, Kamigyo Ward, Botanbokocho, 576
+- **Kinkaku-ji** · Tempel · ★ 4,6 · Andere (Kyoto)
+  Historic, tranquil temple with a gold-leaf facade set amid landscaped gardens & a reflecting pond.
+  [Maps](https://maps.google.com/?cid=1073025677330113631) · [Website](https://www.shokoku-ji.jp/kinkakuji/) · 1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan
 - **Tōdai-ji** · Tempel · ★ 4,7 · Andere (Nara)
   Buddhist temple originally built in the mid-700s, with one of Japan's largest bronze Buddha statues.
   [Maps](https://maps.google.com/?cid=17911005107283377295) · [Website](https://www.todaiji.or.jp/) · 406-1 Zoshicho, Nara, 630-8587, Japan
