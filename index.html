@@ -591,12 +591,22 @@ function itemHtml(d) {
 }
 
 function renderChips() {
+  // Zahlen folgen allen Filtern außer der Kategorie-Auswahl selbst
+  const base = DATA.filter(d => {
+    if (S.region !== "alle" && d.region !== S.region) return false;
+    if (S.bezirk !== "alle" && d.bezirk !== S.bezirk) return false;
+    if (S.minr > 0 && (!d.rating || d.rating < S.minr)) return false;
+    if (S.hideDone && isDone(d)) return false;
+    return matchesQuery(d);
+  });
   const counts = {};
-  DATA.forEach(d => { counts[d.kategorie] = (counts[d.kategorie] || 0) + 1; });
-  const cats = Object.keys(KAT).filter(k => counts[k]);
-  $("chips").innerHTML =
-    `<button type="button" class="chip all" data-kat="" aria-pressed="${S.kat.size === 0}">Alle</button>` +
-    cats.map(c => `<button type="button" class="chip" data-kat="${esc(c)}" aria-pressed="${S.kat.has(c)}"><span class="k">${KAT[c].k}</span>${esc(c)} <span class="n">${counts[c]}</span></button>`).join("");
+  base.forEach(d => { counts[d.kategorie] = (counts[d.kategorie] || 0) + 1; });
+  const cats = Object.keys(KAT).filter(k => counts[k] || S.kat.has(k));
+  const box = $("chips"), left = box.scrollLeft;
+  box.innerHTML =
+    `<button type="button" class="chip all" data-kat="" aria-pressed="${S.kat.size === 0}">Alle <span class="n">${base.length}</span></button>` +
+    cats.map(c => `<button type="button" class="chip" data-kat="${esc(c)}" aria-pressed="${S.kat.has(c)}"><span class="k">${KAT[c].k}</span>${esc(c)} <span class="n">${counts[c] || 0}</span></button>`).join("");
+  box.scrollLeft = left;
 }
 
 function renderList(rows) {
@@ -653,6 +663,7 @@ function renderTabs() {
 function renderAll() {
   const rows = filtered();
   renderTabs();
+  renderChips();
   renderCount(rows);
   if (S.tab === "liste") renderList(rows);
   if (S.tab === "merkliste") renderMerkliste();
@@ -940,7 +951,7 @@ document.addEventListener("click", e => {
     if (!k) S.kat.clear();
     else if (S.kat.has(k)) S.kat.delete(k);
     else S.kat.add(k);
-    savePrefs(); renderChips(); renderAll();
+    savePrefs(); renderAll();
     return;
   }
   const tab = e.target.closest(".tab");
@@ -968,7 +979,7 @@ document.addEventListener("click", e => {
   else if (a === "far-list") { S.tab = "liste"; S.region = "Andere Region"; savePrefs(); renderAll(); }
   else if (a === "reset-all") {
     Object.assign(S, DEFAULT_FILTERS); S.kat.clear(); S.q = ""; $("q").value = ""; $("clear-q").hidden = true;
-    savePrefs(); renderChips(); renderAll();
+    savePrefs(); renderAll();
   }
 });
 $("scrim").addEventListener("click", closeSheets);
@@ -987,7 +998,6 @@ $("clear-q").addEventListener("click", () => { $("q").value = ""; $("clear-q").h
 loadPrefs();
 try { over = JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}") || {}; } catch (e) { over = {}; }
 buildBezirke();
-renderChips();
 renderAll();
 
 (async () => {
