@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""Erzeugt orte.md (Übersicht aller Orte) aus den in index.html eingebetteten Daten.
+"""Erzeugt orte.md (Übersicht aller Orte) aus quelle/orte.json.
 
 Mit --kompakt PFAD: zusätzlich eine kurze Tabellen-Fassung (für Google Drive)."""
 import json, collections, datetime, pathlib, re, sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
-s = (root / "index.html").read_text(encoding="utf-8")
-i = s.find('[{"name"')
-data, _ = json.JSONDecoder().raw_decode(s[i:])
+data = json.loads((root / "quelle" / "orte.json").read_text(encoding="utf-8"))
 
 REST = "Außerhalb der 23 Bezirke"
 def gruppe(d):

@@ -2,7 +2,7 @@ name: orte.md aktualisieren
 on:
   push:
     branches: [main]
-    paths: [index.html, tools/orte_md.py]
+    paths: [quelle/orte.json, tools/orte_md.py]
   workflow_dispatch:
 permissions:
   contents: write
