@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,8 +8,8 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
+| Café | 41 |
 | Shop | 40 |
-| Café | 40 |
 | Sehenswürdigkeit | 40 |
 | Essen | 23 |
 | Park | 9 |
@@ -22,7 +22,7 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 ## Inhalt
 
-- Shibuya (38)
+- Shibuya (39)
 - Taito (24)
 - Koto (18)
 - Chuo (15)
@@ -40,12 +40,12 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Tokio – außerhalb der 23 Bezirke (9)
 - Außerhalb Tokios (25)
 
-## Shibuya (38)
+## Shibuya (39)
 
 - **Mikkeller Tokyo** · Bar · ★ 4,5 · Dogenzaka, Shibuya City
   Trendy, minimalist location offering craft beer on tap, plus meatballs & sandwiches.
   [Maps](https://maps.google.com/?cid=13829012941481371191) · [Website](https://mikkeller.com/locations/mikkeller-tokyo) · 2 Chome-19-11 Dogenzaka, Shibuya, Tokyo 150-0043, Japan
-- **ANAKUMA CAFE Harajuku** · Café · Jingumae, Shibuya City
+- **ANAKUMA CAFE Harajuku** · Café · ★ 4,8 · Jingumae, Shibuya City
   Take-away-Café nahe Takeshita-dori: Bestellung am Tablet, eine Bärentatze reicht Getränke durch ein Loch in der Wand. Ca. 3 Min. ab Harajuku.
   [Maps](https://maps.google.com/?cid=1975990326689132499) · 1-23-28 Jingumae, Shibuya, Tokyo 150-0001, Japan
 - **BIEN-ETRE MAISON** · Café · ★ 4,3 · Uehara, Shibuya City
@@ -67,6 +67,9 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Parfaiteria bel** · Café · ★ 4,1 · Dogenzaka, Shibuya City
   Nacht-Parfait-Spezialist aus Hokkaido, seit 2017 in Shibuya; kunstvolle, mehrschichtige Parfaits mit saisonal wechselnder Karte, geoeffnet bis spaet in die Nacht (Fr/Sa bis 1 Uhr).
   [Maps](https://maps.google.com/?cid=7456084186848908381) · [Website](https://yoru-parfait-gaku.com/) · Japan, 〒150-0043 Tokyo, Shibuya, Dogenzaka, 1 Chome−７−10 渋谷道玄坂一丁目ビル 3F
+- **PEANUTS Cafe SUNNY SIDE kitchen** · Café · ★ 4,2 · Jingumae, Shibuya City
+  Snoopy-/PEANUTS-Themencafé im 2. Untergeschoss von WITH HARAJUKU, gegenüber Bhf. Harajuku: Sandwiches, French Toast, Snoopy-Pancakes aus Reismehl und Latte Art mit den PEANUTS-Figuren; tgl. ca. 9–21:30 Uhr, Reservierung möglich.
+  [Maps](https://maps.google.com/?cid=9899437419143955082) · [Website](https://www.peanutscafe.jp/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−14−30 WITH HARAJUKU B2F
 - **RUMBLE CRUMBLE 渋谷本店** · Café · ★ 4,0 · Jingumae, Shibuya City
   New-York-Style-Cookies aus eigener Kueche; woechentlich am selben Tag eine limitierte Box mit 12 Sorten, frisch produziert und am Bestelltag verschickt.
   [Maps](https://maps.google.com/?cid=8696642782876363972) · [Website](https://www.rumble-crumble.com/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−16−3 原宿T2ビル 1F
@@ -456,7 +459,7 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Sunshine Aquarium** · Sehenswürdigkeit · ★ 4,2 · Higashiikebukuro, Toshima City
   High-rise aquarium featuring diverse sea creatures & an above-ground glass pool.
   [Maps](https://maps.google.com/?cid=16310910173512393673) · [Website](https://sunshinecity.jp/aquarium/?utm_source=Google&utm_medium=mybusiness&utm_campaign=kutikomi&utm_id=1) · Japan, 〒170-8630 Tokyo, Toshima City, Higashiikebukuro, 3 Chome−1−1 サンシャインシティワールドインポートマートビル 屋上
-- **Pokémon Center Mega Tokyo & Pikachu Sweets** · Shop · Higashi-Ikebukuro, Toshima City
+- **Pokémon Center Mega Tokyo & Pikachu Sweets** · Shop · ★ 4,4 · Higashi-Ikebukuro, Toshima City
   Großer Pokémon Center in der Sunshine City (Ikebukuro) mit angeschlossenem Pikachu-Sweets-Café; ca. 3 Min. ab Higashi-Ikebukuro, 8 Min. ab Ikebukuro.
   [Maps](https://maps.google.com/?cid=6655307181794378837) · [Website](https://shop.pokemon.co.jp/en/shop/pokemoncenter-megatokyo/) · Sunshine City Alpa 2F, 3-1-2 Higashi-Ikebukuro, Toshima City, Tokyo 170-6002, Japan
 
@@ -525,9 +528,9 @@ Stand: 25.09.2026 · 182 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **CAFE 雫** · Café · ★ 4,3 · Ome (Tokyo)
   Café im Sawanoi-Garten einer Sake-Brauerei in Ome, Terrasse mit Blick auf den Tama-Fluss, bekannt für Tofu-Cheesecake.
   [Maps](https://maps.google.com/?cid=4270557898128443933) · [Website](https://www.sawanoi-sake.com/service/shizuku/) · 2 Chome-748 Sawai, Ome, Tokyo 198-0172, Japan
-- **Craft soy milk factory (Taiwan Sabo Doujan Biyori)** · Café · Kichijoji (Musashino)
-  Taiwanisches Teehaus mit gläserner Sojamilch-Manufaktur, täglich frisch gepresste Sojamilch, Douhua und Xian Dou Jiang; ca. 7 Min. ab Bhf. Kichijoji. Zuordnung zum Google-Eintrag bitte prüfen.
-  [Maps](https://maps.google.com/?cid=840462544848553220) · 2-15-4 Kichijoji Honcho, Musashino, Tokyo 180-0004, Japan (Prime Urban Kichijoji)
+- **Craft soy milk factory (Taiwan Sabo Doujan Biyori)** · Café · ★ 3,9 · Kichijoji (Musashino)
+  Taiwanisches Teehaus „豆漿日和“ (Doujan Biyori, unter Aufsicht von Erjixuan/Taiwan) mit gläserner Sojamilch-Manufaktur: täglich frisch gepresste Sojamilch, Douhua und Xian Dou Jiang; ab 8 Uhr geöffnet, ca. 7 Min. ab Bhf. Kichijoji.
+  [Maps](https://maps.google.com/?cid=840462544848553220) · Japan, 〒180-0004 Tokyo, Musashino, Kichijoji Honcho, 2 Chome−15−4 ミュプレ吉祥寺 1階
 - **Jindai Botanical Gardens** · Park · ★ 4,3 · Chofu (Tokyo)
   Tokyo's main botanical garden, featuring a famous rose garden & a big greenhouse for exotic plants.
   [Maps](https://maps.google.com/?cid=9763061280357406539) · [Website](https://www.tokyo-park.or.jp/jindai/) · 5 Chome-31-10 Jindaiji Motomachi, Chofu, Tokyo 182-0017, Japan
