@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,14 +8,14 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
+| Shop | 41 |
 | Café | 41 |
-| Shop | 40 |
 | Sehenswürdigkeit | 40 |
 | Essen | 23 |
-| Park | 9 |
+| Park | 10 |
 | Tempel | 9 |
 | Schrein | 8 |
-| Museum | 6 |
+| Museum | 7 |
 | Hotel | 3 |
 | Bar | 3 |
 | Markt | 1 |
@@ -25,16 +25,16 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Shibuya (39)
 - Taito (24)
 - Koto (18)
-- Chuo (15)
+- Chuo (16)
 - Minato (13)
 - Chiyoda (7)
 - Setagaya (7)
 - Shinjuku (7)
-- Toshima (5)
+- Toshima (6)
 - Sumida (4)
 - Meguro (3)
 - Nakano (3)
-- Ota (2)
+- Ota (3)
 - Shinagawa (1)
 - Suginami (1)
 - Tokio – außerhalb der 23 Bezirke (9)
@@ -285,7 +285,7 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
   [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
 
-## Chuo (15)
+## Chuo (16)
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
   Aus popeye
@@ -316,6 +316,9 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Fish Market Tsukiji Outer Market** · Markt · ★ 4,2 · Tsukiji, Chuo City
   Sprawling wholesale fish market with an array of seafood & viewing areas for a popular tuna auction.
   [Maps](https://maps.google.com/?cid=11704332758705177180) · [Website](https://www.tsukiji.or.jp/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome および６丁目一部
+- **ART AQUARIUM MUSEUM** · Museum · ★ 4,1 · Ginza, Chuo City
+  Kunstmuseum im 9. Stock des Mitsukoshi Ginza mit Installationen und Skulpturen aus farbig beleuchteten Goldfischbecken. Öffnet laut Google um 10 Uhr; Tickets werden oft mit festem Datum verkauft.
+  [Maps](https://maps.google.com/?cid=15689961400037075470) · Mitsukoshi Ginza Neubau 9F, 4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan
 - **Hamarikyu Gardens** · Park · ★ 4,5 · Hamarikyuteien, Chuo City
   Public park with a pond, laid out in the Edo-period style, on the site of 17th-century Shogun villa.
   [Maps](https://maps.google.com/?cid=11189930762912151578) · [Website](https://www.tokyo-park.or.jp/park/hama-rikyu/) · 1-1 Hamarikyuteien, Chuo City, Tokyo 104-0046, Japan
@@ -445,7 +448,7 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
   1887 gegruendeter Traditions-Tofuladen in Yotsuya, bekannt fuer Baumwolltofu (Momen) mit natuerlichem Nigari von der Insel Izu Oshima, beliebt bei umliegenden Restaurants.
   [Maps](https://maps.google.com/?cid=13804295019356588079) · Japan, 〒160-0004 Tokyo, Shinjuku City, Yotsuya, 3 Chome−１−12 ｢栗原ビル/1F｣
 
-## Toshima (5)
+## Toshima (6)
 
 - **Sennari Monaka Sugamo** · Café · ★ 4,6 · Sugamo, Toshima City
   Seit 1937 bestehendes Monaka-Spezialgeschaeft direkt am Eingang der Sugamo-Einkaufsstrasse; kuerbisfoermige Monaka in fuenf Fuellungen sowie frische Dorayaki.
@@ -459,6 +462,9 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Sunshine Aquarium** · Sehenswürdigkeit · ★ 4,2 · Higashiikebukuro, Toshima City
   High-rise aquarium featuring diverse sea creatures & an above-ground glass pool.
   [Maps](https://maps.google.com/?cid=16310910173512393673) · [Website](https://sunshinecity.jp/aquarium/?utm_source=Google&utm_medium=mybusiness&utm_campaign=kutikomi&utm_id=1) · Japan, 〒170-8630 Tokyo, Toshima City, Higashiikebukuro, 3 Chome−1−1 サンシャインシティワールドインポートマートビル 屋上
+- **Pokémon Card Station Mega Tokyo** · Shop · ★ 4,5 · Higashi-Ikebukuro, Toshima City
+  Pokémon-Sammelkartenladen im selben Bereich wie das Pokémon Center Mega Tokyo (Sunshine City, Alpa 2F, Ikebukuro). Öffnet laut Google um 10 Uhr.
+  [Maps](https://maps.google.com/?cid=10313052321054012193) · [Website](https://www.pokemon-card.com/) · Sunshine City Alpa 2F, 3-1-2 Higashi-Ikebukuro, Toshima City, Tokyo 170-6002, Japan
 - **Pokémon Center Mega Tokyo & Pikachu Sweets** · Shop · ★ 4,4 · Higashi-Ikebukuro, Toshima City
   Großer Pokémon Center in der Sunshine City (Ikebukuro) mit angeschlossenem Pikachu-Sweets-Café; ca. 3 Min. ab Higashi-Ikebukuro, 8 Min. ab Ikebukuro.
   [Maps](https://maps.google.com/?cid=6655307181794378837) · [Website](https://shop.pokemon.co.jp/en/shop/pokemoncenter-megatokyo/) · Sunshine City Alpa 2F, 3-1-2 Higashi-Ikebukuro, Toshima City, Tokyo 170-6002, Japan
@@ -500,10 +506,13 @@ Stand: 01.10.2026 · 183 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Bustling shopping center featuring stores for anime & comics, plus boutiques, gift shops & eateries.
   [Maps](https://maps.google.com/?cid=16264325981541494974) · [Website](https://nakano-broadway.com/) · 5 Chome-52-15 Nakano, Nakano City, Tokyo 164-0001, Japan
 
-## Ota (2)
+## Ota (3)
 
 - **Daikokudo** · Café · ★ 4,3 · Denenchofu, Ota City
   [Maps](https://maps.google.com/?cid=11751005537573459903) · [Website](https://daikokudou.tokyo/) · 1 Chome-55-5 Denenchofu, Ota City, Tokyo 145-0071, Japan
+- **Haginaka Park** · Park · ★ 4,2 · Haginaka, Ota City
+  Großer Stadtpark im Bezirk Ota (nahe Haneda) mit Hallen- und Freibad, Baseballfeldern sowie Spielbereichen, in denen Kinder auf ausgediente Fahrzeuge klettern oder Rad fahren können. Rund um die Uhr zugänglich.
+  [Maps](https://maps.google.com/?cid=10581520799701650728) · [Website](https://www.city.ota.tokyo.jp/) · 3 Chome-26-46 Haginaka, Ota City, Tokyo 144-0047, Japan
 - **Tamagawadai Park** · Park · ★ 4,2 · Denenchofu, Ota City
   Hillside park featuring botanical gardens, flower displays & views of the river & distant mountains.
   [Maps](https://maps.google.com/?cid=465379040562906320) · [Website](http://www.city.ota.tokyo.jp/shisetsu/park/tamagawadai.html) · 1 Chome-63-1 Denenchofu, Ota City, Tokyo 145-0071, Japan
