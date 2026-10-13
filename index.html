@@ -765,23 +765,45 @@ const toggleDone = id => { const d = byId.get(id); return save(id, { besucht: !i
 
 /* ---------- sheets ---------- */
 let lastFocus = null;
+let sheetPushed = false;   // für das offene Blatt liegt ein Eintrag im Browser-Verlauf
+let sheetOpen = false;     // ein Blatt ist (oder soll) offen sein
+let hideTimer = null;      // verzögertes Verstecken nach dem Schließen (Animation)
+let selfBack = 0;          // von der App selbst ausgelöste history.back()-Aufrufe, deren popstate zu ignorieren ist
 function openSheet(el) {
   lastFocus = document.activeElement;
   ["detail", "filters"].forEach(s => { if ($(s) !== el) { $(s).classList.remove("on"); $(s).hidden = true; } });
   const side = WIDE.matches && el.id === "detail";    // Seitenleiste statt Blatt: Karte bleibt bedienbar
   $("scrim").classList.toggle("side", side);
   el.setAttribute("aria-modal", side ? "false" : "true");
+  clearTimeout(hideTimer);
+  sheetOpen = true;
+  if (!sheetPushed && selfBack === 0) { history.pushState({ sheet: true }, ""); sheetPushed = true; }   // Zurück-Taste/-Geste schließt das Blatt
   $("scrim").hidden = false; el.hidden = false;
   requestAnimationFrame(() => { $("scrim").classList.add("on"); el.classList.add("on"); });
   el.scrollTop = 0;
 }
 function closeSheets() {
+  if (sheetPushed) { sheetPushed = false; selfBack++; history.back(); }   // Verlaufseintrag wieder entfernen
+  hideSheets();
+}
+window.addEventListener("popstate", () => {
+  if (selfBack > 0) {
+    selfBack--;
+    // Blatt wurde noch während des Zurückgehens wieder geöffnet: Verlaufseintrag nachholen
+    if (selfBack === 0 && !sheetPushed && sheetOpen) { history.pushState({ sheet: true }, ""); sheetPushed = true; }
+    return;
+  }
+  if (sheetPushed) { sheetPushed = false; hideSheets(); }   // Zurück-Taste: nur das Blatt schließen, App bleibt offen
+});
+function hideSheets() {
+  sheetOpen = false;
   editing = null;
   S.openId = null;
   $("scrim").classList.remove("on");
   ["detail", "filters"].forEach(s => $(s).classList.remove("on"));
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  setTimeout(() => { $("scrim").hidden = true; $("detail").hidden = true; $("filters").hidden = true; }, reduce ? 0 : 220);
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => { $("scrim").hidden = true; $("detail").hidden = true; $("filters").hidden = true; }, reduce ? 0 : 220);
   if (mapVisible()) Map2.render(mapRows());
   if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll: true }); } catch (e) {}
 }

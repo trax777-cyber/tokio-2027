@@ -20,7 +20,8 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 | Schrift: 16 px Basis, Zweittext 14 px, nichts unter 12 px, Ersatzschriften für Japanisch | **in der App** (kleinste Schrift in allen vier Ansichten gemessen: 12 px) |
 | Zustände: Hover (nur Maus, aktive Elemente behalten ihre Farbe), Gedrückt, Gesperrt, „Bewegung reduzieren“ | **in der App** |
 | Laptop-Layout ab 1024 px: Liste links, Karte rechts, Detail als Seitenleiste | **in der App** (mit der echten Karten-Bibliothek getestet, Kartenkacheln im Test nicht geladen) |
-| Karten-Punkte größer, Zurück-Taste, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
+| Zurück-Taste/-Geste schließt das Blatt, statt die App zu verlassen | **in der App** (im Browser mit allen Öffnen- und Schließen-Wegen getestet, nicht auf echten Handys) |
+| Karten-Punkte größer, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
 
@@ -38,7 +39,7 @@ Die App hat bereits ein stimmiges Design (Papier, Tinte, Zinnoberrot, Kanji-Stem
 | 4 | Tippflächen | Chips 34 px, Schließen-Knopf 36 px, „Kopieren“ 30 px | mindestens 40 px, wichtige Knöpfe 44 px |
 | 5 | Laptop | eine schmale Spalte (max. 820 px) | ab 1024 px Liste links, Karte rechts, Detail als Seitenleiste |
 
-Dazu kommen Empfehlungen, die Code betreffen (Zurück-Taste, Offline-Betrieb, eigene Schriften, Merkliste teilen). Sie stehen in den Abschnitten 7, 11 und 12.
+Dazu kommen Empfehlungen, die Code betreffen (Offline-Betrieb, eigene Schriften, Merkliste teilen; die Zurück-Taste ist umgesetzt). Sie stehen in den Abschnitten 7, 11 und 12.
 
 <table>
 <tr><th>Ist, hell</th><th>Soll, hell</th><th>Ist, dunkel</th><th>Soll, dunkel</th></tr>
@@ -265,7 +266,7 @@ Tab-Leiste (immer sichtbar)
 
 | Lücke | Wirkung | Soll |
 |---|---|---|
-| Kein Eintrag im Browser-Verlauf (`pushState`/`popstate` fehlen) | Die Android-Zurück-Taste oder Wischgeste schließt das Blatt nicht, sondern verlässt die App | Beim Öffnen eines Blatts Verlaufseintrag anlegen, bei Zurück Blatt schließen |
+| ~~Kein Eintrag im Browser-Verlauf~~ (früher: Zurück-Taste verließ die App) | **umgesetzt:** Beim Öffnen eines Blatts legt die App einen Verlaufseintrag an (`pushState`), die Zurück-Taste oder -Geste schließt nur das Blatt. Schließen per Knopf, Esc oder Hintergrund entfernt den Eintrag wieder. Am Laptop genügt ein Eintrag, auch wenn man den Ort wechselt. | – |
 | Tab-Leiste hat `role="tab"`, aber keine Pfeiltasten und kein `aria-controls` | Am Laptop mit Tastatur umständlich, Bildschirmleser kennt die Zuordnung nicht | Pfeiltasten links/rechts, `aria-controls` auf die Ansichten |
 | Ab Laptop-Breite nur Tabs | Karte und Liste nie gleichzeitig sichtbar | Zwei-Spalten-Layout (Abschnitt 6), **umgesetzt** |
 

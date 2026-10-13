@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Zurück-Taste schließt das Blatt
+Kontext:      Die Android-Zurück-Taste und die iPhone-Wischgeste verließen die App, auch wenn ein Blatt offen war.
+Entscheidung: Beim Öffnen von Detail oder Filter ein Eintrag im Browser-Verlauf (`pushState`), bei Zurück schließt nur das Blatt. Schließt die App das Blatt selbst (Knopf, Esc, Hintergrund), nimmt sie den Eintrag mit `history.back()` zurück und ignoriert dessen `popstate`. Wird das Blatt währenddessen neu geöffnet, legt sie den Eintrag danach an. Zusätzlich: das verzögerte Verstecken nach dem Schließen wird bei erneutem Öffnen abgebrochen (vorher konnte ein schnelles Wiederöffnen sofort wieder verschwinden).
+Alternativen: Hash-URLs (`#ort-123`, verworfen: ändert die Adresse und bräuchte Aufräumen beim Start), kein Verlaufseintrag (so war es vorher).
+Folgen:       Zurück am Anfang verlässt die App wie üblich. Auf echten Geräten nicht getestet.
+
 ## 2026-10-13 · Laptop-Layout in die App übernommen (ab 1024 px)
 Kontext:      Am Laptop war nur eine schmale Spalte mit Tabs sichtbar, Karte und Liste nie zugleich.
 Entscheidung: Zwei Spalten (Liste 380 bis 460 px, Karte), Detail als Seitenleiste ohne Abdunkeln, Karte-Tab entfällt, Tab-Leiste bleibt links unten. Zoom und Übersicht der Karte links. Merkliste zeigt gemerkte Orte auf der Karte. `docs/soll.css` entfernt, weil alles umgesetzt ist.
