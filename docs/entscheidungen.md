@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Überlauf bei 320 px, Statuszeile 12 px, Manifest ohne Ortszahl
+Kontext:      Bei 320 px Breite scrollte die Seite 4 px zu weit (Suchzeile und Filter-Knopf drückten die Grid-Spalte von `.tools` breiter). `.status` hatte 12,5 px, das Manifest nannte „179 Orte“.
+Entscheidung: `.tools` bekommt `grid-template-columns: minmax(0, 1fr)`, `.status` 12 px, Manifest-Text ohne Zahl.
+Alternativen: Chips-Zeile kürzen (verworfen: nicht die Ursache).
+Folgen:       Gemessen in headless Chromium bei 320 und 1280 px: kein Überlauf, keine Konsolenfehler. Echte Geräte nicht getestet.
+
 ## 2026-10-13 · Bildschirmleser-Texte, Merkliste teilen, Update-Hinweis für die Mac-Datei
 Kontext:      Sterne, Trefferzahl und Tabs waren für Bildschirmleser schlecht benannt, die Merkliste ließ sich nicht weitergeben (jede Person hatte ihre eigene), und die Mac-Datei musste von Hand ersetzt werden.
 Entscheidung: Unsichtbare Texte (`.sr`), `lang="ja"` für japanische Textstücke, `aria-live` an der Trefferzahl, Tabs mit Pfeiltasten und `aria-controls`, `inert` für den Hintergrund bei modalen Blättern. Merkliste teilen per Teilen-Menü oder Zwischenablage, dazu ein Link mit `#m=<Ortsnummern>`, der nach Bestätigung die Orte übernimmt (Notizen nicht). Die Ein-Datei-Fassung prüft per `version.json` auf Updates und bietet den Download an; Ersetzen bleibt Handarbeit, weil eine Seite sich nicht selbst überschreiben darf.
