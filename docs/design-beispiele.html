@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Tokio 2027 – Design-Beispiele</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Soll-Werte, siehe docs/soll.css */
+  :root{--paper:#f2f0eb;--paper-2:#e9e6de;--ink:#23262b;--ink-soft:#5d6166;--line:#d8d4c9;--line-strong:#8b8165;--card:#fff;
+    --indigo:#2f3e50;--indigo-soft:#e2e7ec;--vermillion:#ae452e;--vermillion-soft:#f4e4df;--gold:#836124;--gold-soft:#f1e8d4;
+    --sage:#4d6a52;--sage-soft:#e3ebe3;--focus:#145ce9;
+    --serif:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',Georgia,serif;
+    --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI','Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#191b1e;--paper-2:#202226;--ink:#ece9e2;--ink-soft:#a7aab0;--line:#35383d;--line-strong:#6c727c;--card:#24262a;--indigo:#9db4cc;--indigo-soft:#263041;--vermillion:#df917c;--vermillion-soft:#3a2521;--gold:#d3b06a;--gold-soft:#3a3120;--sage:#9bc0a1;--sage-soft:#22301f;--focus:#568af0}}
+  :root[data-theme="dark"]{--paper:#191b1e;--paper-2:#202226;--ink:#ece9e2;--ink-soft:#a7aab0;--line:#35383d;--line-strong:#6c727c;--card:#24262a;--indigo:#9db4cc;--indigo-soft:#263041;--vermillion:#df917c;--vermillion-soft:#3a2521;--gold:#d3b06a;--gold-soft:#3a3120;--sage:#9bc0a1;--sage-soft:#22301f;--focus:#568af0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans)}
+  :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  main{max-width:960px;margin:0 auto;padding:24px 16px 64px}
+  h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0}
+  h1{font-size:28px}h2{font-size:22px;margin:40px 0 12px;padding-top:24px;border-top:1px solid var(--line)}h3{font-size:18px;margin:20px 0 8px}
+  p{margin:0 0 12px;max-width:68ch}.soft{color:var(--ink-soft)}.small{font-size:14px}
+  .bar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:8px}
+  button{font:inherit;color:inherit}
+  .btn{min-height:44px;padding:8px 16px;border:1px solid var(--line-strong);background:var(--card);border-radius:10px;font-weight:600;cursor:pointer}
+  .btn:hover{background:var(--paper-2)}.btn:active{transform:scale(.97)}.btn.primary{background:var(--indigo);border-color:var(--indigo);color:var(--paper)}
+  .btn:disabled{opacity:.45;cursor:not-allowed}.btn.loading{position:relative;color:transparent}
+  .btn.loading::after{content:"";position:absolute;inset:0;margin:auto;width:18px;height:18px;border-radius:50%;border:2px solid var(--paper);border-top-color:transparent;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.btn.loading::after{animation:none}.btn:active{transform:none}}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+  .sw{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+  .sw i{display:block;height:56px}.sw div{padding:8px 10px;font-size:14px}.sw b{display:block;font-weight:600}.sw code{font-size:12px;color:var(--ink-soft)}
+  table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .ty{display:grid;grid-template-columns:120px 1fr;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line)}.ty code{font-size:12px;color:var(--ink-soft)}
+  .row3{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+  .chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:4px 12px 4px 8px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink-soft);border-radius:999px;font-size:14px;cursor:pointer}
+  .chip .k{font-family:var(--serif);font-weight:700;color:var(--ink)}.chip[aria-pressed="true"]{background:var(--indigo);border-color:var(--indigo);color:var(--paper)}.chip[aria-pressed="true"] .k{color:var(--paper)}
+  .chip:hover{background:var(--paper-2)}.chip[aria-pressed="true"]:hover{background:var(--indigo)}
+  .stamp{display:grid;place-items:center;width:38px;height:38px;border-radius:8px;font:700 19px/1 var(--serif)}
+  .g-food{background:var(--vermillion-soft);color:var(--vermillion)}.g-cafe{background:var(--gold-soft);color:var(--gold)}.g-shop{background:var(--indigo-soft);color:var(--indigo)}.g-calm{background:var(--sage-soft);color:var(--sage)}.g-misc{background:var(--paper-2);color:var(--ink-soft)}
+  .item{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line)}.item .n{font-weight:600}.item .s{font-size:14px;color:var(--ink-soft)}
+  .fav{width:48px;min-height:48px;border:0;background:none;font-size:22px;cursor:pointer;color:var(--ink-soft)}.fav[aria-pressed="true"]{color:var(--gold)}
+  .field{width:100%;max-width:340px;min-height:48px;padding:10px 12px;font:inherit;border:1px solid var(--line-strong);border-radius:10px;background:var(--card);color:var(--ink)}
+  .field.err{border-color:var(--vermillion);border-width:2px}.err-msg{color:var(--vermillion);font-size:14px;margin-top:4px}
+  .tabbar{display:flex;gap:4px;border:1px solid var(--line);border-radius:14px;padding:6px 8px;max-width:420px;background:var(--paper)}
+  .tab{flex:1;min-height:56px;border:0;background:none;border-radius:10px;color:var(--ink-soft);font-size:12.5px;font-weight:600;display:grid;justify-items:center;align-content:center;cursor:pointer}
+  .tab .ico{font:700 19px/1.1 var(--serif)}.tab[aria-selected="true"]{color:var(--vermillion);background:var(--vermillion-soft)}
+  .wire{display:grid;gap:24px;grid-template-columns:minmax(0,260px) minmax(0,1fr);align-items:start}
+  @media (max-width:700px){.wire{grid-template-columns:1fr}}
+  .phone,.lap{border:2px solid var(--line-strong);border-radius:22px;background:var(--paper);overflow:hidden;display:grid}
+  .phone{height:420px;grid-template-rows:auto auto 1fr auto}.lap{height:320px;border-radius:12px;grid-template-columns:minmax(0,38%) 1fr}
+  .w-top{padding:10px 12px;border-bottom:1px solid var(--line);font:700 14px var(--serif)}.w-bar{display:flex;gap:6px;padding:8px 12px}.w-bar span{height:26px;border-radius:8px;border:1px solid var(--line-strong);background:var(--card);flex:1}.w-bar span+span{flex:0 0 38px}
+  .w-body{padding:8px 12px;display:grid;gap:8px;align-content:start;overflow:hidden}.w-row{height:40px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center}.w-row b{width:22px;height:22px;border-radius:5px;background:var(--indigo-soft)}.w-row i{height:8px;flex:1;border-radius:4px;background:var(--paper-2)}
+  .w-tabs{display:flex;border-top:1px solid var(--line);padding:6px;gap:4px}.w-tabs span{flex:1;height:28px;border-radius:8px;background:var(--paper-2)}.w-tabs span:first-child{background:var(--vermillion-soft)}
+  .w-map{background:var(--paper-2);position:relative}.w-map u{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--vermillion);border:2px solid var(--card)}
+  .w-panel{position:absolute;right:10px;top:10px;bottom:10px;width:44%;background:var(--paper);border:1px solid var(--line-strong);border-radius:12px;padding:10px;font-size:12px;color:var(--ink-soft)}
+  .sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<main>
+  <div class="bar"><h1>Tokio 2027 – Design-Beispiele</h1><button class="btn" id="th" type="button">Hell / Dunkel umschalten</button></div>
+  <p class="soft">Lebende Beispiele zum <a href="design-guidelines.md" style="color:var(--indigo)">Design-Leitfaden</a>. Alle Werte stammen aus <code>docs/soll.css</code> (Ziel-Design). Die App selbst ist unverändert.</p>
+
+  <h2>1 · Farben</h2>
+  <div class="grid" id="sw"></div>
+  <h3>Kategorien: Farbe plus Schriftzeichen plus Text</h3>
+  <p class="soft small">Die Farbe allein trägt nie die Bedeutung. Jede Kategorie hat ein eigenes Zeichen und steht zusätzlich als Wort in der Zeile.</p>
+  <div class="row3">
+    <span class="chip" aria-pressed="false"><span class="k">食</span>Essen</span>
+    <span class="chip" aria-pressed="false"><span class="k">茶</span>Café</span>
+    <span class="chip" aria-pressed="false"><span class="k">店</span>Shop</span>
+    <span class="chip" aria-pressed="false"><span class="k">社</span>Schrein</span>
+    <span class="chip" aria-pressed="false"><span class="k">園</span>Park</span>
+  </div>
+  <div class="row3"><span class="stamp g-food" aria-hidden="true">食</span><span class="stamp g-cafe" aria-hidden="true">茶</span><span class="stamp g-shop" aria-hidden="true">店</span><span class="stamp g-calm" aria-hidden="true">社</span><span class="stamp g-misc" aria-hidden="true">他</span></div>
+
+  <h2>2 · Typografie</h2>
+  <div class="ty"><code>Titel 28 / 1,2</code><span style="font:700 28px/1.2 var(--serif)">Tokio 2027</span></div>
+  <div class="ty"><code>Überschrift 22 / 1,2</code><span style="font:700 22px/1.2 var(--serif)">Meiji-Schrein &amp; Yoyogi-Park</span></div>
+  <div class="ty"><code>Unterüberschrift 18 / 1,3</code><span style="font:700 18px/1.3 var(--serif)">Beschreibung</span></div>
+  <div class="ty"><code>Text 16 / 1,5</code><span>Ramen-Laden nahe Bahnhof Ebisu, mittags oft Schlange. 渋谷本店 ist die Hauptfiliale.</span></div>
+  <div class="ty"><code>Zweittext 14 / 1,5</code><span class="soft small">Café · Shibuya · ★ 4,3 · Sunshine City, 2. Stock</span></div>
+  <div class="ty"><code>Etikett 12 / 1,4</code><span class="soft" style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase">Beschreibung</span></div>
+
+  <h2>3 · Bedienelemente und Zustände</h2>
+  <h3>Knopf</h3>
+  <div class="row3">
+    <button class="btn" type="button">Normal</button><button class="btn" type="button" style="background:var(--paper-2)">Hover</button><button class="btn" type="button" style="transform:scale(.97)">Gedrückt</button>
+    <button class="btn" type="button" style="outline:2px solid var(--focus);outline-offset:2px">Fokus</button><button class="btn" type="button" disabled>Gesperrt</button><button class="btn primary loading" type="button" aria-label="Lädt">Lädt</button><button class="btn primary" type="button">Primär</button>
+  </div>
+  <h3>Filter-Chips</h3>
+  <div class="row3"><button class="chip" type="button" aria-pressed="false"><span class="k">食</span>Essen</button><button class="chip" type="button" aria-pressed="true"><span class="k">茶</span>Café</button></div>
+  <h3>Ortszeile mit Merken-Stern</h3>
+  <div class="item"><span class="stamp g-food" aria-hidden="true">食</span><div style="flex:1"><div class="n">AFURI Ebisu</div><div class="s">Essen · Shibuya · ★ 4,3</div></div><button class="fav" type="button" aria-pressed="false" aria-label="Merken: AFURI Ebisu">☆</button></div>
+  <div class="item"><span class="stamp g-cafe" aria-hidden="true">茶</span><div style="flex:1"><div class="n">ANAKUMA CAFE Harajuku</div><div class="s">Café · Shibuya · ★ 4,8</div></div><button class="fav" type="button" aria-pressed="true" aria-label="Von Merkliste entfernen: ANAKUMA CAFE Harajuku">★</button></div>
+  <h3>Eingabefeld</h3>
+  <div class="row3" style="align-items:flex-start"><div><label class="small soft" for="f1">Notiz</label><br><input id="f1" class="field" placeholder="z. B. Dienstag Vormittag"></div>
+  <div><label class="small soft" for="f2">Notiz (Fehler)</label><br><input id="f2" class="field err" aria-invalid="true" aria-describedby="e2" value="…"><div class="err-msg" id="e2">Nicht gespeichert. Prüfe die Verbindung.</div></div></div>
+  <h3>Tab-Leiste</h3>
+  <div class="tabbar" role="tablist"><button class="tab" role="tab" aria-selected="true"><span class="ico">一覧</span>Liste</button><button class="tab" role="tab" aria-selected="false"><span class="ico">地図</span>Karte</button><button class="tab" role="tab" aria-selected="false"><span class="ico">☆</span>Merkliste</button></div>
+
+  <h2>4 · Layout-Skizzen</h2>
+  <div class="wire">
+    <div><div class="phone" aria-label="Handy-Skizze"><div class="w-top">Tokio 2027</div><div class="w-bar"><span></span><span></span></div><div class="w-body"><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div></div><div class="w-tabs"><span></span><span></span><span></span></div></div><p class="small soft">Handy: eine Spalte, Tab-Leiste unten, Detail als Blatt von unten.</p></div>
+    <div><div class="lap" aria-label="Laptop-Skizze"><div style="border-right:1px solid var(--line);display:grid;grid-template-rows:auto auto 1fr"><div class="w-top">Tokio 2027</div><div class="w-bar"><span></span><span></span></div><div class="w-body"><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div><div class="w-row"><b></b><i></i></div></div></div><div class="w-map"><u style="left:20%;top:30%"></u><u style="left:45%;top:55%"></u><u style="left:30%;top:70%"></u><u style="left:55%;top:25%"></u><div class="w-panel"><b style="font-family:var(--serif);color:var(--ink)">Detail</b><br>Seitenleiste statt Blatt von unten</div></div></div><p class="small soft">Laptop ab 1024 px: Liste links, Karte rechts, Detail als Seitenleiste.</p></div>
+  </div>
+</main>
+<script>
+  const S=[['Papier','--paper'],['Karte','--card'],['Text','--ink'],['Text gedämpft','--ink-soft'],['Indigo','--indigo'],['Zinnober','--vermillion'],['Gold','--gold'],['Salbei','--sage'],['Linie (Trenner)','--line'],['Linie stark (Bedienelemente)','--line-strong'],['Fokus','--focus']];
+  const g=document.getElementById('sw');
+  function draw(){g.innerHTML='';const cs=getComputedStyle(document.documentElement);
+    S.forEach(([n,v])=>{const d=document.createElement('div');d.className='sw';d.innerHTML=`<i style="background:var(${v})"></i><div><b>${n}</b><code>${v} ${cs.getPropertyValue(v).trim()}</code></div>`;g.appendChild(d)})}
+  draw();
+  document.getElementById('th').addEventListener('click',()=>{const r=document.documentElement,dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.setAttribute('data-theme',dark?'light':'dark');draw()});
+</script>
+</body>
+</html>
