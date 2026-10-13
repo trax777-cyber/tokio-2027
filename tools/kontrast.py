@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""WCAG-Kontrasttabelle für die Farb-Tokens (Ist = App heute, Soll = docs/soll.css).
+"""WCAG-Kontrasttabelle für die Farb-Tokens (Ist = App vor der Übernahme am 13.10.2026, Soll = heutige App-Werte).
 Aufruf: python3 tools/kontrast.py   (gibt eine Markdown-Tabelle aus; ✗ = Ziel verfehlt)"""
 
 def _lin(v): return v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4

@@ -2,8 +2,14 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Farben und Tippflächen in die App übernommen
+Kontext:      Fünf Farbpaare lagen unter dem WCAG-Ziel, mehrere Bedienelemente unter 40 px.
+Entscheidung: `--vermillion`, `--gold`, `--focus` angepasst, `--line-strong` neu (hell/dunkel). Ränder der Bedienelemente und der ungemerkte Stern nutzen die neuen Werte. Mindesthöhen: Chip 40, Tab 56, Schließen/Pille/Knöpfe 44, kleiner Knopf 40, Karten-Zoom 44.
+Alternativen: `soll.css` als Zusatz anhängen (verworfen: zwei Quellen für dieselben Werte).
+Folgen:       Schrift, Zustände, Laptop-Layout und Code-Punkte bleiben offen. Karten-Punkte (JavaScript) nicht angepasst. Echte Geräte noch nicht getestet.
+
 ## 2026-10-13 · Design-Leitfaden beschreibt Ist und zeigt Soll, ändert die App nicht
 Kontext:      Die App wird von Familie genutzt, ein Design-Leitfaden fehlte.
-Entscheidung: Schlanker Leitfaden (ca. 10 Seiten) im Repository, Ziel-Design als `docs/soll.css`, Beispiele als `docs/design-beispiele.html`. Die App bleibt unverändert, bis das Soll bewusst übernommen wird.
+Entscheidung: Schlanker Leitfaden (ca. 10 Seiten) im Repository, Ziel-Design als `docs/soll.css`, Beispiele als `docs/design-beispiele.html`. Die App bleibt unverändert, bis das Soll bewusst übernommen wird (Farben und Tippflächen: siehe oben).
 Alternativen: Notion-Seite (verworfen: nicht neben dem Code versioniert), volle 12-Kapitel-Fassung (verworfen: zu groß für eine Ein-Datei-App).
 Folgen:       Soll-Werte (Farben, Größen) sind noch nicht in der App. Übernahme nach Abschnitt 12 des Leitfadens.

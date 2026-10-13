@@ -1,20 +1,13 @@
-/* Tokio 2027 – Ziel-Design (Soll)
-   Nur Abweichungen vom heutigen Stand (quelle/app.src.html). Die App selbst ist NICHT geändert.
+/* Tokio 2027 – Ziel-Design (Soll), noch NICHT übernommener Rest
+   Stand 2026-10-13: Farben (Abschnitt 3 des Leitfadens), Rand-Kontrast, Merken-Stern und Tippflächen (Abschnitt 8)
+   sind in die App übernommen (quelle/app.src.html). Hier steht, was noch fehlt: Schrift, Zustände, Laptop-Layout.
    Zum Ansehen: Datei nach dem <style>-Block der App einbinden oder in den Browser-Entwicklertools einfügen.
-   Begründung zu jedem Punkt: docs/design-guidelines.md */
+   Begründung: docs/design-guidelines.md */
 
-/* ---------- 1. Farben: AA-Kontrast (4,5:1 Text, 3:1 Bedienelemente) ---------- */
+/* ---------- 1. Schrift: japanische Ersatzschriften ---------- */
 :root {
-  --vermillion: #ae452e;   /* war #b1462f: 4,49 → 4,6:1 auf --vermillion-soft */
-  --gold: #836124;         /* war #97702a: 3,69 → 5,2:1 auf --gold-soft */
-  --line-strong: #8b8165;  /* neu: Rand von Bedienelementen, 3,2:1 */
-  --focus: #145ce9;        /* war #2f6fed: 3,99 → 4,9:1 */
   --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --line-strong: #6c727c; --focus: #568af0; }
-}
-:root[data-theme="dark"] { --line-strong: #6c727c; --focus: #568af0; }
 
 /* ---------- 2. Typografie: 16 px Basis, nichts unter 12 px ---------- */
 body { font-size: 16px; line-height: 1.5; }
@@ -26,28 +19,7 @@ body { font-size: 16px; line-height: 1.5; }
 .tab { font-size: 12.5px; }
 #map .leaflet-control-attribution { font-size: 11px; }
 
-/* ---------- 3. Bedienelemente: Ränder mit 3:1, Zielgröße mind. 44 px ---------- */
-.search, .chip, .filter-btn, .toggle, .seg button, .btn, .small-btn, textarea, select {
-  border-color: var(--line-strong);
-}
-.chip[aria-pressed="true"], .seg button[aria-pressed="true"], .btn.primary { border-color: var(--indigo); }
-.chip { min-height: 40px; padding-top: 4px; padding-bottom: 4px; }
-.filter-btn { min-height: 44px; }
-.clear-q { min-width: 44px; min-height: 44px; margin-right: -12px; }
-.seg button { min-height: 40px; }
-.btn { min-height: 44px; }
-.small-btn { min-height: 40px; }
-.pill-link { min-height: 44px; }
-.sheet-close { width: 44px; height: 44px; }
-.tab { min-height: 56px; }
-.row { min-height: 64px; }
-#map .leaflet-control-zoom a, .home-ctl a { width: 44px; height: 44px; line-height: 44px; }
-
-/* ---------- 4. Merken-Stern: auch ungemerkt sichtbar (Form + Kontrast) ---------- */
-.fav { color: var(--ink-soft); }
-.fav[aria-pressed="true"] { color: var(--gold); }
-
-/* ---------- 5. Zustände ---------- */
+/* ---------- 3. Zustände ---------- */
 @media (hover: hover) {
   .chip:hover, .seg button:hover, .toggle:hover, .btn:hover, .small-btn:hover { background: var(--paper-2); }
   .row:hover .name { text-decoration: underline; text-underline-offset: 3px; }
@@ -58,7 +30,7 @@ button:disabled, .btn:disabled { opacity: 0.45; cursor: not-allowed; }
   .chip:active, .seg button:active, .toggle:active, .btn:active, .tab:active { transform: none; }
 }
 
-/* ---------- 6. Laptop (ab 1024 px): Liste links, Karte rechts ---------- */
+/* ---------- 4. Laptop (ab 1024 px): Liste links, Karte rechts ---------- */
 @media (min-width: 1024px) {
   .top, .tools { max-width: 1200px; }
 }

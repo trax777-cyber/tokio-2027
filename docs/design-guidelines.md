@@ -1,12 +1,28 @@
 # Tokio 2027 – Design-Leitfaden
 
-Stand: 13.10.2026 · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
+Stand: 13.10.2026 (Farben und Tippflächen am selben Tag in die App übernommen) · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
 
-**Wozu dieses Dokument?** Es beschreibt, wie die App heute aussieht (**Ist**), und zeigt das Ziel-Design (**Soll**). Die App selbst ist dafür nicht verändert worden. Das Soll steht als Stylesheet in [`soll.css`](soll.css), lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
+**Wozu dieses Dokument?** Es beschreibt, wie die App vor der Übernahme aussah (**Ist**), und zeigt das Ziel-Design (**Soll**). Übernommen sind inzwischen Farben und Tippflächen (siehe „Stand der Umsetzung“). Der Rest des Soll steht als Stylesheet in [`soll.css`](soll.css), lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
 
-**Wie ist es entstanden?** Der Ist-Zustand stammt aus dem Quellcode (`quelle/app.src.html`), die Maße aus dem Browser (Handy-Breite 390 px, Chromium), die Kontraste aus den Farbwerten berechnet (`tools/kontrast.py`). Nicht getestet sind echte iPhones, Android-Geräte, Bildschirmleser und die Karte (die Karten-Bibliothek war in der Prüfumgebung nicht erreichbar).
+**Wie ist es entstanden?** Die Tabellen und Bilder mit „Ist“ zeigen den Zustand **vor** der Übernahme. Der Ist-Zustand stammt aus dem Quellcode (`quelle/app.src.html`), die Maße aus dem Browser (Handy-Breite 390 px, Chromium), die Kontraste aus den Farbwerten berechnet (`tools/kontrast.py`). Nicht getestet sind echte iPhones, Android-Geräte, Bildschirmleser und die Karte (die Karten-Bibliothek war in der Prüfumgebung nicht erreichbar).
 
 **Nutzer:** Mathias und Familie. Alter und Sehvermögen der Mitreisenden sind nicht bekannt. Der Leitfaden geht deshalb vom ungünstigen Fall aus: grelle Sonne, eine Hand, Handy in Bewegung.
+
+---
+
+## Stand der Umsetzung (13.10.2026)
+
+| Teil | Status |
+|---|---|
+| Farben: `--vermillion`, `--gold`, `--focus`, neues `--line-strong` (hell und dunkel) | **in der App** |
+| Ränder aller Bedienelemente auf `--line-strong`, Merken-Stern dauerhaft sichtbar | **in der App** |
+| Tippflächen: Chip 40, Tab 56, Schließen 44, Pille 44, Knöpfe 44/40, Zoom 44, Suche leeren 44 px | **in der App** (am Handy-Layout gemessen, siehe Abschnitt 8) |
+| Schrift: 16 px Basis, nichts unter 12 px, Ersatzschriften für Japanisch | offen, `soll.css` |
+| Zustände (Hover, Gedrückt, Gesperrt) | offen, `soll.css` |
+| Laptop-Layout mit zwei Spalten | offen, `soll.css` (Layout fehlt noch) |
+| Karten-Punkte größer, Zurück-Taste, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
+
+Die Bilder „Soll“ in diesem Dokument zeigen zusätzlich die noch offene Schrift.
 
 ---
 
@@ -406,9 +422,9 @@ Notiert wird: geschafft ja/nein, Zeit, Stolpersteine. **Zyklus:** Test, die drei
 | Arbeitsablauf | `CLAUDE.md` |
 | Kontrastprüfung | `tools/kontrast.py` |
 
-**Vom Soll in die App (wenn ihr es umsetzen wollt):**
+**Vom Soll in die App (so wurden Farben und Tippflächen übernommen):**
 
-1. `docs/soll.css` am Ende des `<style>`-Blocks von `quelle/app.src.html` einfügen und die Token-Werte direkt in den `:root`-Block übernehmen.
+1. Token-Werte direkt in den `:root`-Block von `quelle/app.src.html` schreiben und die Regeln der Bausteine dort ändern, nicht als Zusatz-Stylesheet anhängen. Der noch offene Rest steht in `docs/soll.css`.
 2. Die Code-Punkte aus Abschnitt 7, 10 und 11 einzeln umsetzen.
 3. `python3 quelle/build.py`, `python3 tools/kontrast.py`, Prüfroutine aus Abschnitt 10.
 4. Änderung auf `main` pushen, GitHub Pages veröffentlicht automatisch.
