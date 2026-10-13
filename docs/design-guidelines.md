@@ -1,8 +1,8 @@
 # Tokio 2027 – Design-Leitfaden
 
-Stand: 13.10.2026 (Farben, Tippflächen, Schrift und Zustände am selben Tag in die App übernommen) · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
+Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am selben Tag in die App übernommen) · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
 
-**Wozu dieses Dokument?** Es beschreibt, wie die App vor der Übernahme aussah (**Ist**), und zeigt das Ziel-Design (**Soll**). Übernommen sind inzwischen Farben, Tippflächen, Schrift und Zustände (siehe „Stand der Umsetzung“). Der Rest des Soll steht als Stylesheet in [`soll.css`](soll.css), lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
+**Wozu dieses Dokument?** Es beschreibt, wie die App vor der Übernahme aussah (**Ist**), und zeigt das Ziel-Design (**Soll**). Übernommen sind inzwischen Farben, Tippflächen, Schrift, Zustände und das Laptop-Layout (siehe „Stand der Umsetzung“). Das Ziel-Design steckt jetzt in `quelle/app.src.html`, lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
 
 **Wie ist es entstanden?** Die Tabellen und Bilder mit „Ist“ zeigen den Zustand **vor** der Übernahme. Der Ist-Zustand stammt aus dem Quellcode (`quelle/app.src.html`), die Maße aus dem Browser (Handy-Breite 390 px, Chromium), die Kontraste aus den Farbwerten berechnet (`tools/kontrast.py`). Nicht getestet sind echte iPhones, Android-Geräte, Bildschirmleser und die Karte (die Karten-Bibliothek war in der Prüfumgebung nicht erreichbar).
 
@@ -19,7 +19,7 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift und Zustände am selben Tag in 
 | Tippflächen: Chip 40, Tab 56, Schließen 44, Pille 44, Knöpfe 44/40, Zoom 44, Suche leeren 44 px | **in der App** (am Handy-Layout gemessen, siehe Abschnitt 8) |
 | Schrift: 16 px Basis, Zweittext 14 px, nichts unter 12 px, Ersatzschriften für Japanisch | **in der App** (kleinste Schrift in allen vier Ansichten gemessen: 12 px) |
 | Zustände: Hover (nur Maus, aktive Elemente behalten ihre Farbe), Gedrückt, Gesperrt, „Bewegung reduzieren“ | **in der App** |
-| Laptop-Layout mit zwei Spalten | offen, `soll.css` enthält nur die breitere Kopfzeile, der Rest braucht Code |
+| Laptop-Layout ab 1024 px: Liste links, Karte rechts, Detail als Seitenleiste | **in der App** (mit der echten Karten-Bibliothek getestet, Kartenkacheln im Test nicht geladen) |
 | Karten-Punkte größer, Zurück-Taste, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
@@ -56,7 +56,7 @@ Dazu kommen Empfehlungen, die Code betreffen (Zurück-Taste, Offline-Betrieb, ei
 </tr>
 </table>
 
-*Die echte App (Handy-Breite 390 px), links Ist, rechts Soll: größere Schrift, kräftigere Ränder, gut erkennbarer Merken-Stern, höhere Tippflächen. Das Soll entsteht ausschließlich aus `soll.css` über dem unveränderten Code.*
+*Die echte App (Handy-Breite 390 px), links Ist, rechts Soll: größere Schrift, kräftigere Ränder, gut erkennbarer Merken-Stern, höhere Tippflächen. Das Soll-Bild entstand mit einem Zusatz-Stylesheet über dem damaligen Code (`soll.css`, inzwischen in die App übernommen und entfernt).*
 
 ---
 
@@ -166,7 +166,7 @@ Ziele: Text 4,5 : 1, große Schrift und Bedienelemente 3 : 1 (WCAG 1.4.3 und 1.4
 
 **Schriften (Ist, beibehalten):** *Shippori Mincho* (Serifen, Titel, Stempel, Tab-Zeichen) und *Source Sans 3* (Text). Mincho trägt den japanischen Charakter, Source Sans bleibt auch bei kleiner Größe gut lesbar.
 
-**Lücke:** Source Sans hat keine japanischen Zeichen. In „RUMBLE CRUMBLE 渋谷本店“ springt der Browser für 渋谷本店 auf eine beliebige Systemschrift. Soll: feste Ersatzliste (`Hiragino Sans`, `Yu Gothic`, `Noto Sans JP`), steht in `soll.css`.
+**Lücke:** Source Sans hat keine japanischen Zeichen. In „RUMBLE CRUMBLE 渋谷本店“ springt der Browser für 渋谷本店 auf eine beliebige Systemschrift. Soll (umgesetzt): feste Ersatzliste (`Hiragino Sans`, `Yu Gothic`, `Noto Sans JP`).
 
 ### Größen (Soll)
 
@@ -228,9 +228,15 @@ Im Ist sind die Abstände gewachsen (6, 8, 10, 12, 13, 14, 16, 20, 24). Soll: ei
 |---|---|---|
 | bis 719 px (Handy) | eine Spalte, Tab-Leiste unten, Blätter von unten, Seitenrand 16 px | unverändert |
 | 720 bis 1023 px (Tablet, kleiner Laptop) | gleiche Spalte, nur größerer Titel, Inhalt max. 820 px zentriert | unverändert |
-| **ab 1024 px (Laptop)** | wie Tablet, viel leere Fläche | **zwei Spalten: Liste links (ca. 420 px), Karte rechts, Detail als Seitenleiste statt Blatt, Tab-Leiste entfällt** |
+| **ab 1024 px (Laptop)** | wie Tablet, viel leere Fläche | **zwei Spalten: Liste links (380 bis 460 px), Karte rechts, Detail als Seitenleiste statt Blatt; die Tab-Leiste bleibt links unten mit „Liste“ und „Merkliste“, die Karte ist immer sichtbar** (umgesetzt) |
 
 ![Layout-Skizzen](img/beispiel-layout-hell.png)
+
+**So sieht es in der App aus** (1280 × 800 px, Ort geöffnet; die Kartenkacheln fehlen im Test, die Punkte sind die Orte):
+
+<table><tr><td><img src="img/laptop-detail-hell.png" width="460" alt="Laptop, hell"></td><td><img src="img/laptop-detail-dunkel.png" width="460" alt="Laptop, dunkel"></td></tr></table>
+
+**Verhalten am Laptop:** Ein Klick auf eine Zeile oder einen Punkt öffnet die Seitenleiste und rückt den Ort links von ihr ins Bild. Die Karte bleibt bedienbar (kein Abdunkeln), Esc schließt die Leiste. Wechselt man den Ort während des Bearbeitens, fragt die App vor dem Verwerfen. In der Merkliste zeigt die Karte nur die gemerkten Orte. Zoom und Übersicht liegen links, weil die Leiste rechts abdeckt.
 
 **Weitere Regeln**
 
@@ -261,7 +267,7 @@ Tab-Leiste (immer sichtbar)
 |---|---|---|
 | Kein Eintrag im Browser-Verlauf (`pushState`/`popstate` fehlen) | Die Android-Zurück-Taste oder Wischgeste schließt das Blatt nicht, sondern verlässt die App | Beim Öffnen eines Blatts Verlaufseintrag anlegen, bei Zurück Blatt schließen |
 | Tab-Leiste hat `role="tab"`, aber keine Pfeiltasten und kein `aria-controls` | Am Laptop mit Tastatur umständlich, Bildschirmleser kennt die Zuordnung nicht | Pfeiltasten links/rechts, `aria-controls` auf die Ansichten |
-| Ab Laptop-Breite nur Tabs | Karte und Liste nie gleichzeitig sichtbar | Zwei-Spalten-Layout (Abschnitt 6) |
+| Ab Laptop-Breite nur Tabs | Karte und Liste nie gleichzeitig sichtbar | Zwei-Spalten-Layout (Abschnitt 6), **umgesetzt** |
 
 ## 8. Bedienelemente
 
@@ -309,7 +315,7 @@ Hintergrund: WCAG 2.2 verlangt mindestens 24 × 24 px (Kriterium 2.5.8, AA). App
 
 ## 9. Konsistenz
 
-**Eine Quelle.** Die App entsteht aus `quelle/app.src.html` und `quelle/orte.json` (`python3 quelle/build.py`). Das Ziel-Design liegt daneben in `docs/soll.css`. Beides zusammen ist die „Komponentenbibliothek“. Eine eigene Bibliothek lohnt bei einer Datei nicht.
+**Eine Quelle.** Die App entsteht aus `quelle/app.src.html` und `quelle/orte.json` (`python3 quelle/build.py`). Das Ziel-Design ist dort umgesetzt, die Abweichungen von früher stehen in `docs/entscheidungen.md`. Beides zusammen ist die „Komponentenbibliothek“. Eine eigene Bibliothek lohnt bei einer Datei nicht.
 
 **Bausteine (Ist, alle beibehalten):**
 
@@ -417,14 +423,13 @@ Notiert wird: geschafft ja/nein, Zeit, Stolpersteine. **Zyklus:** Test, die drei
 |---|---|
 | Orte | `quelle/orte.json` |
 | App-Code und heutiges Design | `quelle/app.src.html` |
-| Ziel-Design | `docs/soll.css` |
 | Beispiele, Skizzen | `docs/design-beispiele.html`, `docs/img/` |
 | Arbeitsablauf | `CLAUDE.md` |
 | Kontrastprüfung | `tools/kontrast.py` |
 
 **Vom Soll in die App (so wurden Farben und Tippflächen übernommen):**
 
-1. Token-Werte direkt in den `:root`-Block von `quelle/app.src.html` schreiben und die Regeln der Bausteine dort ändern, nicht als Zusatz-Stylesheet anhängen. Der noch offene Rest (Laptop-Layout) steht in `docs/soll.css`.
+1. Token-Werte direkt in den `:root`-Block von `quelle/app.src.html` schreiben und die Regeln der Bausteine dort ändern, nicht als Zusatz-Stylesheet anhängen. Ein Zusatz-Stylesheet gibt es nicht mehr (`docs/soll.css` ist entfernt, alles ist umgesetzt).
 2. Die Code-Punkte aus Abschnitt 7, 10 und 11 einzeln umsetzen.
 3. `python3 quelle/build.py`, `python3 tools/kontrast.py`, Prüfroutine aus Abschnitt 10.
 4. Änderung auf `main` pushen, GitHub Pages veröffentlicht automatisch.

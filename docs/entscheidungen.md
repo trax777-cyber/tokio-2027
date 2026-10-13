@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Laptop-Layout in die App übernommen (ab 1024 px)
+Kontext:      Am Laptop war nur eine schmale Spalte mit Tabs sichtbar, Karte und Liste nie zugleich.
+Entscheidung: Zwei Spalten (Liste 380 bis 460 px, Karte), Detail als Seitenleiste ohne Abdunkeln, Karte-Tab entfällt, Tab-Leiste bleibt links unten. Zoom und Übersicht der Karte links. Merkliste zeigt gemerkte Orte auf der Karte. `docs/soll.css` entfernt, weil alles umgesetzt ist.
+Alternativen: Detail weiter als Blatt von unten (verworfen: verdeckt Liste und Karte), Tabs oben (verworfen: ändert die Bedienung vom Handy).
+Folgen:       Beim Wechsel des Orts während des Bearbeitens fragt die App vor dem Verwerfen (Seitenleiste bleibt sonst offen und überschriebe nichts stillschweigend). Das Filterblatt bleibt ein Blatt von unten mit Abdunkeln. Karten-Kacheln im Test nicht geladen, nur Punkte, Zoom und Verhalten geprüft.
+
 ## 2026-10-13 · Schrift und Zustände in die App übernommen
 Kontext:      Fließtext 15 px und Kleinstes 10 bis 11,5 px, keine Hover- und Gedrückt-Zustände, japanische Namen in Zufallsschrift.
 Entscheidung: Basis 16 px (Zeilenhöhe 1,5), Zweittext 14 px, Zähler und Etiketten 12 px, Leaflet-Hinweis 11 px (Pflichtangabe, bleibt knapp unter 12). Ersatzschriften Hiragino Sans, Yu Gothic, Noto Sans JP. Hover nur bei Mausgeräten und nicht auf aktiven Elementen, Gedrückt 97 %, Gesperrt 45 %, alles ohne Bewegung bei „Bewegung reduzieren“.

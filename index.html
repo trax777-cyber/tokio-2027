@@ -408,6 +408,30 @@
     .brand h1 { font-size: 26px; }
     .hanko { width: 46px; height: 46px; font-size: 17px; }
   }
+  /* ---------- Laptop (ab 1024 px): Liste links, Karte rechts, Detail als Seitenleiste ---------- */
+  @media (min-width: 1024px) {
+    :root { --col: clamp(380px, 32vw, 460px); }
+    .app { display: grid; grid-template-columns: var(--col) minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr) auto; }
+    .top, .tools { max-width: none; margin: 0; grid-column: 1; }
+    .top { grid-row: 1; }
+    .tools { grid-row: 2; }
+    main { display: contents; }
+    .tabs { grid-column: 1; grid-row: 4; }
+    .tab[data-tab="karte"] { display: none; }
+    .view { position: relative; inset: auto; min-height: 0; }
+    #view-liste, #view-merkliste { grid-column: 1; grid-row: 3; border-top: 1px solid var(--line); }
+    #view-karte { grid-column: 2; grid-row: 1 / -1; border-left: 1px solid var(--line); }
+    .list-wrap { max-width: none; }
+    #detail.sheet {
+      left: auto; right: 16px; top: 16px; bottom: 16px; width: clamp(340px, 34vw, 420px);
+      max-width: none; max-height: none; margin: 0; border-radius: 18px;
+      transform: translateX(calc(100% + 32px));
+    }
+    #detail.sheet.on { transform: none; }
+    #detail .grip { display: none; }
+    .scrim.side { display: none !important; }
+    #map .leaflet-top.leaflet-right { right: auto; left: 0; }   /* Zoom und Übersicht bleiben links, die Seitenleiste deckt rechts ab */
+  }
 </style>
 
 </head>
@@ -531,6 +555,9 @@ const OUTSIDE = "Außerhalb der 23 Bezirke";
 
 const DEFAULT_FILTERS = { region: "alle", bezirk: "alle", minr: 0, sort: "name", hideDone: false };
 const S = { tab: "liste", q: "", kat: new Set(), ...DEFAULT_FILTERS, openId: null };
+const WIDE = matchMedia("(min-width: 1024px)");   // Laptop: Liste links, Karte rechts, Detail als Seitenleiste
+const mapVisible = () => S.tab === "karte" || WIDE.matches;
+const mapRows = () => S.tab === "merkliste" ? DATA.filter(d => isFav(d) && matchesQuery(d)) : filtered();
 let over = {};          // id -> gespeicherte Änderungen {beschreibung?, fav, besucht, notiz}
 let db = null;
 let editing = null;     // "desc" | "note" | null
@@ -681,20 +708,21 @@ function renderCount(rows) {
 
 function renderTabs() {
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.tab === S.tab));
-  ["liste", "karte", "merkliste"].forEach(t => { $("view-" + t).hidden = t !== S.tab; });
+  ["liste", "karte", "merkliste"].forEach(t => { $("view-" + t).hidden = t === "karte" ? !mapVisible() : t !== S.tab; });
   const isMerk = S.tab === "merkliste";
   $("chips").hidden = isMerk;
   $("open-filter").hidden = isMerk;
 }
 
 function renderAll() {
+  if (WIDE.matches && S.tab === "karte") S.tab = "liste";   // am Laptop ist die Karte immer sichtbar
   const rows = filtered();
   renderTabs();
   renderChips();
   renderCount(rows);
   if (S.tab === "liste") renderList(rows);
   if (S.tab === "merkliste") renderMerkliste();
-  if (S.tab === "karte") Map2.render(rows);
+  if (mapVisible()) Map2.render(S.tab === "merkliste" ? mapRows() : rows);
 }
 
 /* ---------- saving ---------- */
@@ -740,6 +768,9 @@ let lastFocus = null;
 function openSheet(el) {
   lastFocus = document.activeElement;
   ["detail", "filters"].forEach(s => { if ($(s) !== el) { $(s).classList.remove("on"); $(s).hidden = true; } });
+  const side = WIDE.matches && el.id === "detail";    // Seitenleiste statt Blatt: Karte bleibt bedienbar
+  $("scrim").classList.toggle("side", side);
+  el.setAttribute("aria-modal", side ? "false" : "true");
   $("scrim").hidden = false; el.hidden = false;
   requestAnimationFrame(() => { $("scrim").classList.add("on"); el.classList.add("on"); });
   el.scrollTop = 0;
@@ -751,16 +782,22 @@ function closeSheets() {
   ["detail", "filters"].forEach(s => $(s).classList.remove("on"));
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   setTimeout(() => { $("scrim").hidden = true; $("detail").hidden = true; $("filters").hidden = true; }, reduce ? 0 : 220);
-  if (S.tab === "karte") Map2.render(filtered());
+  if (mapVisible()) Map2.render(mapRows());
   if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll: true }); } catch (e) {}
 }
 
 function openDetail(id) {
   if (!byId.has(id)) return;
+  if (editing && S.openId && S.openId !== id) {      // Seitenleiste bleibt beim Wechsel offen: nichts stillschweigend verwerfen
+    const cur = byId.get(S.openId), ta = $("ed-desc") || $("ed-note");
+    const orig = editing === "desc" ? desc(cur) : note(cur);
+    if (ta && ta.value !== orig && !confirm("Nicht gespeicherte Änderung verwerfen?")) return;
+  }
   S.openId = id; editing = null;
   renderDetail();
   openSheet($("detail"));
-  if (S.tab === "karte") Map2.render(filtered());
+  if (mapVisible()) Map2.render(mapRows());
+  if (WIDE.matches) Map2.reveal(byId.get(id));
   setTimeout(() => { const c = $("detail").querySelector(".sheet-close"); c && c.focus({ preventScroll: true }); }, 50);
 }
 
@@ -803,7 +840,7 @@ function renderDetail() {
       ${gm ? `<a class="pill-link primary" href="${esc(gm)}" target="_blank" rel="noopener">Google Maps ↗</a>` : ""}
       ${route ? `<a class="pill-link" href="${esc(route)}" target="_blank" rel="noopener">Route mit Öffis ↗</a>` : ""}
       ${web ? `<a class="pill-link" href="${esc(web)}" target="_blank" rel="noopener">Website ↗</a>` : ""}
-      ${onMap && S.tab !== "karte" ? `<button type="button" class="pill-link" data-action="show-map">Auf der Karte</button>` : ""}
+      ${onMap && !mapVisible() ? `<button type="button" class="pill-link" data-action="show-map">Auf der Karte</button>` : ""}
     </div>
     <div class="d-sec">
       <h3>Beschreibung ${editing !== "desc" ? `<button type="button" class="link-btn" data-action="edit-desc">${ds ? "Bearbeiten" : "Hinzufügen"}</button>` : ""}</h3>
@@ -955,15 +992,21 @@ const Map2 = (() => {
 
   function fitAll() {
     const pts = lastRows.filter(hasCoords);
-    if (map && pts.length) map.fitBounds(L.latLngBounds(pts.map(d => [d.lat, d.lng])), { padding: [30, 30] });
+    if (map && pts.length) map.fitBounds(L.latLngBounds(pts.map(d => [d.lat, d.lng])), { padding: [30, 30], maxZoom: 15 });
   }
   function focus(d) {
     if (map && hasCoords(d)) map.setView([d.lat, d.lng], 16);
   }
-  window.addEventListener("resize", () => { if (map && S.tab === "karte") map.invalidateSize(); });
+  // Laptop: Ort sichtbar machen, links von der Seitenleiste (sie deckt rechts ca. ein Drittel ab)
+  function reveal(d) {
+    if (!map || !hasCoords(d)) return;
+    map.setView([d.lat, d.lng], Math.max(map.getZoom(), 14), { animate: false });
+    map.panBy([Math.round(Math.min(420, innerWidth * 0.34) / 2), 0], { animate: false });
+  }
+  window.addEventListener("resize", () => { if (map && mapVisible()) map.invalidateSize(); });
 
   $("legend").innerHTML = GROUPS.map(([g, n]) => `<span><i style="background:var(${COLORS[g]})"></i>${n}</span>`).join("");
-  return { render, focus, fitAll };
+  return { render, focus, reveal, fitAll };
 })();
 
 /* ---------- events ---------- */
@@ -982,7 +1025,11 @@ document.addEventListener("click", e => {
     return;
   }
   const tab = e.target.closest(".tab");
-  if (tab) { S.tab = tab.dataset.tab; savePrefs(); renderAll(); return; }
+  if (tab) {
+    S.tab = tab.dataset.tab; savePrefs(); renderAll();
+    if (WIDE.matches && S.tab === "merkliste") Map2.fitAll();    // Laptop: Karte zeigt die gemerkten Orte
+    return;
+  }
   const act = e.target.closest("[data-action]");
   if (!act) return;
   const a = act.dataset.action, id = S.openId;
@@ -1010,6 +1057,8 @@ document.addEventListener("click", e => {
   }
 });
 $("scrim").addEventListener("click", closeSheets);
+const onWideChange = () => { if (!$("scrim").hidden) closeSheets(); renderAll(); };
+if (WIDE.addEventListener) WIDE.addEventListener("change", onWideChange); else WIDE.addListener(onWideChange);
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !$("scrim").hidden) closeSheets();
 });
