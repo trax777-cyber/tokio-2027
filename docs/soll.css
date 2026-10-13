@@ -1,36 +1,10 @@
 /* Tokio 2027 – Ziel-Design (Soll), noch NICHT übernommener Rest
-   Stand 2026-10-13: Farben (Abschnitt 3 des Leitfadens), Rand-Kontrast, Merken-Stern und Tippflächen (Abschnitt 8)
-   sind in die App übernommen (quelle/app.src.html). Hier steht, was noch fehlt: Schrift, Zustände, Laptop-Layout.
-   Zum Ansehen: Datei nach dem <style>-Block der App einbinden oder in den Browser-Entwicklertools einfügen.
-   Begründung: docs/design-guidelines.md */
+   Stand 2026-10-13: Farben, Tippflächen, Schrift und Zustände sind in der App (quelle/app.src.html).
+   Hier steht nur noch das Laptop-Layout. Auch dieses ist erst ein Anfang: Die Zwei-Spalten-Ansicht
+   (Liste links, Karte rechts, Detail als Seitenleiste) braucht Änderungen an HTML und JavaScript.
+   Begründung: docs/design-guidelines.md, Abschnitt 6 */
 
-/* ---------- 1. Schrift: japanische Ersatzschriften ---------- */
-:root {
-  --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif;
-}
-
-/* ---------- 2. Typografie: 16 px Basis, nichts unter 12 px ---------- */
-body { font-size: 16px; line-height: 1.5; }
-.name { font-size: 16px; }
-.sub, .desc, .note-line, .addr p, .map-note, .small-btn, .count, .brand p { font-size: 14px; }
-.desc { line-height: 1.5; }
-.chip { font-size: 14px; }
-.chip .n, .tag-done, .status, .legend, .filter-btn .dot, .tab .badge { font-size: 12px; }
-.tab { font-size: 12.5px; }
-#map .leaflet-control-attribution { font-size: 11px; }
-
-/* ---------- 3. Zustände ---------- */
-@media (hover: hover) {
-  .chip:hover, .seg button:hover, .toggle:hover, .btn:hover, .small-btn:hover { background: var(--paper-2); }
-  .row:hover .name { text-decoration: underline; text-underline-offset: 3px; }
-}
-.chip:active, .seg button:active, .toggle:active, .btn:active, .tab:active { transform: scale(0.97); }
-button:disabled, .btn:disabled { opacity: 0.45; cursor: not-allowed; }
-@media (prefers-reduced-motion: reduce) {
-  .chip:active, .seg button:active, .toggle:active, .btn:active, .tab:active { transform: none; }
-}
-
-/* ---------- 4. Laptop (ab 1024 px): Liste links, Karte rechts ---------- */
+/* ---------- Laptop (ab 1024 px): breiterer Inhalt ---------- */
 @media (min-width: 1024px) {
   .top, .tools { max-width: 1200px; }
 }

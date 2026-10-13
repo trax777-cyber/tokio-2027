@@ -11,5 +11,5 @@
   alte Datei in den Papierkorb, neue mit gleichem Titel anlegen (`disableConversionToGoogleType: true`).
 - Ortsdaten wie Sterne, Typ und Adresse: Google Maps per Playwright laden (Chromium mit `proxy: {server: $HTTPS_PROXY}`, Seite `https://www.google.com/maps/place/<Name>/data=!4m2!3m1!1s<hex>:<hex>?hl=en`, etwa 20 s warten, `innerText` lesen). Das klappt nicht immer (ERR_TOO_MANY_RETRIES), dann einzeln wiederholen.
   Koordinaten: aus `!3d…!4d…` im aufgelösten Link, sonst aus dem Plus Code der Seite.
-- Design: `docs/design-guidelines.md` (Ist und Soll), `docs/soll.css` (nur der noch nicht übernommene Rest des Ziel-Designs: Schrift, Zustände, Laptop-Layout), `docs/design-beispiele.html` (Beispielseite), `docs/entscheidungen.md` (Entscheidungsprotokoll).
+- Design: `docs/design-guidelines.md` (Ist und Soll), `docs/soll.css` (nur der noch nicht übernommene Rest des Ziel-Designs: Laptop-Layout), `docs/design-beispiele.html` (Beispielseite), `docs/entscheidungen.md` (Entscheidungsprotokoll).
   Neue Oberflächenelemente richten sich nach dem Leitfaden: Token-Farben, Tippflächen mind. 40/44 px, nichts unter 12 px, Zeichen immer mit Wort. Kontrast prüfen mit `python3 tools/kontrast.py`.

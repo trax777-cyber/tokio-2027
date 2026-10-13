@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Schrift und Zustände in die App übernommen
+Kontext:      Fließtext 15 px und Kleinstes 10 bis 11,5 px, keine Hover- und Gedrückt-Zustände, japanische Namen in Zufallsschrift.
+Entscheidung: Basis 16 px (Zeilenhöhe 1,5), Zweittext 14 px, Zähler und Etiketten 12 px, Leaflet-Hinweis 11 px (Pflichtangabe, bleibt knapp unter 12). Ersatzschriften Hiragino Sans, Yu Gothic, Noto Sans JP. Hover nur bei Mausgeräten und nicht auf aktiven Elementen, Gedrückt 97 %, Gesperrt 45 %, alles ohne Bewegung bei „Bewegung reduzieren“.
+Alternativen: Hover auch auf aktive Elemente (verworfen: die Auswahlfarbe verschwände unter dem Mauszeiger, so war es in `soll.css` zunächst angelegt).
+Folgen:       Zeilen werden höher, weniger Orte pro Bildschirm. Laptop-Layout, Karten-Punkte und Code-Punkte bleiben offen. `.status` (12,5 px) bewusst nicht auf 12 gesenkt.
+
 ## 2026-10-13 · Farben und Tippflächen in die App übernommen
 Kontext:      Fünf Farbpaare lagen unter dem WCAG-Ziel, mehrere Bedienelemente unter 40 px.
 Entscheidung: `--vermillion`, `--gold`, `--focus` angepasst, `--line-strong` neu (hell/dunkel). Ränder der Bedienelemente und der ungemerkte Stern nutzen die neuen Werte. Mindesthöhen: Chip 40, Tab 56, Schließen/Pille/Knöpfe 44, kleiner Knopf 40, Karten-Zoom 44.

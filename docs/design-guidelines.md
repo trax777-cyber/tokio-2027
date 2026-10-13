@@ -1,8 +1,8 @@
 # Tokio 2027 – Design-Leitfaden
 
-Stand: 13.10.2026 (Farben und Tippflächen am selben Tag in die App übernommen) · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
+Stand: 13.10.2026 (Farben, Tippflächen, Schrift und Zustände am selben Tag in die App übernommen) · Gilt für die App unter https://trax777-cyber.github.io/tokio-2027/
 
-**Wozu dieses Dokument?** Es beschreibt, wie die App vor der Übernahme aussah (**Ist**), und zeigt das Ziel-Design (**Soll**). Übernommen sind inzwischen Farben und Tippflächen (siehe „Stand der Umsetzung“). Der Rest des Soll steht als Stylesheet in [`soll.css`](soll.css), lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
+**Wozu dieses Dokument?** Es beschreibt, wie die App vor der Übernahme aussah (**Ist**), und zeigt das Ziel-Design (**Soll**). Übernommen sind inzwischen Farben, Tippflächen, Schrift und Zustände (siehe „Stand der Umsetzung“). Der Rest des Soll steht als Stylesheet in [`soll.css`](soll.css), lebende Beispiele in [`design-beispiele.html`](design-beispiele.html). Die Beispielseite ist unter https://trax777-cyber.github.io/tokio-2027/docs/design-beispiele.html im Browser zu öffnen (Hell/Dunkel umschaltbar).
 
 **Wie ist es entstanden?** Die Tabellen und Bilder mit „Ist“ zeigen den Zustand **vor** der Übernahme. Der Ist-Zustand stammt aus dem Quellcode (`quelle/app.src.html`), die Maße aus dem Browser (Handy-Breite 390 px, Chromium), die Kontraste aus den Farbwerten berechnet (`tools/kontrast.py`). Nicht getestet sind echte iPhones, Android-Geräte, Bildschirmleser und die Karte (die Karten-Bibliothek war in der Prüfumgebung nicht erreichbar).
 
@@ -17,12 +17,12 @@ Stand: 13.10.2026 (Farben und Tippflächen am selben Tag in die App übernommen)
 | Farben: `--vermillion`, `--gold`, `--focus`, neues `--line-strong` (hell und dunkel) | **in der App** |
 | Ränder aller Bedienelemente auf `--line-strong`, Merken-Stern dauerhaft sichtbar | **in der App** |
 | Tippflächen: Chip 40, Tab 56, Schließen 44, Pille 44, Knöpfe 44/40, Zoom 44, Suche leeren 44 px | **in der App** (am Handy-Layout gemessen, siehe Abschnitt 8) |
-| Schrift: 16 px Basis, nichts unter 12 px, Ersatzschriften für Japanisch | offen, `soll.css` |
-| Zustände (Hover, Gedrückt, Gesperrt) | offen, `soll.css` |
-| Laptop-Layout mit zwei Spalten | offen, `soll.css` (Layout fehlt noch) |
+| Schrift: 16 px Basis, Zweittext 14 px, nichts unter 12 px, Ersatzschriften für Japanisch | **in der App** (kleinste Schrift in allen vier Ansichten gemessen: 12 px) |
+| Zustände: Hover (nur Maus, aktive Elemente behalten ihre Farbe), Gedrückt, Gesperrt, „Bewegung reduzieren“ | **in der App** |
+| Laptop-Layout mit zwei Spalten | offen, `soll.css` enthält nur die breitere Kopfzeile, der Rest braucht Code |
 | Karten-Punkte größer, Zurück-Taste, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
 
-Die Bilder „Soll“ in diesem Dokument zeigen zusätzlich die noch offene Schrift.
+Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
 
 ---
 
@@ -181,7 +181,7 @@ Ziele: Text 4,5 : 1, große Schrift und Bedienelemente 3 : 1 (WCAG 1.4.3 und 1.4
 
 **Regeln**
 
-- **Nichts unter 12 px.** Im Ist liegen Zähler bei 10,5 und 11 px, das Haken-Etikett bei 11,5 px.
+- **Nichts unter 12 px.** Im Ist liegen Zähler bei 10,5 und 11 px, das Haken-Etikett bei 11,5 px. Einzige Ausnahme: der Pflichthinweis der Karte (Quellenangabe von Leaflet und Esri) mit 11 px.
 - Eingabefelder bleiben bei 16 px, sonst zoomt iOS beim Antippen hinein (im Ist bereits so).
 - Zeilenhöhe 1,5 im Fließtext, weil Latein und Kanji gemischt vorkommen.
 - Ziffern in Zählern und Bewertungen tabellarisch (`font-variant-numeric: tabular-nums`, im Ist vorhanden).
@@ -424,7 +424,7 @@ Notiert wird: geschafft ja/nein, Zeit, Stolpersteine. **Zyklus:** Test, die drei
 
 **Vom Soll in die App (so wurden Farben und Tippflächen übernommen):**
 
-1. Token-Werte direkt in den `:root`-Block von `quelle/app.src.html` schreiben und die Regeln der Bausteine dort ändern, nicht als Zusatz-Stylesheet anhängen. Der noch offene Rest steht in `docs/soll.css`.
+1. Token-Werte direkt in den `:root`-Block von `quelle/app.src.html` schreiben und die Regeln der Bausteine dort ändern, nicht als Zusatz-Stylesheet anhängen. Der noch offene Rest (Laptop-Layout) steht in `docs/soll.css`.
 2. Die Code-Punkte aus Abschnitt 7, 10 und 11 einzeln umsetzen.
 3. `python3 quelle/build.py`, `python3 tools/kontrast.py`, Prüfroutine aus Abschnitt 10.
 4. Änderung auf `main` pushen, GitHub Pages veröffentlicht automatisch.
