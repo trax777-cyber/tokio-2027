@@ -23,7 +23,9 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 | Zurück-Taste/-Geste schließt das Blatt, statt die App zu verlassen | **in der App** (im Browser mit allen Öffnen- und Schließen-Wegen getestet, nicht auf echten Handys) |
 | Karten-Punkte: Radius 8/10/12 px je nach Zoom, Trefferfläche je Punkt mindestens 37 px (ab Zoom 14 mindestens 45 px) | **in der App** (Trefferfläche mit Klick-Test geprüft) |
 | Offline: Schriften und Karten-Bibliothek liegen im Repository, Service Worker, Ein-Datei-Fassung | **in der App** (Start ohne Netz in Chromium getestet; echte Geräte nicht) |
-| Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
+| Bildschirmleser-Texte: Bewertung als „4,3 von 5 Sternen“, Notiz-Hinweis, japanische Textstücke als `lang="ja"`, Trefferzahl und Filter/Merkliste mit Zahl im Namen, Pfeiltasten und `aria-controls` für Tabs, Hintergrund bei Blättern gesperrt (`inert`), Kartenhinweis | **in der App** (Zugänglichkeitsbaum und Tastatur in Chromium geprüft, mit keinem echten Bildschirmleser) |
+| Merkliste teilen: Textliste mit Adressen, Maps-Links und Notizen über das Teilen-Menü oder die Zwischenablage; Link `#m=…` übernimmt die Orte nach Bestätigung | **in der App** |
+| Nichts mehr offen aus den Code-Punkten außer: echte Geräte und Bildschirmleser testen | offen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
 
@@ -41,7 +43,7 @@ Die App hat bereits ein stimmiges Design (Papier, Tinte, Zinnoberrot, Kanji-Stem
 | 4 | Tippflächen | Chips 34 px, Schließen-Knopf 36 px, „Kopieren“ 30 px | mindestens 40 px, wichtige Knöpfe 44 px |
 | 5 | Laptop | eine schmale Spalte (max. 820 px) | ab 1024 px Liste links, Karte rechts, Detail als Seitenleiste |
 
-Dazu kommen Empfehlungen, die Code betreffen (Bildschirmleser-Texte, Merkliste teilen; Zurück-Taste, Offline-Betrieb, eigene Schriften und größere Karten-Punkte sind umgesetzt). Sie stehen in den Abschnitten 7, 11 und 12.
+Dazu kamen Empfehlungen, die Code betreffen (Zurück-Taste, Offline-Betrieb, eigene Schriften, größere Karten-Punkte, Bildschirmleser-Texte, Merkliste teilen). Alle sind umgesetzt. Sie stehen in den Abschnitten 7, 11 und 12.
 
 <table>
 <tr><th>Ist, hell</th><th>Soll, hell</th><th>Ist, dunkel</th><th>Soll, dunkel</th></tr>
@@ -91,7 +93,7 @@ Es gibt keine erfundenen Personas. Es gibt zwei Situationen, die sich aus dem Ge
 | Typische Aufgabe | Orte vergleichen, filtern, Notizen schreiben, Merkliste füllen | Merkliste öffnen, Adresse kopieren, Route starten |
 | Wichtig | Überblick, Karte groß | Lesbarkeit, große Tippflächen, schneller Start |
 
-**Familie.** Alle bekommen dieselbe App, aber jede Person hat ihre **eigene** Merkliste, weil sie auf dem Gerät gespeichert wird. Das ist technisch gewollt, im Alltag aber verwirrend, wenn man gemeinsam plant. Empfehlung für das Soll: ein Knopf „Merkliste teilen“ in der Merkliste, der eine Textliste mit Namen und Maps-Links an Nachrichten-Apps übergibt (`navigator.share`, ohne Server). Das ist ein Entwurf und nicht gebaut.
+**Familie.** Alle bekommen dieselbe App, aber jede Person hat ihre **eigene** Merkliste, weil sie auf dem Gerät gespeichert wird. Das ist technisch gewollt, im Alltag aber verwirrend, wenn man gemeinsam plant. **Umgesetzt:** ein Knopf „Merkliste teilen“ in der Merkliste. Er übergibt eine Textliste (Name, Kategorie, Bezirk, Bewertung, Adresse, Maps-Link, Notiz) an das Teilen-Menü des Geräts (`navigator.share`) oder kopiert sie in die Zwischenablage. Am Ende steht ein App-Link mit den Ortsnummern (`…/tokio-2027/#m=0.4.6`). Wer ihn öffnet, bekommt gefragt, ob die Orte auf die eigene Merkliste kommen sollen. Ohne Bestätigung passiert nichts, Notizen werden nicht übertragen, nur die Orte. Es ist ein Weg, keine Synchronisierung: Spätere Änderungen an der Merkliste teilt man neu.
 
 **Wie man die Zielgruppe prüft:** nicht mit Umfragen, sondern mit dem Fünf-Aufgaben-Test aus Abschnitt 11, einmal mit jeder Person, die die App nutzt.
 
@@ -269,7 +271,7 @@ Tab-Leiste (immer sichtbar)
 | Lücke | Wirkung | Soll |
 |---|---|---|
 | ~~Kein Eintrag im Browser-Verlauf~~ (früher: Zurück-Taste verließ die App) | **umgesetzt:** Beim Öffnen eines Blatts legt die App einen Verlaufseintrag an (`pushState`), die Zurück-Taste oder -Geste schließt nur das Blatt. Schließen per Knopf, Esc oder Hintergrund entfernt den Eintrag wieder. Am Laptop genügt ein Eintrag, auch wenn man den Ort wechselt. | – |
-| Tab-Leiste hat `role="tab"`, aber keine Pfeiltasten und kein `aria-controls` | Am Laptop mit Tastatur umständlich, Bildschirmleser kennt die Zuordnung nicht | Pfeiltasten links/rechts, `aria-controls` auf die Ansichten |
+| ~~Tab-Leiste ohne Pfeiltasten und ohne `aria-controls`~~ | früher: am Laptop mit Tastatur umständlich, Bildschirmleser kannte die Zuordnung nicht | **umgesetzt:** Pfeiltasten, Pos1/Ende, `aria-controls`, Ansichten als `tabpanel` (am Laptop die Karte als `region`) |
 | Ab Laptop-Breite nur Tabs | Karte und Liste nie gleichzeitig sichtbar | Zwei-Spalten-Layout (Abschnitt 6), **umgesetzt** |
 
 ## 8. Bedienelemente
@@ -360,10 +362,10 @@ Hintergrund: WCAG 2.2 verlangt mindestens 24 × 24 px (Kriterium 2.5.8, AA). App
 |---|---|---|
 | Kontrast | fünf Paare unter dem Ziel | Soll-Farben (Abschnitt 3) |
 | Tippflächen | mehrere Elemente unter 40 px | Maße (Abschnitt 8) |
-| Tastatur | Tab-Leiste ohne Pfeiltasten; keine Fokusfalle im Blatt erkennbar | Pfeiltasten; beim Öffnen restliche Seite mit `inert` sperren |
-| Bildschirmleser | Bewertung als „★ 4,3“, Sterne `aria-hidden` | zusätzlich unsichtbarer Text „4,3 von 5 Sternen“ |
-| Bildschirmleser | Trefferzahl ohne Ansage | `aria-live="polite"` |
-| Karte | Punkte per Tastatur nicht erreichbar (Kreismarker) | Liste ist die barrierefreie Alternative, sie bleibt vollständig; Karte als „Zusatzansicht“ kennzeichnen |
+| Tastatur | Tab-Leiste ohne Pfeiltasten; keine Fokusfalle im Blatt | **umgesetzt:** Pfeiltasten; bei Blättern mit Abdunkeln ist die Seite dahinter `inert` (die Seitenleiste am Laptop ist absichtlich nicht modal) |
+| Bildschirmleser | Bewertung als „★ 4,3“, Sterne `aria-hidden` | **umgesetzt:** unsichtbarer Text „4,3 von 5 Sternen“; Merken-Knopf heißt immer „Merken: Name“ (Zustand über `aria-pressed`); japanische Namen und Adressen als `lang="ja"` |
+| Bildschirmleser | Trefferzahl ohne Ansage | **umgesetzt:** `aria-live="polite"`, nur bei Änderung; Filter-Knopf „Filter, 2 aktiv“, Tab „Merkliste, 3 gemerkt“, Fortschrittsbalken mit Name und Text |
+| Karte | Punkte per Tastatur nicht erreichbar (Kreismarker) | Liste ist die barrierefreie Alternative, sie bleibt vollständig; Karte als „Zusatzansicht“ kennzeichnen (**umgesetzt:** versteckter Hinweis an der Karte) |
 | Bewegung | Blätter gleiten ein | bei „Bewegung reduzieren“ bereits aus (im Ist so) |
 | Zoom | App ist `overflow: hidden` bei 100 % Höhe | bei 200 % Browser-Zoom prüfen, ob Inhalte erreichbar bleiben (WCAG 1.4.4) |
 

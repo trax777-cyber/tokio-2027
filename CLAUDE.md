@@ -14,3 +14,5 @@
   Koordinaten: aus `!3d…!4d…` im aufgelösten Link, sonst aus dem Plus Code der Seite.
 - Design: `docs/design-guidelines.md` (Ist und Soll), `docs/design-beispiele.html` (Beispielseite), `docs/entscheidungen.md` (Entscheidungsprotokoll).
   Neue Oberflächenelemente richten sich nach dem Leitfaden: Token-Farben, Tippflächen mind. 40/44 px, nichts unter 12 px, Zeichen immer mit Wort. Kontrast prüfen mit `python3 tools/kontrast.py`.
+- Ortsnummern: Das Präfix der `id` (z. B. `179-…`) darf sich nie ändern und muss eindeutig bleiben. Links zum Teilen der Merkliste (`#m=0.4.6`) und gemerkte Orte hängen daran.
+- Mac-Datei: `Tokio-2027-offline.html` plus `version.json` entstehen mit `build.py`. Die Datei enthält einen Update-Hinweis, der `version.json` von raw.githubusercontent.com abfragt. Beides gehört mit ins Repository. Anleitung: `docs/mac-datei-aktuell-halten.md`.

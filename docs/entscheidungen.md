@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Bildschirmleser-Texte, Merkliste teilen, Update-Hinweis für die Mac-Datei
+Kontext:      Sterne, Trefferzahl und Tabs waren für Bildschirmleser schlecht benannt, die Merkliste ließ sich nicht weitergeben (jede Person hatte ihre eigene), und die Mac-Datei musste von Hand ersetzt werden.
+Entscheidung: Unsichtbare Texte (`.sr`), `lang="ja"` für japanische Textstücke, `aria-live` an der Trefferzahl, Tabs mit Pfeiltasten und `aria-controls`, `inert` für den Hintergrund bei modalen Blättern. Merkliste teilen per Teilen-Menü oder Zwischenablage, dazu ein Link mit `#m=<Ortsnummern>`, der nach Bestätigung die Orte übernimmt (Notizen nicht). Die Ein-Datei-Fassung prüft per `version.json` auf Updates und bietet den Download an; Ersetzen bleibt Handarbeit, weil eine Seite sich nicht selbst überschreiben darf.
+Alternativen: Gemeinsame Merkliste auf einem Server (verworfen: bräuchte Konten und Hosting), Chrome-only „File System Access“ zum Überschreiben (verworfen: nur ein Browser, Berechtigung bei jeder Sitzung).
+Folgen:       Ortsnummern (`id`-Präfix) dürfen sich nie ändern, sonst zeigen alte Links auf falsche Orte. Mit echten Bildschirmlesern und Geräten nicht getestet.
+
 ## 2026-10-13 · Karten-Punkte größer und Offline-Betrieb
 Kontext:      Karten-Punkte hatten 13 px Durchmesser und genau diese Trefferfläche. Ohne Netz startete die App nicht (Schriften und Karten-Bibliothek kamen von fremden Servern, kein Service Worker).
 Entscheidung: Punkte in Canvas mit 10 px Trefferfläche, Radius nach Zoom 8/10/12 px. Schriften und Leaflet im Repository unter `vendor/`, Service Worker `sw.js` (App-Hülle vorab ablegen, Start online zuerst aus dem Netz, sonst aus dem Speicher), Ein-Datei-Fassung `Tokio-2027-offline.html` für den Mac. `sw.js` und die Ein-Datei-Fassung entstehen in `quelle/build.py`, die Version ergibt sich aus den Dateiinhalten.

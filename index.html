@@ -389,6 +389,9 @@
     font-size: 14px; box-shadow: var(--shadow);
   }
 
+  .sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .share-row { padding: 6px 0 2px; }
+
   /* ---------- Zustände ---------- */
   @media (hover: hover) {
     .chip:not([aria-pressed="true"]):hover, .seg button:not([aria-pressed="true"]):hover,
@@ -443,7 +446,7 @@
         <p>Juli 2027 · Wien → Haneda</p>
       </div>
     </div>
-    <div class="count" id="count"></div>
+    <div class="count" id="count" aria-live="polite" aria-atomic="true"></div>
   </header>
 
   <div class="tools">
@@ -468,7 +471,8 @@
 
     <section class="view map-view" id="view-karte" aria-label="Karte" hidden>
       <div class="map-box">
-        <div id="map" aria-label="Karte der Orte"></div>
+        <p class="sr" id="map-hint">Zusatzansicht. Alle Orte stehen auch in der Liste und sind dort mit Tastatur und Bildschirmleser bedienbar.</p>
+        <div id="map" aria-label="Karte der Orte" aria-describedby="map-hint"></div>
         <div class="legend" id="legend"></div>
       </div>
       <div class="map-note" id="map-note"></div>
@@ -479,10 +483,10 @@
     </section>
   </main>
 
-  <nav class="tabs" role="tablist">
-    <button class="tab" role="tab" data-tab="liste" type="button"><span class="ico">一覧</span>Liste</button>
-    <button class="tab" role="tab" data-tab="karte" type="button"><span class="ico">地図</span>Karte</button>
-    <button class="tab" role="tab" data-tab="merkliste" type="button"><span class="ico">☆</span>Merkliste<span class="badge" id="fav-badge" hidden></span></button>
+  <nav class="tabs" role="tablist" aria-label="Ansicht">
+    <button class="tab" role="tab" id="tab-liste" aria-controls="view-liste" data-tab="liste" type="button"><span class="ico">一覧</span>Liste</button>
+    <button class="tab" role="tab" id="tab-karte" aria-controls="view-karte" data-tab="karte" type="button"><span class="ico">地図</span>Karte</button>
+    <button class="tab" role="tab" id="tab-merkliste" aria-controls="view-merkliste" data-tab="merkliste" type="button"><span class="ico">☆</span>Merkliste<span class="badge" id="fav-badge" hidden></span></button>
   </nav>
 </div>
 
@@ -564,6 +568,10 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const byId = new Map(DATA.map(d => [d.id, d]));
 const kat = d => KAT[d.kategorie] || KAT.Sonstiges;
+// Japanische Textstücke als Japanisch kennzeichnen, damit Bildschirmleser sie nicht mit deutscher Stimme vorlesen
+const ja = s => esc(s).replace(/([\u3040-\u30ff\u3400-\u9fff\uff66-\uff9f]+)/g, '<span lang="ja">$1</span>');
+const whereOf = d => d.region === "Tokio" && d.bezirk !== OUTSIDE ? d.bezirk : d.stadtteil.replace(/^Andere \((.*)\)$/, "$1");
+const ratingHtml = r => `<span aria-hidden="true">${fmtRating(r)}</span><span class="sr">${fmtRating(r)} von 5 Sternen</span>`;
 const desc = d => (over[d.id] && typeof over[d.id].beschreibung === "string") ? over[d.id].beschreibung : (d.beschreibung || "");
 const isFav = d => !!(over[d.id] && over[d.id].fav);
 const isDone = d => !!(over[d.id] && over[d.id].besucht);
@@ -627,18 +635,18 @@ function activeFilterCount() {
 /* ---------- rendering ---------- */
 function itemHtml(d) {
   const k = kat(d), ds = desc(d), n = note(d), fav = isFav(d), done = isDone(d);
-  const where = d.region === "Tokio" && d.bezirk !== OUTSIDE ? d.bezirk : d.stadtteil.replace(/^Andere \((.*)\)$/, "$1");
+  const where = whereOf(d);
   return `<li class="item${done ? " done" : ""}">
     <button class="row" type="button" data-open="${esc(d.id)}">
       <span class="stamp g-${k.g}" aria-hidden="true">${k.k}</span>
       <span class="body">
-        <span class="name">${esc(d.name)}</span>
-        <span class="sub"><span>${esc(d.kategorie)} · ${esc(where)}</span>${d.rating ? `<span class="rate">★ ${fmtRating(d.rating)}</span>` : ""}${done ? `<span class="tag-done">✓ besucht</span>` : ""}</span>
-        ${n ? `<span class="note-line">✎ ${esc(n)}</span>` : ""}
+        <span class="name">${ja(d.name)}</span>
+        <span class="sub"><span>${esc(d.kategorie)} · ${esc(where)}</span>${d.rating ? `<span class="rate"><span aria-hidden="true">★ </span>${ratingHtml(d.rating)}</span>` : ""}${done ? `<span class="tag-done">✓ besucht</span>` : ""}</span>
+        ${n ? `<span class="note-line"><span aria-hidden="true">✎ </span><span class="sr">Notiz: </span>${esc(n)}</span>` : ""}
         ${ds ? `<span class="desc">${esc(ds)}</span>` : ""}
       </span>
     </button>
-    <button class="fav" type="button" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="${fav ? "Von Merkliste entfernen" : "Merken"}: ${esc(d.name)}">${fav ? "★" : "☆"}</button>
+    <button class="fav" type="button" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="Merken: ${esc(d.name)}">${fav ? "★" : "☆"}</button>
   </li>`;
 }
 
@@ -683,30 +691,40 @@ function renderMerkliste() {
   wrap.innerHTML = `
     <div class="progress">
       <div class="txt"><b>${totalDone}</b> von <b>${totalFav}</b> gemerkten Orten besucht</div>
-      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div>
+      <div class="bar" role="progressbar" aria-label="Besuchte gemerkte Orte" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}" aria-valuetext="${totalDone} von ${totalFav}"><i style="width:${pct}%"></i></div>
     </div>
+    <div class="share-row"><button type="button" class="btn" data-action="share">Merkliste teilen</button></div>
     ${open.length ? `<div class="section-h">Noch offen · ${open.length}</div><ul class="list">${open.map(itemHtml).join("")}</ul>` : ""}
     ${done.length ? `<div class="section-h">Besucht · ${done.length}</div><ul class="list">${done.map(itemHtml).join("")}</ul>` : ""}
     ${!favs.length ? `<div class="empty">Keine gemerkten Orte passen zur Suche.</div>` : ""}`;
 }
 
 function renderCount(rows) {
+  let countHtml;
   if (S.tab === "merkliste") {
-    $("count").innerHTML = `<b>${DATA.filter(isFav).length}</b> gemerkt`;
+    countHtml = `<b>${DATA.filter(isFav).length}</b> gemerkt`;
   } else {
-    $("count").innerHTML = rows.length === DATA.length ? `<b>${DATA.length}</b> Orte` : `<b>${rows.length}</b> von ${DATA.length}`;
+    countHtml = rows.length === DATA.length ? `<b>${DATA.length}</b> Orte` : `<b>${rows.length}</b> von ${DATA.length}`;
   }
+  if ($("count").innerHTML !== countHtml) $("count").innerHTML = countHtml;   // nur bei Änderung, sonst sagt der Bildschirmleser es jedes Mal an
   const f = activeFilterCount();
   $("filter-dot").hidden = !f;
   $("filter-dot").textContent = f;
   const nf = DATA.filter(isFav).length;
   $("fav-badge").hidden = !nf;
   $("fav-badge").textContent = nf;
+  $("open-filter").setAttribute("aria-label", f ? `Filter, ${f} aktiv` : "Filter");
+  $("tab-merkliste").setAttribute("aria-label", nf ? `Merkliste, ${nf} gemerkt` : "Merkliste");
 }
 
 function renderTabs() {
-  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.tab === S.tab));
-  ["liste", "karte", "merkliste"].forEach(t => { $("view-" + t).hidden = t === "karte" ? !mapVisible() : t !== S.tab; });
+  document.querySelectorAll(".tab").forEach(t => { const on = t.dataset.tab === S.tab; t.setAttribute("aria-selected", on); t.tabIndex = on ? 0 : -1; });
+  ["liste", "karte", "merkliste"].forEach(t => {
+    const v = $("view-" + t), panel = !(t === "karte" && WIDE.matches);   // am Laptop ist die Karte kein Tab-Inhalt, sondern immer da
+    v.hidden = t === "karte" ? !mapVisible() : t !== S.tab;
+    v.setAttribute("role", panel ? "tabpanel" : "region");
+    if (panel) v.setAttribute("aria-labelledby", "tab-" + t); else v.removeAttribute("aria-labelledby");
+  });
   const isMerk = S.tab === "merkliste";
   $("chips").hidden = isMerk;
   $("open-filter").hidden = isMerk;
@@ -773,6 +791,7 @@ function openSheet(el) {
   const side = WIDE.matches && el.id === "detail";    // Seitenleiste statt Blatt: Karte bleibt bedienbar
   $("scrim").classList.toggle("side", side);
   el.setAttribute("aria-modal", side ? "false" : "true");
+  document.querySelector(".app").inert = !side;       // Modal: Tastatur und Bildschirmleser bleiben im Blatt
   clearTimeout(hideTimer);
   sheetOpen = true;
   if (!sheetPushed && selfBack === 0) { history.pushState({ sheet: true }, ""); sheetPushed = true; }   // Zurück-Taste/-Geste schließt das Blatt
@@ -795,6 +814,7 @@ window.addEventListener("popstate", () => {
 });
 function hideSheets() {
   sheetOpen = false;
+  document.querySelector(".app").inert = false;
   editing = null;
   S.openId = null;
   $("scrim").classList.remove("on");
@@ -847,9 +867,9 @@ function renderDetail() {
       <span class="stamp g-${k.g}" aria-hidden="true">${k.k}</span>
       <div>
         <div class="d-kat">${esc(d.kategorie)}${d.google_typ ? " · " + esc(d.google_typ) : ""}</div>
-        <h2 id="d-name">${esc(d.name)}</h2>
+        <h2 id="d-name">${ja(d.name)}</h2>
         <div class="d-where">${esc(d.bezirk === OUTSIDE ? d.stadtteil.replace(/^Andere \((.*)\)$/, "$1") : d.bezirk + " · " + d.stadtteil)}</div>
-        ${d.rating ? `<div class="d-rate"><span class="stars" aria-hidden="true">${stars}</span> ${fmtRating(d.rating)}${count}</div>` : ""}
+        ${d.rating ? `<div class="d-rate"><span class="stars" aria-hidden="true">${stars}</span> ${ratingHtml(d.rating)}${count}</div>` : ""}
       </div>
     </div>
     <div class="d-actions">
@@ -872,7 +892,7 @@ function renderDetail() {
     </div>
     ${d.adresse ? `<div class="d-sec">
       <h3>Adresse</h3>
-      <div class="addr"><p id="d-addr">${esc(d.adresse)}</p><button type="button" class="small-btn" data-action="copy">Kopieren</button></div>
+      <div class="addr"><p id="d-addr">${ja(d.adresse)}</p><button type="button" class="small-btn" data-action="copy">Kopieren</button></div>
     </div>` : ""}`;
   const ta = $("detail").querySelector("textarea");
   if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
@@ -1009,7 +1029,7 @@ const Map2 = (() => {
         fillColor: css(COLORS[kat(d).g]),
         fillOpacity: done ? 0.45 : 0.95
       });
-      m.bindTooltip(esc(d.name) + (fav ? " ★" : ""), { direction: "top", offset: [0, -r] });
+      m.bindTooltip(ja(d.name) + (fav ? " ★" : ""), { direction: "top", offset: [0, -r] });
       m.on("click", () => openDetail(d.id));
       m.addTo(layer);
     });
@@ -1083,11 +1103,21 @@ document.addEventListener("click", e => {
     Map2.focus(d);
   }
   else if (a === "fit-all") Map2.fitAll();
+  else if (a === "share") shareMerkliste();
   else if (a === "far-list") { S.tab = "liste"; S.region = "Andere Region"; savePrefs(); renderAll(); }
   else if (a === "reset-all") {
     Object.assign(S, DEFAULT_FILTERS); S.kat.clear(); S.q = ""; $("q").value = ""; $("clear-q").hidden = true;
     savePrefs(); renderAll();
   }
+});
+document.querySelector(".tabs").addEventListener("keydown", e => {   // Pfeiltasten, Pos1, Ende wie bei Tabs üblich
+  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+  const tabs = [...document.querySelectorAll(".tab")].filter(t => t.offsetParent !== null);
+  const i = tabs.indexOf(document.activeElement);
+  if (i < 0) return;
+  e.preventDefault();
+  const j = e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+  S.tab = tabs[j].dataset.tab; savePrefs(); renderAll(); tabs[j].focus();
 });
 $("scrim").addEventListener("click", closeSheets);
 const onWideChange = () => { if (!$("scrim").hidden) closeSheets(); renderAll(); };
@@ -1103,6 +1133,58 @@ $("q").addEventListener("input", e => {
 });
 $("clear-q").addEventListener("click", () => { $("q").value = ""; $("clear-q").hidden = true; S.q = ""; renderAll(); $("q").focus(); });
 
+/* ---------- Merkliste teilen ---------- */
+const APP_URL = "https://trax777-cyber.github.io/tokio-2027/";
+const mapsLink = d => {
+  const m = /0x[0-9a-f]+:(0x[0-9a-f]+)/i.exec(d.googleUrl || "");
+  if (m) { try { return "https://maps.google.com/?cid=" + BigInt(m[1]).toString(); } catch (e) {} }
+  return hasCoords(d) ? `https://www.google.com/maps/search/?api=1&query=${d.lat},${d.lng}` : "";
+};
+function merklisteText() {
+  const favs = DATA.filter(isFav).sort((a, b) => a.name.localeCompare(b.name, "de"));
+  const open = favs.filter(d => !isDone(d)), done = favs.filter(isDone);
+  const entry = (d, mark) => {
+    const n = note(d);
+    return [`${mark} ${d.name}`, `   ${d.kategorie} · ${whereOf(d)}${d.rating ? " · ★ " + fmtRating(d.rating) : ""}`,
+      d.adresse ? `   ${d.adresse}` : "", mapsLink(d) ? `   ${mapsLink(d)}` : "", n ? `   Notiz: ${n}` : ""].filter(Boolean).join("\n");
+  };
+  const parts = [`Tokio 2027 – Merkliste (${favs.length} ${favs.length === 1 ? "Ort" : "Orte"}, ${done.length} besucht)`];
+  if (open.length) parts.push(`Noch offen\n\n` + open.map(d => entry(d, "•")).join("\n\n"));
+  if (done.length) parts.push(`Besucht\n\n` + done.map(d => entry(d, "✓")).join("\n\n"));
+  parts.push(`In der App öffnen und übernehmen:\n${APP_URL}#m=${favs.map(d => parseInt(d.id, 10)).join(".")}`);
+  return parts.join("\n\n");
+}
+async function shareMerkliste() {
+  if (!DATA.some(isFav)) { toast("Die Merkliste ist noch leer."); return; }
+  const text = merklisteText();
+  if (navigator.share) {
+    try { await navigator.share({ title: "Tokio 2027 – Merkliste", text }); return; }
+    catch (e) { if (e && e.name === "AbortError") return; }   // sonst: unten kopieren
+  }
+  try { await navigator.clipboard.writeText(text); toast("Merkliste kopiert. Du kannst sie jetzt in eine Nachricht einfügen."); return; } catch (e) {}
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+  document.body.appendChild(ta); ta.select();
+  let ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+  ta.remove();
+  toast(ok ? "Merkliste kopiert. Du kannst sie jetzt in eine Nachricht einfügen." : "Kopieren nicht möglich. Bitte die Merkliste einzeln weitergeben.");
+}
+// Link mit #m=1.5.42 : fragt, ob die Orte auf die eigene Merkliste kommen sollen (nichts passiert ohne Bestätigung)
+async function importShared() {
+  const m = /^#m=([\d.]+)$/.exec(location.hash);
+  if (!m) return;
+  history.replaceState(history.state, "", location.pathname + location.search);
+  const nums = new Set(m[1].split(".").map(Number));
+  const list = DATA.filter(d => nums.has(parseInt(d.id, 10))), neu = list.filter(d => !isFav(d));
+  if (!list.length) return;
+  if (!neu.length) { toast("Alle Orte aus dem geteilten Link sind schon auf deiner Merkliste."); return; }
+  if (!confirm(`Geteilte Merkliste: ${neu.length} ${neu.length === 1 ? "neuen Ort" : "neue Orte"} auf deine Merkliste setzen?`)) return;
+  for (const d of neu) await save(d.id, { fav: true });
+  S.tab = "merkliste"; savePrefs(); renderAll();
+  toast(`${neu.length} ${neu.length === 1 ? "Ort" : "Orte"} übernommen.`);
+}
+addEventListener("hashchange", importShared);
+
 /* ---------- offline ---------- */
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
@@ -1115,6 +1197,7 @@ loadPrefs();
 try { over = JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}") || {}; } catch (e) { over = {}; }
 buildBezirke();
 renderAll();
+importShared();
 
 (async () => {
   try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
