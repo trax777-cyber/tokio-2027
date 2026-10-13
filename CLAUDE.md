@@ -1,7 +1,8 @@
 # Tokio 2027 – Arbeitsablauf
 
 - Datenquelle: `quelle/orte.json`. App-Code: `quelle/app.src.html`.
-- `index.html` nie direkt bearbeiten, sondern mit `python3 quelle/build.py` erzeugen.
+- `index.html`, `sw.js` und `Tokio-2027-offline.html` nie direkt bearbeiten: `python3 quelle/build.py` erzeugt alle drei (Service-Worker-Vorlage: `quelle/sw.src.js`). Alle drei mit committen.
+- Schriften und Leaflet liegen in `vendor/` (siehe `vendor/LIESMICH.md`), nichts von fremden Servern einbinden, sonst bricht der Offline-Start.
 - Neuen Ort hinzufügen:
   1. Eintrag an `quelle/orte.json` anhängen (gleiche Felder, `id` = fortlaufende Nummer + Slug).
   2. `python3 quelle/build.py` und `python3 tools/orte_md.py` ausführen.

@@ -15,11 +15,9 @@
 <meta name="theme-color" content="#f2f0eb" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#191b1e" media="(prefers-color-scheme: dark)">
 <title>Tokio 2027 Orte</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<script src="vendor/leaflet/leaflet.js"></script>
+<link rel="stylesheet" href="vendor/fonts/fonts.css">
 <style>
   :root {
     --paper: #f2f0eb;
@@ -957,6 +955,7 @@ const Map2 = (() => {
       L.tileLayer(base + "_Base/MapServer/tile/{z}/{y}/{x}", { ...opts, attribution: 'Karte © <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a>, HERE, Garmin, © OpenStreetMap' }),
       L.tileLayer(base + "_Reference/MapServer/tile/{z}/{y}/{x}", opts)
     ]).addTo(map);
+    tiles.eachLayer(l => { l.on("tileerror", onTileError); l.on("tileload", onTileLoad); });
   }
 
   function build() {
@@ -964,7 +963,7 @@ const Map2 = (() => {
       $("map").innerHTML = '<div class="map-offline"><div><strong>Karte nicht verfügbar</strong><br>Die Karte braucht eine Internetverbindung. Liste und Merkliste funktionieren weiter.</div></div>';
       return false;
     }
-    map = L.map("map", { zoomControl: false });
+    map = L.map("map", { zoomControl: false, renderer: L.canvas({ tolerance: 10 }) });   // Canvas: +10 px Trefferfläche rund um jeden Punkt
     L.control.zoom({ position: "topright", zoomInTitle: "Hineinzoomen", zoomOutTitle: "Herauszoomen" }).addTo(map);
     const Home = L.Control.extend({
       options: { position: "topright" },
@@ -980,36 +979,48 @@ const Map2 = (() => {
     map.attributionControl.setPrefix(false);
     map.fitBounds(TOKYO_BOUNDS);
     layer = L.layerGroup().addTo(map);
+    map.on("zoomend", () => render(lastRows));   // Punktgröße folgt dem Zoom (erst nach dem ersten Zeichnen, sonst fehlt die Ebene)
     setTiles();
     if (mq.addEventListener) mq.addEventListener("change", () => { setTiles(); render(lastRows); });
     return true;
   }
 
+  let noteState = { n: 0, far: 0 }, tilesFailed = false, tileFails = 0;
+  function onTileError() { if (++tileFails === 3 && !tilesFailed) { tilesFailed = true; renderNote(); } }
+  function onTileLoad() { tileFails = 0; if (tilesFailed) { tilesFailed = false; renderNote(); } }
   function render(rows) {
     lastRows = rows;
     if (!map && !build()) return;
     map.invalidateSize();
     layer.clearLayers();
     const card = css("--card");
+    // Punktgröße nach Zoom: im Überblick klein (Gedränge), ab Zoom 14 mit 24 px Durchmesser; Trefferfläche immer mind. 36 px
+    const z = map.getZoom(), baseR = z >= 14 ? 12 : z >= 12 ? 10 : 8;
     // Favoriten zuletzt zeichnen, damit sie oben liegen
     const pts = rows.filter(hasCoords).slice().sort((a, b) => isFav(a) - isFav(b));
     pts.forEach(d => {
       const sel = d.id === S.openId, fav = isFav(d), done = isDone(d);
+      const r = baseR + (sel ? 4 : fav ? 1.5 : 0);
       const m = L.circleMarker([d.lat, d.lng], {
-        radius: sel ? 11 : fav ? 8 : 6.5,
+        radius: r,
         color: sel ? css("--ink") : fav ? css("--gold") : card,
         weight: sel || fav ? 3 : 1.5,
         opacity: 1,
         fillColor: css(COLORS[kat(d).g]),
         fillOpacity: done ? 0.45 : 0.95
       });
-      m.bindTooltip(esc(d.name) + (fav ? " ★" : ""), { direction: "top", offset: [0, -6] });
+      m.bindTooltip(esc(d.name) + (fav ? " ★" : ""), { direction: "top", offset: [0, -r] });
       m.on("click", () => openDetail(d.id));
       m.addTo(layer);
     });
-    const far = pts.filter(d => !NEAR_TOKYO(d)).length;
-    $("map-note").innerHTML = `<b>${pts.length}</b> Orte auf der Karte` +
-      (far ? ` · ${far} davon außerhalb Tokios (z. B. Kyoto, Nikkō) – <button type="button" class="link-btn" data-action="fit-all">alle zeigen</button>` : "");
+    noteState = { n: pts.length, far: pts.filter(d => !NEAR_TOKYO(d)).length };
+    renderNote();
+  }
+  function renderNote() {
+    const { n, far } = noteState;
+    $("map-note").innerHTML = `<b>${n}</b> Orte auf der Karte` +
+      (far ? ` · ${far} davon außerhalb Tokios (z. B. Kyoto, Nikkō) – <button type="button" class="link-btn" data-action="fit-all">alle zeigen</button>` : "") +
+      (tilesFailed ? `<br>Kartenhintergrund nicht geladen (offline?). Orte, Liste und Merkliste funktionieren weiter.` : "");
   }
 
   function fitAll() {
@@ -1028,7 +1039,7 @@ const Map2 = (() => {
   window.addEventListener("resize", () => { if (map && mapVisible()) map.invalidateSize(); });
 
   $("legend").innerHTML = GROUPS.map(([g, n]) => `<span><i style="background:var(${COLORS[g]})"></i>${n}</span>`).join("");
-  return { render, focus, reveal, fitAll };
+  return { render, focus, reveal, fitAll, getMap: () => map };
 })();
 
 /* ---------- events ---------- */
@@ -1091,6 +1102,13 @@ $("q").addEventListener("input", e => {
   qTimer = setTimeout(() => { S.q = e.target.value.trim().toLowerCase(); renderAll(); }, 80);
 });
 $("clear-q").addEventListener("click", () => { $("q").value = ""; $("clear-q").hidden = true; S.q = ""; renderAll(); $("q").focus(); });
+
+/* ---------- offline ---------- */
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+addEventListener("offline", () => toast("Offline: Liste, Merkliste und Notizen funktionieren. Die Karte zeigt nur die Orte, ohne Hintergrund."));
+addEventListener("online", () => toast("Wieder online."));
 
 /* ---------- start ---------- */
 loadPrefs();

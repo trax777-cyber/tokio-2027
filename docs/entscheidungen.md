@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-10-13 · Karten-Punkte größer und Offline-Betrieb
+Kontext:      Karten-Punkte hatten 13 px Durchmesser und genau diese Trefferfläche. Ohne Netz startete die App nicht (Schriften und Karten-Bibliothek kamen von fremden Servern, kein Service Worker).
+Entscheidung: Punkte in Canvas mit 10 px Trefferfläche, Radius nach Zoom 8/10/12 px. Schriften und Leaflet im Repository unter `vendor/`, Service Worker `sw.js` (App-Hülle vorab ablegen, Start online zuerst aus dem Netz, sonst aus dem Speicher), Ein-Datei-Fassung `Tokio-2027-offline.html` für den Mac. `sw.js` und die Ein-Datei-Fassung entstehen in `quelle/build.py`, die Version ergibt sich aus den Dateiinhalten.
+Alternativen: Kartenkacheln ebenfalls zwischenspeichern (verworfen: Esri-Server war in der Prüfumgebung nicht erreichbar, ob er CORS erlaubt, ist unbekannt, ein falscher Versuch würde die Karte zerstören), Radius immer 12 px (verworfen: im Überblick verschwimmt Tokio).
+Folgen:       Kartenhintergrund ist offline nicht verfügbar (Hinweis erscheint). Die Wartezeit für neue Fassungen beträgt bei schlechter Verbindung bis zu 4 s. Jeder neue Build erzeugt neue `sw.js` und `Tokio-2027-offline.html`, beide gehören ins Repository. Nicht auf echten Geräten getestet.
+
 ## 2026-10-13 · Zurück-Taste schließt das Blatt
 Kontext:      Die Android-Zurück-Taste und die iPhone-Wischgeste verließen die App, auch wenn ein Blatt offen war.
 Entscheidung: Beim Öffnen von Detail oder Filter ein Eintrag im Browser-Verlauf (`pushState`), bei Zurück schließt nur das Blatt. Schließt die App das Blatt selbst (Knopf, Esc, Hintergrund), nimmt sie den Eintrag mit `history.back()` zurück und ignoriert dessen `popstate`. Wird das Blatt währenddessen neu geöffnet, legt sie den Eintrag danach an. Zusätzlich: das verzögerte Verstecken nach dem Schließen wird bei erneutem Öffnen abgebrochen (vorher konnte ein schnelles Wiederöffnen sofort wieder verschwinden).

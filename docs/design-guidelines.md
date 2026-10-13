@@ -21,7 +21,9 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 | Zustände: Hover (nur Maus, aktive Elemente behalten ihre Farbe), Gedrückt, Gesperrt, „Bewegung reduzieren“ | **in der App** |
 | Laptop-Layout ab 1024 px: Liste links, Karte rechts, Detail als Seitenleiste | **in der App** (mit der echten Karten-Bibliothek getestet, Kartenkacheln im Test nicht geladen) |
 | Zurück-Taste/-Geste schließt das Blatt, statt die App zu verlassen | **in der App** (im Browser mit allen Öffnen- und Schließen-Wegen getestet, nicht auf echten Handys) |
-| Karten-Punkte größer, Offline, eigene Schriften, Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
+| Karten-Punkte: Radius 8/10/12 px je nach Zoom, Trefferfläche je Punkt mindestens 37 px (ab Zoom 14 mindestens 45 px) | **in der App** (Trefferfläche mit Klick-Test geprüft) |
+| Offline: Schriften und Karten-Bibliothek liegen im Repository, Service Worker, Ein-Datei-Fassung | **in der App** (Start ohne Netz in Chromium getestet; echte Geräte nicht) |
+| Bildschirmleser-Texte, Merkliste teilen | offen, Code-Änderungen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
 
@@ -39,7 +41,7 @@ Die App hat bereits ein stimmiges Design (Papier, Tinte, Zinnoberrot, Kanji-Stem
 | 4 | Tippflächen | Chips 34 px, Schließen-Knopf 36 px, „Kopieren“ 30 px | mindestens 40 px, wichtige Knöpfe 44 px |
 | 5 | Laptop | eine schmale Spalte (max. 820 px) | ab 1024 px Liste links, Karte rechts, Detail als Seitenleiste |
 
-Dazu kommen Empfehlungen, die Code betreffen (Offline-Betrieb, eigene Schriften, Merkliste teilen; die Zurück-Taste ist umgesetzt). Sie stehen in den Abschnitten 7, 11 und 12.
+Dazu kommen Empfehlungen, die Code betreffen (Bildschirmleser-Texte, Merkliste teilen; Zurück-Taste, Offline-Betrieb, eigene Schriften und größere Karten-Punkte sind umgesetzt). Sie stehen in den Abschnitten 7, 11 und 12.
 
 <table>
 <tr><th>Ist, hell</th><th>Soll, hell</th><th>Ist, dunkel</th><th>Soll, dunkel</th></tr>
@@ -202,7 +204,7 @@ Ziele: Text 4,5 : 1, große Schrift und Bedienelemente 3 : 1 (WCAG 1.4.3 und 1.4
 | Suche | SVG-Lupe | 17 px | `aria-hidden`, Feld hat `aria-label` |
 | Karten-Punkte | Kreis in Gruppenfarbe | siehe unten | Merken = goldener Rand, Besucht = durchscheinend |
 
-**Karten-Punkte, Ist und Soll.** Ist: Radius 6,5 px (13 px Durchmesser), gemerkt 8, geöffnet 11. Das ist für den Daumen zu klein und liegt unter der WCAG-Mindestgröße von 24 px. Soll: Radius mindestens 12 px (24 px) und eine unsichtbare Trefferfläche von 44 px.
+**Karten-Punkte, Ist und Soll.** Ist: Radius 6,5 px (13 px Durchmesser), gemerkt 8, geöffnet 11, Trefferfläche genau so groß. Das war für den Daumen zu klein. **Umgesetzt:** Der Radius folgt dem Zoom (bis Zoom 11: 8 px, 12 bis 13: 10 px, ab 14: 12 px, also 24 px Durchmesser), gemerkte Orte +1,5, der geöffnete +4. Dazu kommen 10 px Trefferfläche rundherum (Canvas-Ansicht mit `tolerance`). Das ergibt mindestens 37 px, ab Zoom 14 mindestens 45 px. Im Überblick sind die Punkte absichtlich kleiner als 24 px, sonst verschwimmt ganz Tokio zu einem Fleck. Der Hinweis auf größeren Zoom reicht dort, weil die Trefferfläche den Wert erfüllt.
 
 **Kanji-Legende (Soll).** Nicht jede Person der Familie liest Kanji. Eine einzeilige Legende im Filterblatt („食 Essen · 茶 Café · 酒 Bar · 店 Shop · 市 Markt · 館 Museum · 社 Schrein · 寺 Tempel · 園 Park · 景 Sehenswürdigkeit · 宿 Hotel · 他 Sonstiges“) macht die Zeichen lernbar. Auf der Karte gibt es schon eine Legende.
 
@@ -385,13 +387,13 @@ Hintergrund: WCAG 2.2 verlangt mindestens 24 × 24 px (Kriterium 2.5.8, AA). App
 | Punkt | Ist | Soll |
 |---|---|---|
 | App-Datei | eine Datei, ca. 168 KB, enthält alle Orte | bleibt (186 Orte sind klein) |
-| Schriften | Google Fonts (zwei Familien, sechs Schnitte) von fremden Servern | selbst mitliefern (Datenschutz, Offline) |
-| Karten-Bibliothek | Leaflet 1.9.4 von cdnjs | selbst mitliefern |
+| Schriften | Google Fonts von fremden Servern | **umgesetzt:** selbst mitgeliefert (`vendor/fonts`, 327 KB; Source Sans 3 und Shippori Mincho 700 nur mit Latein und den Kanji der Oberfläche) |
+| Karten-Bibliothek | Leaflet 1.9.4 von cdnjs | **umgesetzt:** `vendor/leaflet` (144 KB) |
 | Karten-Kacheln | Esri (hell/dunkel) | bleiben online |
-| Offline | `manifest.webmanifest` vorhanden, **kein Service Worker** | Service Worker legt App, Schriften und Leaflet zwischen; Liste, Merkliste und Detail laufen offline, Karte zeigt weiter den Hinweis |
+| Offline | `manifest.webmanifest` vorhanden, **kein Service Worker** | **umgesetzt:** `sw.js` legt App, Schriften und Leaflet beim ersten Besuch ab (ca. 34 Dateien). Online holt die App zuerst die neueste Fassung (4 s Geduld), offline nimmt sie die gemerkte. Liste, Merkliste, Notizen und Punkte auf der Karte laufen ohne Netz, der Kartenhintergrund nicht (Hinweis erscheint). Außerdem die Ein-Datei-Fassung `Tokio-2027-offline.html` (772 KB) für den Mac |
 | Messziele | nicht gemessen | Core Web Vitals im „guten“ Bereich: LCP ≤ 2,5 s, INP ≤ 200 ms, CLS ≤ 0,1 (mit Lighthouse messen) |
 
-**Datenschutz-Hinweis.** Wer Google Fonts von Google-Servern lädt, übermittelt die IP-Adresse an Google. Ein Münchner Gericht hat das 2022 als unzulässig gewertet (Aktenzeichen bitte selbst nachschlagen, ich nenne es nicht aus dem Gedächtnis). Für eine private App mit Familie ist das praktisch unbedeutend. Eigene Schriften lösen es und helfen zugleich dem Offline-Betrieb.
+**Datenschutz-Hinweis (erledigt).** Früher übermittelte jeder Aufruf die IP-Adresse an Google Fonts und an cdnjs. Seit dem Selbst-Mitliefern (13.10.2026) lädt die App keine Schriften und keine Bibliothek mehr von fremden Servern. Übrig bleiben die Kartenkacheln von Esri und die Links nach außen (Google Maps).
 
 ### Browser und Geräte
 
