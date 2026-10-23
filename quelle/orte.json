@@ -3245,5 +3245,22 @@
   "lng": "139.7042067",
   "bezirk": "Shibuya",
   "id": "190-think-of-things"
+ },
+ {
+  "name": "BAM BI COFFEE",
+  "kategorie": "Café",
+  "google_typ": "Cafe",
+  "stadtteil": "Okubo, Shinjuku City",
+  "region": "Tokio",
+  "adresse": "1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)",
+  "beschreibung": "Kleines Café in Okubo (Shinjuku). Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.",
+  "rating": 4.4,
+  "ratingsTotal": "",
+  "website": "",
+  "googleUrl": "https://www.google.com/maps/place/BAM+BI+COFFEE/data=!4m2!3m1!1s0x60188ddf83d9bb27:0x5c71e6fc5c28dc3c",
+  "lat": "35.69978",
+  "lng": "139.7040406",
+  "bezirk": "Shinjuku",
+  "id": "191-bam-bi-coffee"
  }
 ]
