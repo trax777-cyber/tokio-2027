@@ -3228,5 +3228,22 @@
   "lng": "139.7744369",
   "bezirk": "Chuo",
   "id": "189-pokemon-cafe-tokyo"
+ },
+ {
+  "name": "THINK OF THINGS",
+  "kategorie": "Shop",
+  "google_typ": "Home goods store",
+  "stadtteil": "Sendagaya, Shibuya City",
+  "region": "Tokio",
+  "adresse": "3 Chome-62-1 Sendagaya, Shibuya City, Tokyo 151-0051, Japan",
+  "beschreibung": "Laden für Haushaltswaren und Alltagsgegenstände in Sendagaya. Öffnet laut Google um 11 Uhr.",
+  "rating": 4.4,
+  "ratingsTotal": "",
+  "website": "https://think-of-things.com/",
+  "googleUrl": "https://www.google.com/maps/place/THINK+OF+THINGS/data=!4m2!3m1!1s0x60188cbbadd8e8ad:0xe56e39ee18e09361",
+  "lat": "35.6731745",
+  "lng": "139.7042067",
+  "bezirk": "Shibuya",
+  "id": "190-think-of-things"
  }
 ]

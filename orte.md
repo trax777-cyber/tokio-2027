@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 23.10.2026 · 191 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,7 +8,7 @@ Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
-| Shop | 42 |
+| Shop | 43 |
 | Café | 42 |
 | Sehenswürdigkeit | 41 |
 | Essen | 24 |
@@ -22,7 +22,7 @@ Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 ## Inhalt
 
-- Shibuya (40)
+- Shibuya (41)
 - Taito (24)
 - Koto (18)
 - Chuo (17)
@@ -40,7 +40,7 @@ Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Tokio – außerhalb der 23 Bezirke (9)
 - Außerhalb Tokios (25)
 
-## Shibuya (40)
+## Shibuya (41)
 
 - **Mikkeller Tokyo** · Bar · ★ 4,5 · Dogenzaka, Shibuya City
   Trendy, minimalist location offering craft beer on tap, plus meatballs & sandwiches.
@@ -154,6 +154,9 @@ Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **The Monocle Shop, Tokyo** · Shop · ★ 4,5 · Tomigaya, Shibuya City
   Stylish retail of lifestyle magazine featuring original & select brand apparel, stationary & goods.
   [Maps](https://maps.google.com/?cid=10587866752086620030) · [Website](http://monocle.com/shop) · Japan, 〒151-0063 Tokyo, Shibuya, Tomigaya, 1 Chome−19−2 ルナ・ロッサ渋谷 1F
+- **THINK OF THINGS** · Shop · ★ 4,4 · Sendagaya, Shibuya City
+  Laden für Haushaltswaren und Alltagsgegenstände in Sendagaya. Öffnet laut Google um 11 Uhr.
+  [Maps](https://maps.google.com/?cid=16532214976906040161) · [Website](https://think-of-things.com/) · 3 Chome-62-1 Sendagaya, Shibuya City, Tokyo 151-0051, Japan
 - **Tokyu Plaza Harajuku “Harakado”** · Shop · ★ 4,3 · Jingumae, Shibuya City
   Seit April 2024 an der Jingumae-Kreuzung, 75 Laeden von Keller bis Dachterrasse, oeffentliches Bad im Untergeschoss, dreistoeckige begruente Dachterrasse mit Bar.
   [Maps](https://maps.google.com/?cid=8567568301111815145) · [Website](https://www.tokyu-plaza.com/harakado/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−31−21 原宿スクエア内 東急プラザ 原宿「ハラカド」
