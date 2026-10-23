@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,10 +8,10 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
-| Shop | 41 |
+| Shop | 42 |
 | Café | 41 |
-| Sehenswürdigkeit | 40 |
-| Essen | 23 |
+| Sehenswürdigkeit | 41 |
+| Essen | 24 |
 | Park | 10 |
 | Tempel | 9 |
 | Schrein | 8 |
@@ -22,12 +22,12 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 ## Inhalt
 
-- Shibuya (39)
+- Shibuya (40)
 - Taito (24)
 - Koto (18)
 - Chuo (16)
 - Minato (13)
-- Chiyoda (7)
+- Chiyoda (9)
 - Setagaya (7)
 - Shinjuku (7)
 - Toshima (6)
@@ -40,7 +40,7 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Tokio – außerhalb der 23 Bezirke (9)
 - Außerhalb Tokios (25)
 
-## Shibuya (39)
+## Shibuya (40)
 
 - **Mikkeller Tokyo** · Bar · ★ 4,5 · Dogenzaka, Shibuya City
   Trendy, minimalist location offering craft beer on tap, plus meatballs & sandwiches.
@@ -85,6 +85,9 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Spontini Cascade Harajuku** · Essen · ★ 4,1 · Jingumae, Shibuya City
   Erste Uebersee-Filiale (2015) der seit 1953 bestehenden Mailaender Pizzeria Spontini; dickes, fluffiges Pizzateig in Sojaoel angebraten, riesige Stuecke fuer 900-1900 Yen, Signature-Gericht Margherita.
   [Maps](https://maps.google.com/?cid=7704555619490203980) · [Website](http://spontini.jp/harajuku.html) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−10−37 CASCADE HARAJUKU 2F
+- **Tofu Shokudou (豆富食堂)** · Essen · ★ 4,2 · Ebisu, Shibuya City
+  Tofu-Lokal in Ebisu: mittags Essensset, abends Schankstube mit Tofu-Gerichten (laut Betreiber täglich frisch gemachter Tofu, u. a. Gammo, Yuba-Frühlingsrolle, Okara-Kartoffelsalat). Öffnet laut Google um 11:30 Uhr; Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).
+  [Maps](https://maps.google.com/?cid=12008719108752135153) · [Website](https://tofushokudo.com/) · 1 Chome-3-1 Ebisunishi, Shibuya City, Tokyo 150-0021, Japan (Fujikura Heights 1F)
 - **Yoyogi Park** · Park · ★ 4,4 · Yoyogikamizonocho, Shibuya City
   Large, public city park with lakes, fountains & forested areas with mature trees.
   [Maps](https://maps.google.com/?cid=3800131593595043646) · [Website](https://www.tokyo-park.or.jp/park/yoyogi/) · 2-1 Yoyogikamizonocho, Shibuya, Tokyo 151-0052, Japan
@@ -377,7 +380,7 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Lantern-filled temple complex with shrines & statues, including hundreds of Shinto fox deities.
   [Maps](https://maps.google.com/?cid=393525607122310857) · [Website](http://www.toyokawainari-tokyo.jp/) · 1 Chome-4-7 Motoakasaka, Minato City, Tokyo 107-0051, Japan
 
-## Chiyoda (7)
+## Chiyoda (9)
 
 - **Intermediatheque** · Museum · ★ 4,6 · Marunouchi, Chiyoda City
   Permanent exhibition of the scientific & cultural heritage collections of the University of Tokyo.
@@ -394,9 +397,15 @@ Stand: 10.10.2026 · 186 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Manseibashi Station Remains** · Sehenswürdigkeit · ★ 4,2 · Kanda Sudacho, Chiyoda City
   1912 eroeffneter, 1943 stillgelegter Bahnhof am Kanda-Fluss; seit 2013 als mAAch ecute mit Cafes und Shops in den roten Backsteinboegen, alte Treppen und ehemaliger Bahnsteig mit Zugblick erhalten.
   [Maps](https://maps.google.com/?cid=8948628828680585085) · [Website](http://www.ejrcf.or.jp/mansei/) · Japan, 〒101-0041 Tokyo, Chiyoda City, Kanda Sudacho, 1 Chome−２５−4 マーチエキュート神田万世橋
+- **Mod Tokyo (Gameboy Mod Workshop)** · Sehenswürdigkeit · ★ 4,9 · Kanda, Chiyoda City
+  Workshop in Akihabara/Kanda, in dem Game-Boy-Geräte modifiziert werden. Öffnungszeiten bei Google nicht angegeben: vorab auf der Website prüfen, ob Termin oder Reservierung nötig ist.
+  [Maps](https://maps.google.com/?cid=2903437981222606694) · [Website](https://mod-tokyo.com/) · Kanda Kitanorimonocho 15, Le Nid KANDA 701, Chiyoda City, Tokyo 101-0036, Japan
 - **Akihabara Gachapon Hall** · Shop · ★ 4,0 · Sotokanda, Chiyoda City
   Traditionsreicher Laden mit rund 500 Gachapon-Automaten voller Sammelfiguren, seit über 20 Jahren ein Fixpunkt in Akihabara.
   [Maps](https://maps.google.com/?cid=12470700033409864041) · [Website](http://www.akibagacha.com/) · Japan, 〒101-0021 Tokyo, Chiyoda City, Sotokanda, 3 Chome−15−5 MNビル 1F
+- **Hibiya OKUROJI (日比谷OKUROJI)** · Shop · ★ 4,1 · Hibiya, Chiyoda City
+  Einkaufs- und Gastro-Passage unter den Bahnbögen in Hibiya. Laut Google durchgehend geöffnet; einzelne Läden haben eigene Zeiten.
+  [Maps](https://maps.google.com/?cid=16720952306026620586) · [Website](https://jrtk.jp/) · 1 Chome-7-1 Uchisaiwaicho, Chiyoda City, Tokyo 100-0011, Japan
 - **Tokyo Character Street** · Shop · ★ 4,2 · Marunouchi, Chiyoda City
   Shopping concourse inside Tokyo Station with stores for anime & manga character merchandise.
   [Maps](https://maps.google.com/?cid=1169765817995755207) · [Website](https://e-shop.tokyoeki-1bangai.co.jp/) · Japan, 〒100-0005 Tokyo, Chiyoda City, Marunouchi, 1 Chome−9−1 東京駅一番街 B1
