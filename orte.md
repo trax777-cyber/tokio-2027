@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 23.10.2026 · 190 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -9,7 +9,7 @@ Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027
 | Kategorie | Anzahl |
 |---|---:|
 | Shop | 42 |
-| Café | 41 |
+| Café | 42 |
 | Sehenswürdigkeit | 41 |
 | Essen | 24 |
 | Park | 10 |
@@ -25,7 +25,7 @@ Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Shibuya (40)
 - Taito (24)
 - Koto (18)
-- Chuo (16)
+- Chuo (17)
 - Minato (13)
 - Chiyoda (9)
 - Setagaya (7)
@@ -288,7 +288,7 @@ Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
   [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
 
-## Chuo (16)
+## Chuo (17)
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
   Aus popeye
@@ -299,6 +299,9 @@ Stand: 23.10.2026 · 189 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Parklet Bakery** · Café · ★ 4,3 · Nihonbashikobunacho, Chuo City
   Breads, light bites & coffee served in a laid-back bakery that also stocks wine & food items.
   [Maps](https://maps.google.com/?cid=2245339997391594763) · [Website](https://parkletbakery.com/) · Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階
+- **Pokémon Cafe TOKYO (ポケモンカフェ)** · Café · ★ 4,1 · Nihonbashi, Chuo City
+  Café im 5. Stock der Nihombashi Takashimaya, mit Gerichten und Süßem in Pokémon-Form sowie Souvenirs. Öffnet laut Google um 10:30 Uhr; ob und wie man reservieren muss, bitte auf der Website prüfen. Speisen vorab auf Fleisch- und Fischanteile prüfen.
+  [Maps](https://maps.google.com/?cid=4725603843889793061) · [Website](https://pokemon-cafe.jp/) · 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)
 - **Single O Hamacho** · Café · ★ 4,5 · Nihonbashihamacho, Chuo City
   Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.
   [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F

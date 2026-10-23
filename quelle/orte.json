@@ -3211,5 +3211,22 @@
   "lng": "139.773424",
   "bezirk": "Chiyoda",
   "id": "188-mod-tokyo"
+ },
+ {
+  "name": "Pokémon Cafe TOKYO (ポケモンカフェ)",
+  "kategorie": "Café",
+  "google_typ": "Cafe",
+  "stadtteil": "Nihonbashi, Chuo City",
+  "region": "Tokio",
+  "adresse": "2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)",
+  "beschreibung": "Café im 5. Stock der Nihombashi Takashimaya, mit Gerichten und Süßem in Pokémon-Form sowie Souvenirs. Öffnet laut Google um 10:30 Uhr; ob und wie man reservieren muss, bitte auf der Website prüfen. Speisen vorab auf Fleisch- und Fischanteile prüfen.",
+  "rating": 4.1,
+  "ratingsTotal": "",
+  "website": "https://pokemon-cafe.jp/",
+  "googleUrl": "https://www.google.com/maps/place/Pok%C3%A9mon+Cafe+TOKYO/data=!4m2!3m1!1s0x601889578c05994f:0x4194b7a8a0458825",
+  "lat": "35.6806372",
+  "lng": "139.7744369",
+  "bezirk": "Chuo",
+  "id": "189-pokemon-cafe-tokyo"
  }
 ]
