@@ -3279,5 +3279,22 @@
   "lng": "139.687887",
   "bezirk": "Shinjuku",
   "id": "192-bam-bi-coffee-nishi-shinjuku"
+ },
+ {
+  "name": "Tofu Cuisine Sorano Shibuya (豆腐料理 空野 渋谷)",
+  "kategorie": "Essen",
+  "google_typ": "Tofu restaurant",
+  "stadtteil": "Sakuragaokacho, Shibuya City",
+  "region": "Tokio",
+  "adresse": "4-17 Sakuragaokacho, Shibuya City, Tokyo 150-0031, Japan (Cherry Garden 1F)",
+  "beschreibung": "Tofu-Restaurant in Sakuragaokacho (Shibuya) mit Tofu-Gerichten. Öffnet laut Google erst um 16:30 Uhr, also eher Abendessen. Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).",
+  "rating": 4.4,
+  "ratingsTotal": "",
+  "website": "https://foodgate.net/",
+  "googleUrl": "https://www.google.com/maps/place/Tofu+Cuisine+Sorano+Shibuya/data=!4m2!3m1!1s0x60188b5bb2beb491:0x3ca9e75cd11c88e",
+  "lat": "35.6547415",
+  "lng": "139.7038617",
+  "bezirk": "Shibuya",
+  "id": "193-tofu-cuisine-sorano-shibuya"
  }
 ]

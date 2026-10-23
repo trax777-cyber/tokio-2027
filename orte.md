@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -11,7 +11,7 @@ Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027
 | Café | 44 |
 | Shop | 43 |
 | Sehenswürdigkeit | 41 |
-| Essen | 24 |
+| Essen | 25 |
 | Park | 10 |
 | Tempel | 9 |
 | Schrein | 8 |
@@ -22,7 +22,7 @@ Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 ## Inhalt
 
-- Shibuya (41)
+- Shibuya (42)
 - Taito (24)
 - Koto (18)
 - Chuo (17)
@@ -40,7 +40,7 @@ Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Tokio – außerhalb der 23 Bezirke (9)
 - Außerhalb Tokios (25)
 
-## Shibuya (41)
+## Shibuya (42)
 
 - **Mikkeller Tokyo** · Bar · ★ 4,5 · Dogenzaka, Shibuya City
   Trendy, minimalist location offering craft beer on tap, plus meatballs & sandwiches.
@@ -85,6 +85,9 @@ Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Spontini Cascade Harajuku** · Essen · ★ 4,1 · Jingumae, Shibuya City
   Erste Uebersee-Filiale (2015) der seit 1953 bestehenden Mailaender Pizzeria Spontini; dickes, fluffiges Pizzateig in Sojaoel angebraten, riesige Stuecke fuer 900-1900 Yen, Signature-Gericht Margherita.
   [Maps](https://maps.google.com/?cid=7704555619490203980) · [Website](http://spontini.jp/harajuku.html) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−10−37 CASCADE HARAJUKU 2F
+- **Tofu Cuisine Sorano Shibuya (豆腐料理 空野 渋谷)** · Essen · ★ 4,4 · Sakuragaokacho, Shibuya City
+  Tofu-Restaurant in Sakuragaokacho (Shibuya) mit Tofu-Gerichten. Öffnet laut Google erst um 16:30 Uhr, also eher Abendessen. Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).
+  [Maps](https://maps.google.com/?cid=273204956198193294) · [Website](https://foodgate.net/) · 4-17 Sakuragaokacho, Shibuya City, Tokyo 150-0031, Japan (Cherry Garden 1F)
 - **Tofu Shokudou (豆富食堂)** · Essen · ★ 4,2 · Ebisu, Shibuya City
   Tofu-Lokal in Ebisu: mittags Essensset, abends Schankstube mit Tofu-Gerichten (laut Betreiber täglich frisch gemachter Tofu, u. a. Gammo, Yuba-Frühlingsrolle, Okara-Kartoffelsalat). Öffnet laut Google um 11:30 Uhr; Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).
   [Maps](https://maps.google.com/?cid=12008719108752135153) · [Website](https://tofushokudo.com/) · 1 Chome-3-1 Ebisunishi, Shibuya City, Tokyo 150-0021, Japan (Fujikura Heights 1F)
