@@ -3262,5 +3262,22 @@
   "lng": "139.7040406",
   "bezirk": "Shinjuku",
   "id": "191-bam-bi-coffee"
+ },
+ {
+  "name": "BAM BI COFFEE Nishi-Shinjuku (バムビコーヒー西新宿店)",
+  "kategorie": "Café",
+  "google_typ": "Cafe",
+  "stadtteil": "Nishishinjuku, Shinjuku City",
+  "region": "Tokio",
+  "adresse": "4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)",
+  "beschreibung": "Zweite Filiale von BAM BI COFFEE (die andere liegt in Okubo), in Nishi-Shinjuku. Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.",
+  "rating": 4.4,
+  "ratingsTotal": "",
+  "website": "",
+  "googleUrl": "https://www.google.com/maps/place/BAM+BI+COFFEE/data=!4m2!3m1!1s0x6018f33faa97a38d:0xf6eb89e3bc072658",
+  "lat": "35.6888518",
+  "lng": "139.687887",
+  "bezirk": "Shinjuku",
+  "id": "192-bam-bi-coffee-nishi-shinjuku"
  }
 ]

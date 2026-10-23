@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 23.10.2026 · 192 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 23.10.2026 · 193 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,8 +8,8 @@ Stand: 23.10.2026 · 192 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
+| Café | 44 |
 | Shop | 43 |
-| Café | 43 |
 | Sehenswürdigkeit | 41 |
 | Essen | 24 |
 | Park | 10 |
@@ -28,7 +28,7 @@ Stand: 23.10.2026 · 192 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Chuo (17)
 - Minato (13)
 - Chiyoda (9)
-- Shinjuku (8)
+- Shinjuku (9)
 - Setagaya (7)
 - Toshima (6)
 - Sumida (4)
@@ -416,11 +416,14 @@ Stand: 23.10.2026 · 192 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Shopping concourse inside Tokyo Station with stores for anime & manga character merchandise.
   [Maps](https://maps.google.com/?cid=1169765817995755207) · [Website](https://e-shop.tokyoeki-1bangai.co.jp/) · Japan, 〒100-0005 Tokyo, Chiyoda City, Marunouchi, 1 Chome−9−1 東京駅一番街 B1
 
-## Shinjuku (8)
+## Shinjuku (9)
 
 - **BAM BI COFFEE** · Café · ★ 4,4 · Okubo, Shinjuku City
   Kleines Café in Okubo (Shinjuku). Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
   [Maps](https://maps.google.com/?cid=6661359295410003004) · 1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)
+- **BAM BI COFFEE Nishi-Shinjuku (バムビコーヒー西新宿店)** · Café · ★ 4,4 · Nishishinjuku, Shinjuku City
+  Zweite Filiale von BAM BI COFFEE (die andere liegt in Okubo), in Nishi-Shinjuku. Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
+  [Maps](https://maps.google.com/?cid=17792466364062443096) · 4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)
 - **Gyoza no Fukuho** · Essen · ★ 4,3 · Shinjuku City
   Any Tokyoite will proudly tell you that their family recipe for gyoza dumplings is the best but they ll also tell you that this place comes in a very close second Always bustling with Shinjuku s after work crowds and young diners come evening this is the kind of spot where catch ups linger into the early hours and sharing plates of gyoza are devoured and thus reordered without a second thought
   [Maps](https://maps.google.com/?cid=15912583242526311410) · [Website](https://fukuho.net/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階
