@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,14 +8,14 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
+| Shop | 44 |
 | Café | 44 |
-| Shop | 43 |
 | Sehenswürdigkeit | 41 |
 | Essen | 25 |
 | Park | 10 |
 | Tempel | 9 |
+| Museum | 8 |
 | Schrein | 8 |
-| Museum | 7 |
 | Hotel | 3 |
 | Bar | 3 |
 | Markt | 1 |
@@ -24,8 +24,8 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - Shibuya (42)
 - Taito (24)
+- Chuo (18)
 - Koto (18)
-- Chuo (17)
 - Minato (13)
 - Chiyoda (9)
 - Shinjuku (9)
@@ -38,7 +38,7 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Shinagawa (1)
 - Suginami (1)
 - Tokio – außerhalb der 23 Bezirke (9)
-- Außerhalb Tokios (25)
+- Außerhalb Tokios (26)
 
 ## Shibuya (42)
 
@@ -239,6 +239,62 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Completed in 645, this temple, Tokyo's oldest, was built to honor Kannon, the goddess of mercy.
   [Maps](https://maps.google.com/?cid=7785923974874169613) · [Website](https://www.senso-ji.jp/) · 2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan
 
+## Chuo (18)
+
+- **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
+  Aus popeye
+  [Maps](https://maps.google.com/?cid=7690982991018637456) · [Website](https://glitchcoffee.com/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階
+- **Hatsune Japanese Sweets** · Café · ★ 4,2 · Nihonbashiningyocho, Chuo City
+  1837 gegruendeter, einer der aeltesten Wagashi-Laeden Japans in Nihonbashi Ningyocho; bekannt fuer hausgemachten Anko und Mochi sowie Shiruko/Zenzai seit der Edo-Zeit.
+  [Maps](https://maps.google.com/?cid=5794026808577077147) · [Website](https://www.instagram.com/amami.hatsune/) · 1 Chome-15-6 Nihonbashiningyocho, Chuo City, Tokyo 103-0013, Japan
+- **Parklet Bakery** · Café · ★ 4,3 · Nihonbashikobunacho, Chuo City
+  Breads, light bites & coffee served in a laid-back bakery that also stocks wine & food items.
+  [Maps](https://maps.google.com/?cid=2245339997391594763) · [Website](https://parkletbakery.com/) · Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階
+- **Pokémon Cafe TOKYO (ポケモンカフェ)** · Café · ★ 4,1 · Nihonbashi, Chuo City
+  Café im 5. Stock der Nihombashi Takashimaya, mit Gerichten und Süßem in Pokémon-Form sowie Souvenirs. Öffnet laut Google um 10:30 Uhr; ob und wie man reservieren muss, bitte auf der Website prüfen. Speisen vorab auf Fleisch- und Fischanteile prüfen.
+  [Maps](https://maps.google.com/?cid=4725603843889793061) · [Website](https://pokemon-cafe.jp/) · 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)
+- **Single O Hamacho** · Café · ★ 4,5 · Nihonbashihamacho, Chuo City
+  Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.
+  [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F
+- **Solatsuki** · Café · ★ 4,0 · Tsukiji, Chuo City
+  [Maps](https://maps.google.com/?cid=5967592568438161593) · [Website](https://solatsuki.jp/solatsuki) · 4 Chome-11-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
+- **Turret Coffee** · Café · ★ 4,6 · Tsukiji, Chuo City
+  Artsy, compact cafe offering barista-made caffeinated drinks, some with fancy latte art.
+  [Maps](https://maps.google.com/?cid=1983689277156776805) · [Website](http://instagram.com/turretcoffee) · 2 Chome-12-6 Tsukiji, Chuo City, Tokyo 104-0045, Japan
+- **Onigiri Marutoyo** · Essen · ★ 4,0 · Tsukiji, Chuo City
+  Beruehmter Onigiri-Spezialist im aeusseren Tsukiji-Markt, geoeffnet ab ca. 3 Uhr morgens; bekanntestes Gericht ist "Bakudan" mit weich gekochtem Ei, dazu Fuellungen wie Lachs, Ikura oder Mentaiko.
+  [Maps](https://maps.google.com/?cid=14094582827016577213) · [Website](https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/389/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome−9−9 築地場外市場 1F
+- **Tempura Abe Honten** · Essen · ★ 4,1 · Ginza, Chuo City
+  In a city where tempura a deep fried beloved Japanese dish is associated with casual dining it s a hard task finding a special occasion worthy spot to enjoy it in That s where this old family favorite comes in Abe the chef here has over 30 years experience in this dish and watching him prepare his top notch tempura some would say the capital s best from a counter seat is unforgettable Don t leave without ordering the kakiage tendon at lunch It features a crisp tempura fritter topped with an oozy egg yolk.
+  [Maps](https://maps.google.com/?cid=11792726080048590927) · [Website](https://tempuraabe.foodre.jp/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−3−7 銀座 スバルビル 地下1階
+- **Tsukiji Yamacho** · Essen · ★ 3,9 · Tsukiji, Chuo City
+  Original Laden für tamago-yaki (omelett am Stiel)
+  [Maps](https://maps.google.com/?cid=12120390205030045980) · [Website](http://www.yamachou-matue.jp/index.shtml) · 4 Chome-10-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
+- **Fish Market Tsukiji Outer Market** · Markt · ★ 4,2 · Tsukiji, Chuo City
+  Sprawling wholesale fish market with an array of seafood & viewing areas for a popular tuna auction.
+  [Maps](https://maps.google.com/?cid=11704332758705177180) · [Website](https://www.tsukiji.or.jp/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome および６丁目一部
+- **ART AQUARIUM MUSEUM** · Museum · ★ 4,1 · Ginza, Chuo City
+  Kunstmuseum im 9. Stock des Mitsukoshi Ginza mit Installationen und Skulpturen aus farbig beleuchteten Goldfischbecken. Öffnet laut Google um 10 Uhr; Tickets werden oft mit festem Datum verkauft.
+  [Maps](https://maps.google.com/?cid=15689961400037075470) · Mitsukoshi Ginza Neubau 9F, 4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan
+- **Hamarikyu Gardens** · Park · ★ 4,5 · Hamarikyuteien, Chuo City
+  Public park with a pond, laid out in the Edo-period style, on the site of 17th-century Shogun villa.
+  [Maps](https://maps.google.com/?cid=11189930762912151578) · [Website](https://www.tokyo-park.or.jp/park/hama-rikyu/) · 1-1 Hamarikyuteien, Chuo City, Tokyo 104-0046, Japan
+- **COREDO Muromachi 1** · Shop · ★ 3,9 · Nihonbashimuromachi, Chuo City
+  Mall mit Schwerpunkt Haushaltswaren und Gourmetläden
+  [Maps](https://maps.google.com/?cid=8045973119871515421) · [Website](https://mitsui-shopping-park.com/urban/muromachi/) · 2 Chome-2-1 Nihonbashimuromachi, Chuo City, Tokyo 103-0022, Japan
+- **Kayanoya Coredo Muromachi Store** · Shop · ★ 4,1 · Nihonbashimuromachi, Chuo City
+  Von Architekt Kengo Kuma gestaltete Filiale der 120 Jahre alten Sojasauce-Marke Kayanoya: Dashi- und Gewuerzpackungen, hängende Sojasauce-Faesser als Blickfang.
+  [Maps](https://maps.google.com/?cid=18330220380169445725) · [Website](http://www.kayanoya.com/shop/nihonbashi/) · Japan, 〒103-0022 Tokyo, Chuo City, Nihonbashimuromachi, 1 Chome−5−5 COREDO Muromachi 3, 1F
+- **Marronnier Gate Ginza 2 (マロニエゲート銀座2)** · Shop · ★ 3,8 · Ginza, Chuo City
+  Einkaufshaus in Ginza. Laut Google u. a. Uniqlo (Etagen 1–4), Kura Sushi (1. Stock), OK-Supermarkt (UG) und Daiso (6. Stock). Öffnet laut Google um 11 Uhr; die Läden haben teils eigene Zeiten.
+  [Maps](https://maps.google.com/?cid=14223649498377218697) · [Website](https://marronniergate.com/) · 3 Chome-2-1 Ginza, Chuo City, Tokyo 104-0061, Japan
+- **Mitsukoshi Ginza** · Shop · ★ 4,1 · Ginza, Chuo City
+  Kaufhaus mit ausgezeichnete Haushaltswaren und Gormet-Foodhall
+  [Maps](https://maps.google.com/?cid=10519083699749749694) · [Website](https://www.mistore.jp/store/ginza.html) · 4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan
+- **Pokémon Center Tokyo DX** · Shop · ★ 4,5 · Nihonbashi, Chuo City
+  Seit 2018 groesster Pokemon Center im 5. Stock der Nihonbashi Takashimaya, erster mit permanentem angeschlossenem Pokemon-Cafe; eigener Fotobereich mit Snorlax-Statue.
+  [Maps](https://maps.google.com/?cid=17206393884080941756) · [Website](https://www.pokemon.co.jp/shop/pokecen/tokyodx/) · 髙島屋S.C.東館 5F, 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan
+
 ## Koto (18)
 
 - **485 TOKINI CASTELLA / 485 TOKINI CREPE** · Café · ★ 4,7 · Tokiwa, Koto City
@@ -293,59 +349,6 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Fukagawa Fudou-dō (Naritasan Tokyo branch temple)** · Tempel · ★ 4,4 · Tomioka, Koto City
   Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
   [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
-
-## Chuo (17)
-
-- **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
-  Aus popeye
-  [Maps](https://maps.google.com/?cid=7690982991018637456) · [Website](https://glitchcoffee.com/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階
-- **Hatsune Japanese Sweets** · Café · ★ 4,2 · Nihonbashiningyocho, Chuo City
-  1837 gegruendeter, einer der aeltesten Wagashi-Laeden Japans in Nihonbashi Ningyocho; bekannt fuer hausgemachten Anko und Mochi sowie Shiruko/Zenzai seit der Edo-Zeit.
-  [Maps](https://maps.google.com/?cid=5794026808577077147) · [Website](https://www.instagram.com/amami.hatsune/) · 1 Chome-15-6 Nihonbashiningyocho, Chuo City, Tokyo 103-0013, Japan
-- **Parklet Bakery** · Café · ★ 4,3 · Nihonbashikobunacho, Chuo City
-  Breads, light bites & coffee served in a laid-back bakery that also stocks wine & food items.
-  [Maps](https://maps.google.com/?cid=2245339997391594763) · [Website](https://parkletbakery.com/) · Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階
-- **Pokémon Cafe TOKYO (ポケモンカフェ)** · Café · ★ 4,1 · Nihonbashi, Chuo City
-  Café im 5. Stock der Nihombashi Takashimaya, mit Gerichten und Süßem in Pokémon-Form sowie Souvenirs. Öffnet laut Google um 10:30 Uhr; ob und wie man reservieren muss, bitte auf der Website prüfen. Speisen vorab auf Fleisch- und Fischanteile prüfen.
-  [Maps](https://maps.google.com/?cid=4725603843889793061) · [Website](https://pokemon-cafe.jp/) · 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)
-- **Single O Hamacho** · Café · ★ 4,5 · Nihonbashihamacho, Chuo City
-  Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.
-  [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F
-- **Solatsuki** · Café · ★ 4,0 · Tsukiji, Chuo City
-  [Maps](https://maps.google.com/?cid=5967592568438161593) · [Website](https://solatsuki.jp/solatsuki) · 4 Chome-11-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
-- **Turret Coffee** · Café · ★ 4,6 · Tsukiji, Chuo City
-  Artsy, compact cafe offering barista-made caffeinated drinks, some with fancy latte art.
-  [Maps](https://maps.google.com/?cid=1983689277156776805) · [Website](http://instagram.com/turretcoffee) · 2 Chome-12-6 Tsukiji, Chuo City, Tokyo 104-0045, Japan
-- **Onigiri Marutoyo** · Essen · ★ 4,0 · Tsukiji, Chuo City
-  Beruehmter Onigiri-Spezialist im aeusseren Tsukiji-Markt, geoeffnet ab ca. 3 Uhr morgens; bekanntestes Gericht ist "Bakudan" mit weich gekochtem Ei, dazu Fuellungen wie Lachs, Ikura oder Mentaiko.
-  [Maps](https://maps.google.com/?cid=14094582827016577213) · [Website](https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/389/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome−9−9 築地場外市場 1F
-- **Tempura Abe Honten** · Essen · ★ 4,1 · Ginza, Chuo City
-  In a city where tempura a deep fried beloved Japanese dish is associated with casual dining it s a hard task finding a special occasion worthy spot to enjoy it in That s where this old family favorite comes in Abe the chef here has over 30 years experience in this dish and watching him prepare his top notch tempura some would say the capital s best from a counter seat is unforgettable Don t leave without ordering the kakiage tendon at lunch It features a crisp tempura fritter topped with an oozy egg yolk.
-  [Maps](https://maps.google.com/?cid=11792726080048590927) · [Website](https://tempuraabe.foodre.jp/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−3−7 銀座 スバルビル 地下1階
-- **Tsukiji Yamacho** · Essen · ★ 3,9 · Tsukiji, Chuo City
-  Original Laden für tamago-yaki (omelett am Stiel)
-  [Maps](https://maps.google.com/?cid=12120390205030045980) · [Website](http://www.yamachou-matue.jp/index.shtml) · 4 Chome-10-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
-- **Fish Market Tsukiji Outer Market** · Markt · ★ 4,2 · Tsukiji, Chuo City
-  Sprawling wholesale fish market with an array of seafood & viewing areas for a popular tuna auction.
-  [Maps](https://maps.google.com/?cid=11704332758705177180) · [Website](https://www.tsukiji.or.jp/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome および６丁目一部
-- **ART AQUARIUM MUSEUM** · Museum · ★ 4,1 · Ginza, Chuo City
-  Kunstmuseum im 9. Stock des Mitsukoshi Ginza mit Installationen und Skulpturen aus farbig beleuchteten Goldfischbecken. Öffnet laut Google um 10 Uhr; Tickets werden oft mit festem Datum verkauft.
-  [Maps](https://maps.google.com/?cid=15689961400037075470) · Mitsukoshi Ginza Neubau 9F, 4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan
-- **Hamarikyu Gardens** · Park · ★ 4,5 · Hamarikyuteien, Chuo City
-  Public park with a pond, laid out in the Edo-period style, on the site of 17th-century Shogun villa.
-  [Maps](https://maps.google.com/?cid=11189930762912151578) · [Website](https://www.tokyo-park.or.jp/park/hama-rikyu/) · 1-1 Hamarikyuteien, Chuo City, Tokyo 104-0046, Japan
-- **COREDO Muromachi 1** · Shop · ★ 3,9 · Nihonbashimuromachi, Chuo City
-  Mall mit Schwerpunkt Haushaltswaren und Gourmetläden
-  [Maps](https://maps.google.com/?cid=8045973119871515421) · [Website](https://mitsui-shopping-park.com/urban/muromachi/) · 2 Chome-2-1 Nihonbashimuromachi, Chuo City, Tokyo 103-0022, Japan
-- **Kayanoya Coredo Muromachi Store** · Shop · ★ 4,1 · Nihonbashimuromachi, Chuo City
-  Von Architekt Kengo Kuma gestaltete Filiale der 120 Jahre alten Sojasauce-Marke Kayanoya: Dashi- und Gewuerzpackungen, hängende Sojasauce-Faesser als Blickfang.
-  [Maps](https://maps.google.com/?cid=18330220380169445725) · [Website](http://www.kayanoya.com/shop/nihonbashi/) · Japan, 〒103-0022 Tokyo, Chuo City, Nihonbashimuromachi, 1 Chome−5−5 COREDO Muromachi 3, 1F
-- **Mitsukoshi Ginza** · Shop · ★ 4,1 · Ginza, Chuo City
-  Kaufhaus mit ausgezeichnete Haushaltswaren und Gormet-Foodhall
-  [Maps](https://maps.google.com/?cid=10519083699749749694) · [Website](https://www.mistore.jp/store/ginza.html) · 4 Chome-6-16 Ginza, Chuo City, Tokyo 104-8212, Japan
-- **Pokémon Center Tokyo DX** · Shop · ★ 4,5 · Nihonbashi, Chuo City
-  Seit 2018 groesster Pokemon Center im 5. Stock der Nihonbashi Takashimaya, erster mit permanentem angeschlossenem Pokemon-Cafe; eigener Fotobereich mit Snorlax-Statue.
-  [Maps](https://maps.google.com/?cid=17206393884080941756) · [Website](https://www.pokemon.co.jp/shop/pokecen/tokyodx/) · 髙島屋S.C.東館 5F, 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan
 
 ## Minato (13)
 
@@ -583,7 +586,7 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist temple, founded 733 & rebuilt 1919, with a 17th-century gate & annual soba noodle festival.
   [Maps](https://maps.google.com/?cid=8224161598012187145) · [Website](http://www.jindaiji.or.jp/) · Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−1
 
-## Außerhalb Tokios (25)
+## Außerhalb Tokios (26)
 
 - **FermenCo.** · Essen · ★ 4,7 · Andere (Shizuoka)
   Sauerteig-Pizza und Naturwein direkt am Strand von Shimoda auf der Izu-Halbinsel, 2025 unter Tokios Tabelog-100-Pizza-Adressen gelistet.
@@ -591,6 +594,9 @@ Stand: 23.10.2026 · 194 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Edo-Tokyo Open Air Architectural Museum** · Museum · ★ 4,5 · Andere (Chome−− 内 都立小金井公園)
   Open-air museum with a collection of Japanese structures from many periods of history, plus a cafe.
   [Maps](https://maps.google.com/?cid=2629868023087343463) · [Website](https://www.tatemonoen.jp/) · Japan, 〒184-0005 Tokyo, Koganei, Sakuracho, 3 Chome−7−1 内 都立小金井公園
+- **Kadokawa Musashino Museum (角川武蔵野ミュージアム)** · Museum · ★ 4,2 · Andere (Tokorozawa, Saitama)
+  Kulturkomplex in Tokorozawa Sakura Town, bekannt für das riesige Bookshelf Theater (Bibliothek) und Anime-Ausstellungen. Öffnet laut Google um 10 Uhr. Liegt in der Präfektur Saitama, also außerhalb von Tokio: Anreise und Zeit einplanen.
+  [Maps](https://maps.google.com/?cid=14792333067707422694) · [Website](https://kadcul.com/) · 3 Chome-31-3 Higashitokorozawawada, Tokorozawa, Saitama 359-0023, Japan (Tokorozawa Sakura Town)
 - **Arashiyama Park Kameyama Area** · Park · ★ 4,5 · Andere (Kyoto)
   berühmtesten Bambushain Japans
   [Maps](https://maps.google.com/?cid=14594246792188669430) · [Website](http://www.pref.kyoto.jp/koen-annai/ara.html) · Japan, 〒616-8386 Kyoto, Ukyo Ward, Sagakamenoocho, ６

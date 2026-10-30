@@ -3296,5 +3296,39 @@
   "lng": "139.7038617",
   "bezirk": "Shibuya",
   "id": "193-tofu-cuisine-sorano-shibuya"
+ },
+ {
+  "name": "Marronnier Gate Ginza 2 (マロニエゲート銀座2)",
+  "kategorie": "Shop",
+  "google_typ": "Shopping mall",
+  "stadtteil": "Ginza, Chuo City",
+  "region": "Tokio",
+  "adresse": "3 Chome-2-1 Ginza, Chuo City, Tokyo 104-0061, Japan",
+  "beschreibung": "Einkaufshaus in Ginza. Laut Google u. a. Uniqlo (Etagen 1–4), Kura Sushi (1. Stock), OK-Supermarkt (UG) und Daiso (6. Stock). Öffnet laut Google um 11 Uhr; die Läden haben teils eigene Zeiten.",
+  "rating": 3.8,
+  "ratingsTotal": "",
+  "website": "https://marronniergate.com/",
+  "googleUrl": "https://www.google.com/maps/place/Marronnier+Gate+Ginza+2/data=!4m2!3m1!1s0x60188be5ac7d445f:0xc5648ddbd06fea89",
+  "lat": "35.6736875",
+  "lng": "139.7651875",
+  "bezirk": "Chuo",
+  "id": "194-marronnier-gate-ginza-2"
+ },
+ {
+  "name": "Kadokawa Musashino Museum (角川武蔵野ミュージアム)",
+  "kategorie": "Museum",
+  "google_typ": "Museum",
+  "stadtteil": "Andere (Tokorozawa, Saitama)",
+  "region": "Andere Region",
+  "adresse": "3 Chome-31-3 Higashitokorozawawada, Tokorozawa, Saitama 359-0023, Japan (Tokorozawa Sakura Town)",
+  "beschreibung": "Kulturkomplex in Tokorozawa Sakura Town, bekannt für das riesige Bookshelf Theater (Bibliothek) und Anime-Ausstellungen. Öffnet laut Google um 10 Uhr. Liegt in der Präfektur Saitama, also außerhalb von Tokio: Anreise und Zeit einplanen.",
+  "rating": 4.2,
+  "ratingsTotal": "",
+  "website": "https://kadcul.com/",
+  "googleUrl": "https://www.google.com/maps/place/Kadokawa+Musashino+Museum/data=!4m2!3m1!1s0x6018e71fdf69ebc3:0xcd48ec8d4bf717e6",
+  "lat": "35.7976875",
+  "lng": "139.5078125",
+  "bezirk": "Außerhalb der 23 Bezirke",
+  "id": "195-kadokawa-musashino-museum"
  }
 ]
