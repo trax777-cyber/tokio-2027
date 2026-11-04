@@ -3330,5 +3330,22 @@
   "lng": "139.5078125",
   "bezirk": "Außerhalb der 23 Bezirke",
   "id": "195-kadokawa-musashino-museum"
+ },
+ {
+  "name": "MOMOTARO JEANS Aoyama (桃太郎ジーンズ)",
+  "kategorie": "Shop",
+  "google_typ": "Clothing store",
+  "stadtteil": "Kita-Aoyama, Minato City",
+  "region": "Tokio",
+  "adresse": "3 Chome-11-7 Kita-Aoyama, Minato City, Tokyo 107-0061, Japan (Ao Building, 1F–2F)",
+  "beschreibung": "Jeansgeschäft in Aoyama (Etagen 1 und 2 im Ao Building). Der Betreiber zeigt auf Google Denim-Fading-Beispiele; das Label stammt laut Betreiber aus Kojima (Okayama). Öffnet laut Google um 11 Uhr.",
+  "rating": 4.3,
+  "ratingsTotal": "",
+  "website": "https://momotarojeans.com/",
+  "googleUrl": "https://www.google.com/maps/place/MOMOTARO+JEANS+Aoyama/data=!4m2!3m1!1s0x60188b5ff62dc42d:0xe65fa7032da1d5d1",
+  "lat": "35.663737",
+  "lng": "139.7105572",
+  "bezirk": "Minato",
+  "id": "196-momotaro-jeans-aoyama"
  }
 ]

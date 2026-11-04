@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,7 +8,7 @@ Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
-| Shop | 44 |
+| Shop | 45 |
 | Café | 44 |
 | Sehenswürdigkeit | 41 |
 | Essen | 25 |
@@ -26,7 +26,7 @@ Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Taito (24)
 - Chuo (18)
 - Koto (18)
-- Minato (13)
+- Minato (14)
 - Chiyoda (9)
 - Shinjuku (9)
 - Setagaya (7)
@@ -350,7 +350,7 @@ Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
   [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
 
-## Minato (13)
+## Minato (14)
 
 - **Bricolage bread & co.** · Café · ★ 4,3 · Roppongi, Minato City
   Relaxed cafe & bakery supplying artisanal French bread & international bites, plus coffee.
@@ -385,6 +385,9 @@ Stand: 30.10.2026 · 196 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **KAPITAL Legs Roppongi** · Shop · ★ 4,1 · Roppongi, Minato City
   Filiale der Kult-Denim-Marke KAPITAL (seit 1984), bekannt fuer handwerkliche Indigo-Faerbung und die auf 100 Jahre Haltbarkeit ausgelegte Century Denim.
   [Maps](https://maps.google.com/?cid=6155998456279403498) · [Website](https://www.kapital.jp/shop/detail/6.html) · Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−10−1 六本木ヒルズ ヒルサイド 1F
+- **MOMOTARO JEANS Aoyama (桃太郎ジーンズ)** · Shop · ★ 4,3 · Kita-Aoyama, Minato City
+  Jeansgeschäft in Aoyama (Etagen 1 und 2 im Ao Building). Der Betreiber zeigt auf Google Denim-Fading-Beispiele; das Label stammt laut Betreiber aus Kojima (Okayama). Öffnet laut Google um 11 Uhr.
+  [Maps](https://maps.google.com/?cid=16600170383603258833) · [Website](https://momotarojeans.com/) · 3 Chome-11-7 Kita-Aoyama, Minato City, Tokyo 107-0061, Japan (Ao Building, 1F–2F)
 - **Reiyukai Shakaden Temple** · Tempel · ★ 4,3 · Azabudai, Minato City
   1975 fertiggestellter "Raumschiff-Tempel" der Takenaka Corporation nahe dem Tokyo Tower, Hauptquartier der buddhistischen Reiyukai-Bewegung; dunkler Granit/Kupferbau mit 8 Meter hoher Holz-Buddha-Statue, kostenlose Japanisch-Kurse fuer Besucher.
   [Maps](https://maps.google.com/?cid=13264466578595955946) · [Website](https://reiyukai.jp/) · 1 Chome-7-8 Azabudai, Minato City, Tokyo 106-0041, Japan
