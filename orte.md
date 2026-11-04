@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -11,7 +11,7 @@ Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027
 | Shop | 46 |
 | Café | 44 |
 | Sehenswürdigkeit | 41 |
-| Essen | 25 |
+| Essen | 26 |
 | Park | 10 |
 | Tempel | 9 |
 | Museum | 8 |
@@ -24,8 +24,8 @@ Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - Shibuya (42)
 - Taito (24)
+- Koto (19)
 - Chuo (18)
-- Koto (18)
 - Minato (14)
 - Shinjuku (10)
 - Chiyoda (9)
@@ -239,6 +239,64 @@ Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Completed in 645, this temple, Tokyo's oldest, was built to honor Kannon, the goddess of mercy.
   [Maps](https://maps.google.com/?cid=7785923974874169613) · [Website](https://www.senso-ji.jp/) · 2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan
 
+## Koto (19)
+
+- **485 TOKINI CASTELLA / 485 TOKINI CREPE** · Café · ★ 4,7 · Tokiwa, Koto City
+  Gemütliches Café nahe Kiyosumi-Shirakawa, bekannt für japanischen Castella-Kuchen und weitere Torten.
+  [Maps](https://maps.google.com/?cid=3046912254734332575) · [Website](https://instagram.com/485__tokini?igshid=yanc9x15r2z7) · 2 Chome-2-14 Tokiwa, Koto City, Tokyo 135-0006, Japan
+- **Blue Bottle Coffee - Kiyosumi-Shirakawa Flagship Cafe** · Café · ★ 4,1 · Hirano, Koto City
+  Trendy cafe chain offering upscale coffee drinks & pastries, plus beans & brewing equipment.
+  [Maps](https://maps.google.com/?cid=13603549750032992380) · [Website](https://store.bluebottlecoffee.jp/pages/kiyosumi?utm_source=google&utm_medium=my_business&utm_campaign=top&utm_id=C001Kiyosumi) · 1 Chome-4-8 Hirano, Koto City, Tokyo 135-0023, Japan
+- **Boulangerie S.Igarashi** · Café · ★ 4,3 · Kiba, Koto City
+  Beliebte Bäckerei in einem Wohnviertel bei Kiba, bekannt für Brot aus hochwertigem Mehl und Naturhefe; wegen Andrangs oft mit Wartenummer.
+  [Maps](https://maps.google.com/?cid=7245893848077011896) · [Website](https://www.s-igarashi.tokyo/?fbclid=PAAaYQMaI-CjZwE8e0blPsfE9A3UWi91Lge5psCPK1_g3BMzBf2E2fYY23duA) · 3 Chome-8-10 Kiba, Koto City, Tokyo 135-0042, Japan
+- **Ciest** · Café · ★ 4,1 · Hirano, Koto City
+  Bäckerei mit Wein-Pairing, mahlt Mehl aus 15-16 einheimischen Weizensorten selbst; 2019 in Funabori eröffnet, 2025 nach Kiyosumi-Shirakawa umgezogen.
+  [Maps](https://maps.google.com/?cid=10989498087227358967) · [Website](https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==) · Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ
+- **Day** · Café · ★ 4,5 · Kiyosumi, Koto City
+  [Maps](https://maps.google.com/?cid=11982084839998586365) · [Website](https://www.instagram.com/day_kiyosumishirakawa/) · 2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan
+- **Le Bois Kiyosumi Shirakawa Cafe & Miscellaneous Goods (formerly THE LITTLE THINGS)** · Café · ★ 4,2 · Miyoshi, Koto City
+  Verstecktes Cafe in ruhiger Wohngegend von Kiyosumi-Shirakawa; am Eingang verkaufte Zimmerpflanzen, gedaempft beleuchteter Innenraum mit Theken- und Terrassenplaetzen.
+  [Maps](https://maps.google.com/?cid=10977837667374905564) · [Website](https://instagram.com/le.bois_kiyosumi) · 3 Chome-1-14 Miyoshi, Koto City, Tokyo 135-0022, Japan
+- **MISONOMI** · Café · ★ 4,4 · Tokiwa, Koto City
+  Seit 2022 in Kiyosumi-Shirakawa: Miso-Suppen-Cafe mit gefriergetrockneten Zutaten und rohem Miso auf einer Monaka-Waffel, ergibt mit heissem Wasser aufgegossen Misosuppe; mehrere Sorten, auch abgewogen als Mitbringsel.
+  [Maps](https://maps.google.com/?cid=12792320235912906524) · [Website](https://www.misonomi.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内
+- **tallskogen** · Café · ★ 4,4 · Kiyosumi, Koto City
+  [Maps](https://maps.google.com/?cid=7474980125854947600) · [Website](http://totti.tokyo/) · 2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan
+- **iki Espresso** · Essen · ★ 3,9 · Tokiwa, Koto City
+  Open-fronted contemporary cafe serving specialist coffee & an all-day menu of snacks & pastries.
+  [Maps](https://maps.google.com/?cid=3451075743309228904) · [Website](https://iki-espresso.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 2 Chome−2−12 1階
+- **iki Roastery & Eatery** · Essen · ★ 4,0 · Tokiwa, Koto City
+  Zur Roesterei umgebautes Flussufer-Lagerhaus des Cafes iki, mit hauseigener Baeckerei und Kaffeebar; Montag/Dienstag 10-16 Uhr live beim Roesten zusehen, Kaffee-Verkostungen ab 2500 Yen.
+  [Maps](https://maps.google.com/?cid=11658222583870003093) · [Website](https://iki-espresso.com/) · 1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan
+- **Kiyosumi (清炭, Yakiniku)** · Essen · ★ 4,8 · Kiyosumi, Koto City
+  Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr; Reservierung laut Google über Hot Pepper möglich, ob sie nötig ist, weiß ich nicht.
+  [Maps](https://maps.google.com/?cid=910770910273313351) · 3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)
+- **Okada** · Essen · ★ 3,8 · Kitasuna, Koto City
+  Lokaler Yakitori-Laden in Kitasuna nahe der Sunamachi-Ginza-Einkaufsstrasse, beliebt fuer Innereien-Eintopf (Motsu-ni) und Yakitori-Spiesse, oft zum Mitnehmen gekauft.
+  [Maps](https://maps.google.com/?cid=3156119243245033521) · [Website](https://sunagin.goemon.tokyo/listings/okada/) · 3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan
+- **Ryu Sushi** · Essen · ★ 4,1 · Toyosu, Koto City
+  sushi doesn t come much fresher or more authentic than at this spot in the heart of toyosu fish market the chefs here have been making edo style sushi for over 50 years.
+  [Maps](https://maps.google.com/?cid=7098413625217631431) · Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階
+- **LYURO Tokyo Kiyosumi by THE SHARE HOTEL** · Hotel · ★ 4,4 · Kiyosumi, Koto City
+  HOTEL Bezirk Koto
+  [Maps](https://maps.google.com/?cid=14572128234047431754) · [Website](https://www.thesharehotels.com/lyuro/?utm_source=google&utm_medium=map) · Japan, 〒135-0024 Tokyo, Koto City, Kiyosumi, 1 Chome−1−7 清澄リバーサイドビル
+- **Fukagawa Edo Museum** · Museum · ★ 4,4 · Shirakawa, Koto City
+  This history museum focused on the Edo period features re-created homes, a theater & lecture hall.
+  [Maps](https://maps.google.com/?cid=5532162446945768520) · [Website](https://www.kcf.or.jp/fukagawa/) · 1 Chome-3-28 Shirakawa, Koto City, Tokyo 135-0021, Japan
+- **Unicorn Gundam** · Sehenswürdigkeit · ★ 4,6 · Aomi, Koto City
+  Giant white statue of a cult sci-fi novel & anime character, with nighttime music & lights.
+  [Maps](https://maps.google.com/?cid=16300115339830217555) · [Website](https://www.unicorn-gundam-statue.jp/) · Japan, 〒135-0064 Tokyo, Koto City, Aomi, 1 Chome−1−10 ダイバーシティ東京プラザ内 2Fフェスティバル広場
+- **The Plant Society Tokyo Flagship** · Shop · ★ 4,1 · Hirano, Koto City
+  Erste Filiale des Melbourner Pflanzenladens ausserhalb Australiens (seit 2021), im 2. Stock von TOKYOBIKE TOKYO in Kiyosumi-Shirakawa; Zimmerpflanzen und Keramiktoepfe australischer Kuenstler.
+  [Maps](https://maps.google.com/?cid=11660278740734395758) · [Website](https://www.theplantsociety.jp/) · 2 Chome-6-1 Hirano, Koto City, Tokyo 135-0023, Japan
+- **Tokyobike Tokyo** · Shop · ★ 4,1 · Miyoshi, Koto City
+  Flagship-Store der Fahrradmarke tokyobike in Kiyosumi-Shirakawa (seit 2021), im Erdgeschoss Fahrraeder und der Kaffeestand Arise Coffee Roasters, im Obergeschoss der Pflanzenladen The Plant Society.
+  [Maps](https://maps.google.com/?cid=13789346794542849408) · [Website](https://tokyobike.com/) · 3 Chome-7-2 Miyoshi, Koto City, Tokyo 135-0022, Japan
+- **Fukagawa Fudou-dō (Naritasan Tokyo branch temple)** · Tempel · ★ 4,4 · Tomioka, Koto City
+  Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
+  [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
+
 ## Chuo (18)
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
@@ -294,61 +352,6 @@ Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Pokémon Center Tokyo DX** · Shop · ★ 4,5 · Nihonbashi, Chuo City
   Seit 2018 groesster Pokemon Center im 5. Stock der Nihonbashi Takashimaya, erster mit permanentem angeschlossenem Pokemon-Cafe; eigener Fotobereich mit Snorlax-Statue.
   [Maps](https://maps.google.com/?cid=17206393884080941756) · [Website](https://www.pokemon.co.jp/shop/pokecen/tokyodx/) · 髙島屋S.C.東館 5F, 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan
-
-## Koto (18)
-
-- **485 TOKINI CASTELLA / 485 TOKINI CREPE** · Café · ★ 4,7 · Tokiwa, Koto City
-  Gemütliches Café nahe Kiyosumi-Shirakawa, bekannt für japanischen Castella-Kuchen und weitere Torten.
-  [Maps](https://maps.google.com/?cid=3046912254734332575) · [Website](https://instagram.com/485__tokini?igshid=yanc9x15r2z7) · 2 Chome-2-14 Tokiwa, Koto City, Tokyo 135-0006, Japan
-- **Blue Bottle Coffee - Kiyosumi-Shirakawa Flagship Cafe** · Café · ★ 4,1 · Hirano, Koto City
-  Trendy cafe chain offering upscale coffee drinks & pastries, plus beans & brewing equipment.
-  [Maps](https://maps.google.com/?cid=13603549750032992380) · [Website](https://store.bluebottlecoffee.jp/pages/kiyosumi?utm_source=google&utm_medium=my_business&utm_campaign=top&utm_id=C001Kiyosumi) · 1 Chome-4-8 Hirano, Koto City, Tokyo 135-0023, Japan
-- **Boulangerie S.Igarashi** · Café · ★ 4,3 · Kiba, Koto City
-  Beliebte Bäckerei in einem Wohnviertel bei Kiba, bekannt für Brot aus hochwertigem Mehl und Naturhefe; wegen Andrangs oft mit Wartenummer.
-  [Maps](https://maps.google.com/?cid=7245893848077011896) · [Website](https://www.s-igarashi.tokyo/?fbclid=PAAaYQMaI-CjZwE8e0blPsfE9A3UWi91Lge5psCPK1_g3BMzBf2E2fYY23duA) · 3 Chome-8-10 Kiba, Koto City, Tokyo 135-0042, Japan
-- **Ciest** · Café · ★ 4,1 · Hirano, Koto City
-  Bäckerei mit Wein-Pairing, mahlt Mehl aus 15-16 einheimischen Weizensorten selbst; 2019 in Funabori eröffnet, 2025 nach Kiyosumi-Shirakawa umgezogen.
-  [Maps](https://maps.google.com/?cid=10989498087227358967) · [Website](https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==) · Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ
-- **Day** · Café · ★ 4,5 · Kiyosumi, Koto City
-  [Maps](https://maps.google.com/?cid=11982084839998586365) · [Website](https://www.instagram.com/day_kiyosumishirakawa/) · 2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan
-- **Le Bois Kiyosumi Shirakawa Cafe & Miscellaneous Goods (formerly THE LITTLE THINGS)** · Café · ★ 4,2 · Miyoshi, Koto City
-  Verstecktes Cafe in ruhiger Wohngegend von Kiyosumi-Shirakawa; am Eingang verkaufte Zimmerpflanzen, gedaempft beleuchteter Innenraum mit Theken- und Terrassenplaetzen.
-  [Maps](https://maps.google.com/?cid=10977837667374905564) · [Website](https://instagram.com/le.bois_kiyosumi) · 3 Chome-1-14 Miyoshi, Koto City, Tokyo 135-0022, Japan
-- **MISONOMI** · Café · ★ 4,4 · Tokiwa, Koto City
-  Seit 2022 in Kiyosumi-Shirakawa: Miso-Suppen-Cafe mit gefriergetrockneten Zutaten und rohem Miso auf einer Monaka-Waffel, ergibt mit heissem Wasser aufgegossen Misosuppe; mehrere Sorten, auch abgewogen als Mitbringsel.
-  [Maps](https://maps.google.com/?cid=12792320235912906524) · [Website](https://www.misonomi.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内
-- **tallskogen** · Café · ★ 4,4 · Kiyosumi, Koto City
-  [Maps](https://maps.google.com/?cid=7474980125854947600) · [Website](http://totti.tokyo/) · 2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan
-- **iki Espresso** · Essen · ★ 3,9 · Tokiwa, Koto City
-  Open-fronted contemporary cafe serving specialist coffee & an all-day menu of snacks & pastries.
-  [Maps](https://maps.google.com/?cid=3451075743309228904) · [Website](https://iki-espresso.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 2 Chome−2−12 1階
-- **iki Roastery & Eatery** · Essen · ★ 4,0 · Tokiwa, Koto City
-  Zur Roesterei umgebautes Flussufer-Lagerhaus des Cafes iki, mit hauseigener Baeckerei und Kaffeebar; Montag/Dienstag 10-16 Uhr live beim Roesten zusehen, Kaffee-Verkostungen ab 2500 Yen.
-  [Maps](https://maps.google.com/?cid=11658222583870003093) · [Website](https://iki-espresso.com/) · 1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan
-- **Okada** · Essen · ★ 3,8 · Kitasuna, Koto City
-  Lokaler Yakitori-Laden in Kitasuna nahe der Sunamachi-Ginza-Einkaufsstrasse, beliebt fuer Innereien-Eintopf (Motsu-ni) und Yakitori-Spiesse, oft zum Mitnehmen gekauft.
-  [Maps](https://maps.google.com/?cid=3156119243245033521) · [Website](https://sunagin.goemon.tokyo/listings/okada/) · 3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan
-- **Ryu Sushi** · Essen · ★ 4,1 · Toyosu, Koto City
-  sushi doesn t come much fresher or more authentic than at this spot in the heart of toyosu fish market the chefs here have been making edo style sushi for over 50 years.
-  [Maps](https://maps.google.com/?cid=7098413625217631431) · Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階
-- **LYURO Tokyo Kiyosumi by THE SHARE HOTEL** · Hotel · ★ 4,4 · Kiyosumi, Koto City
-  HOTEL Bezirk Koto
-  [Maps](https://maps.google.com/?cid=14572128234047431754) · [Website](https://www.thesharehotels.com/lyuro/?utm_source=google&utm_medium=map) · Japan, 〒135-0024 Tokyo, Koto City, Kiyosumi, 1 Chome−1−7 清澄リバーサイドビル
-- **Fukagawa Edo Museum** · Museum · ★ 4,4 · Shirakawa, Koto City
-  This history museum focused on the Edo period features re-created homes, a theater & lecture hall.
-  [Maps](https://maps.google.com/?cid=5532162446945768520) · [Website](https://www.kcf.or.jp/fukagawa/) · 1 Chome-3-28 Shirakawa, Koto City, Tokyo 135-0021, Japan
-- **Unicorn Gundam** · Sehenswürdigkeit · ★ 4,6 · Aomi, Koto City
-  Giant white statue of a cult sci-fi novel & anime character, with nighttime music & lights.
-  [Maps](https://maps.google.com/?cid=16300115339830217555) · [Website](https://www.unicorn-gundam-statue.jp/) · Japan, 〒135-0064 Tokyo, Koto City, Aomi, 1 Chome−1−10 ダイバーシティ東京プラザ内 2Fフェスティバル広場
-- **The Plant Society Tokyo Flagship** · Shop · ★ 4,1 · Hirano, Koto City
-  Erste Filiale des Melbourner Pflanzenladens ausserhalb Australiens (seit 2021), im 2. Stock von TOKYOBIKE TOKYO in Kiyosumi-Shirakawa; Zimmerpflanzen und Keramiktoepfe australischer Kuenstler.
-  [Maps](https://maps.google.com/?cid=11660278740734395758) · [Website](https://www.theplantsociety.jp/) · 2 Chome-6-1 Hirano, Koto City, Tokyo 135-0023, Japan
-- **Tokyobike Tokyo** · Shop · ★ 4,1 · Miyoshi, Koto City
-  Flagship-Store der Fahrradmarke tokyobike in Kiyosumi-Shirakawa (seit 2021), im Erdgeschoss Fahrraeder und der Kaffeestand Arise Coffee Roasters, im Obergeschoss der Pflanzenladen The Plant Society.
-  [Maps](https://maps.google.com/?cid=13789346794542849408) · [Website](https://tokyobike.com/) · 3 Chome-7-2 Miyoshi, Koto City, Tokyo 135-0022, Japan
-- **Fukagawa Fudou-dō (Naritasan Tokyo branch temple)** · Tempel · ★ 4,4 · Tomioka, Koto City
-  Buddhist place of worship famed for daily fire rituals involving sutra chanting & taiko drumming.
-  [Maps](https://maps.google.com/?cid=10668939928745944312) · [Website](https://www.fukagawafudou.gr.jp/) · 1 Chome-17-13 Tomioka, Koto City, Tokyo 135-0047, Japan
 
 ## Minato (14)
 

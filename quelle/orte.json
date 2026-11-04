@@ -3364,5 +3364,22 @@
   "lng": "139.7040133",
   "bezirk": "Shinjuku",
   "id": "197-beams-fennica"
+ },
+ {
+  "name": "Kiyosumi (清炭, Yakiniku)",
+  "kategorie": "Essen",
+  "google_typ": "Yakiniku restaurant",
+  "stadtteil": "Kiyosumi, Koto City",
+  "region": "Tokio",
+  "adresse": "3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)",
+  "beschreibung": "Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr; Reservierung laut Google über Hot Pepper möglich, ob sie nötig ist, weiß ich nicht.",
+  "rating": 4.8,
+  "ratingsTotal": "",
+  "website": "",
+  "googleUrl": "https://www.google.com/maps/place/Kiyosumi/data=!4m2!3m1!1s0x60188984993873b3:0xca3b55142999a47",
+  "lat": "35.6826309",
+  "lng": "139.7981424",
+  "bezirk": "Koto",
+  "id": "198-kiyosumi-yakiniku"
  }
 ]
