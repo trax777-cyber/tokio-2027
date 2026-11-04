@@ -3347,5 +3347,22 @@
   "lng": "139.7105572",
   "bezirk": "Minato",
   "id": "196-momotaro-jeans-aoyama"
+ },
+ {
+  "name": "BEAMS fennica",
+  "kategorie": "Shop",
+  "google_typ": "Clothing store",
+  "stadtteil": "Shinjuku, Shinjuku City",
+  "region": "Tokio",
+  "adresse": "3 Chome-32-8 Shinjuku, Shinjuku City, Tokyo 160-0022, Japan",
+  "beschreibung": "Bekleidungsgeschäft von BEAMS in Shinjuku (nicht zu verwechseln mit Beams Japan, ebenfalls in Shinjuku). Öffnet laut Google um 11:45 Uhr. Google nennt keine Webseite und keine weitere Beschreibung.",
+  "rating": 4.3,
+  "ratingsTotal": "",
+  "website": "",
+  "googleUrl": "https://www.google.com/maps/place/BEAMS+fennica/data=!4m2!3m1!1s0x60188cdb02ce6651:0x2129e22d1586d7d1",
+  "lat": "35.6903544",
+  "lng": "139.7040133",
+  "bezirk": "Shinjuku",
+  "id": "197-beams-fennica"
  }
 ]

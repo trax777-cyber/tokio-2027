@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 04.11.2026 · 198 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,7 +8,7 @@ Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
-| Shop | 45 |
+| Shop | 46 |
 | Café | 44 |
 | Sehenswürdigkeit | 41 |
 | Essen | 25 |
@@ -27,8 +27,8 @@ Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - Chuo (18)
 - Koto (18)
 - Minato (14)
+- Shinjuku (10)
 - Chiyoda (9)
-- Shinjuku (9)
 - Setagaya (7)
 - Toshima (6)
 - Sumida (4)
@@ -395,6 +395,39 @@ Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Lantern-filled temple complex with shrines & statues, including hundreds of Shinto fox deities.
   [Maps](https://maps.google.com/?cid=393525607122310857) · [Website](http://www.toyokawainari-tokyo.jp/) · 1 Chome-4-7 Motoakasaka, Minato City, Tokyo 107-0051, Japan
 
+## Shinjuku (10)
+
+- **BAM BI COFFEE** · Café · ★ 4,4 · Okubo, Shinjuku City
+  Kleines Café in Okubo (Shinjuku). Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
+  [Maps](https://maps.google.com/?cid=6661359295410003004) · 1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)
+- **BAM BI COFFEE Nishi-Shinjuku (バムビコーヒー西新宿店)** · Café · ★ 4,4 · Nishishinjuku, Shinjuku City
+  Zweite Filiale von BAM BI COFFEE (die andere liegt in Okubo), in Nishi-Shinjuku. Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
+  [Maps](https://maps.google.com/?cid=17792466364062443096) · 4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)
+- **Gyoza no Fukuho** · Essen · ★ 4,3 · Shinjuku City
+  Any Tokyoite will proudly tell you that their family recipe for gyoza dumplings is the best but they ll also tell you that this place comes in a very close second Always bustling with Shinjuku s after work crowds and young diners come evening this is the kind of spot where catch ups linger into the early hours and sharing plates of gyoza are devoured and thus reordered without a second thought
+  [Maps](https://maps.google.com/?cid=15912583242526311410) · [Website](https://fukuho.net/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階
+- **Godzilla Head** · Sehenswürdigkeit · ★ 4,4 · Kabukicho, Shinjuku City
+  12 Meter hohe Godzilla-Kopf-Statue seit 2015 auf der Terrasse von Hotel Gracery im Shinjuku Toho Building, brüllt stündlich und stößt Rauch aus.
+  [Maps](https://maps.google.com/?cid=3278137894263719495) · [Website](https://www.toho.co.jp/shinjukutoho/) · 1 Chome-19-1 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan
+- **Omoide Yokocho Memory Lane** · Sehenswürdigkeit · ★ 4,2 · Nishishinjuku, Shinjuku City
+  berühmteste Imbiss Gasse
+  [Maps](https://maps.google.com/?cid=10416638554535967955) · [Website](http://shinjuku-omoide.com/) · 1 Chome-2-2 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan
+- **South Observation Deck, Tokyo Metropolitan Government Building No. 1** · Sehenswürdigkeit · ★ 4,7 · Nishishinjuku, Shinjuku City
+  One of the most popular places to take in the views is at the Tokyo Metropolitan Government Building, where you’ll find two free observatories on the 45th floor of both the north and south towers.
+  [Maps](https://maps.google.com/?cid=9849659820499292991) · [Website](https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou) · Japan, 〒160-8001 Tokyo, Shinjuku City, Nishishinjuku, 2 Chome−8−1 Tochomae Station, 45階
+- **BEAMS fennica** · Shop · ★ 4,3 · Shinjuku, Shinjuku City
+  Bekleidungsgeschäft von BEAMS in Shinjuku (nicht zu verwechseln mit Beams Japan, ebenfalls in Shinjuku). Öffnet laut Google um 11:45 Uhr. Google nennt keine Webseite und keine weitere Beschreibung.
+  [Maps](https://maps.google.com/?cid=2389689760559323089) · 3 Chome-32-8 Shinjuku, Shinjuku City, Tokyo 160-0022, Japan
+- **Beams Japan** · Shop · ★ 4,4 · Shinjuku City
+  Men's, women's & children's clothing with a pop art-inspired look from a modern flagship store.
+  [Maps](https://maps.google.com/?cid=16899391789199176645) · [Website](https://www.beams.co.jp/shop/j/?utm_source=gbp&utm_medium=organic&utm_campaign=0231) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−32−6 B1F 5F
+- **Godzilla Store Tokyo** · Shop · ★ 4,3 · Shinjuku City
+  Erster offizieller Godzilla-Shop der Welt (seit 2017), im Erdgeschoss des Shinjuku Marui Annex, rund 500 Fanartikel, teils exklusiv.
+  [Maps](https://maps.google.com/?cid=16055044323949760294) · [Website](http://godzilla.store/tokyo/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−1−26 新宿マルイアネックス1F
+- **Kurihara Tofu Shop** · Shop · ★ 4,7 · Yotsuya, Shinjuku City
+  1887 gegruendeter Traditions-Tofuladen in Yotsuya, bekannt fuer Baumwolltofu (Momen) mit natuerlichem Nigari von der Insel Izu Oshima, beliebt bei umliegenden Restaurants.
+  [Maps](https://maps.google.com/?cid=13804295019356588079) · Japan, 〒160-0004 Tokyo, Shinjuku City, Yotsuya, 3 Chome−１−12 ｢栗原ビル/1F｣
+
 ## Chiyoda (9)
 
 - **Intermediatheque** · Museum · ★ 4,6 · Marunouchi, Chiyoda City
@@ -424,36 +457,6 @@ Stand: 04.11.2026 · 197 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Tokyo Character Street** · Shop · ★ 4,2 · Marunouchi, Chiyoda City
   Shopping concourse inside Tokyo Station with stores for anime & manga character merchandise.
   [Maps](https://maps.google.com/?cid=1169765817995755207) · [Website](https://e-shop.tokyoeki-1bangai.co.jp/) · Japan, 〒100-0005 Tokyo, Chiyoda City, Marunouchi, 1 Chome−9−1 東京駅一番街 B1
-
-## Shinjuku (9)
-
-- **BAM BI COFFEE** · Café · ★ 4,4 · Okubo, Shinjuku City
-  Kleines Café in Okubo (Shinjuku). Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
-  [Maps](https://maps.google.com/?cid=6661359295410003004) · 1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)
-- **BAM BI COFFEE Nishi-Shinjuku (バムビコーヒー西新宿店)** · Café · ★ 4,4 · Nishishinjuku, Shinjuku City
-  Zweite Filiale von BAM BI COFFEE (die andere liegt in Okubo), in Nishi-Shinjuku. Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
-  [Maps](https://maps.google.com/?cid=17792466364062443096) · 4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)
-- **Gyoza no Fukuho** · Essen · ★ 4,3 · Shinjuku City
-  Any Tokyoite will proudly tell you that their family recipe for gyoza dumplings is the best but they ll also tell you that this place comes in a very close second Always bustling with Shinjuku s after work crowds and young diners come evening this is the kind of spot where catch ups linger into the early hours and sharing plates of gyoza are devoured and thus reordered without a second thought
-  [Maps](https://maps.google.com/?cid=15912583242526311410) · [Website](https://fukuho.net/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階
-- **Godzilla Head** · Sehenswürdigkeit · ★ 4,4 · Kabukicho, Shinjuku City
-  12 Meter hohe Godzilla-Kopf-Statue seit 2015 auf der Terrasse von Hotel Gracery im Shinjuku Toho Building, brüllt stündlich und stößt Rauch aus.
-  [Maps](https://maps.google.com/?cid=3278137894263719495) · [Website](https://www.toho.co.jp/shinjukutoho/) · 1 Chome-19-1 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan
-- **Omoide Yokocho Memory Lane** · Sehenswürdigkeit · ★ 4,2 · Nishishinjuku, Shinjuku City
-  berühmteste Imbiss Gasse
-  [Maps](https://maps.google.com/?cid=10416638554535967955) · [Website](http://shinjuku-omoide.com/) · 1 Chome-2-2 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan
-- **South Observation Deck, Tokyo Metropolitan Government Building No. 1** · Sehenswürdigkeit · ★ 4,7 · Nishishinjuku, Shinjuku City
-  One of the most popular places to take in the views is at the Tokyo Metropolitan Government Building, where you’ll find two free observatories on the 45th floor of both the north and south towers.
-  [Maps](https://maps.google.com/?cid=9849659820499292991) · [Website](https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou) · Japan, 〒160-8001 Tokyo, Shinjuku City, Nishishinjuku, 2 Chome−8−1 Tochomae Station, 45階
-- **Beams Japan** · Shop · ★ 4,4 · Shinjuku City
-  Men's, women's & children's clothing with a pop art-inspired look from a modern flagship store.
-  [Maps](https://maps.google.com/?cid=16899391789199176645) · [Website](https://www.beams.co.jp/shop/j/?utm_source=gbp&utm_medium=organic&utm_campaign=0231) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−32−6 B1F 5F
-- **Godzilla Store Tokyo** · Shop · ★ 4,3 · Shinjuku City
-  Erster offizieller Godzilla-Shop der Welt (seit 2017), im Erdgeschoss des Shinjuku Marui Annex, rund 500 Fanartikel, teils exklusiv.
-  [Maps](https://maps.google.com/?cid=16055044323949760294) · [Website](http://godzilla.store/tokyo/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 3 Chome−1−26 新宿マルイアネックス1F
-- **Kurihara Tofu Shop** · Shop · ★ 4,7 · Yotsuya, Shinjuku City
-  1887 gegruendeter Traditions-Tofuladen in Yotsuya, bekannt fuer Baumwolltofu (Momen) mit natuerlichem Nigari von der Insel Izu Oshima, beliebt bei umliegenden Restaurants.
-  [Maps](https://maps.google.com/?cid=13804295019356588079) · Japan, 〒160-0004 Tokyo, Shinjuku City, Yotsuya, 3 Chome−１−12 ｢栗原ビル/1F｣
 
 ## Setagaya (7)
 
