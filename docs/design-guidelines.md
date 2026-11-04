@@ -302,7 +302,7 @@ Tab-Leiste (immer sichtbar)
 | Suchfeld, Filter-Knopf | 46 px | 48 px |
 | Tab | 51 px | 56 px |
 | Schließen-Knopf | **36 × 36 px** | **44 × 44 px** |
-| Pille („Google Maps“, „Website“) | **38 px** | **44 px** |
+| Pille („Google Maps“, „Website“, „Tabelog“) | **38 px** | **44 px** |
 | „Kopieren“ (kleiner Knopf) | **30 px** | **40 px** |
 | Karten-Zoom | 36 px | 44 px |
 

@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-04 · Tabelog-Link bei Restaurants und Cafés
+Kontext:      Für Essen und Cafés ist Tabelog (Bewertungen, Öffnungszeiten, Reservierung) hilfreicher als die Lokal-Webseite. Das Feld „website“ ist aber schon mit der eigenen Seite des Lokals belegt.
+Entscheidung: Neues optionales Feld `tabelog` in `orte.json` und ein Knopf „Tabelog ↗“ im Detailblatt (Stil „Pille“, 44 px, Wort plus Zeichen, hinter „Website“). Fehlt das Feld, erscheint kein Knopf. `orte.md` listet den Link mit. 64 von 70 Lokalen (Essen, Café) haben einen Link, gefunden per Websuche und gegen Adresse und Gegend abgeglichen. Bei 5 unsicheren (Le Bois, McLean, Solatsuki, TORAYA Akasaka, Craft soy milk factory) bleibt das Feld leer, bei „Bon“ (Ryusen) wurde nichts gefunden. Bei Kiyosumi (Yakiniku) stand der Tabelog-Link bisher in „website“, jetzt in `tabelog` (keine eigene Webseite bekannt).
+Alternativen: Link in „website“ überschreiben (verworfen: eigene Webseiten gehen verloren), nur in `orte.json` ohne Knopf (verworfen: in der App unsichtbar).
+Folgen:       Tabelog-Seiten waren von der Prüfumgebung nicht abrufbar, die Links sind nicht geöffnet worden (zwei, Raimon Sansada und Shibadaimon Sarashina Nunoya, sind aus der japanischen Adresse in die englische /en/-Form umgeschrieben). Links können veralten, wenn ein Lokal schließt oder umzieht. Neue Lokale bekommen ihren Tabelog-Link beim Anlegen per Websuche. Auf echten Geräten nicht getestet.
+
 ## 2026-10-13 · Überlauf bei 320 px, Statuszeile 12 px, Manifest ohne Ortszahl
 Kontext:      Bei 320 px Breite scrollte die Seite 4 px zu weit (Suchzeile und Filter-Knopf drückten die Grid-Spalte von `.tools` breiter). `.status` hatte 12,5 px, das Manifest nannte „179 Orte“.
 Entscheidung: `.tools` bekommt `grid-template-columns: minmax(0, 1fr)`, `.status` 12 px, Manifest-Text ohne Zahl.

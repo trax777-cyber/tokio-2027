@@ -827,7 +827,7 @@ function renderDetail() {
   const d = byId.get(S.openId);
   if (!d) return;
   const k = kat(d), ds = desc(d), n = note(d), fav = isFav(d), done = isDone(d);
-  const gm = safeUrl(d.googleUrl), web = safeUrl(d.website);
+  const gm = safeUrl(d.googleUrl), web = safeUrl(d.website), tab = safeUrl(d.tabelog);
   const route = isFinite(d.lat) ? `https://www.google.com/maps/dir/?api=1&destination=${d.lat},${d.lng}&travelmode=transit` : "";
   const stars = d.rating ? "★".repeat(Math.round(d.rating)) + "☆".repeat(5 - Math.round(d.rating)) : "";
   const count = d.ratingsTotal ? ` · ${Number(d.ratingsTotal).toLocaleString("de-DE")} Bewertungen` : "";
@@ -862,6 +862,7 @@ function renderDetail() {
       ${gm ? `<a class="pill-link primary" href="${esc(gm)}" target="_blank" rel="noopener">Google Maps ↗</a>` : ""}
       ${route ? `<a class="pill-link" href="${esc(route)}" target="_blank" rel="noopener">Route mit Öffis ↗</a>` : ""}
       ${web ? `<a class="pill-link" href="${esc(web)}" target="_blank" rel="noopener">Website ↗</a>` : ""}
+      ${tab ? `<a class="pill-link" href="${esc(tab)}" target="_blank" rel="noopener">Tabelog ↗</a>` : ""}
       ${onMap && !mapVisible() ? `<button type="button" class="pill-link" data-action="show-map">Auf der Karte</button>` : ""}
     </div>
     <div class="d-sec">

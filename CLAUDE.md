@@ -5,6 +5,7 @@
 - Schriften und Leaflet liegen in `vendor/` (siehe `vendor/LIESMICH.md`), nichts von fremden Servern einbinden, sonst bricht der Offline-Start.
 - Neuen Ort hinzufügen:
   1. Eintrag an `quelle/orte.json` anhängen (gleiche Felder, `id` = fortlaufende Nummer + Slug).
+     Bei Essen und Cafés optional `tabelog` (englische Tabelog-Seite, per Websuche gefunden und gegen die Adresse geprüft). Nichts raten, im Zweifel leer lassen.
   2. `python3 quelle/build.py` und `python3 tools/orte_md.py` ausführen.
   3. Commit und Push auf `main`. GitHub Pages veröffentlicht automatisch. Die GitHub Action `orte-md.yml` hält `orte.md` aktuell.
 - Google Drive (Ordner „Tokyo“, ID `1EQibKV8NZg-K7Gs_1C3iePJjIRc6Kr9e`): die Datei „Tokio 2027 – Orte.md“ ist die kompakte Fassung.

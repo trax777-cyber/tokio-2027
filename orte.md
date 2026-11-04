@@ -47,50 +47,50 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   [Maps](https://maps.google.com/?cid=13829012941481371191) · [Website](https://mikkeller.com/locations/mikkeller-tokyo) · 2 Chome-19-11 Dogenzaka, Shibuya, Tokyo 150-0043, Japan
 - **ANAKUMA CAFE Harajuku** · Café · ★ 4,8 · Jingumae, Shibuya City
   Take-away-Café nahe Takeshita-dori: Bestellung am Tablet, eine Bärentatze reicht Getränke durch ein Loch in der Wand. Ca. 3 Min. ab Harajuku.
-  [Maps](https://maps.google.com/?cid=1975990326689132499) · 1-23-28 Jingumae, Shibuya, Tokyo 150-0001, Japan
+  [Maps](https://maps.google.com/?cid=1975990326689132499) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13276998/) · 1-23-28 Jingumae, Shibuya, Tokyo 150-0001, Japan
 - **BIEN-ETRE MAISON** · Café · ★ 4,3 · Uehara, Shibuya City
-  [Maps](https://maps.google.com/?cid=2602377731225467068) · [Website](https://www.tablecheck.com/shops/bien-etre/reserve) · Japan, 〒151-0064 Tokyo, Shibuya, Uehara, 1 Chome−17−11 2F・3F
+  [Maps](https://maps.google.com/?cid=2602377731225467068) · [Website](https://www.tablecheck.com/shops/bien-etre/reserve) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131811/13271828/) · Japan, 〒151-0064 Tokyo, Shibuya, Uehara, 1 Chome−17−11 2F・3F
 - **Fuglen Tokyo** · Café · ★ 4,3 · Tomigaya, Shibuya City
   Café
-  [Maps](https://maps.google.com/?cid=17164645774726874279) · [Website](https://fuglencoffee.jp/) · 1 Chome-16-11 Tomigaya, Shibuya, Tokyo 151-0063, Japan
+  [Maps](https://maps.google.com/?cid=17164645774726874279) · [Website](https://fuglencoffee.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131810/13141002/) · 1 Chome-16-11 Tomigaya, Shibuya, Tokyo 151-0063, Japan
 - **Fumigrafico** · Café · ★ 4,3 · Motoyoyogicho, Shibuya City
-  [Maps](https://maps.google.com/?cid=17772021722327594764) · [Website](http://fumigrafico.net/) · 9-6 Motoyoyogicho, Shibuya, Tokyo 151-0062, Japan
+  [Maps](https://maps.google.com/?cid=17772021722327594764) · [Website](http://fumigrafico.net/) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131810/13261499/) · 9-6 Motoyoyogicho, Shibuya, Tokyo 151-0062, Japan
 - **Haritts Donuts & Coffee** · Café · ★ 4,4 · Uehara, Shibuya City
   Unscheinbarer Donut-Laden seit 2004 in einem alten Holzhaus in Yoyogi-Uehara, handgemachte fluffige Donuts, oft schon nachmittags ausverkauft.
-  [Maps](https://maps.google.com/?cid=6598551405510889569) · [Website](https://www.instagram.com/haritts_uehara?igsh=OGJ3MTdyZ3h0OTNi) · 1 Chome-34-2 Uehara, Shibuya, Tokyo 151-0064, Japan
+  [Maps](https://maps.google.com/?cid=6598551405510889569) · [Website](https://www.instagram.com/haritts_uehara?igsh=OGJ3MTdyZ3h0OTNi) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131811/13023466/) · 1 Chome-34-2 Uehara, Shibuya, Tokyo 151-0064, Japan
 - **kasiki** · Café · ★ 4,3 · Nishihara, Shibuya City
   flavor in the air. - seasonal ice cream and natural wine
-  [Maps](https://maps.google.com/?cid=5875564465392199196) · [Website](https://www.instagram.com/p/CkIrizCPoz5/) · 1 Chome-13-2 Nishihara, Shibuya, Tokyo 151-0066, Japan
+  [Maps](https://maps.google.com/?cid=5875564465392199196) · [Website](https://www.instagram.com/p/CkIrizCPoz5/) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131807/13278143/) · 1 Chome-13-2 Nishihara, Shibuya, Tokyo 151-0066, Japan
 - **NUMBER SUGAR** · Café · ★ 4,3 · Jingumae, Shibuya City
   Sleek, minimalist store for artisanal caramel candy in a host of flavors, plus gift packages.
-  [Maps](https://maps.google.com/?cid=5571226775801367661) · [Website](http://www.numbersugar.jp/) · 5 Chome-11-11 Jingumae, Shibuya, Tokyo 150-0001, Japan
+  [Maps](https://maps.google.com/?cid=5571226775801367661) · [Website](http://www.numbersugar.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13166958/) · 5 Chome-11-11 Jingumae, Shibuya, Tokyo 150-0001, Japan
 - **Parfaiteria bel** · Café · ★ 4,1 · Dogenzaka, Shibuya City
   Nacht-Parfait-Spezialist aus Hokkaido, seit 2017 in Shibuya; kunstvolle, mehrschichtige Parfaits mit saisonal wechselnder Karte, geoeffnet bis spaet in die Nacht (Fr/Sa bis 1 Uhr).
-  [Maps](https://maps.google.com/?cid=7456084186848908381) · [Website](https://yoru-parfait-gaku.com/) · Japan, 〒150-0043 Tokyo, Shibuya, Dogenzaka, 1 Chome−７−10 渋谷道玄坂一丁目ビル 3F
+  [Maps](https://maps.google.com/?cid=7456084186848908381) · [Website](https://yoru-parfait-gaku.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130301/13213633/) · Japan, 〒150-0043 Tokyo, Shibuya, Dogenzaka, 1 Chome−７−10 渋谷道玄坂一丁目ビル 3F
 - **PEANUTS Cafe SUNNY SIDE kitchen** · Café · ★ 4,2 · Jingumae, Shibuya City
   Snoopy-/PEANUTS-Themencafé im 2. Untergeschoss von WITH HARAJUKU, gegenüber Bhf. Harajuku: Sandwiches, French Toast, Snoopy-Pancakes aus Reismehl und Latte Art mit den PEANUTS-Figuren; tgl. ca. 9–21:30 Uhr, Reservierung möglich.
-  [Maps](https://maps.google.com/?cid=9899437419143955082) · [Website](https://www.peanutscafe.jp/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−14−30 WITH HARAJUKU B2F
+  [Maps](https://maps.google.com/?cid=9899437419143955082) · [Website](https://www.peanutscafe.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13260699/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−14−30 WITH HARAJUKU B2F
 - **RUMBLE CRUMBLE 渋谷本店** · Café · ★ 4,0 · Jingumae, Shibuya City
   New-York-Style-Cookies aus eigener Kueche; woechentlich am selben Tag eine limitierte Box mit 12 Sorten, frisch produziert und am Bestelltag verschickt.
-  [Maps](https://maps.google.com/?cid=8696642782876363972) · [Website](https://www.rumble-crumble.com/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−16−3 原宿T2ビル 1F
+  [Maps](https://maps.google.com/?cid=8696642782876363972) · [Website](https://www.rumble-crumble.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13304102/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−16−3 原宿T2ビル 1F
 - **AFURI Ebisu** · Essen · ★ 4,3 · Ebisu, Shibuya City
   Ramen
-  [Maps](https://maps.google.com/?cid=13480834823894184664) · [Website](https://afuri.com/) · Japan, 〒150-0013 Tokyo, Shibuya, Ebisu, 1 Chome−1−7 117ビル 1F
+  [Maps](https://maps.google.com/?cid=13480834823894184664) · [Website](https://afuri.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130302/13005500/) · Japan, 〒150-0013 Tokyo, Shibuya, Ebisu, 1 Chome−1−7 117ビル 1F
 - **Gonpachi Nori-temaki Harajuku** · Essen · ★ 4,5 · Jingumae, Shibuya City
   Gonpachi a winner with health conscious Tokyoites
-  [Maps](https://maps.google.com/?cid=14961247491825611590) · [Website](https://gonpachi.jp/nori-temaki/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−35−3 コープオリンピア
+  [Maps](https://maps.google.com/?cid=14961247491825611590) · [Website](https://gonpachi.jp/nori-temaki/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13221143/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−35−3 コープオリンピア
 - **Masaka (Vegan Izakaya)** · Essen · ★ 4,6 · Udagawacho, Shibuya City
   Seit 2019 vollstaendig vegane Izakaya in der Chaos Kitchen im Untergeschoss der Shibuya Parco, beruehmt fuer Karaage aus Soja; keine Reservierung moeglich, oft Warteschlange.
-  [Maps](https://maps.google.com/?cid=12920739430222153725) · [Website](https://www.instagram.com/vegan_izakaya_masaka/) · Japan, 〒150-0042 Tokyo, Shibuya, Udagawacho, 15−1 渋谷PARCO B1
+  [Maps](https://maps.google.com/?cid=12920739430222153725) · [Website](https://www.instagram.com/vegan_izakaya_masaka/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130301/13241217/) · Japan, 〒150-0042 Tokyo, Shibuya, Udagawacho, 15−1 渋谷PARCO B1
 - **Spontini Cascade Harajuku** · Essen · ★ 4,1 · Jingumae, Shibuya City
   Erste Uebersee-Filiale (2015) der seit 1953 bestehenden Mailaender Pizzeria Spontini; dickes, fluffiges Pizzateig in Sojaoel angebraten, riesige Stuecke fuer 900-1900 Yen, Signature-Gericht Margherita.
-  [Maps](https://maps.google.com/?cid=7704555619490203980) · [Website](http://spontini.jp/harajuku.html) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−10−37 CASCADE HARAJUKU 2F
+  [Maps](https://maps.google.com/?cid=7704555619490203980) · [Website](http://spontini.jp/harajuku.html) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13188197/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 1 Chome−10−37 CASCADE HARAJUKU 2F
 - **Tofu Cuisine Sorano Shibuya (豆腐料理 空野 渋谷)** · Essen · ★ 4,4 · Sakuragaokacho, Shibuya City
   Tofu-Restaurant in Sakuragaokacho (Shibuya) mit Tofu-Gerichten. Öffnet laut Google erst um 16:30 Uhr, also eher Abendessen. Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).
-  [Maps](https://maps.google.com/?cid=273204956198193294) · [Website](https://foodgate.net/) · 4-17 Sakuragaokacho, Shibuya City, Tokyo 150-0031, Japan (Cherry Garden 1F)
+  [Maps](https://maps.google.com/?cid=273204956198193294) · [Website](https://foodgate.net/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130301/13005182/) · 4-17 Sakuragaokacho, Shibuya City, Tokyo 150-0031, Japan (Cherry Garden 1F)
 - **Tofu Shokudou (豆富食堂)** · Essen · ★ 4,2 · Ebisu, Shibuya City
   Tofu-Lokal in Ebisu: mittags Essensset, abends Schankstube mit Tofu-Gerichten (laut Betreiber täglich frisch gemachter Tofu, u. a. Gammo, Yuba-Frühlingsrolle, Okara-Kartoffelsalat). Öffnet laut Google um 11:30 Uhr; Speisen vorab auf Fleisch- und Fischanteile prüfen (z. B. Dashi).
-  [Maps](https://maps.google.com/?cid=12008719108752135153) · [Website](https://tofushokudo.com/) · 1 Chome-3-1 Ebisunishi, Shibuya City, Tokyo 150-0021, Japan (Fujikura Heights 1F)
+  [Maps](https://maps.google.com/?cid=12008719108752135153) · [Website](https://tofushokudo.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130302/13265410/) · 1 Chome-3-1 Ebisunishi, Shibuya City, Tokyo 150-0021, Japan (Fujikura Heights 1F)
 - **Yoyogi Park** · Park · ★ 4,4 · Yoyogikamizonocho, Shibuya City
   Large, public city park with lakes, fountains & forested areas with mature trees.
   [Maps](https://maps.google.com/?cid=3800131593595043646) · [Website](https://www.tokyo-park.or.jp/park/yoyogi/) · 2-1 Yoyogikamizonocho, Shibuya, Tokyo 151-0052, Japan
@@ -177,17 +177,17 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   [Maps](https://maps.google.com/?cid=13026381540411865675) · [Website](https://shop.ethicalspirits.jp/) · 3 Chome-9-1 Kuramae, Taito City, Tokyo 111-0051, Japan
 - **ARC** · Café · ★ 4,0 · Torigoe, Taito City
   Aus popeye
-  [Maps](https://maps.google.com/?cid=8322571293854132157) · [Website](https://www.instagram.com/arc__coffee/) · Japan, 〒111-0054 Tokyo, Taito City, Torigoe, 2 Chome−3−4 篠田梅村共同ビル 1F
+  [Maps](https://maps.google.com/?cid=8322571293854132157) · [Website](https://www.instagram.com/arc__coffee/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131103/13285092/) · Japan, 〒111-0054 Tokyo, Taito City, Torigoe, 2 Chome−3−4 篠田梅村共同ビル 1F
 - **Himitsudō** · Café · ★ 3,7 · Yanaka, Taito City
   Tiny shop preparing generous portions of shaved ice dessert topped with handmade fruit syrups.
-  [Maps](https://maps.google.com/?cid=11482321306331796146) · [Website](http://himitsudo.com/) · 3 Chome-11-18 Yanaka, Taito City, Tokyo 110-0001, Japan
+  [Maps](https://maps.google.com/?cid=11482321306331796146) · [Website](http://himitsudo.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131106/13126796/) · 3 Chome-11-18 Yanaka, Taito City, Tokyo 110-0001, Japan
 - **SAWAWA Matcha Sweets Shop Asakusa** · Café · ★ 4,5 · Asakusa, Taito City
-  [Maps](https://maps.google.com/?cid=10180835281867357472) · [Website](https://www.telacoya.co.jp/company/shop_detail/shop_detail-293/) · 2 Chome-2-10 Asakusa, Taito City, Tokyo 111-0032, Japan
+  [Maps](https://maps.google.com/?cid=10180835281867357472) · [Website](https://www.telacoya.co.jp/company/shop_detail/shop_detail-293/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131102/13192104/) · 2 Chome-2-10 Asakusa, Taito City, Tokyo 111-0032, Japan
 - **seihitsu** · Café · ★ 4,8 · Senzoku, Taito City
-  [Maps](https://maps.google.com/?cid=6740882471927045462) · [Website](https://www.instagram.com/seihitsu_cafe?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr) · Japan, 〒111-0031 Tokyo, Taito City, Senzoku, 1 Chome−18−2 海老根ビル 1階
+  [Maps](https://maps.google.com/?cid=6740882471927045462) · [Website](https://www.instagram.com/seihitsu_cafe?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131104/13294964/) · Japan, 〒111-0031 Tokyo, Taito City, Senzoku, 1 Chome−18−2 海老根ビル 1階
 - **Yanaka Shippoya** · Café · ★ 3,9 · Yanaka, Taito City
   Seit 2009 in Yanaka Ginza, gebackene (nicht frittierte) Donuts in Katzenschwanz-Form in ueber einem Dutzend Sorten, Bestseller ist die getigerte "Tora".
-  [Maps](https://maps.google.com/?cid=2577131075774785885) · [Website](http://yanakashippoya.com/index.html) · 3 Chome-11-12 Yanaka, Taito City, Tokyo 110-0001, Japan
+  [Maps](https://maps.google.com/?cid=2577131075774785885) · [Website](http://yanakashippoya.com/index.html) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131106/13103773/) · 3 Chome-11-12 Yanaka, Taito City, Tokyo 110-0001, Japan
 - **Bon** · Essen · ★ 4,7 · Ryusen, Taito City
   Bon specializes in shojin ryori the vegetarian cuisine eaten by Zen Buddhist monks in Japan
   [Maps](https://maps.google.com/?cid=4196019976311989704) · [Website](http://www.fuchabon.co.jp/) · 1 Chome-2-11 Ryusen, Taito City, Tokyo 110-0012, Japan
@@ -196,10 +196,10 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   [Maps](https://maps.google.com/?cid=11375105851764303235) · [Website](http://mclean.jp/) · 2 Chome-2-10 Komagata, Taito City, Tokyo 111-0043, Japan
 - **McLean OLD FASHIONED DINER** · Essen · ★ 4,5 · Kuramae, Taito City
   Aus popeye
-  [Maps](https://maps.google.com/?cid=17240285421529561395) · [Website](http://www.mclean.jp/) · 2 Chome-5-4 Kuramae, Taito City, Tokyo 111-0051, Japan
+  [Maps](https://maps.google.com/?cid=17240285421529561395) · [Website](http://www.mclean.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131103/13249033/) · 2 Chome-5-4 Kuramae, Taito City, Tokyo 111-0051, Japan
 - **San-Sada** · Essen · ★ 3,5 · Asakusa, Taito City
   Aus popeye
-  [Maps](https://maps.google.com/?cid=9381824200514409223) · [Website](http://www.tempura-sansada.co.jp/) · 1 Chome-2-2 Asakusa, Taito City, Tokyo 111-0032, Japan
+  [Maps](https://maps.google.com/?cid=9381824200514409223) · [Website](http://www.tempura-sansada.co.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131102/13003675/) · 1 Chome-2-2 Asakusa, Taito City, Tokyo 111-0032, Japan
 - **OTHER SPACE Hotel Asakusa** · Hotel · ★ 4,5 · Asakusa, Taito City
   HOTEL
   [Maps](https://maps.google.com/?cid=3184394917603328826) · [Website](https://otherspacehotel.com/?lang=auto) · 3 Chome-4-10 Asakusa, Taito City, Tokyo 111-0032, Japan
@@ -243,41 +243,41 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **485 TOKINI CASTELLA / 485 TOKINI CREPE** · Café · ★ 4,7 · Tokiwa, Koto City
   Gemütliches Café nahe Kiyosumi-Shirakawa, bekannt für japanischen Castella-Kuchen und weitere Torten.
-  [Maps](https://maps.google.com/?cid=3046912254734332575) · [Website](https://instagram.com/485__tokini?igshid=yanc9x15r2z7) · 2 Chome-2-14 Tokiwa, Koto City, Tokyo 135-0006, Japan
+  [Maps](https://maps.google.com/?cid=3046912254734332575) · [Website](https://instagram.com/485__tokini?igshid=yanc9x15r2z7) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131201/13248617/) · 2 Chome-2-14 Tokiwa, Koto City, Tokyo 135-0006, Japan
 - **Blue Bottle Coffee - Kiyosumi-Shirakawa Flagship Cafe** · Café · ★ 4,1 · Hirano, Koto City
   Trendy cafe chain offering upscale coffee drinks & pastries, plus beans & brewing equipment.
-  [Maps](https://maps.google.com/?cid=13603549750032992380) · [Website](https://store.bluebottlecoffee.jp/pages/kiyosumi?utm_source=google&utm_medium=my_business&utm_campaign=top&utm_id=C001Kiyosumi) · 1 Chome-4-8 Hirano, Koto City, Tokyo 135-0023, Japan
+  [Maps](https://maps.google.com/?cid=13603549750032992380) · [Website](https://store.bluebottlecoffee.jp/pages/kiyosumi?utm_source=google&utm_medium=my_business&utm_campaign=top&utm_id=C001Kiyosumi) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13177218/) · 1 Chome-4-8 Hirano, Koto City, Tokyo 135-0023, Japan
 - **Boulangerie S.Igarashi** · Café · ★ 4,3 · Kiba, Koto City
   Beliebte Bäckerei in einem Wohnviertel bei Kiba, bekannt für Brot aus hochwertigem Mehl und Naturhefe; wegen Andrangs oft mit Wartenummer.
-  [Maps](https://maps.google.com/?cid=7245893848077011896) · [Website](https://www.s-igarashi.tokyo/?fbclid=PAAaYQMaI-CjZwE8e0blPsfE9A3UWi91Lge5psCPK1_g3BMzBf2E2fYY23duA) · 3 Chome-8-10 Kiba, Koto City, Tokyo 135-0042, Japan
+  [Maps](https://maps.google.com/?cid=7245893848077011896) · [Website](https://www.s-igarashi.tokyo/?fbclid=PAAaYQMaI-CjZwE8e0blPsfE9A3UWi91Lge5psCPK1_g3BMzBf2E2fYY23duA) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13266760/) · 3 Chome-8-10 Kiba, Koto City, Tokyo 135-0042, Japan
 - **Ciest** · Café · ★ 4,1 · Hirano, Koto City
   Bäckerei mit Wein-Pairing, mahlt Mehl aus 15-16 einheimischen Weizensorten selbst; 2019 in Funabori eröffnet, 2025 nach Kiyosumi-Shirakawa umgezogen.
-  [Maps](https://maps.google.com/?cid=10989498087227358967) · [Website](https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==) · Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ
+  [Maps](https://maps.google.com/?cid=10989498087227358967) · [Website](https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13308814/) · Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ
 - **Day** · Café · ★ 4,5 · Kiyosumi, Koto City
-  [Maps](https://maps.google.com/?cid=11982084839998586365) · [Website](https://www.instagram.com/day_kiyosumishirakawa/) · 2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan
+  [Maps](https://maps.google.com/?cid=11982084839998586365) · [Website](https://www.instagram.com/day_kiyosumishirakawa/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13306194/) · 2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan
 - **Le Bois Kiyosumi Shirakawa Cafe & Miscellaneous Goods (formerly THE LITTLE THINGS)** · Café · ★ 4,2 · Miyoshi, Koto City
   Verstecktes Cafe in ruhiger Wohngegend von Kiyosumi-Shirakawa; am Eingang verkaufte Zimmerpflanzen, gedaempft beleuchteter Innenraum mit Theken- und Terrassenplaetzen.
   [Maps](https://maps.google.com/?cid=10977837667374905564) · [Website](https://instagram.com/le.bois_kiyosumi) · 3 Chome-1-14 Miyoshi, Koto City, Tokyo 135-0022, Japan
 - **MISONOMI** · Café · ★ 4,4 · Tokiwa, Koto City
   Seit 2022 in Kiyosumi-Shirakawa: Miso-Suppen-Cafe mit gefriergetrockneten Zutaten und rohem Miso auf einer Monaka-Waffel, ergibt mit heissem Wasser aufgegossen Misosuppe; mehrere Sorten, auch abgewogen als Mitbringsel.
-  [Maps](https://maps.google.com/?cid=12792320235912906524) · [Website](https://www.misonomi.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内
+  [Maps](https://maps.google.com/?cid=12792320235912906524) · [Website](https://www.misonomi.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131201/13276109/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内
 - **tallskogen** · Café · ★ 4,4 · Kiyosumi, Koto City
-  [Maps](https://maps.google.com/?cid=7474980125854947600) · [Website](http://totti.tokyo/) · 2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan
+  [Maps](https://maps.google.com/?cid=7474980125854947600) · [Website](http://totti.tokyo/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13274919/) · 2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan
 - **iki Espresso** · Essen · ★ 3,9 · Tokiwa, Koto City
   Open-fronted contemporary cafe serving specialist coffee & an all-day menu of snacks & pastries.
-  [Maps](https://maps.google.com/?cid=3451075743309228904) · [Website](https://iki-espresso.com/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 2 Chome−2−12 1階
+  [Maps](https://maps.google.com/?cid=3451075743309228904) · [Website](https://iki-espresso.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131201/13190426/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 2 Chome−2−12 1階
 - **iki Roastery & Eatery** · Essen · ★ 4,0 · Tokiwa, Koto City
   Zur Roesterei umgebautes Flussufer-Lagerhaus des Cafes iki, mit hauseigener Baeckerei und Kaffeebar; Montag/Dienstag 10-16 Uhr live beim Roesten zusehen, Kaffee-Verkostungen ab 2500 Yen.
-  [Maps](https://maps.google.com/?cid=11658222583870003093) · [Website](https://iki-espresso.com/) · 1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan
+  [Maps](https://maps.google.com/?cid=11658222583870003093) · [Website](https://iki-espresso.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13275063/) · 1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan
 - **Kiyosumi (清炭, Yakiniku)** · Essen · ★ 4,8 · Kiyosumi, Koto City
-  Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr. Reservierung: über die Tabelog-Seite (als Webseite hinterlegt); ob eine Reservierung nötig ist, weiß ich nicht.
-  [Maps](https://maps.google.com/?cid=910770910273313351) · [Website](https://tabelog.com/en/tokyo/A1313/A131303/13296820/) · 3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)
+  Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr. Reservierung: über die Tabelog-Seite (Knopf „Tabelog“); ob eine Reservierung nötig ist, weiß ich nicht.
+  [Maps](https://maps.google.com/?cid=910770910273313351) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13296820/) · 3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)
 - **Okada** · Essen · ★ 3,8 · Kitasuna, Koto City
   Lokaler Yakitori-Laden in Kitasuna nahe der Sunamachi-Ginza-Einkaufsstrasse, beliebt fuer Innereien-Eintopf (Motsu-ni) und Yakitori-Spiesse, oft zum Mitnehmen gekauft.
-  [Maps](https://maps.google.com/?cid=3156119243245033521) · [Website](https://sunagin.goemon.tokyo/listings/okada/) · 3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan
+  [Maps](https://maps.google.com/?cid=3156119243245033521) · [Website](https://sunagin.goemon.tokyo/listings/okada/) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131202/13157944/) · 3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan
 - **Ryu Sushi** · Essen · ★ 4,1 · Toyosu, Koto City
   sushi doesn t come much fresher or more authentic than at this spot in the heart of toyosu fish market the chefs here have been making edo style sushi for over 50 years.
-  [Maps](https://maps.google.com/?cid=7098413625217631431) · Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階
+  [Maps](https://maps.google.com/?cid=7098413625217631431) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131307/13227363/) · Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階
 - **LYURO Tokyo Kiyosumi by THE SHARE HOTEL** · Hotel · ★ 4,4 · Kiyosumi, Koto City
   HOTEL Bezirk Koto
   [Maps](https://maps.google.com/?cid=14572128234047431754) · [Website](https://www.thesharehotels.com/lyuro/?utm_source=google&utm_medium=map) · Japan, 〒135-0024 Tokyo, Koto City, Kiyosumi, 1 Chome−1−7 清澄リバーサイドビル
@@ -301,33 +301,33 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
   Aus popeye
-  [Maps](https://maps.google.com/?cid=7690982991018637456) · [Website](https://glitchcoffee.com/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階
+  [Maps](https://maps.google.com/?cid=7690982991018637456) · [Website](https://glitchcoffee.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1301/A130101/13283362/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階
 - **Hatsune Japanese Sweets** · Café · ★ 4,2 · Nihonbashiningyocho, Chuo City
   1837 gegruendeter, einer der aeltesten Wagashi-Laeden Japans in Nihonbashi Ningyocho; bekannt fuer hausgemachten Anko und Mochi sowie Shiruko/Zenzai seit der Edo-Zeit.
-  [Maps](https://maps.google.com/?cid=5794026808577077147) · [Website](https://www.instagram.com/amami.hatsune/) · 1 Chome-15-6 Nihonbashiningyocho, Chuo City, Tokyo 103-0013, Japan
+  [Maps](https://maps.google.com/?cid=5794026808577077147) · [Website](https://www.instagram.com/amami.hatsune/) · [Tabelog](https://tabelog.com/en/tokyo/A1302/A130204/13003045/) · 1 Chome-15-6 Nihonbashiningyocho, Chuo City, Tokyo 103-0013, Japan
 - **Parklet Bakery** · Café · ★ 4,3 · Nihonbashikobunacho, Chuo City
   Breads, light bites & coffee served in a laid-back bakery that also stocks wine & food items.
-  [Maps](https://maps.google.com/?cid=2245339997391594763) · [Website](https://parkletbakery.com/) · Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階
+  [Maps](https://maps.google.com/?cid=2245339997391594763) · [Website](https://parkletbakery.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1302/A130204/13266600/) · Japan, 〒103-0024 Tokyo, Chuo City, Nihonbashikobunacho, 14−7 SOIL Nihonbashi１階
 - **Pokémon Cafe TOKYO (ポケモンカフェ)** · Café · ★ 4,1 · Nihonbashi, Chuo City
   Café im 5. Stock der Nihombashi Takashimaya, mit Gerichten und Süßem in Pokémon-Form sowie Souvenirs. Öffnet laut Google um 10:30 Uhr; ob und wie man reservieren muss, bitte auf der Website prüfen. Speisen vorab auf Fleisch- und Fischanteile prüfen.
-  [Maps](https://maps.google.com/?cid=4725603843889793061) · [Website](https://pokemon-cafe.jp/) · 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)
+  [Maps](https://maps.google.com/?cid=4725603843889793061) · [Website](https://pokemon-cafe.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1302/A130204/13219141/) · 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japan (Nihombashi Takashimaya S.C. Ostgebäude, 5F)
 - **Single O Hamacho** · Café · ★ 4,5 · Nihonbashihamacho, Chuo City
   Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.
-  [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F
+  [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1302/A130204/13264861/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F
 - **Solatsuki** · Café · ★ 4,0 · Tsukiji, Chuo City
   [Maps](https://maps.google.com/?cid=5967592568438161593) · [Website](https://solatsuki.jp/solatsuki) · 4 Chome-11-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
 - **Turret Coffee** · Café · ★ 4,6 · Tsukiji, Chuo City
   Artsy, compact cafe offering barista-made caffeinated drinks, some with fancy latte art.
-  [Maps](https://maps.google.com/?cid=1983689277156776805) · [Website](http://instagram.com/turretcoffee) · 2 Chome-12-6 Tsukiji, Chuo City, Tokyo 104-0045, Japan
+  [Maps](https://maps.google.com/?cid=1983689277156776805) · [Website](http://instagram.com/turretcoffee) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131301/13162482/) · 2 Chome-12-6 Tsukiji, Chuo City, Tokyo 104-0045, Japan
 - **Onigiri Marutoyo** · Essen · ★ 4,0 · Tsukiji, Chuo City
   Beruehmter Onigiri-Spezialist im aeusseren Tsukiji-Markt, geoeffnet ab ca. 3 Uhr morgens; bekanntestes Gericht ist "Bakudan" mit weich gekochtem Ei, dazu Fuellungen wie Lachs, Ikura oder Mentaiko.
-  [Maps](https://maps.google.com/?cid=14094582827016577213) · [Website](https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/389/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome−9−9 築地場外市場 1F
+  [Maps](https://maps.google.com/?cid=14094582827016577213) · [Website](https://www.tsukiji.or.jp/shoplist/cat-d/cat-15/389/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131301/13095644/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome−9−9 築地場外市場 1F
 - **Tempura Abe Honten** · Essen · ★ 4,1 · Ginza, Chuo City
   In a city where tempura a deep fried beloved Japanese dish is associated with casual dining it s a hard task finding a special occasion worthy spot to enjoy it in That s where this old family favorite comes in Abe the chef here has over 30 years experience in this dish and watching him prepare his top notch tempura some would say the capital s best from a counter seat is unforgettable Don t leave without ordering the kakiage tendon at lunch It features a crisp tempura fritter topped with an oozy egg yolk.
-  [Maps](https://maps.google.com/?cid=11792726080048590927) · [Website](https://tempuraabe.foodre.jp/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−3−7 銀座 スバルビル 地下1階
+  [Maps](https://maps.google.com/?cid=11792726080048590927) · [Website](https://tempuraabe.foodre.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1301/A130101/13092132/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−3−7 銀座 スバルビル 地下1階
 - **Tsukiji Yamacho** · Essen · ★ 3,9 · Tsukiji, Chuo City
   Original Laden für tamago-yaki (omelett am Stiel)
-  [Maps](https://maps.google.com/?cid=12120390205030045980) · [Website](http://www.yamachou-matue.jp/index.shtml) · 4 Chome-10-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
+  [Maps](https://maps.google.com/?cid=12120390205030045980) · [Website](http://www.yamachou-matue.jp/index.shtml) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131301/13100313/) · 4 Chome-10-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
 - **Fish Market Tsukiji Outer Market** · Markt · ★ 4,2 · Tsukiji, Chuo City
   Sprawling wholesale fish market with an array of seafood & viewing areas for a popular tuna auction.
   [Maps](https://maps.google.com/?cid=11704332758705177180) · [Website](https://www.tsukiji.or.jp/) · Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4 Chome および６丁目一部
@@ -357,22 +357,22 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Bricolage bread & co.** · Café · ★ 4,3 · Roppongi, Minato City
   Relaxed cafe & bakery supplying artisanal French bread & international bites, plus coffee.
-  [Maps](https://maps.google.com/?cid=11341471369970278259) · [Website](https://bricolagebread.com/) · Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−15−1 けやき坂テラス 1F
+  [Maps](https://maps.google.com/?cid=11341471369970278259) · [Website](https://bricolagebread.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1307/A130701/13222793/) · Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−15−1 けやき坂テラス 1F
 - **Little Darling Coffee Roasters** · Café · ★ 4,3 · Minamiaoyama, Minato City
   Burgers, hot dogs & bento boxes are served with specialty coffee at this laid-back cafe.
-  [Maps](https://maps.google.com/?cid=15167927711952577742) · [Website](http://littledarlingcoffeeroasters.com/) · 1 Chome-12-32 Minamiaoyama, Minato City, Tokyo 107-0062, Japan
+  [Maps](https://maps.google.com/?cid=15167927711952577742) · [Website](http://littledarlingcoffeeroasters.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1307/A130701/13225981/) · 1 Chome-12-32 Minamiaoyama, Minato City, Tokyo 107-0062, Japan
 - **TORAYA Akasaka Main Store** · Café · ★ 4,5 · Akasaka, Minato City
   Ueber 500 Jahre alte Wagashi-Manufaktur, urspruenglich Hoflieferant in Kyoto, seit 1879 in Akasaka; 2018 mit Hinoki-Holz und schwarzer Shikkui-Wand neu gestaltet, Cafe im dritten Stock.
   [Maps](https://maps.google.com/?cid=666145497035542268) · [Website](https://www.toraya-group.co.jp/toraya/shops/detail/?id=5) · 4 Chome-9-22 Akasaka, Minato City, Tokyo 107-8401, Japan
 - **Ise Sueyoshi** · Essen · ★ 4,9 · Nishiazabu, Minato City
   Intimate, minimalist venue for thoughtfully plated, traditional multi-course Japanese meals.
-  [Maps](https://maps.google.com/?cid=3393061192175723667) · [Website](https://ise-sueyoshi.com/) · Japan, 〒106-0031 Tokyo, Minato City, Nishiazabu, 4 Chome−2−15 水野ビル 3F
+  [Maps](https://maps.google.com/?cid=3393061192175723667) · [Website](https://ise-sueyoshi.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1307/A130703/13181530/) · Japan, 〒106-0031 Tokyo, Minato City, Nishiazabu, 4 Chome−2−15 水野ビル 3F
 - **Sahsya Kanetanaka** · Essen · ★ 3,8 · Kita-Aoyama, Minato City
   zugängliches Kaiseki, mittags mit leckeren snacks, abend längere Gängen. RESERVIEREN
-  [Maps](https://maps.google.com/?cid=11530824019234875368) · [Website](http://www.kanetanaka.co.jp/restrant/sahsya/) · Japan, 〒107-0061 Tokyo, Minato City, Kita-Aoyama, 3 Chome−6−1 OAK OMOTESANDO 2F
+  [Maps](https://maps.google.com/?cid=11530824019234875368) · [Website](http://www.kanetanaka.co.jp/restrant/sahsya/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130602/13154538/) · Japan, 〒107-0061 Tokyo, Minato City, Kita-Aoyama, 3 Chome−6−1 OAK OMOTESANDO 2F
 - **Shibadaimon Sarashina Nunoya** · Essen · ★ 3,8 · Shibadaimon, Minato City
   From the noren curtains at the front door to the unfussy Edo era inspired interior the 230 year old Sarashina Nunoya is an authentic soba store in all respects It s run by seventh generation soba maker Eiichi Kaneko who has an unparalleled passion for tsuyu dipping sauce the staff here learn his unique recipe by taste alone.
-  [Maps](https://maps.google.com/?cid=2124676207282603657) · [Website](https://sarashina-nunoya.gorp.jp/) · Japan, 〒105-0012 Tokyo, Minato City, Shibadaimon, 1 Chome−15−8 布萬スカイビル 3F
+  [Maps](https://maps.google.com/?cid=2124676207282603657) · [Website](https://sarashina-nunoya.gorp.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1314/A131401/13001522/) · Japan, 〒105-0012 Tokyo, Minato City, Shibadaimon, 1 Chome−15−8 布萬スカイビル 3F
 - **Nezu Museum** · Museum · ★ 4,5 · Minamiaoyama, Minato City
   Japanese & East Asian art museum with pre-modern pieces in various media, plus a cafe & gift shop.
   [Maps](https://maps.google.com/?cid=15044873861634050844) · [Website](https://www.nezu-muse.or.jp/) · 6 Chome-5-1 Minamiaoyama, Minato City, Tokyo 107-0062, Japan
@@ -402,13 +402,13 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **BAM BI COFFEE** · Café · ★ 4,4 · Okubo, Shinjuku City
   Kleines Café in Okubo (Shinjuku). Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
-  [Maps](https://maps.google.com/?cid=6661359295410003004) · 1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)
+  [Maps](https://maps.google.com/?cid=6661359295410003004) · [Tabelog](https://tabelog.com/en/tokyo/A1304/A130404/13270013/) · 1 Chome-14-26 Okubo, Shinjuku City, Tokyo 169-0072, Japan (Watanabe-so)
 - **BAM BI COFFEE Nishi-Shinjuku (バムビコーヒー西新宿店)** · Café · ★ 4,4 · Nishishinjuku, Shinjuku City
   Zweite Filiale von BAM BI COFFEE (die andere liegt in Okubo), in Nishi-Shinjuku. Öffnet laut Google um 10 Uhr; Google nennt als Webauftritt nur Instagram.
-  [Maps](https://maps.google.com/?cid=17792466364062443096) · 4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)
+  [Maps](https://maps.google.com/?cid=17792466364062443096) · [Tabelog](https://tabelog.com/en/tokyo/A1304/A130401/13317691/) · 4 Chome-18-1 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan (Duke Nishishinjuku 1F)
 - **Gyoza no Fukuho** · Essen · ★ 4,3 · Shinjuku City
   Any Tokyoite will proudly tell you that their family recipe for gyoza dumplings is the best but they ll also tell you that this place comes in a very close second Always bustling with Shinjuku s after work crowds and young diners come evening this is the kind of spot where catch ups linger into the early hours and sharing plates of gyoza are devoured and thus reordered without a second thought
-  [Maps](https://maps.google.com/?cid=15912583242526311410) · [Website](https://fukuho.net/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階
+  [Maps](https://maps.google.com/?cid=15912583242526311410) · [Website](https://fukuho.net/) · [Tabelog](https://tabelog.com/en/tokyo/A1304/A130402/13050544/) · Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 2 Chome−8−6 KDX新宿286ビル 1階
 - **Godzilla Head** · Sehenswürdigkeit · ★ 4,4 · Kabukicho, Shinjuku City
   12 Meter hohe Godzilla-Kopf-Statue seit 2015 auf der Terrasse von Hotel Gracery im Shinjuku Toho Building, brüllt stündlich und stößt Rauch aus.
   [Maps](https://maps.google.com/?cid=3278137894263719495) · [Website](https://www.toho.co.jp/shinjukutoho/) · 1 Chome-19-1 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan
@@ -465,12 +465,12 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Et -THE CULTURAL COFFEEHOUSE-** · Café · ★ 4,4 · Kitazawa, Setagaya City
   Ende 2024 eröffnetes zweistöckiges Café in Shimokitazawa mit an die Setouchi-Region angelehntem Interieur, bekannt für Sauerteig-Tartines und Blick auf den ehemaligen Bahntrassen-Park.
-  [Maps](https://maps.google.com/?cid=4531355883304770268) · [Website](https://www.instagram.com/ettheculturalcoffeehouse) · Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−22−3 下北パークフロント 1F,2F
+  [Maps](https://maps.google.com/?cid=4531355883304770268) · [Website](https://www.instagram.com/ettheculturalcoffeehouse) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131802/13304657/) · Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−22−3 下北パークフロント 1F,2F
 - **HIROKI Okonomiyaki** · Essen · ★ 4,2 · Kitazawa, Setagaya City
   okonomiyaki at Hiroki where the savory pancakes are cooked right in front of you on
-  [Maps](https://maps.google.com/?cid=4179790870449753372) · [Website](https://teppan-hiroki.com/shimokitazawa.html) · Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−14−14 ハニー下北沢 1F
+  [Maps](https://maps.google.com/?cid=4179790870449753372) · [Website](https://teppan-hiroki.com/shimokitazawa.html) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131802/13001391/) · Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−14−14 ハニー下北沢 1F
 - **smash things スマッシュシングス** · Essen · ★ 4,7 · Komazawa, Setagaya City
-  [Maps](https://maps.google.com/?cid=10320205936147213554) · [Website](https://www.instagram.com/smashthings_burger?igsh=MXhhN2IxbDN3dHo4Nw==&utm_source=qr) · Japan, 〒154-0012 Tokyo, Setagaya City, Komazawa, 3 Chome−14−1 グランドブルー駒沢 101
+  [Maps](https://maps.google.com/?cid=10320205936147213554) · [Website](https://www.instagram.com/smashthings_burger?igsh=MXhhN2IxbDN3dHo4Nw==&utm_source=qr) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131707/13311800/) · Japan, 〒154-0012 Tokyo, Setagaya City, Komazawa, 3 Chome−14−1 グランドブルー駒沢 101
 - **Todoroki Ravine Park** · Park · ★ 4,2 · Todoroki, Setagaya City
   Serene, tree-filled park with a brook, walking path & traditional Japanese garden, plus a temple.
   [Maps](https://maps.google.com/?cid=8190717095247196857) · [Website](https://www.city.setagaya.lg.jp/mokuji/kusei/012/015/001/010/d00004247.html) · 1 Chome-22-26 Todoroki, Setagaya City, Tokyo 158-0082, Japan
@@ -488,7 +488,7 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Sennari Monaka Sugamo** · Café · ★ 4,6 · Sugamo, Toshima City
   Seit 1937 bestehendes Monaka-Spezialgeschaeft direkt am Eingang der Sugamo-Einkaufsstrasse; kuerbisfoermige Monaka in fuenf Fuellungen sowie frische Dorayaki.
-  [Maps](https://maps.google.com/?cid=4657136896401800495) · [Website](https://www.monaka.co.jp/) · 3 Chome-28-8 Sugamo, Toshima City, Tokyo 170-0002, Japan
+  [Maps](https://maps.google.com/?cid=4657136896401800495) · [Website](https://www.monaka.co.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1323/A132301/13012338/) · 3 Chome-28-8 Sugamo, Toshima City, Tokyo 170-0002, Japan
 - **Komagome Myogi Shrine** · Schrein · ★ 4,5 · Komagome, Toshima City
   1300 Jahre alter Schrein in Toshima, bekannt als "versteckter Katzenschrein" mit schwarzen Katzenstatuen (Legende um den Samurai Ota Dokan); echte Katzen leben vor Ort, beliebte besondere Goshuin-Stempel.
   [Maps](https://maps.google.com/?cid=9569725107485614733) · [Website](http://www.myogi.tokyo/) · 3 Chome-16-16 Komagome, Toshima City, Tokyo 170-0003, Japan
@@ -509,7 +509,7 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **cafe capyba** · Café · ★ 4,2 · Higashimukojima, Sumida City
   Seit April 2023 in Higashimukojima (Sumida), reservierungspflichtiges Tier-Cafe mit zwei Capybaras (Pinsuke und Kohaku); 30-Minuten-Sessions mit Eintritt plus Pflichtgetraenk, Streicheln und Fuettern moeglich.
-  [Maps](https://maps.google.com/?cid=1532132383146045950) · [Website](https://cspace.co.jp/) · 1 Chome-31-3 Higashimukojima, Sumida City, Tokyo 131-0032, Japan
+  [Maps](https://maps.google.com/?cid=1532132383146045950) · [Website](https://cspace.co.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131203/13283618/) · 1 Chome-31-3 Higashimukojima, Sumida City, Tokyo 131-0032, Japan
 - **Mukojima-Hyakkaen Gardens** · Park · ★ 4,0 · Higashimukojima, Sumida City
   Small 19th-century garden with views of Tokyo Skytree, home to a diverse range of flowering plants.
   [Maps](https://maps.google.com/?cid=17595332385447268680) · [Website](https://www.tokyo-park.or.jp/park/mukojima-hyakkaen/) · 3 Chome-18-3 Higashimukojima, Sumida City, Tokyo 131-0032, Japan
@@ -524,9 +524,9 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **TOLO PAN TOKYO** · Café · ★ 4,3 · Higashiyama, Meguro City
   Baeckerei in Ikejiri-Ohashi (Meguro) von Chef Tanaka, Tabelog-100-Brot-Auszeichnung 2020 und 2022; rund 70-100 Brotsorten aus 13 Mehlsorten, jede Sorte anders geformt, bekannt fuer Croissants und den "Toro Dog".
-  [Maps](https://maps.google.com/?cid=3802194123401637) · [Website](http://tolotokyo.com/) · 3 Chome-14-3 Higashiyama, Meguro City, Tokyo 153-0043, Japan
+  [Maps](https://maps.google.com/?cid=3802194123401637) · [Website](http://tolotokyo.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131705/13093803/) · 3 Chome-14-3 Higashiyama, Meguro City, Tokyo 153-0043, Japan
 - **Tokyo Dosanjin** · Essen · ★ 4,0 · Aobadai, Meguro City
-  [Maps](https://maps.google.com/?cid=15125799156036320533) · [Website](https://tokyo-dosanjin.jp/?utm_source=google&utm_medium=GBP) · Japan, 〒153-0042 Tokyo, Meguro City, Aobadai, 3 Chome−19−8 目黒 蕎麦 池尻大橋
+  [Maps](https://maps.google.com/?cid=15125799156036320533) · [Website](https://tokyo-dosanjin.jp/?utm_source=google&utm_medium=GBP) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131705/13047472/) · Japan, 〒153-0042 Tokyo, Meguro City, Aobadai, 3 Chome−19−8 目黒 蕎麦 池尻大橋
 - **KINTO STORE Tokyo** · Shop · ★ 4,5 · Aobadai, Meguro City
   Flagship-Store der japanischen Tischgeschirr-Marke KINTO (seit 1972 in Shiga, seit 2019 Laden in Nakameguro) mit breitem Sortiment an Geschirr und Trinkgefaessen.
   [Maps](https://maps.google.com/?cid=5752944925645348638) · [Website](https://www.kinto.co.jp/) · 1 Chome-19-12 Aobadai, Meguro City, Tokyo 153-0042, Japan
@@ -535,7 +535,7 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Daily Chiko** · Café · ★ 4,2 · Nakano City
   Seit 1974 bestehender Softeis-Stand im Untergeschoss der Nakano Broadway, bekannt für die 20 cm hohe Waffel mit acht Eissorten übereinander.
-  [Maps](https://maps.google.com/?cid=11799026278440337779) · [Website](http://facebook.com/Dailychiko) · Japan, 〒164-0001 Tokyo, Nakano City, Nakano, 5 Chome−52−15 地下1階
+  [Maps](https://maps.google.com/?cid=11799026278440337779) · [Website](http://facebook.com/Dailychiko) · [Tabelog](https://tabelog.com/en/tokyo/A1319/A131902/13001083/) · Japan, 〒164-0001 Tokyo, Nakano City, Nakano, 5 Chome−52−15 地下1階
 - **FESN Laboratory** · Shop · ★ 4,7 · Chome-33-15, Nakano City
   [Maps](https://maps.google.com/?cid=3310978079795037993) · [Website](https://fareastskatenetwork.com/fesn-laboratory/) · 3 Chome-33-15 Nakano, Nakano City, Tokyo 164-0001, Japan
 - **Nakano Broadway** · Shop · ★ 4,2 · Chome-52-15, Nakano City
@@ -545,7 +545,7 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 ## Ota (3)
 
 - **Daikokudo** · Café · ★ 4,3 · Denenchofu, Ota City
-  [Maps](https://maps.google.com/?cid=11751005537573459903) · [Website](https://daikokudou.tokyo/) · 1 Chome-55-5 Denenchofu, Ota City, Tokyo 145-0071, Japan
+  [Maps](https://maps.google.com/?cid=11751005537573459903) · [Website](https://daikokudou.tokyo/) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131704/13127783/) · 1 Chome-55-5 Denenchofu, Ota City, Tokyo 145-0071, Japan
 - **Haginaka Park** · Park · ★ 4,2 · Haginaka, Ota City
   Großer Stadtpark im Bezirk Ota (nahe Haneda) mit Hallen- und Freibad, Baseballfeldern sowie Spielbereichen, in denen Kinder auf ausgediente Fahrzeuge klettern oder Rad fahren können. Rund um die Uhr zugänglich.
   [Maps](https://maps.google.com/?cid=10581520799701650728) · [Website](https://www.city.ota.tokyo.jp/) · 3 Chome-26-46 Haginaka, Ota City, Tokyo 144-0047, Japan
@@ -569,10 +569,10 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **Ameya** · Café · ★ 4,0 · Chofu (Tokyo)
   Wagashi-Café nahe dem Jindaiji-Tempel in Chofu, bekannt für sein Soba-Brot mit Bohnenpastenfüllung.
-  [Maps](https://maps.google.com/?cid=3652041686971825674) · [Website](https://chofu.com/ameya/?utm_source=google&utm_medium=maps) · Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−10
+  [Maps](https://maps.google.com/?cid=3652041686971825674) · [Website](https://chofu.com/ameya/?utm_source=google&utm_medium=maps) · [Tabelog](https://tabelog.com/en/tokyo/A1326/A132601/13090474/) · Japan, 〒182-0017 Tokyo, Chofu, Jindaiji Motomachi, 5 Chome−１５−10
 - **CAFE 雫** · Café · ★ 4,3 · Ome (Tokyo)
   Café im Sawanoi-Garten einer Sake-Brauerei in Ome, Terrasse mit Blick auf den Tama-Fluss, bekannt für Tofu-Cheesecake.
-  [Maps](https://maps.google.com/?cid=4270557898128443933) · [Website](https://www.sawanoi-sake.com/service/shizuku/) · 2 Chome-748 Sawai, Ome, Tokyo 198-0172, Japan
+  [Maps](https://maps.google.com/?cid=4270557898128443933) · [Website](https://www.sawanoi-sake.com/service/shizuku/) · [Tabelog](https://tabelog.com/en/tokyo/A1330/A133003/13266222/) · 2 Chome-748 Sawai, Ome, Tokyo 198-0172, Japan
 - **Craft soy milk factory (Taiwan Sabo Doujan Biyori)** · Café · ★ 3,9 · Kichijoji (Musashino)
   Taiwanisches Teehaus „豆漿日和“ (Doujan Biyori, unter Aufsicht von Erjixuan/Taiwan) mit gläserner Sojamilch-Manufaktur: täglich frisch gepresste Sojamilch, Douhua und Xian Dou Jiang; ab 8 Uhr geöffnet, ca. 7 Min. ab Bhf. Kichijoji.
   [Maps](https://maps.google.com/?cid=840462544848553220) · Japan, 〒180-0004 Tokyo, Musashino, Kichijoji Honcho, 2 Chome−15−4 ミュプレ吉祥寺 1階
@@ -599,7 +599,7 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 - **FermenCo.** · Essen · ★ 4,7 · Andere (Shizuoka)
   Sauerteig-Pizza und Naturwein direkt am Strand von Shimoda auf der Izu-Halbinsel, 2025 unter Tokios Tabelog-100-Pizza-Adressen gelistet.
-  [Maps](https://maps.google.com/?cid=1198027064164583622) · [Website](https://www.instagram.com/fermenco.pizza/) · 348-37 Kisami, Shimoda, Shizuoka 415-0028, Japan
+  [Maps](https://maps.google.com/?cid=1198027064164583622) · [Website](https://www.instagram.com/fermenco.pizza/) · [Tabelog](https://tabelog.com/en/shizuoka/A2205/A220503/22039192/) · 348-37 Kisami, Shimoda, Shizuoka 415-0028, Japan
 - **Edo-Tokyo Open Air Architectural Museum** · Museum · ★ 4,5 · Andere (Chome−− 内 都立小金井公園)
   Open-air museum with a collection of Japanese structures from many periods of history, plus a cafe.
   [Maps](https://maps.google.com/?cid=2629868023087343463) · [Website](https://www.tatemonoen.jp/) · Japan, 〒184-0005 Tokyo, Koganei, Sakuracho, 3 Chome−7−1 内 都立小金井公園

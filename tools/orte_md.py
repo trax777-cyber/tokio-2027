@@ -44,6 +44,7 @@ for g in keys:
         links = []
         if d.get("googleUrl"): links.append(f"[Maps]({maps(d['googleUrl'])})")
         if d.get("website"): links.append(f"[Website]({d['website']})")
+        if d.get("tabelog"): links.append(f"[Tabelog]({d['tabelog']})")
         if d.get("adresse"): links.append(md(d["adresse"]))
         if links: out.append("  " + " · ".join(links))
 (root / "orte.md").write_text("\n".join(out) + "\n", encoding="utf-8")
