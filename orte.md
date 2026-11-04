@@ -270,8 +270,8 @@ Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Zur Roesterei umgebautes Flussufer-Lagerhaus des Cafes iki, mit hauseigener Baeckerei und Kaffeebar; Montag/Dienstag 10-16 Uhr live beim Roesten zusehen, Kaffee-Verkostungen ab 2500 Yen.
   [Maps](https://maps.google.com/?cid=11658222583870003093) · [Website](https://iki-espresso.com/) · 1 Chome-4-7 Tokiwa, Koto City, Tokyo 135-0006, Japan
 - **Kiyosumi (清炭, Yakiniku)** · Essen · ★ 4,8 · Kiyosumi, Koto City
-  Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr; Reservierung laut Google über Hot Pepper möglich, ob sie nötig ist, weiß ich nicht.
-  [Maps](https://maps.google.com/?cid=910770910273313351) · 3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)
+  Yakiniku-Lokal (Fleisch vom Holzkohlegrill) in Kiyosumi, 4. Stock im RINNOVA3, mit Tisch- und Thekenplätzen. Kein vegetarisches Lokal. Öffnet laut Google um 11:30 Uhr. Reservierung: über die Tabelog-Seite (als Webseite hinterlegt); ob eine Reservierung nötig ist, weiß ich nicht.
+  [Maps](https://maps.google.com/?cid=910770910273313351) · [Website](https://tabelog.com/en/tokyo/A1313/A131303/13296820/) · 3 Chome-9-12 Kiyosumi, Koto City, Tokyo 135-0024, Japan (RINNOVA3 4F)
 - **Okada** · Essen · ★ 3,8 · Kitasuna, Koto City
   Lokaler Yakitori-Laden in Kitasuna nahe der Sunamachi-Ginza-Einkaufsstrasse, beliebt fuer Innereien-Eintopf (Motsu-ni) und Yakitori-Spiesse, oft zum Mitnehmen gekauft.
   [Maps](https://maps.google.com/?cid=3156119243245033521) · [Website](https://sunagin.goemon.tokyo/listings/okada/) · 3 Chome-38-15 Kitasuna, Koto City, Tokyo 136-0073, Japan
