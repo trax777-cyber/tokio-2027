@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 04.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 05.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 

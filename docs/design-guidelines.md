@@ -204,7 +204,7 @@ Ziele: Text 4,5 : 1, große Schrift und Bedienelemente 3 : 1 (WCAG 1.4.3 und 1.4
 | Tab-Leiste | 一覧 · 地図 · ☆ | Zeichen 19 px | immer mit deutschem Wort darunter |
 | Merken | ☆ leer / ★ gefüllt | 22 px, Tippfläche 48 px | Formwechsel plus Farbwechsel |
 | Suche | SVG-Lupe | 17 px | `aria-hidden`, Feld hat `aria-label` |
-| Karten-Punkte | Kreis in Gruppenfarbe | siehe unten | Merken = goldener Rand, Besucht = durchscheinend |
+| Karten-Punkte | Form und Farbe je Gruppe (Kreis Essen, Raute Café, Quadrat Shop, Dreieck Ruhe) | siehe unten | Merken = goldener Rand, Besucht = durchscheinend |
 
 **Karten-Punkte, Ist und Soll.** Ist: Radius 6,5 px (13 px Durchmesser), gemerkt 8, geöffnet 11, Trefferfläche genau so groß. Das war für den Daumen zu klein. **Umgesetzt:** Der Radius folgt dem Zoom (bis Zoom 11: 8 px, 12 bis 13: 10 px, ab 14: 12 px, also 24 px Durchmesser), gemerkte Orte +1,5, der geöffnete +4. Dazu kommen 10 px Trefferfläche rundherum (Canvas-Ansicht mit `tolerance`). Das ergibt mindestens 37 px, ab Zoom 14 mindestens 45 px. Im Überblick sind die Punkte absichtlich kleiner als 24 px, sonst verschwimmt ganz Tokio zu einem Fleck. Der Hinweis auf größeren Zoom reicht dort, weil die Trefferfläche den Wert erfüllt.
 
