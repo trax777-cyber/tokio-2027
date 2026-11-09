@@ -29,6 +29,8 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 | Symbole (Stern, Kreis, Haken, Pfeil) als Inline-SVG statt Textzeichen | **in der App** |
 | `prefers-contrast: more` (kräftigere Ränder und Zweittext), `forced-colors: active` (Systemfarben, Ränder) | **in der App** (in Chromium emuliert, nicht mit Windows-Kontrastdesign getestet) |
 | Ab 1440 px: Detail neben der Karte statt darüber (Karte wird schmaler) | **in der App** |
+| Phase 3 (09.11.2026): Karte fasst Orte unter Zoom 15 zu Gruppenpunkten mit Zahl zusammen (60-px-Zelle), Antippen zoomt hinein; gemerkte und der geöffnete Ort bleiben einzeln | **in der App** (Zählung: Gruppen plus Einzelpunkte ergeben auf jeder Zoomstufe 199) |
+| Restwerte auf die Skala gebracht (Abstände, Eckradien, Schriftgrößen), Halbschritte `--s-0/1h/2h`, `--fs-ui`, `--fs-glyph` | **in der App** (einzelne Abstände um 1 bis 2 px verschoben) |
 | Nichts mehr offen aus den Code-Punkten außer: echte Geräte und Bildschirmleser testen | offen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.

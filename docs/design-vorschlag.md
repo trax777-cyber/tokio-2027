@@ -1,6 +1,6 @@
 # Visueller Auffrischungs-Vorschlag für die Tokyo-App
 
-Stand: 09.11.2026. **Nur ein Vorschlag, an der App ist nichts geändert.** Grundlage: der laufende Code (`quelle/app.src.html`), `docs/design-guidelines.md`, die Gestaltungskritik vom 05.11. und Screenshots im headless Chromium (390, 320, 1280 px, hell und dunkel). Nicht getestet: echte Geräte, Bildschirmleser, Kartenkacheln.
+Stand: 09.11.2026. **Umsetzung:** Phase 1, 2 und 3 sind in der App (siehe `docs/entscheidungen.md`); nicht umgesetzt: weitere Dichte-Optionen. *Ursprünglich nur ein Vorschlag, an der App war nichts geändert.* Grundlage: der laufende Code (`quelle/app.src.html`), `docs/design-guidelines.md`, die Gestaltungskritik vom 05.11. und Screenshots im headless Chromium (390, 320, 1280 px, hell und dunkel). Nicht getestet: echte Geräte, Bildschirmleser, Kartenkacheln.
 
 ## 0. Einordnung und Gegenargumente
 
