@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="app-version" content="ece37efe89">
+<meta name="app-version" content="bc2961aa70">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }</style>
@@ -860,7 +860,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .chips::-webkit-scrollbar { display: none; }
   .chip {
     flex: none; display: inline-flex; align-items: center; gap: 6px;
-    border: 1px solid var(--line-strong); background: var(--card); color: var(--ink-soft);
+    border: 1px solid var(--line); background: var(--paper-2); color: var(--ink-soft);
     border-radius: var(--r-pill); padding: 6px var(--s-3) 6px var(--s-2); font-size: var(--fs-small); cursor: pointer;
     min-height: 40px;
   }
@@ -1025,7 +1025,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     border: 1px solid var(--line-strong); background: var(--card); border-radius: 12px;
     padding: var(--s-3) 10px; font-size: 0.9375rem; font-weight: 600; cursor: pointer;
   }
-  .toggle .i { font-size: var(--fs-h3); line-height: 1; }
+  .toggle .i { font-size: var(--fs-h3); line-height: 1; display: inline-flex; }
+  .ic { width: 1em; height: 1em; display: inline-block; flex: none; vertical-align: -0.14em; }
+  .fav .ic { width: 1em; height: 1em; }
+  .tab .ico .ic { width: 1.1em; height: 1.1em; vertical-align: -0.2em; }
+  .pill-link .ic { width: 0.9em; height: 0.9em; margin-left: -2px; vertical-align: -0.1em; }
   .toggle.fav-t[aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); color: var(--gold); }
   .toggle.done-t[aria-pressed="true"] { background: var(--sage-soft); border-color: var(--sage); color: var(--sage); }
   .d-links { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-bottom: 18px; }
@@ -1058,7 +1062,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
   .edit-actions { display: flex; gap: var(--s-2); margin-top: var(--s-2); align-items: center; }
   .btn {
-    border: 1px solid var(--line-strong); background: var(--card); border-radius: var(--r-m);
+    border: 1px solid var(--line); background: var(--paper-2); border-radius: var(--r-m);
     padding: var(--s-2) var(--s-4); font-size: var(--fs-small); font-weight: 600; cursor: pointer;
     min-height: 44px;
   }
@@ -1071,7 +1075,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .f-group > label, .f-group > .lab { display: block; font-size: var(--fs-label); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: var(--s-2); }
   .seg { display: flex; flex-wrap: wrap; gap: 6px; }
   .seg button {
-    border: 1px solid var(--line-strong); background: var(--card); border-radius: var(--r-pill);
+    border: 1px solid var(--line); background: var(--paper-2); border-radius: var(--r-pill);
     padding: 7px 13px; font-size: var(--fs-small); cursor: pointer;
     min-height: 40px;
   }
@@ -1097,7 +1101,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   /* ---------- Zustände ---------- */
   @media (hover: hover) {
     .chip:not([aria-pressed="true"]):hover, .seg button:not([aria-pressed="true"]):hover,
-    .toggle:not([aria-pressed="true"]):hover, .btn:not(.primary):hover, .small-btn:hover { background: var(--paper-2); }
+    .btn:not(.primary):hover { border-color: var(--line-strong); }
+    .toggle:not([aria-pressed="true"]):hover, .small-btn:hover { background: var(--paper-2); }
     .row:hover .name { text-decoration: underline; text-underline-offset: 3px; }
   }
   .chip:active, .seg button:active, .toggle:active, .btn:active, .tab:active { transform: scale(0.97); }
@@ -1137,6 +1142,37 @@ svg.leaflet-image-layer.leaflet-interactive path {
     #map .leaflet-bottom.leaflet-right { right: auto; left: 0; }   /* Quellenangabe bleibt sichtbar */
     .legend { flex-direction: column; align-items: flex-start; right: auto; bottom: 32px; gap: var(--s-1); }
     body:has(#detail.on) .map-note { padding-right: calc(clamp(340px, 34vw, 420px) + 32px); }
+  }
+  /* ---------- Scrollcontainer: Fokusring wird nicht am Rand abgeschnitten ---------- */
+  .view.scroll, #detail.sheet, #filters.sheet { scroll-padding: var(--s-3); }
+
+  /* ---------- Erhöhter Kontrast (Systemeinstellung) ---------- */
+  @media (prefers-contrast: more) {
+    :root { --ink-soft: #3f4348; --line: #8b8165; --line-strong: #5a5240; }
+    .chip, .seg button, .btn { border-color: var(--line-strong); }
+  }
+  @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink-soft: #c9ccd1; --line: #6c727c; --line-strong: #a3a9b3; }
+  }
+  @media (prefers-contrast: more) {
+    :root[data-theme="dark"] { --ink-soft: #c9ccd1; --line: #6c727c; --line-strong: #a3a9b3; }
+  }
+
+  /* ---------- Erzwungene Farben (Windows-Kontrastdesign) ---------- */
+  @media (forced-colors: active) {
+    .chip, .seg button, .btn, .toggle, .small-btn, .pill-link, .filter-btn, .tab, .fav, .sheet-close { border: 1px solid ButtonText; }
+    .chip[aria-pressed="true"], .seg button[aria-pressed="true"], .toggle[aria-pressed="true"],
+    .tab[aria-selected="true"], .btn.primary, .pill-link.primary { background: Highlight; color: HighlightText; border-color: HighlightText; forced-color-adjust: none; }
+    :focus-visible { outline: 3px solid Highlight; outline-offset: 2px; }
+    .hanko, .stamp { border: 1px solid CanvasText; }
+  }
+
+  /* ---------- Sehr große Bildschirme (ab 1440 px): Detail neben der Karte statt darüber ---------- */
+  @media (min-width: 1440px) {
+    :root { --detail-w: clamp(380px, 28vw, 440px); }
+    body:has(#detail.on) .app { padding-right: calc(var(--detail-w) + var(--s-4) * 2); }
+    #detail.sheet { width: var(--detail-w); }
+    body:has(#detail.on) .map-note { padding-right: var(--s-4); }
   }
 </style>
 
@@ -1191,7 +1227,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <nav class="tabs" role="tablist" aria-label="Ansicht">
     <button class="tab" role="tab" id="tab-liste" aria-controls="view-liste" data-tab="liste" type="button"><span class="ico">一覧</span>Liste</button>
     <button class="tab" role="tab" id="tab-karte" aria-controls="view-karte" data-tab="karte" type="button"><span class="ico">地図</span>Karte</button>
-    <button class="tab" role="tab" id="tab-merkliste" aria-controls="view-merkliste" data-tab="merkliste" type="button"><span class="ico">☆</span>Merkliste<span class="badge" id="fav-badge" hidden></span></button>
+    <button class="tab" role="tab" id="tab-merkliste" aria-controls="view-merkliste" data-tab="merkliste" type="button"><span class="ico" id="tab-star"></span>Merkliste<span class="badge" id="fav-badge" hidden></span></button>
   </nav>
 </div>
 
@@ -1230,7 +1266,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </div>
   </div>
   <div class="f-group">
-    <button type="button" class="toggle f-toggle" id="f-hide" aria-pressed="false"><span class="i" aria-hidden="true">○</span>Besuchte Orte ausblenden</button>
+    <button type="button" class="toggle f-toggle" id="f-hide" aria-pressed="false"><span class="i" aria-hidden="true"></span>Besuchte Orte ausblenden</button>
   </div>
   <div class="f-foot">
     <button type="button" class="btn" id="f-reset">Zurücksetzen</button>
@@ -1262,6 +1298,7 @@ const OUTSIDE = "Außerhalb der 23 Bezirke";
 
 const DEFAULT_FILTERS = { region: "alle", bezirk: "alle", minr: 0, sort: "name", hideDone: false };
 const S = { tab: "liste", q: "", kat: new Set(), ...DEFAULT_FILTERS, openId: null };
+const WIDE3 = matchMedia("(min-width: 1440px)");   // Detail steht dort neben der Karte, nicht darüber
 const WIDE = matchMedia("(min-width: 1024px)");   // Laptop: Liste links, Karte rechts, Detail als Seitenleiste
 const mapVisible = () => S.tab === "karte" || WIDE.matches;
 const mapRows = () => S.tab === "merkliste" ? DATA.filter(d => isFav(d) && matchesQuery(d)) : filtered();
@@ -1270,6 +1307,15 @@ let db = null;
 let editing = null;     // "desc" | "note" | null
 
 const $ = id => document.getElementById(id);
+/* Symbole als Inline-SVG (gleiche Strichstärke auf allen Geräten), immer mit Wort daneben, für Hilfsmittel versteckt */
+const svgIc = (path, fill = "none", w = 1.9) => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="${fill}" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
+const STAR_PATH = '<path d="M12 3.6l2.5 5.4 5.9.7-4.3 4.1 1.1 5.8L12 16.7l-5.2 2.9 1.1-5.8-4.3-4.1 5.9-.7z"/>';
+const ICON = {
+  star: svgIc(STAR_PATH), starFill: svgIc(STAR_PATH, "currentColor"),
+  circle: svgIc('<circle cx="12" cy="12" r="8.2"/>'),
+  check: svgIc('<circle cx="12" cy="12" r="8.2"/><path d="M8.2 12.4l2.6 2.6 5-5.4"/>'),
+  arrow: svgIc('<path d="M7.5 16.5l9-9M9 7.5h7.5V15"/>', "none", 2.1)
+};
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const byId = new Map(DATA.map(d => [d.id, d]));
 const kat = d => KAT[d.kategorie] || KAT.Sonstiges;
@@ -1351,7 +1397,7 @@ function itemHtml(d) {
         ${ds ? `<span class="desc">${esc(ds)}</span>` : ""}
       </span>
     </button>
-    <button class="fav" type="button" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="Merken: ${esc(d.name)}">${fav ? "★" : "☆"}</button>
+    <button class="fav" type="button" data-fav="${esc(d.id)}" aria-pressed="${fav}" aria-label="Merken: ${esc(d.name)}">${fav ? ICON.starFill : ICON.star}</button>
   </li>`;
 }
 
@@ -1527,6 +1573,7 @@ function hideSheets() {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   clearTimeout(hideTimer);
   hideTimer = setTimeout(() => { $("scrim").hidden = true; $("detail").hidden = true; $("filters").hidden = true; }, reduce ? 0 : 220);
+  if (WIDE3.matches && mapVisible()) Map2.resize();
   if (mapVisible()) Map2.render(mapRows());
   if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll: true }); } catch (e) {}
 }
@@ -1542,7 +1589,8 @@ function openDetail(id) {
   renderDetail();
   openSheet($("detail"));
   if (mapVisible()) Map2.render(mapRows());
-  if (WIDE.matches) Map2.reveal(byId.get(id));
+  if (WIDE.matches && !WIDE3.matches) Map2.reveal(byId.get(id));
+  if (WIDE3.matches) requestAnimationFrame(() => { if (mapVisible()) { Map2.resize(); Map2.reveal(byId.get(id)); } });   // erst nach dem Einblenden: Karte ist dann schmaler
   setTimeout(() => { const c = $("detail").querySelector(".sheet-close"); c && c.focus({ preventScroll: true }); }, 50);
 }
 
@@ -1578,14 +1626,14 @@ function renderDetail() {
       </div>
     </div>
     <div class="d-actions">
-      <button type="button" class="toggle fav-t" data-action="fav" aria-pressed="${fav}"><span class="i">${fav ? "★" : "☆"}</span>${fav ? "Gemerkt" : "Merken"}</button>
-      <button type="button" class="toggle done-t" data-action="done" aria-pressed="${done}"><span class="i">${done ? "✓" : "○"}</span>${done ? "Besucht" : "Besucht markieren"}</button>
+      <button type="button" class="toggle fav-t" data-action="fav" aria-pressed="${fav}"><span class="i">${fav ? ICON.starFill : ICON.star}</span>${fav ? "Gemerkt" : "Merken"}</button>
+      <button type="button" class="toggle done-t" data-action="done" aria-pressed="${done}"><span class="i">${done ? ICON.check : ICON.circle}</span>${done ? "Besucht" : "Besucht markieren"}</button>
     </div>
     <div class="d-links">
-      ${gm ? `<a class="pill-link primary" href="${esc(gm)}" target="_blank" rel="noopener">Google Maps ↗</a>` : ""}
-      ${route ? `<a class="pill-link" href="${esc(route)}" target="_blank" rel="noopener">Route mit Öffis ↗</a>` : ""}
-      ${web ? `<a class="pill-link" href="${esc(web)}" target="_blank" rel="noopener">Website ↗</a>` : ""}
-      ${tab ? `<a class="pill-link" href="${esc(tab)}" target="_blank" rel="noopener">Tabelog ↗</a>` : ""}
+      ${gm ? `<a class="pill-link primary" href="${esc(gm)}" target="_blank" rel="noopener">Google Maps ${ICON.arrow}</a>` : ""}
+      ${route ? `<a class="pill-link" href="${esc(route)}" target="_blank" rel="noopener">Route mit Öffis ${ICON.arrow}</a>` : ""}
+      ${web ? `<a class="pill-link" href="${esc(web)}" target="_blank" rel="noopener">Website ${ICON.arrow}</a>` : ""}
+      ${tab ? `<a class="pill-link" href="${esc(tab)}" target="_blank" rel="noopener">Tabelog ${ICON.arrow}</a>` : ""}
       ${onMap && !mapVisible() ? `<button type="button" class="pill-link" data-action="show-map">Auf der Karte</button>` : ""}
     </div>
     <div class="d-sec">
@@ -1644,8 +1692,9 @@ function syncFilterSheet() {
   mark("f-sort", S.sort);
   $("f-bezirk").value = S.bezirk;
   $("f-hide").setAttribute("aria-pressed", S.hideDone);
-  $("f-hide").firstChild.textContent = S.hideDone ? "✓" : "○";
+  $("f-hide").firstElementChild.innerHTML = S.hideDone ? ICON.check : ICON.circle;
 }
+$("tab-star").innerHTML = ICON.star;
 function onFilterChange() { syncFilterSheet(); savePrefs(); renderAll(); }
 $("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { S.region = b.dataset.v; onFilterChange(); } });
 $("f-rating").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { S.minr = parseFloat(b.dataset.v); onFilterChange(); } });
@@ -1778,12 +1827,12 @@ const Map2 = (() => {
   function reveal(d) {
     if (!map || !hasCoords(d)) return;
     map.setView([d.lat, d.lng], Math.max(map.getZoom(), 14), { animate: false });
-    map.panBy([Math.round(Math.min(420, innerWidth * 0.34) / 2), 0], { animate: false });
+    if (!WIDE3.matches) map.panBy([Math.round(Math.min(420, innerWidth * 0.34) / 2), 0], { animate: false });   // ab 1440 px ist die Karte schon schmaler
   }
   window.addEventListener("resize", () => { if (map && mapVisible()) map.invalidateSize(); });
 
   $("legend").innerHTML = GROUPS.map(([g, n]) => `<span><i class="sh-${g}" style="background:var(${COLORS[g]})"></i>${n}</span>`).join("");
-  return { render, focus, reveal, fitAll, getMap: () => map };
+  return { render, focus, reveal, fitAll, resize: () => { if (map) map.invalidateSize(); }, getMap: () => map };
 })();
 
 /* ---------- events ---------- */
@@ -1941,7 +1990,7 @@ importShared();
 <script>
 (function () {
   if (location.protocol !== "file:") return;
-  var V = "ece37efe89", RAW = "https://raw.githubusercontent.com/trax777-cyber/tokio-2027/main/", KEY = "tokio-update-geprueft", bar;
+  var V = "bc2961aa70", RAW = "https://raw.githubusercontent.com/trax777-cyber/tokio-2027/main/", KEY = "tokio-update-geprueft", bar;
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} }
   function show(text, buttons) {
     if (!bar) {

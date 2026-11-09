@@ -25,6 +25,10 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 | Offline: Schriften und Karten-Bibliothek liegen im Repository, Service Worker, Ein-Datei-Fassung | **in der App** (Start ohne Netz in Chromium getestet; echte Geräte nicht) |
 | Bildschirmleser-Texte: Bewertung als „4,3 von 5 Sternen“, Notiz-Hinweis, japanische Textstücke als `lang="ja"`, Trefferzahl und Filter/Merkliste mit Zahl im Namen, Pfeiltasten und `aria-controls` für Tabs, Hintergrund bei Blättern gesperrt (`inert`), Kartenhinweis | **in der App** (Zugänglichkeitsbaum und Tastatur in Chromium geprüft, mit keinem echten Bildschirmleser) |
 | Merkliste teilen: Textliste mit Adressen, Maps-Links und Notizen über das Teilen-Menü oder die Zwischenablage; Link `#m=…` übernimmt die Orte nach Bestätigung | **in der App** |
+| Phase 2 (09.11.2026): Chips, Segmente und Zweitknöpfe tonal (Fläche `--paper-2`, Rand `--line`), Felder, Auswahl, Schalter und „Kopieren“ behalten `--line-strong` | **in der App** (Ausnahme zur Regel „Ränder auf `--line-strong`“: diese Elemente erkennt man am Text und an der Form) |
+| Symbole (Stern, Kreis, Haken, Pfeil) als Inline-SVG statt Textzeichen | **in der App** |
+| `prefers-contrast: more` (kräftigere Ränder und Zweittext), `forced-colors: active` (Systemfarben, Ränder) | **in der App** (in Chromium emuliert, nicht mit Windows-Kontrastdesign getestet) |
+| Ab 1440 px: Detail neben der Karte statt darüber (Karte wird schmaler) | **in der App** |
 | Nichts mehr offen aus den Code-Punkten außer: echte Geräte und Bildschirmleser testen | offen |
 
 Die Bilder „Soll“ in diesem Dokument zeigen den Stand, der jetzt in der App ist.
@@ -281,6 +285,7 @@ Tab-Leiste (immer sichtbar)
 | Zustand | Darstellung |
 |---|---|
 | Normal | Fläche `--card`, Rand `--line-strong`, Text `--ink` |
+| Normal (Chip, Segment, Zweitknopf, seit Phase 2) | Fläche `--paper-2`, Rand `--line`, Text `--ink-soft` bzw. `--ink` |
 | Hover (nur Maus) | Fläche `--paper-2` |
 | Gedrückt | leicht verkleinert (97 %), entfällt bei „Bewegung reduzieren“ |
 | Fokus (Tastatur) | 2 px Ring `--focus`, 2 px Abstand, nie entfernen |
