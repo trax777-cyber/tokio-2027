@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-10 · Wegfallende Orte bleiben, aber deutlich vermerkt
+Kontext:      Unicorn Gundam (Odaiba, Abbau laut Berichten am 31. August 2026) und ART AQUARIUM MUSEUM (Ginza Mitsukoshi, Ausstellung endet laut Bericht am 6. Januar 2027) sind zur Reise im Juli 2027 voraussichtlich nicht mehr verfügbar.
+Entscheidung: Beide Orte bleiben in der Liste, die Beschreibung beginnt mit „ACHTUNG, VERMUTLICH NICHT MEHR VORHANDEN“ bzw. „ACHTUNG, VERMUTLICH BIS JULI 2027 GESCHLOSSEN“, danach der Grund und die Bitte um Prüfung. Auch in der Kompaktfassung auf Drive sichtbar.
+Alternativen: Orte entfernen (verworfen: Entscheidung des Nutzers), eigenes Datenfeld mit Warnzeichen in der App (nicht gebaut: größerer Eingriff für zwei Orte).
+Folgen:       Beide Orte erscheinen weiter auf der Karte und in Suche und Filter. Die Warnung steht nur im Beschreibungstext des Detailblatts, nicht in der Liste. Bei Bestätigung des Fortbestands (oder neuem Standort) Text anpassen.
+
 ## 2026-11-10 · Beschreibungen der 90 Orte mit langem Text geprüft und überarbeitet
 Kontext:      Die 90 Orte mit längeren Texten (Google-Sätze, eigene Notizen, Texte aus früheren Sitzungen) waren nicht gegen Quellen geprüft. Vorgabe: Vorhandenes bleibt, wo es stimmt, Fehler werden korrigiert, praktische Angaben ergänzt.
 Entscheidung: Pro Ort eine Websuche. Bei 45 Orten steht die Prüfung als Ergänzung hinter dem alten Text, bei 45 ist der Text ersetzt (falsche, veraltete oder unlesbare Vorlage). In den ersetzten Texten stehen die früheren Aussagen, die ich nicht bestätigen konnte, ausdrücklich als „früherer Text“ oder „nicht bestätigt“. Ersatzschreibungen wie „ue“ und „ae“ sind zu Umlauten korrigiert, abgeschnittene englische Google-Texte (Gyoza no Fukuho, Ryu Sushi, Sarashina Nunoya, Tempura Abe) durch deutsche Fassungen ersetzt.
