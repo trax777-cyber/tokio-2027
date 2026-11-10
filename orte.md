@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 09.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -470,6 +470,7 @@ Stand: 09.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   okonomiyaki at Hiroki where the savory pancakes are cooked right in front of you on
   [Maps](https://maps.google.com/?cid=4179790870449753372) · [Website](https://teppan-hiroki.com/shimokitazawa.html) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131802/13001391/) · Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 2 Chome−14−14 ハニー下北沢 1F
 - **smash things スマッシュシングス** · Essen · ★ 4,7 · Komazawa, Setagaya City
+  Burger-Lokal in Komazawa (Setagaya), Erdgeschoss im Grand Blue Komazawa. Der Name deutet auf Smash Burger hin, Google nennt aber keine Speisekarte. Öffnet laut Google um 12 Uhr, bestellbar auch über Uber Eats. Webseite ist der Instagram-Account.
   [Maps](https://maps.google.com/?cid=10320205936147213554) · [Website](https://www.instagram.com/smashthings_burger?igsh=MXhhN2IxbDN3dHo4Nw==&utm_source=qr) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131707/13311800/) · Japan, 〒154-0012 Tokyo, Setagaya City, Komazawa, 3 Chome−14−1 グランドブルー駒沢 101
 - **Todoroki Ravine Park** · Park · ★ 4,2 · Todoroki, Setagaya City
   Serene, tree-filled park with a brook, walking path & traditional Japanese garden, plus a temple.
