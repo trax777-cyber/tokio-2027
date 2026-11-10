@@ -4,7 +4,7 @@ Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`
 
 ## 2026-11-10 · Wegfallende Orte bleiben, aber deutlich vermerkt
 Kontext:      Unicorn Gundam (Odaiba, Abbau laut Berichten am 31. August 2026) und ART AQUARIUM MUSEUM (Ginza Mitsukoshi, Ausstellung endet laut Bericht am 6. Januar 2027) sind zur Reise im Juli 2027 voraussichtlich nicht mehr verfügbar.
-Entscheidung: Beide Orte bleiben in der Liste, die Beschreibung beginnt mit „ACHTUNG, VERMUTLICH NICHT MEHR VORHANDEN“ bzw. „ACHTUNG, VERMUTLICH BIS JULI 2027 GESCHLOSSEN“, danach der Grund und die Bitte um Prüfung. Auch in der Kompaktfassung auf Drive sichtbar.
+Entscheidung: Beide Orte bleiben in der Liste, die Beschreibung beginnt mit „ACHTUNG, VERMUTLICH NICHT MEHR VORHANDEN“ bzw. „ACHTUNG, VERMUTLICH BIS JULI 2027 GESCHLOSSEN“, danach der Grund und die Bitte um Prüfung. Die Kompaktfassung auf Drive enthält keine Beschreibungen, der Hinweis ist dort also nicht sichtbar.
 Alternativen: Orte entfernen (verworfen: Entscheidung des Nutzers), eigenes Datenfeld mit Warnzeichen in der App (nicht gebaut: größerer Eingriff für zwei Orte).
 Folgen:       Beide Orte erscheinen weiter auf der Karte und in Suche und Filter. Die Warnung steht nur im Beschreibungstext des Detailblatts, nicht in der Liste. Bei Bestätigung des Fortbestands (oder neuem Standort) Text anpassen.
 
