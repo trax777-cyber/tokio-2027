@@ -2,6 +2,13 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-10 · Beschreibungen für 84 kurz beschriebene Orte geprüft und ergänzt
+Kontext:      84 Orte hatten nur einen kurzen Text (meist Google-Satz, einige eigene Kurznotizen). Der Altbestand soll bleiben, aber verlässlicher und praktischer werden.
+Entscheidung: Pro Ort eine Websuche, der alte Text bleibt vorn, dahinter steht eine deutsche Ergänzung nur mit Angaben, die mindestens eine nachvollziehbare Quelle trägt (offizielle Seiten, Stadt- und Präfekturseiten, Time Out, Tabelog, Fachmedien). Widersprüche sind benannt („Quellen uneinig“, „bitte prüfen“), Nichtbestätigtes wird als solches gesagt. Zeiten und Preise sind Stand der Quellen, nicht der Orte.
+Gefunden: (1) Tsukiji Outer Market: Der Google-Text spricht von der Thunfisch-Auktion, die seit 2018 in Toyosu stattfindet. (2) Unicorn Gundam: laut Berichten vom Juni 2026 sollte die Statue am 31. August 2026 abgebaut werden, Bestätigung fehlt. (3) Toyokawa Inari: Die Füchse sind buddhistisch, der Google-Text sagt „Shinto“. (4) Ameya ist laut Quellen ein Imbiss zum Mitnehmen, kein Café zum Sitzen. (5) Meiji Jingu: Die Irisblüte im Innengarten ist im Juli vorbei. (6) 485 TOKINI CASTELLA: Die Suche fand nichts, der Hinweis steht im Text.
+Alternativen: Alte Texte ersetzen (verworfen: Vorgabe war, Vorhandenes zu behalten), Fakten aus dem Gedächtnis ergänzen (verworfen: Risiko falscher Angaben).
+Folgen:       Die Texte sind länger (bis rund 600 Zeichen). Gebäude, Öffnungszeiten, Eintritte und Fahrpläne ändern sich, besonders bei Fähren (Aoshima, Tashirojima), Seilbahn (Mitake) und Burgen; vor der Reise offiziell prüfen. Die 91 Orte mit langem Text (über 120 Zeichen) sind nicht neu geprüft. Webseiten der Orte wurden nicht direkt geöffnet.
+
 ## 2026-11-10 · Beschreibungen für 24 dünn beschriebene Orte
 Kontext:      11 Orte hatten keine Beschreibung, 13 nur ein Wort oder „Aus popeye“. Vorhandene Angaben sollen bleiben.
 Entscheidung: Alle 24 per Websuche ergänzt, der alte Text steht am Anfang („Aus popeye.“, „Ramen.“ usw.). Nur aufgenommen, was mehrere Quellen oder eine Fachseite (Präfektur Shiga, Time Out, Tabelog, Hanako) tragen. Unsichere Angaben sind im Text markiert („bitte prüfen“, „laut …“). Bei ARC, Day, things.YANAKA, Fumigrafico und McLean KIOSK fand die Suche nichts Belastbares: dort steht nur Typ und Lage plus der Hinweis, dass nichts gefunden wurde.
