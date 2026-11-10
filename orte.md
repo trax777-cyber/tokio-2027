@@ -49,11 +49,13 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Take-away-Café nahe Takeshita-dori: Bestellung am Tablet, eine Bärentatze reicht Getränke durch ein Loch in der Wand. Ca. 3 Min. ab Harajuku.
   [Maps](https://maps.google.com/?cid=1975990326689132499) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13276998/) · 1-23-28 Jingumae, Shibuya, Tokyo 150-0001, Japan
 - **BIEN-ETRE MAISON** · Café · ★ 4,3 · Uehara, Shibuya City
+  Café der Pâtisserie BIEN-ETRE in Yoyogi-Uehara. Parfaits gibt es nur hier, dazu frische Mille-feuille mit passenden Getränken. Parfait laut Hanako nur mit Vorreservierung (TableCheck). Donnerstag geschlossen, 11 bis 19:30 Uhr (TableCheck, bitte prüfen). Adresse in Quellen widersprüchlich.
   [Maps](https://maps.google.com/?cid=2602377731225467068) · [Website](https://www.tablecheck.com/shops/bien-etre/reserve) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131811/13271828/) · Japan, 〒151-0064 Tokyo, Shibuya, Uehara, 1 Chome−17−11 2F・3F
 - **Fuglen Tokyo** · Café · ★ 4,3 · Tomigaya, Shibuya City
-  Café
+  Café. Ableger des Osloer Fuglen (dort seit 1963), in Tomigaya seit 2012. Tagsüber Kaffee, ab nachmittags Cocktails, nordisches Design. Eigene Rösterei in Tokio seit 2014.
   [Maps](https://maps.google.com/?cid=17164645774726874279) · [Website](https://fuglencoffee.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131810/13141002/) · 1 Chome-16-11 Tomigaya, Shibuya, Tokyo 151-0063, Japan
 - **Fumigrafico** · Café · ★ 4,3 · Motoyoyogicho, Shibuya City
+  Kleine Sauerteig-Bäckerei (laut Instagram). Mehr habe ich nicht verlässlich gefunden, auch keine bestätigte Adresse über die Suche.
   [Maps](https://maps.google.com/?cid=17772021722327594764) · [Website](http://fumigrafico.net/) · [Tabelog](https://tabelog.com/en/tokyo/A1318/A131810/13261499/) · 9-6 Motoyoyogicho, Shibuya, Tokyo 151-0062, Japan
 - **Haritts Donuts & Coffee** · Café · ★ 4,4 · Uehara, Shibuya City
   Unscheinbarer Donut-Laden seit 2004 in einem alten Holzhaus in Yoyogi-Uehara, handgemachte fluffige Donuts, oft schon nachmittags ausverkauft.
@@ -74,7 +76,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   New-York-Style-Cookies aus eigener Kueche; woechentlich am selben Tag eine limitierte Box mit 12 Sorten, frisch produziert und am Bestelltag verschickt.
   [Maps](https://maps.google.com/?cid=8696642782876363972) · [Website](https://www.rumble-crumble.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1306/A130601/13304102/) · Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 6 Chome−16−3 原宿T2ビル 1F
 - **AFURI Ebisu** · Essen · ★ 4,3 · Ebisu, Shibuya City
-  Ramen
+  Ramen. AFURI in Ebisu, bekannt für Yuzu-Shio-Ramen in goldener, leichter Brühe mit Yuzu aus Kochi. Wahlweise leicht (tanrei) oder mit Hühnerfett (maro); laut Time Out gibt es auch vegane Ramen. Bezahlung nur bargeldlos. Brühe kann früh ausverkauft sein. Preise je nach Quelle ca. 1.000 bis 2.500 Yen.
   [Maps](https://maps.google.com/?cid=13480834823894184664) · [Website](https://afuri.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1303/A130302/13005500/) · Japan, 〒150-0013 Tokyo, Shibuya, Ebisu, 1 Chome−1−7 117ビル 1F
 - **Gonpachi Nori-temaki Harajuku** · Essen · ★ 4,5 · Jingumae, Shibuya City
   Gonpachi a winner with health conscious Tokyoites
@@ -170,20 +172,22 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 ## Taito (24)
 
 - **McLean KIOSK-BEER BAR&SODA FOUNTAIN-** · Bar · ★ 5,0 · Komagata, Taito City
-  Aus popeye
+  Aus popeye. Bar unter dem McLean-Namen, gleiche Adresse wie der Burger Stand in Komagata (2-2-10). Zu diesem Lokal habe ich keine weitere verlässliche Beschreibung gefunden.
   [Maps](https://maps.google.com/?cid=14586127554361497993) · [Website](https://www.instagram.com/mclean_kiosk/) · 2 Chome-2-10 Komagata, Taito City, Tokyo 111-0043, Japan
 - **Tokyo Riverside Distillery by Ethical Spirits (Craft Gin)** · Bar · ★ 4,5 · Kuramae, Taito City
   Weltweit erste "regenerative Destillerie" (seit 2021, Kuramae): Craft-Gin aus sonst entsorgten Reststoffen wie Sake-Trester, gerettetem Bier oder Kakaoschalen, mit Shop und Bar vor Ort.
   [Maps](https://maps.google.com/?cid=13026381540411865675) · [Website](https://shop.ethicalspirits.jp/) · 3 Chome-9-1 Kuramae, Taito City, Tokyo 111-0051, Japan
 - **ARC** · Café · ★ 4,0 · Torigoe, Taito City
-  Aus popeye
+  Aus popeye. Coffeeshop in Torigoe (Taito). Zu diesem Lokal habe ich keine weitere verlässliche Beschreibung gefunden.
   [Maps](https://maps.google.com/?cid=8322571293854132157) · [Website](https://www.instagram.com/arc__coffee/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131103/13285092/) · Japan, 〒111-0054 Tokyo, Taito City, Torigoe, 2 Chome−3−4 篠田梅村共同ビル 1F
 - **Himitsudō** · Café · ★ 3,7 · Yanaka, Taito City
   Tiny shop preparing generous portions of shaved ice dessert topped with handmade fruit syrups.
   [Maps](https://maps.google.com/?cid=11482321306331796146) · [Website](http://himitsudo.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131106/13126796/) · 3 Chome-11-18 Yanaka, Taito City, Tokyo 110-0001, Japan
 - **SAWAWA Matcha Sweets Shop Asakusa** · Café · ★ 4,5 · Asakusa, Taito City
+  Matcha-Süßspeisen. SAWAWA gehört zu Telacoya (Souvenirs) und ist durch Matcha-Warabimochi bekannt (Filialen Kawagoe und Kyoto Nishiki). Zur Filiale in Asakusa habe ich keine eigene Quelle gefunden.
   [Maps](https://maps.google.com/?cid=10180835281867357472) · [Website](https://www.telacoya.co.jp/company/shop_detail/shop_detail-293/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131102/13192104/) · 2 Chome-2-10 Asakusa, Taito City, Tokyo 111-0032, Japan
 - **seihitsu** · Café · ★ 4,8 · Senzoku, Taito City
+  Café für Kaffee, Gebäck und Naturwein; Käsekuchen und Desserts besonders beliebt (Listing). Laut einer Quelle nur Bargeld. Öffnungszeit werktags 10 bis 17 Uhr (Listing, bitte prüfen). Quellen nennen den Standort ungenau.
   [Maps](https://maps.google.com/?cid=6740882471927045462) · [Website](https://www.instagram.com/seihitsu_cafe?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131104/13294964/) · Japan, 〒111-0031 Tokyo, Taito City, Senzoku, 1 Chome−18−2 海老根ビル 1階
 - **Yanaka Shippoya** · Café · ★ 3,9 · Yanaka, Taito City
   Seit 2009 in Yanaka Ginza, gebackene (nicht frittierte) Donuts in Katzenschwanz-Form in ueber einem Dutzend Sorten, Bestseller ist die getigerte "Tora".
@@ -192,16 +196,16 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Bon specializes in shojin ryori the vegetarian cuisine eaten by Zen Buddhist monks in Japan
   [Maps](https://maps.google.com/?cid=4196019976311989704) · [Website](http://www.fuchabon.co.jp/) · 1 Chome-2-11 Ryusen, Taito City, Tokyo 110-0012, Japan
 - **McLean** · Essen · ★ 4,3 · Komagata, Taito City
-  Aus popeye
+  Aus popeye. Burger-Lokal in Komagata (Taito), als „McLean Old Burger Stand“ geführt, laut Listing Tabelog-100-Hamburger seit 2018. Mehr als ein Dutzend Burger zur Auswahl (Stars and Stripes). Öffnungszeiten widersprüchlich, bitte prüfen.
   [Maps](https://maps.google.com/?cid=11375105851764303235) · [Website](http://mclean.jp/) · 2 Chome-2-10 Komagata, Taito City, Tokyo 111-0043, Japan
 - **McLean OLD FASHIONED DINER** · Essen · ★ 4,5 · Kuramae, Taito City
-  Aus popeye
+  Aus popeye. Diner in Kuramae, Inneneinrichtung nach amerikanischem Vorbild, Burger und Shakes (Listings). Öffnungszeiten widersprüchlich (Thursday bis Tuesday 11:30 bis 21 Uhr in einem Listing), bitte prüfen.
   [Maps](https://maps.google.com/?cid=17240285421529561395) · [Website](http://www.mclean.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131103/13249033/) · 2 Chome-5-4 Kuramae, Taito City, Tokyo 111-0051, Japan
 - **San-Sada** · Essen · ★ 3,5 · Asakusa, Taito City
-  Aus popeye
+  Aus popeye. Tempura-Lokal nahe Kaminarimon, laut Reiseseiten seit 1837, eines der ältesten Tempura-Lokale Japans (Primärquelle für das Jahr nicht gefunden). Edomae-Stil: Frittieren in Sesamöl, bekannt für Tendon (Tempura auf Reis).
   [Maps](https://maps.google.com/?cid=9381824200514409223) · [Website](http://www.tempura-sansada.co.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1311/A131102/13003675/) · 1 Chome-2-2 Asakusa, Taito City, Tokyo 111-0032, Japan
 - **OTHER SPACE Hotel Asakusa** · Hotel · ★ 4,5 · Asakusa, Taito City
-  HOTEL
+  HOTEL. Konventionelles Hotel mit 94 Zimmern, laut Buchungsportalen etwa 3 Gehminuten zum Senso-ji; dort auch als HOTEL K3 asakusa geführt. Kein Kapselhotel. Quellen sind nur Buchungsportale, bitte auf der Hotelseite prüfen.
   [Maps](https://maps.google.com/?cid=3184394917603328826) · [Website](https://otherspacehotel.com/?lang=auto) · 3 Chome-4-10 Asakusa, Taito City, Tokyo 111-0032, Japan
 - **Sakura Cross Hotel Ueno-Iriya** · Hotel · ★ 4,7 · Negishi, Taito City
   Apartment-Hotel mit klimatisierten Zimmern und Kitchenette nahe Iriya Station, rund 15 Gehminuten zum Ueno-Park, ca. 5 Autominuten zum Sensoji-Tempel.
@@ -231,6 +235,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Beste Adresse für Messer, Kochgeschirr
   [Maps](https://maps.google.com/?cid=17158542540331966183) · [Website](https://kama-asa.co.jp/) · 2 Chome-24-1 Matsugaya, Taito City, Tokyo 111-0036, Japan
 - **Things.YANAKA** · Shop · ★ 4,5 · Yanaka, Taito City
+  Laden in Yanaka. Zu diesem Laden habe ich keine verlässliche Beschreibung gefunden.
   [Maps](https://maps.google.com/?cid=16974908754217126223) · 3 Chome-12-3 Yanaka, Taito City, Tokyo 110-0001, Japan
 - **Senso-ji Hozomon Gate** · Tempel · ★ 4,6 · Asakusa, Taito City
   First built in 942 CE, this Buddhist temple features 2 imposing guardian statues & 3 large lanterns.
@@ -254,6 +259,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Bäckerei mit Wein-Pairing, mahlt Mehl aus 15-16 einheimischen Weizensorten selbst; 2019 in Funabori eröffnet, 2025 nach Kiyosumi-Shirakawa umgezogen.
   [Maps](https://maps.google.com/?cid=10989498087227358967) · [Website](https://www.instagram.com/ciest2019?igsh=MWZjN3BqMTluY2dtcQ==) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13308814/) · Japan, 〒135-0023 Tokyo, Koto City, Hirano, 1 Chome−11−12 １Ｆ
 - **Day** · Café · ★ 4,5 · Kiyosumi, Koto City
+  Café in Kiyosumi (Koto), im Kaffeeviertel Kiyosumi-Shirakawa. Zu diesem Lokal habe ich keine verlässliche weitere Beschreibung gefunden.
   [Maps](https://maps.google.com/?cid=11982084839998586365) · [Website](https://www.instagram.com/day_kiyosumishirakawa/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13306194/) · 2 Chome-3-18 Kiyosumi, Koto City, Tokyo 135-0024, Japan
 - **Le Bois Kiyosumi Shirakawa Cafe & Miscellaneous Goods (formerly THE LITTLE THINGS)** · Café · ★ 4,2 · Miyoshi, Koto City
   Verstecktes Cafe in ruhiger Wohngegend von Kiyosumi-Shirakawa; am Eingang verkaufte Zimmerpflanzen, gedaempft beleuchteter Innenraum mit Theken- und Terrassenplaetzen.
@@ -262,6 +268,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Seit 2022 in Kiyosumi-Shirakawa: Miso-Suppen-Cafe mit gefriergetrockneten Zutaten und rohem Miso auf einer Monaka-Waffel, ergibt mit heissem Wasser aufgegossen Misosuppe; mehrere Sorten, auch abgewogen als Mitbringsel.
   [Maps](https://maps.google.com/?cid=12792320235912906524) · [Website](https://www.misonomi.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1312/A131201/13276109/) · Japan, 〒135-0006 Tokyo, Koto City, Tokiwa, 1 Chome−15−1 MITSUME内
 - **tallskogen** · Café · ★ 4,4 · Kiyosumi, Koto City
+  Nordisch inspiriertes Café mit Holzinterieur, Inhaber Schwede (zuvor Allpress Espresso). Bekannt für Zimtschnecken. Laut Quelle Bio-Gemüse und selbst fermentierte Würzmittel, im Laden verkauft.
   [Maps](https://maps.google.com/?cid=7474980125854947600) · [Website](http://totti.tokyo/) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131303/13274919/) · 2 Chome-10-5 Kiyosumi, Koto City, Tokyo 135-0024, Japan
 - **iki Espresso** · Essen · ★ 3,9 · Tokiwa, Koto City
   Open-fronted contemporary cafe serving specialist coffee & an all-day menu of snacks & pastries.
@@ -279,7 +286,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   sushi doesn t come much fresher or more authentic than at this spot in the heart of toyosu fish market the chefs here have been making edo style sushi for over 50 years.
   [Maps](https://maps.google.com/?cid=7098413625217631431) · [Tabelog](https://tabelog.com/en/tokyo/A1313/A131307/13227363/) · Japan, 〒135-0061 Tokyo, Koto City, Toyosu, 6 Chome−6−1 ７街区／管理施設 棟３階
 - **LYURO Tokyo Kiyosumi by THE SHARE HOTEL** · Hotel · ★ 4,4 · Kiyosumi, Koto City
-  HOTEL Bezirk Koto
+  HOTEL Bezirk Koto. Am Sumida in einem umgebauten Bürogebäude, Konzept „Fließen“. Schlafsaalbetten und Privatzimmer, Restaurant, Bar und große Terrasse zum Fluss, teils Blick auf den Skytree. Schlafsaal laut LiveJapan ab ca. 3.600 Yen pro Bett, Privatzimmer ab ca. 15.000 Yen (bitte prüfen).
   [Maps](https://maps.google.com/?cid=14572128234047431754) · [Website](https://www.thesharehotels.com/lyuro/?utm_source=google&utm_medium=map) · Japan, 〒135-0024 Tokyo, Koto City, Kiyosumi, 1 Chome−1−7 清澄リバーサイドビル
 - **Fukagawa Edo Museum** · Museum · ★ 4,4 · Shirakawa, Koto City
   This history museum focused on the Edo period features re-created homes, a theater & lecture hall.
@@ -300,7 +307,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 ## Chuo (18)
 
 - **Glitch Coffee and Roasters GINZA** · Café · ★ 4,3 · Ginza, Chuo City
-  Aus popeye
+  Aus popeye. Filiale in Ginza, eröffnet April 2023 (Time Out Japan), Stammhaus in Jimbocho. Nur helle Röstungen, Single Origin, in Ginza auch Kaffee-Cocktails. Klein, zu Stoßzeiten laut Berichten 20 bis 60 Minuten Wartezeit. Laut einem Bericht nur Kartenzahlung. Öffnungszeit laut Quellen 9 bis 18 Uhr, bitte prüfen.
   [Maps](https://maps.google.com/?cid=7690982991018637456) · [Website](https://glitchcoffee.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1301/A130101/13283362/) · Japan, 〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−14−8 VORT銀座イーストIII 1階
 - **Hatsune Japanese Sweets** · Café · ★ 4,2 · Nihonbashiningyocho, Chuo City
   1837 gegruendeter, einer der aeltesten Wagashi-Laeden Japans in Nihonbashi Ningyocho; bekannt fuer hausgemachten Anko und Mochi sowie Shiruko/Zenzai seit der Edo-Zeit.
@@ -315,6 +322,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Erstes internationales Cafe des Sydney-Roesters Single O (seit 2021) in Hamacho, Selbstbedienungs-Kaffeezapfsystem mit 6 Zapfhaehnen, australisch-japanische Speisekarte wie Banana Bread mit Espresso-Butter und Jaffles.
   [Maps](https://maps.google.com/?cid=5512988659680013115) · [Website](https://singleo.jp/) · [Tabelog](https://tabelog.com/en/tokyo/A1302/A130204/13264861/) · Japan, 〒103-0007 Tokyo, Chuo City, Nihonbashihamacho, 3 Chome−16−7 スプラウト日本橋浜町 1F
 - **Solatsuki** · Café · ★ 4,0 · Tsukiji, Chuo City
+  Schreibung sonst „Soratsuki“. Erdbeer-Daifuku-Laden im Äußeren Markt von Tsukiji, Stammhaus. Spezialitäten Erdbeer-Daifuku und Erdbeer-Softeis „Strawberry Milky Soft“. Laut Time Out 8 bis 15 Uhr täglich, Preise widersprüchlich, bitte prüfen.
   [Maps](https://maps.google.com/?cid=5967592568438161593) · [Website](https://solatsuki.jp/solatsuki) · 4 Chome-11-10 Tsukiji, Chuo City, Tokyo 104-0045, Japan
 - **Turret Coffee** · Café · ★ 4,6 · Tsukiji, Chuo City
   Artsy, compact cafe offering barista-made caffeinated drinks, some with fancy latte art.
@@ -413,7 +421,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   12 Meter hohe Godzilla-Kopf-Statue seit 2015 auf der Terrasse von Hotel Gracery im Shinjuku Toho Building, brüllt stündlich und stößt Rauch aus.
   [Maps](https://maps.google.com/?cid=3278137894263719495) · [Website](https://www.toho.co.jp/shinjukutoho/) · 1 Chome-19-1 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan
 - **Omoide Yokocho Memory Lane** · Sehenswürdigkeit · ★ 4,2 · Nishishinjuku, Shinjuku City
-  berühmteste Imbiss Gasse
+  berühmteste Imbiss Gasse. Entstand in den späten 1940er Jahren als Schwarzmarkt westlich des JR-Bahnhofs Shinjuku. Heute rund 60 winzige Lokale in einer L-förmigen Gasse von etwa 100 m, Schwerpunkt Yakitori. Spitzname „Piss Alley“ wegen früher fehlender Toiletten. Abends am lebendigsten. Rauchen nur in Lokalen, die es erlauben.
   [Maps](https://maps.google.com/?cid=10416638554535967955) · [Website](http://shinjuku-omoide.com/) · 1 Chome-2-2 Nishishinjuku, Shinjuku City, Tokyo 160-0023, Japan
 - **South Observation Deck, Tokyo Metropolitan Government Building No. 1** · Sehenswürdigkeit · ★ 4,7 · Nishishinjuku, Shinjuku City
   One of the most popular places to take in the views is at the Tokyo Metropolitan Government Building, where you’ll find two free observatories on the 45th floor of both the north and south towers.
@@ -527,6 +535,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Baeckerei in Ikejiri-Ohashi (Meguro) von Chef Tanaka, Tabelog-100-Brot-Auszeichnung 2020 und 2022; rund 70-100 Brotsorten aus 13 Mehlsorten, jede Sorte anders geformt, bekannt fuer Croissants und den "Toro Dog".
   [Maps](https://maps.google.com/?cid=3802194123401637) · [Website](http://tolotokyo.com/) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131705/13093803/) · 3 Chome-14-3 Higashiyama, Meguro City, Tokyo 153-0043, Japan
 - **Tokyo Dosanjin** · Essen · ★ 4,0 · Aobadai, Meguro City
+  Soba-Lokal in Aobadai (Meguro), nahe Ikejiri-Ohashi. Frisch gemachte Soba; laut Time Out Tempura, Tororo-Soba und saisonal Sudachi-Soba. Laut Tabelog mittags ca. 1.000 bis 2.000 Yen, abends 4.000 bis 5.000 Yen. Montags geschlossen, Reservierung möglich. Meinungen gemischt: Brühe gelobt, Portionen teils klein.
   [Maps](https://maps.google.com/?cid=15125799156036320533) · [Website](https://tokyo-dosanjin.jp/?utm_source=google&utm_medium=GBP) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131705/13047472/) · Japan, 〒153-0042 Tokyo, Meguro City, Aobadai, 3 Chome−19−8 目黒 蕎麦 池尻大橋
 - **KINTO STORE Tokyo** · Shop · ★ 4,5 · Aobadai, Meguro City
   Flagship-Store der japanischen Tischgeschirr-Marke KINTO (seit 1972 in Shiga, seit 2019 Laden in Nakameguro) mit breitem Sortiment an Geschirr und Trinkgefaessen.
@@ -538,6 +547,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Seit 1974 bestehender Softeis-Stand im Untergeschoss der Nakano Broadway, bekannt für die 20 cm hohe Waffel mit acht Eissorten übereinander.
   [Maps](https://maps.google.com/?cid=11799026278440337779) · [Website](http://facebook.com/Dailychiko) · [Tabelog](https://tabelog.com/en/tokyo/A1319/A131902/13001083/) · Japan, 〒164-0001 Tokyo, Nakano City, Nakano, 5 Chome−52−15 地下1階
 - **FESN Laboratory** · Shop · ★ 4,7 · Chome-33-15, Nakano City
+  Laden von FESN (Far East Skate Network) in Nakano. FESN ist eine Skate-Videoproduktion, 1995 von Takahiro Morita gegründet; ihr erstes Video gilt als erstes Skatevideo aus Japan. Im Laden entstehen laut Quellen eigene Skateboards. Öffnungszeiten nicht gefunden.
   [Maps](https://maps.google.com/?cid=3310978079795037993) · [Website](https://fareastskatenetwork.com/fesn-laboratory/) · 3 Chome-33-15 Nakano, Nakano City, Tokyo 164-0001, Japan
 - **Nakano Broadway** · Shop · ★ 4,2 · Chome-52-15, Nakano City
   Bustling shopping center featuring stores for anime & comics, plus boutiques, gift shops & eateries.
@@ -546,6 +556,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 ## Ota (3)
 
 - **Daikokudo** · Café · ★ 4,3 · Denenchofu, Ota City
+  Wagashi-Laden in Den'enchofu, nahe dem Tamagawa. Laut Stadtführer von Ota seit 1929. Spezialität Ayuyaki: ein Gebäck in Form des Süßwasserfischs Ayu, gefüllt mit Koshi-An (glatte rote Bohnenpaste), eher wenig süß. Verkauft laut Time Out auch Ningyo-yaki im Kabuki-za. Öffnungszeiten und aktuelle Preise nicht geprüft.
   [Maps](https://maps.google.com/?cid=11751005537573459903) · [Website](https://daikokudou.tokyo/) · [Tabelog](https://tabelog.com/en/tokyo/A1317/A131704/13127783/) · 1 Chome-55-5 Denenchofu, Ota City, Tokyo 145-0071, Japan
 - **Haginaka Park** · Park · ★ 4,2 · Haginaka, Ota City
   Großer Stadtpark im Bezirk Ota (nahe Haneda) mit Hallen- und Freibad, Baseballfeldern sowie Spielbereichen, in denen Kinder auf ausgediente Fahrzeuge klettern oder Rad fahren können. Rund um die Uhr zugänglich.
@@ -644,7 +655,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   This reconstructed castle, originally completed in 1607, sits atop a hill & houses a history museum.
   [Maps](https://maps.google.com/?cid=6812651872500704304) · [Website](https://kumamoto-guide.jp/kumamoto-castle/) · 1-1 Honmaru, Chuo Ward, Kumamoto, 860-0002, Japan
 - **Lake Biwa** · Sehenswürdigkeit · ★ 4,5 · Andere (Shiga)
-  größter See Japans
+  größter See Japans. Liegt ganz in der Präfektur Shiga, Fläche rund 670 km², größte Tiefe etwa 104 m, durchschnittlich etwa 41 m (Präfektur Shiga). Gilt als rund 4 Millionen Jahre alt. Versorgt laut nippon.com mehr als 10 % der Bevölkerung mit Wasser, vor allem im Kansai.
   [Maps](https://maps.google.com/?cid=17152468910832522255) · Shiga, Japan
 - **Matsumoto Castle** · Sehenswürdigkeit · ★ 4,5 · Andere (Nagano)
   Known for its black walls, this grand, 16th-century castle features exhibits of historical weapons.
@@ -659,7 +670,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Familienstrand in Nishiizu (Shizuoka) in einer geschuetzten Bucht mit ruhigen Wellen, gegenueber den markanten Felsformationen von Dogashima; 5 Gehminuten zur Sawada-Freiluft-Onsenquelle mit Meerblick.
   [Maps](https://maps.google.com/?cid=11299802830346751652) · [Website](http://nishiizu-kankou.com/playing/2006/03/post_7.php) · Nishina, Nishiizu, Kamo District, Shizuoka 410-3514, Japan
 - **Philosopher's Path (Tetsugaku no Michi), North End** · Sehenswürdigkeit · ★ 4,6 · Andere (Kyoto)
-  Philosophenweg
+  Philosophenweg. Rund 2 km langer Kanalweg (Angaben 1,8 bis 2 km) zwischen Ginkaku-ji im Norden und Eikando bzw. Nanzen-ji im Süden, zu Fuß etwa 30 bis 40 Minuten. Benannt nach dem Philosophen Nishida Kitaro (Universität Kyoto), der hier täglich gegangen sein soll. Kirschbäume, Blüte meist Ende März bis Anfang April.
   [Maps](https://maps.google.com/?cid=10482958477244399860) · [Website](https://tetsugakunomichi.jp/) · Shishigatani Teranomaecho, Sakyo Ward, Kyoto, 606-8426, Japan
 - **Shinkyō Bridge** · Sehenswürdigkeit · ★ 4,2 · Andere (Tochigi)
   Black-&-red bridge with a storied past, framed by dense forest known for its striking fall colors.

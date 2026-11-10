@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-10 · Beschreibungen für 24 dünn beschriebene Orte
+Kontext:      11 Orte hatten keine Beschreibung, 13 nur ein Wort oder „Aus popeye“. Vorhandene Angaben sollen bleiben.
+Entscheidung: Alle 24 per Websuche ergänzt, der alte Text steht am Anfang („Aus popeye.“, „Ramen.“ usw.). Nur aufgenommen, was mehrere Quellen oder eine Fachseite (Präfektur Shiga, Time Out, Tabelog, Hanako) tragen. Unsichere Angaben sind im Text markiert („bitte prüfen“, „laut …“). Bei ARC, Day, things.YANAKA, Fumigrafico und McLean KIOSK fand die Suche nichts Belastbares: dort steht nur Typ und Lage plus der Hinweis, dass nichts gefunden wurde.
+Alternativen: Beschreibung aus dem Namen ableiten oder aus ähnlichen Läden übernehmen (verworfen: erfindet Fakten).
+Folgen:       Öffnungszeiten und Preise stammen aus Listings und können veralten, die Seiten der Lokale wurden nicht direkt geöffnet. Die übrigen 175 Orte haben Texte (meist von Google, teils englisch) und wurden nicht neu geprüft.
+
 ## 2026-11-10 · Filter-Knopf zeigt die Trefferzahl
 Kontext:      Der Knopf „Fertig“ im Filterblatt sagte nicht, was der Filter ergibt. Das Blatt deckt die Liste ab, die Wirkung blieb unsichtbar. Die Mischsprache der Beschreibungen (Punkt 3 der Gestaltungskritik) ist bewusst kein Mangel mehr.
 Entscheidung: Der Knopf heißt „n Orte anzeigen“, bei 1 „1 Ort anzeigen“, bei 0 „Keine Treffer – Filter ändern“. Die Zahl wird in `renderAll` aktualisiert (`renderDoneLabel`), also nach jeder Filteränderung, auch bei Zurücksetzen und Suche.
