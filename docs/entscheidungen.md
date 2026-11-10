@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-10 · Filter-Knopf zeigt die Trefferzahl
+Kontext:      Der Knopf „Fertig“ im Filterblatt sagte nicht, was der Filter ergibt. Das Blatt deckt die Liste ab, die Wirkung blieb unsichtbar. Die Mischsprache der Beschreibungen (Punkt 3 der Gestaltungskritik) ist bewusst kein Mangel mehr.
+Entscheidung: Der Knopf heißt „n Orte anzeigen“, bei 1 „1 Ort anzeigen“, bei 0 „Keine Treffer – Filter ändern“. Die Zahl wird in `renderAll` aktualisiert (`renderDoneLabel`), also nach jeder Filteränderung, auch bei Zurücksetzen und Suche.
+Alternativen: Zahl neben dem Titel „Filter“ (verworfen: weit weg vom Knopf, der sie auslöst), Knopf bei 0 sperren (verworfen: Schließen muss immer gehen).
+Folgen:       Bei 0 Treffern bricht der Text bei 320 px auf zwei Zeilen um (58 px hoch, kein Überlauf). Gezählt wird nach Kategorie-Chips, Region, Bezirk, Bewertung, Besucht-Filter und Suche, nicht für die Merkliste. Getestet in headless Chromium (390, 320 px): Zahl 199, 65 bei „ab 4,5“, Keine Treffer, keine Konsolenfehler. Echte Geräte und Bildschirmleser nicht getestet (die Textänderung wird nicht angesagt, kein `aria-live`).
+
 ## 2026-11-09 · Phase 3 des Design-Vorschlags: Gruppenpunkte auf der Karte, Restwerte auf der Skala
 Kontext:      Auf der Handy-Karte überlagerten sich die Punkte in Tokio so stark, dass man einzelne nicht traf. Außerdem standen nach Phase 1 noch Eckradien 3, 4, 8, 9, 12 px, neun streunende Schriftgrößen und Abstände wie 3, 5, 7, 9, 11, 13, 14, 18 px im CSS.
 Entscheidung: (1) Gruppenpunkte: Unter Zoom 15 werden Orte, die auf dem Bildschirm in dieselbe 60-px-Zelle fallen, zu einem dunklen Kreis mit Zahl (Radius 12 bis 18 px je nach Anzahl, eigene Zeichenroutine im Canvas). Antippen zoomt auf die Mitglieder (höchstens Zoom 16), der Hinweis lautet „n Orte – antippen zum Vergrößern“. Gemerkte Orte und der geöffnete Ort bleiben immer einzeln, bei höchstens 12 Orten (z. B. Merkliste) gibt es keine Gruppen. (2) Restwerte: Radien 2, 3, 9 px → `--r-pill`, 4 px → `--r-s`, 8 und 12 px → `--r-m`; Schrift 12,5 → 12, 13 und 13,5 → 14, 17 → 18, 20 → 22 px, neue Tokens `--fs-ui` (15 px, Schalter und Logo-Zeichen) und `--fs-glyph` (19 px, Stempel und Tab-Zeichen); Abstände: neue Halbschritte `--s-0` 2 px, `--s-1h` 6 px, `--s-2h` 10 px (bisher 32 Stellen, unverändert), 3 und 5 → 4, 7 → 8, 9 → 10, 11 und 13 → 12, 14 und 18 → 16 px. Ausnahmen bleiben: Quellenangabe der Karte 11 px, Abstände 20, 22, 48 px.

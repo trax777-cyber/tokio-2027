@@ -14,6 +14,7 @@ Stand: 13.10.2026 (Farben, Tippflächen, Schrift, Zustände und Laptop-Layout am
 
 | Teil | Status |
 |---|---|
+| Filter-Knopf „n Orte anzeigen“ mit Trefferzahl statt „Fertig“ | **in der App** |
 | Farben: `--vermillion`, `--gold`, `--focus`, neues `--line-strong` (hell und dunkel) | **in der App** |
 | Ränder aller Bedienelemente auf `--line-strong`, Merken-Stern dauerhaft sichtbar | **in der App** |
 | Tippflächen: Chip 40, Tab 56, Schließen 44, Pille 44, Knöpfe 44/40, Zoom 44, Suche leeren 44 px | **in der App** (am Handy-Layout gemessen, siehe Abschnitt 8) |

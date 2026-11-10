@@ -777,12 +777,16 @@ function renderTabs() {
   $("open-filter").hidden = isMerk;
 }
 
+function renderDoneLabel(n) {
+  $("f-done").textContent = n === 0 ? "Keine Treffer – Filter ändern" : n === 1 ? "1 Ort anzeigen" : `${n} Orte anzeigen`;
+}
 function renderAll() {
   if (WIDE.matches && S.tab === "karte") S.tab = "liste";   // am Laptop ist die Karte immer sichtbar
   const rows = filtered();
   renderTabs();
   renderChips();
   renderCount(rows);
+  renderDoneLabel(rows.length);
   if (S.tab === "liste") renderList(rows);
   if (S.tab === "merkliste") renderMerkliste();
   if (mapVisible()) Map2.render(S.tab === "merkliste" ? mapRows() : rows);
