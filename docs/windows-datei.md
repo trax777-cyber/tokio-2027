@@ -27,6 +27,13 @@ Merken, Besucht und Notizen liegen im Browser, gebunden an Dateipfad und Browser
 - Diesen Link am neuen PC in den Browser einfügen, aber die lokale Datei muss dieselbe sein, in der ihr die App nutzt: Der Link der Live-Seite (`https://trax777-cyber.github.io/tokio-2027/#m=…`) öffnet die Live-Fassung. Zum Übernehmen in die lokale Datei die Adresse der lokalen Datei plus `#m=…` verwenden (Beispiel: `file:///C:/AI/Tokio2027/Tokio%202027.html#m=0.4.6`). Die App fragt, ob die Orte auf die Merkliste sollen.
 - Besucht-Markierungen und Notizen gehen so nicht mit.
 
+## DuckDuckGo-Browser (Windows)
+
+- Datei öffnen: Rechtsklick auf `Tokio 2027.html`, „Öffnen mit“, DuckDuckGo. Die Desktop-Verknüpfung öffnet die Datei im Standardbrowser von Windows.
+- **Feuer-Knopf (Fire Button) und automatisches Löschen löschen auch die Merkliste**, weil sie im Browserspeicher liegt. Nicht drücken, und in den Einstellungen das automatische Löschen ausschalten.
+- Ob DuckDuckGo lokale Dateien (`file:///`) dauerhaft speichern lässt, ist ungeprüft. Test: Ort merken, Browser ganz schließen, neu öffnen, Merkliste prüfen.
+- Sicherung: Die Merkliste regelmäßig mit „Merkliste teilen“ als Text speichern. Sonst als Ausweichbrowser Microsoft Edge nehmen (immer derselbe Browser).
+
 ## Beachten
 
 - Immer denselben Browser und dieselbe Datei im selben Ordner benutzen. Ordner oder Dateiname ändern bedeutet leere Merkliste.
