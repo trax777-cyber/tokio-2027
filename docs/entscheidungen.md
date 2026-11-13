@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-13 · Windows-Einrichtung für C:\AI\Tokio2027
+Kontext:      Der Nutzer arbeitet auf einem neuen Windows-PC. Die Prüfumgebung (Linux, Cloud) kann nicht nach `C:\AI` schreiben.
+Entscheidung: `tools/windows-einrichten.ps1` lädt `Tokio-2027-offline.html` von raw.githubusercontent.com nach `C:\AI\Tokio2027\Tokio 2027.html`, sichert die vorige Fassung, schreibt `Aktualisieren.bat` und eine Desktop-Verknüpfung. Anleitung: `docs/windows-datei.md`. Skript nur ASCII, damit PowerShell 5 ohne BOM nichts verfälscht.
+Alternativen: Datei von Hand kopieren (in der Anleitung als Ausweichweg), Installer oder Electron-App (verworfen: neue Abhängigkeiten, Offline-Pflege).
+Folgen:       Merkliste liegt im Browser pro Dateipfad und Browser und ist auf dem neuen PC leer; Übernahme über „Merkliste teilen“ und `#m=…` an die lokale Datei-Adresse (nur Merkliste, keine Besucht-Markierungen und Notizen). Skript, Verknüpfung und `file:///`-Adressen sind unter Windows nicht getestet.
+
 ## 2026-11-10 · Wegfallende Orte bleiben, aber deutlich vermerkt
 Kontext:      Unicorn Gundam (Odaiba, Abbau laut Berichten am 31. August 2026) und ART AQUARIUM MUSEUM (Ginza Mitsukoshi, Ausstellung endet laut Bericht am 6. Januar 2027) sind zur Reise im Juli 2027 voraussichtlich nicht mehr verfügbar.
 Entscheidung: Beide Orte bleiben in der Liste, die Beschreibung beginnt mit „ACHTUNG, VERMUTLICH NICHT MEHR VORHANDEN“ bzw. „ACHTUNG, VERMUTLICH BIS JULI 2027 GESCHLOSSEN“, danach der Grund und die Bitte um Prüfung. Die Kompaktfassung auf Drive enthält keine Beschreibungen, der Hinweis ist dort also nicht sichtbar.
