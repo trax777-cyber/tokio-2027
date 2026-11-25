@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Erzeugt orte.md (Übersicht aller Orte) aus quelle/orte.json.
 
-Mit --kompakt PFAD: zusätzlich eine kurze Tabellen-Fassung (für Google Drive)."""
+Mit --kompakt PFAD: zusätzlich eine kompakte Fassung mit Beschreibungen (für Google Drive)."""
 import json, collections, datetime, pathlib, re, sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
@@ -54,12 +54,15 @@ if "--kompakt" in sys.argv:
     ziel = pathlib.Path(sys.argv[sys.argv.index("--kompakt") + 1])
     k = [f"# Tokio 2027 – Orte (kompakt)", "",
          f"Stand: {heute} · {len(data)} Orte · App: https://trax777-cyber.github.io/tokio-2027/", "",
-         "Vollständige Fassung mit Beschreibungen und Adressen: https://github.com/trax777-cyber/tokio-2027/blob/main/orte.md", "",
+         "Kompakte Fassung mit Beschreibung und Maps-Link. Adressen, Webseiten und Tabelog-Links stehen in der vollständigen Fassung: https://github.com/trax777-cyber/tokio-2027/blob/main/orte.md", "",
          "> Automatisch erzeugt – wird bei jedem Update ersetzt."]
     for g in keys:
-        k += ["", f"## {g[1]} ({len(gruppen[g])})", "", "| Ort | Kategorie | ★ | Maps |", "|---|---|---|---|"]
+        k += ["", f"## {g[1]} ({len(gruppen[g])})", ""]
         for d in sorted(gruppen[g], key=lambda d: (d["kategorie"], d["name"].lower())):
-            r = f"{d['rating']:.1f}".replace(".", ",") if d.get("rating") else ""
-            k.append(f"| {md(d['name'])} | {d['kategorie']} | {r} | [↗]({maps(d['googleUrl'])}) |")
+            kopf = f"**{md(d['name'])}** · {d['kategorie']}"
+            if d.get("rating"): kopf += f" · ★ {d['rating']:.1f}".replace(".", ",")
+            if d.get("googleUrl"): kopf += f" · [Maps]({maps(d['googleUrl'])})"
+            k.append(f"- {kopf}")
+            if d.get("beschreibung"): k.append(f"  {md(d['beschreibung'])}")
     ziel.write_text("\n".join(k) + "\n", encoding="utf-8")
     print(f"{ziel.name}: kompakt")

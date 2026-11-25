@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-25 · Kompaktfassung mit Beschreibungen
+Kontext:      Die Drive-Kompaktfassung war eine Tabelle ohne Beschreibungen, die Warnungen zu Unicorn Gundam und ART AQUARIUM waren dort nicht sichtbar.
+Entscheidung: `tools/orte_md.py --kompakt` erzeugt statt der Tabellen eine Liste je Bezirk: Name, Kategorie, Bewertung, Maps-Link, darunter die Beschreibung. Adressen, Webseiten und Tabelog-Links bleiben in `orte.md`.
+Alternativen: Tabelle mit Beschreibungsspalte (verworfen: Zeilen mit bis zu 1.200 Zeichen sind unlesbar), nur `orte.md` auf Drive (verworfen: Dateiname und Ordner der Kompaktfassung sind eingeführt).
+Folgen:       Die Datei wächst von etwa 22 KB auf etwa 108 KB. Die Warnungen sind jetzt auch auf Drive sichtbar. `orte.md` bleibt unverändert, die GitHub Action ist nicht betroffen.
+
 ## 2026-11-25 · Fünf neue Orte (199 bis 203)
 Kontext:      Der Nutzer schickte sechs Google-Maps-Links. Einer (Kiyosumi, Yakiniku) war schon als 198 vorhanden (gleiche Google-Orts-ID), die übrigen fünf sind neu.
 Entscheidung: 199 Life Supermarket (Oshiage), 200 Ito-Yokado Kiba, 201 STAR CASE (Koenji), 202 MUSASHI JAPAN Minami Kappabashi (Messer), 203 Kappabashi Kitchen Supply Town. Kategorie „Shop“, die Straße als „Sehenswürdigkeit“. Daten per Google Maps (Playwright), Beschreibungen per Websuche, Widersprüche und Unbestätigtes im Text benannt. Kein Tabelog-Link (kein Lokal).
