@@ -2,6 +2,12 @@
 
 Eine Zeile bis ein Absatz pro Entscheidung. Vorlage: `docs/design-guidelines.md`, Anhang A. Neueste zuerst.
 
+## 2026-11-25 · Fünf neue Orte (199 bis 203)
+Kontext:      Der Nutzer schickte sechs Google-Maps-Links. Einer (Kiyosumi, Yakiniku) war schon als 198 vorhanden (gleiche Google-Orts-ID), die übrigen fünf sind neu.
+Entscheidung: 199 Life Supermarket (Oshiage), 200 Ito-Yokado Kiba, 201 STAR CASE (Koenji), 202 MUSASHI JAPAN Minami Kappabashi (Messer), 203 Kappabashi Kitchen Supply Town. Kategorie „Shop“, die Straße als „Sehenswürdigkeit“. Daten per Google Maps (Playwright), Beschreibungen per Websuche, Widersprüche und Unbestätigtes im Text benannt. Kein Tabelog-Link (kein Lokal).
+Alternativen: Kiyosumi doppelt anlegen (verworfen: Duplikat der Orts-ID), Supermärkte in einer eigenen Kategorie (verworfen: Kategorie „Markt“ steht für den Tsukiji-Markt, Filterchips nicht erweitert).
+Folgen:       204 Orte. Öffnungszeiten und Preise stammen aus Listings. Dass Daiso und Kinokuniya im Ito-Yokado Kiba sind, steht nur im Google-Verzeichnis. Steuerfreier Einkauf bei Life nicht bestätigt. Webadressen nach Google-Anzeige ergänzt (nur Domain), nicht geöffnet. Getestet in headless Chromium: 204 Orte, keine Konsolenfehler, Suche findet die neuen Orte.
+
 ## 2026-11-13 · Windows-Einrichtung für C:\AI\Tokio2027
 Kontext:      Der Nutzer arbeitet auf einem neuen Windows-PC. Die Prüfumgebung (Linux, Cloud) kann nicht nach `C:\AI` schreiben.
 Entscheidung: `tools/windows-einrichten.ps1` lädt `Tokio-2027-offline.html` von raw.githubusercontent.com nach `C:\AI\Tokio2027\Tokio 2027.html`, sichert die vorige Fassung, schreibt `Aktualisieren.bat` und eine Desktop-Verknüpfung. Anleitung: `docs/windows-datei.md`. Skript nur ASCII, damit PowerShell 5 ohne BOM nichts verfälscht.

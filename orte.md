@@ -1,6 +1,6 @@
 # Tokio 2027 – Orte
 
-Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027/
+Stand: 25.11.2026 · 204 Orte · App: https://trax777-cyber.github.io/tokio-2027/
 
 > Automatisch aus der App erzeugt – Änderungen hier werden beim nächsten Update überschrieben.
 
@@ -8,9 +8,9 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 
 | Kategorie | Anzahl |
 |---|---:|
-| Shop | 46 |
+| Shop | 50 |
 | Café | 44 |
-| Sehenswürdigkeit | 41 |
+| Sehenswürdigkeit | 42 |
 | Essen | 26 |
 | Park | 10 |
 | Tempel | 9 |
@@ -23,20 +23,20 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 ## Inhalt
 
 - Shibuya (42)
-- Taito (24)
-- Koto (19)
+- Taito (26)
+- Koto (20)
 - Chuo (18)
 - Minato (14)
 - Shinjuku (10)
 - Chiyoda (9)
 - Setagaya (7)
 - Toshima (6)
-- Sumida (4)
+- Sumida (5)
 - Meguro (3)
 - Nakano (3)
 - Ota (3)
+- Suginami (2)
 - Shinagawa (1)
-- Suginami (1)
 - Tokio – außerhalb der 23 Bezirke (9)
 - Außerhalb Tokios (26)
 
@@ -169,7 +169,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Verspielter Buchladen auf zwei Untergeschossen direkt bei Shibuya Station, Manga, Popkultur-Fanartikel und kurioses Sammelsurium, Fokus auf Mode wegen der Lage. Laut LiveJapan auf dem 1. und 2. Untergeschoss; im 2. Untergeschoss ein Eventraum mit Talkshows und Signierstunden fast täglich, im 1. Untergeschoss ein Duty-Free-Schalter. Zeiten widersprüchlich (10 bis 23 Uhr laut LiveJapan, montags 11 bis 21 Uhr laut einer anderen Seite), bitte prüfen.
   [Maps](https://maps.google.com/?cid=7191809205970926981) · [Website](https://www.village-v.co.jp/) · Japan, 〒150-0042 Tokyo, Shibuya, Udagawacho, 1丁目23−3 渋谷第一勧銀共同ビル
 
-## Taito (24)
+## Taito (26)
 
 - **McLean KIOSK-BEER BAR&SODA FOUNTAIN-** · Bar · ★ 5,0 · Komagata, Taito City
   Aus popeye. Bar unter dem McLean-Namen, gleiche Adresse wie der Burger Stand in Komagata (2-2-10). Zu diesem Lokal habe ich keine weitere verlässliche Beschreibung gefunden.
@@ -219,6 +219,9 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Asakusa Hanayashiki** · Sehenswürdigkeit · ★ 4,1 · Asakusa, Taito City
   Amusement park with a roller coaster & other high-speed rides, plus kids' activities & eateries. Gilt als ältester Freizeitpark Japans (1853 als Botanischer Garten eröffnet, laut Quellen ein Anspruch). Bekannt für die Achterbahn von 1953, laut einer Quelle die älteste noch laufende. Preise widersprüchlich, ein Tagespass kostet laut einer Quelle etwa 2.800 Yen für Erwachsene; bitte offiziell prüfen.
   [Maps](https://maps.google.com/?cid=7760273331863324849) · [Website](https://www.hanayashiki.net/) · 2 Chome-28-1 Asakusa, Taito City, Tokyo 111-0032, Japan
+- **Kappabashi Kitchen Supply Town (かっぱ橋道具街)** · Sehenswürdigkeit · ★ 4,3 · Matsugaya, Taito City
+  Beliebte Einkaufsstraße für Gastronomiebedarf und Küchengeräte zwischen Asakusa und Ueno, laut Quellen etwa 800 m lang mit rund 170 Fachgeschäften. Sonntags sind laut Quellen die meisten Läden geschlossen (etwa 70 Prozent), samstags rund 10 Prozent; Zeiten meist 10 bis 17 oder 18 Uhr, jeder Laden eigenständig. Etwa 5 Minuten ab Tawaramachi (Ginza-Linie). Für Messer siehe auch Kama-Asa. Tel. +81 3-3844-1225.
+  [Maps](https://maps.google.com/?cid=2397099946291010547) · [Website](https://www.kappabashi.or.jp) · 3 Chome-18-2 Matsugaya, Taito City, Tokyo 110-0036, Japan
 - **Yanaka Cemetery** · Sehenswürdigkeit · ★ 4,1 · Yanaka, Taito City
   Grab des letzten Shogun und viele Katzen. Yanaka Reien, in den 1870er Jahren als öffentlicher Friedhof angelegt (Quellen nennen 1872 und 1874), 1935 umbenannt. Das Grab des letzten Shoguns Tokugawa Yoshinobu liegt im umzäunten Tokugawa-Bereich und ist nur durch das Gitter zu sehen. Die Katzen werden von Freiwilligen betreut (Einfangen, Kastrieren, Freilassen). Die Allee „Sakura-dori“ hat hunderte Kirschbäume, zur Blüte voll.
   [Maps](https://maps.google.com/?cid=2563699452954661439) · [Website](https://www.tokyo-park.or.jp/reien/park/index073.html) · 7 Chome-5-24 Yanaka, Taito City, Tokyo 110-0001, Japan
@@ -234,6 +237,9 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Kama-Asa** · Shop · ★ 4,4 · Matsugaya, Taito City
   Beste Adresse für Messer, Kochgeschirr. Laut Firmenhistorie seit 1908 an der Kappabashi-Dougu-Straße (ein Verzeichnis nennt 1891). Zwei Läden nebeneinander, einer für Küchenzubehör, einer nur für Messer. Messer ohne Herstellermarke, Gravur auf Wunsch. Außerdem Nambu-Tekki-Eisenwaren und handgehämmerte Pfannen. 10 bis 17:30 Uhr, außer zum Jahreswechsel. Steuerbefreiung mit Reisepass möglich, Beratung auf Englisch und Französisch.
   [Maps](https://maps.google.com/?cid=17158542540331966183) · [Website](https://kama-asa.co.jp/) · 2 Chome-24-1 Matsugaya, Taito City, Tokyo 111-0036, Japan
+- **MUSASHI JAPAN Minami Kappabashi Knife Shop** · Shop · ★ 4,9 · Nishiasakusa, Taito City
+  Messerladen der Marke Musashi Hamono, nach einem Werbeartikel 2020 als reiner Online-Händler gegründet. Der Laden in Nishiasakusa (2-20-2) ist laut Markenseite der dritte Laden der Marke, eröffnet im Frühjahr 2024. Gravur nach dem Kauf, steuerfreier Einkauf (Kappabashi-Verband), „Ocean Knife Collection“ aus recyceltem Meeresplastik. Laut Markenseite 10:30 bis 18 Uhr (Google nennt Öffnung um 10 Uhr). Etwa 5 Minuten ab Asakusa, Ausgang A2. Der Hauptladen liegt laut Quelle bei 3-8-4 Nishiasakusa. Die Quellen sind teils Werbung. Tel. +81 3-6824-5391.
+  [Maps](https://maps.google.com/?cid=13439821562820591204) · [Website](https://musashihamono.com) · 2 Chome-20-2 Nishiasakusa, Taito City, Tokyo 111-0035, Japan
 - **Things.YANAKA** · Shop · ★ 4,5 · Yanaka, Taito City
   Laden in Yanaka. Zu diesem Laden habe ich keine verlässliche Beschreibung gefunden.
   [Maps](https://maps.google.com/?cid=16974908754217126223) · 3 Chome-12-3 Yanaka, Taito City, Tokyo 110-0001, Japan
@@ -244,7 +250,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Completed in 645, this temple, Tokyo's oldest, was built to honor Kannon, the goddess of mercy. Gründung laut Überlieferung 645 nach dem Fund einer Kannon-Statue im Sumida (andere Quellen nennen 628). Haupthalle etwa 6 bis 17 Uhr (Oktober bis März ab 6:30), Gelände rund um die Uhr offen. Nakamise-Straße etwa 200 m lang, die Läden schließen meist kurz nach der Haupthalle. Omikuji etwa 100 Yen.
   [Maps](https://maps.google.com/?cid=7785923974874169613) · [Website](https://www.senso-ji.jp/) · 2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan
 
-## Koto (19)
+## Koto (20)
 
 - **485 TOKINI CASTELLA / 485 TOKINI CREPE** · Café · ★ 4,7 · Tokiwa, Koto City
   Gemütliches Café nahe Kiyosumi-Shirakawa, bekannt für japanischen Castella-Kuchen und weitere Torten. Per Websuche nicht bestätigt (keine Treffer zu diesem Café), bitte prüfen.
@@ -294,6 +300,9 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Unicorn Gundam** · Sehenswürdigkeit · ★ 4,6 · Aomi, Koto City
   ACHTUNG, VERMUTLICH NICHT MEHR VORHANDEN: Laut Berichten vom Juni 2026 (u. a. Hypebeast) sollte die Statue am 31. August 2026 abgebaut werden („Abschied in Odaiba“). Zur Reise im Juli 2027 steht sie sehr wahrscheinlich nicht mehr dort. Eine Bestätigung des Abbaus oder einen Ersatz habe ich nicht gefunden, bitte bei DiverCity Tokyo Plaza prüfen. Früher: 19,7 m hohe weiße Statue des Unicorn Gundam am DiverCity Tokyo Plaza mit Verwandlung täglich um 11, 13, 15 und 17 Uhr sowie Musik und Licht am Abend.
   [Maps](https://maps.google.com/?cid=16300115339830217555) · [Website](https://www.unicorn-gundam-statue.jp/) · Japan, 〒135-0064 Tokyo, Koto City, Aomi, 1 Chome−1−10 ダイバーシティ東京プラザ内 2Fフェスティバル広場
+- **Ito-Yokado Kiba Store** · Shop · ★ 3,8 · Kiba, Koto City
+  Warenhaus mit Supermarkt (1-5-30 Kiba), etwa 5 Minuten ab Kiba (Tozai-Linie). Laut Google-Verzeichnis u. a. Starbucks (Erdgeschoss), Daiso und Kinokuniya (2. Stock) und 109 Cinemas Kiba (3. Stock); Daiso und Kinokuniya habe ich sonst nicht bestätigt gefunden. Zeiten laut Ito-Yokado-Flyer 10 bis 22 Uhr, 2. und 3. Stock 10 bis 21 Uhr, Änderungen möglich. Tel. +81 3-5606-5234.
+  [Maps](https://maps.google.com/?cid=2212705827384679118) · [Website](https://stores.itoyokado.co.jp) · 1 Chome-5-30 Kiba, Koto City, Tokyo 135-0042, Japan
 - **The Plant Society Tokyo Flagship** · Shop · ★ 4,1 · Hirano, Koto City
   Erste Filiale des Melbourner Pflanzenladens außerhalb Australiens, eröffnet am 10. Juli 2021 im 2. Stock des tokyobike Tokyo in Kiyosumi-Shirakawa; Zimmerpflanzen und Keramiktöpfe australischer Künstler. Zeiten laut Fashionsnap (2021) werktags 12 bis 19 Uhr, Samstag, Sonntag und Feiertage 10 bis 18 Uhr, mittwochs und donnerstags geschlossen: bitte prüfen.
   [Maps](https://maps.google.com/?cid=11660278740734395758) · [Website](https://www.theplantsociety.jp/) · 2 Chome-6-1 Hirano, Koto City, Tokyo 135-0023, Japan
@@ -514,7 +523,7 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Großer Pokémon Center in der Sunshine City (Ikebukuro) mit angeschlossenem Pikachu-Sweets-Café; ca. 3 Min. ab Higashi-Ikebukuro, 8 Min. ab Ikebukuro. Pikachu Sweets ist laut Quellen ein Takeaway-Schalter ohne Reservierung (kein Sitzcafé) und laut Pokémon-Shopseite bis auf Weiteres vorübergehend geschlossen: bitte aktuell prüfen. Sunshine City ALPA, 2. Stock (3-1-2 Higashi-Ikebukuro), 10 bis 20 Uhr nach ALPA-Zeiten, Tel. 03-6709-0707 (Pikachu Sweets). Das Sitz-Café Pokémon Café liegt in Nihonbashi.
   [Maps](https://maps.google.com/?cid=6655307181794378837) · [Website](https://shop.pokemon.co.jp/en/shop/pokemoncenter-megatokyo/) · Sunshine City Alpa 2F, 3-1-2 Higashi-Ikebukuro, Toshima City, Tokyo 170-6002, Japan
 
-## Sumida (4)
+## Sumida (5)
 
 - **cafe capyba** · Café · ★ 4,2 · Higashimukojima, Sumida City
   Tier-Café in Higashimukojima (Sumida), laut früherem Text seit April 2023, mit zwei Capybaras (die Namen Pinsuke und Kohaku sind nicht bestätigt). Nur mit Reservierung über TableCheck, bis zu zwei Wochen im Voraus; Mindestalter 6 Jahre. Fällig sind Nutzungsgebühr plus ein Pflichtgetränk, bar vor Ort; Futter für die Capybaras kostet extra. Die Einlasszeit kann um etwa 15 Minuten abweichen. Das Café kann wegen der Gesundheit der Tiere vorübergehend geschlossen sein. Preis und 30-Minuten-Dauer konnte ich nicht bestätigen. Tel. 03-6657-0748 laut Buchungsseite.
@@ -528,6 +537,9 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
 - **Tokyo Skytree** · Sehenswürdigkeit · ★ 4,4 · Oshiage, Sumida City
   World's tallest freestanding broadcasting tower with an observation deck boasting 360-degree views. Zwei Plattformen: Tembo Deck auf 350 m und Tembo Galleria auf 450 m. Laut Tokyo Solamachi Kasse 9 bis 21 Uhr, letzter Einlass 20 Uhr. Preise laut Quellen: Deck etwa 1.800 bis 2.300 Yen, Kombi etwa 2.700 bis 3.400 Yen, online im Voraus günstiger. Bitte Tickets vorab prüfen und buchen.
   [Maps](https://maps.google.com/?cid=9015449659807889194) · [Website](https://www.tokyo-skytree.jp/?utm_source=google&utm_medium=maps) · 1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan
+- **Life Supermarket Central Square Oshiage Store** · Shop · ★ 4,1 · Oshiage, Sumida City
+  Supermarkt der Kette LIFE am Bahnhof Oshiage (1-10-3 Oshiage), kurzer Weg zum Skytree; laut einer Quelle nahe Ausgang B3. Laut Google-Beitrag mit den Hausmarken Smile Life und Life Premium. Öffnet laut Google um 9:30 Uhr, nach einer einzelnen Quelle bis Mitternacht. Steuerfreier Einkauf ließ sich nicht bestätigen. Tel. +81 3-3622-2320.
+  [Maps](https://maps.google.com/?cid=5119626074302449685) · [Website](https://store.lifecorp.jp) · 1 Chome-10-3 Oshiage, Sumida City, Tokyo 131-0045, Japan
 
 ## Meguro (3)
 
@@ -565,17 +577,20 @@ Stand: 10.11.2026 · 199 Orte · App: https://trax777-cyber.github.io/tokio-2027
   Hillside park featuring botanical gardens, flower displays & views of the river & distant mountains. Laut Listings rund um die Uhr zugänglich (das Parkbüro hat eigene Zeiten). Im Park liegen mehrere Kofun-Grabhügel, dazu eine Ausstellung, deren Zeiten ich nicht gefunden habe. Die Aussicht auf Fluss und Berge stammt aus Reiseführern, ich habe sie nicht unabhängig bestätigt.
   [Maps](https://maps.google.com/?cid=465379040562906320) · [Website](http://www.city.ota.tokyo.jp/shisetsu/park/tamagawadai.html) · 1 Chome-63-1 Denenchofu, Ota City, Tokyo 145-0071, Japan
 
+## Suginami (2)
+
+- **cotogoto** · Shop · ★ 4,2 · Koenjiminami, Suginami City
+  Airy, minimalist boutique showcasing a range of traditional & modern Japanese handicrafts. Im 2. Stock des Koyo Suncrest Koenji (4-27-17 Koenji-Minami), 2 Minuten ab Südausgang Koenji. Laut den meisten Quellen 11 bis 19 Uhr täglich, die offizielle Seite nennt 11 bis 19 oder 20 Uhr. Steuerfreier Einkauf möglich, kein Versand ins Ausland, das Personal spricht überwiegend Japanisch. Tel. 03-3318-0313.
+  [Maps](https://maps.google.com/?cid=6653850366453683501) · [Website](https://www.cotogoto.jp/) · Japan, 〒166-0003 Tokyo, Suginami City, Koenjiminami, 4 Chome−27−17 恒陽サンクレスト高円寺 2階
+- **STAR CASE** · Shop · ★ 4,0 · Koenjikita, Suginami City
+  Star-Wars-Spezialladen in Koenji im 2. Stock (3-25-25 Koenjikita), 4 bis 5 Minuten ab Nordausgang Koenji. Kleiner Laden voller Figuren und Sammelspielzeug, dazu Poster, Pins, Karten und Sticker, japanische und internationale Ware. Laut Guide täglich 13 bis 19 Uhr, dienstags geschlossen (Google nennt Öffnung um 13 Uhr), bitte prüfen. Tel. +81 3-3310-3006 (Japanisch), der Besitzer spricht laut Guide etwas Englisch.
+  [Maps](https://maps.google.com/?cid=15457236799045680953) · [Website](http://starcase.jp) · Japan, 〒166-0002 Tokyo, Suginami City, Koenjikita, 3 Chome−25−25 天名屋ビル 2F
+
 ## Shinagawa (1)
 
 - **Bond Street** · Sehenswürdigkeit · ★ 3,9 · Higashishinagawa, Shinagawa City
   Umgebaute Lagerhallen mit Galerien, Ateliers und Cafés im Küstenviertel Tennozu Isle, bekannt für Street Art. Etwa 200 m lange Straße mit umgebauten Lagerhäusern (früher Zolllager für Öl und Rohstoffe), heute Ateliers, Lokale und Galerien. Street Art und Wandbilder, u. a. vom Festival Pow! Wow! Japan und dem Tennoz Art Festival. Etwa 7 Minuten zu Fuß ab Tennozu Isle Station. Welche Bilder aktuell zu sehen sind, ändert sich.
   [Maps](https://maps.google.com/?cid=6132776486662989691) · [Website](https://www.e-tennoz.com/areaguidance/bldg_bond.html) · 2 Chome-1 Higashishinagawa, Shinagawa City, Tokyo 140-0002, Japan
-
-## Suginami (1)
-
-- **cotogoto** · Shop · ★ 4,2 · Koenjiminami, Suginami City
-  Airy, minimalist boutique showcasing a range of traditional & modern Japanese handicrafts. Im 2. Stock des Koyo Suncrest Koenji (4-27-17 Koenji-Minami), 2 Minuten ab Südausgang Koenji. Laut den meisten Quellen 11 bis 19 Uhr täglich, die offizielle Seite nennt 11 bis 19 oder 20 Uhr. Steuerfreier Einkauf möglich, kein Versand ins Ausland, das Personal spricht überwiegend Japanisch. Tel. 03-3318-0313.
-  [Maps](https://maps.google.com/?cid=6653850366453683501) · [Website](https://www.cotogoto.jp/) · Japan, 〒166-0003 Tokyo, Suginami City, Koenjiminami, 4 Chome−27−17 恒陽サンクレスト高円寺 2階
 
 ## Tokio – außerhalb der 23 Bezirke (9)
 
